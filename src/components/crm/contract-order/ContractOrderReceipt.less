@@ -1,0 +1,372 @@
+@import '../../common/less/common.less';
+
+:global{
+	/*覆盖样式*/
+	.contract_order_receipt_modal .ant-modal-body{
+		padding : 0;
+	}
+	.contract_order_receipt_modal .ant-modal-header{
+		border-bottom : none;
+	}
+
+	.receipt_content_with_pos .ant-form-inline .ant-form-item{
+		margin-right : 10px;
+	}
+	.receipt_content_with_pos .ant-form-inline .ant-form-item:last-child{
+		margin : 0;
+	}
+	/*覆盖样式*/
+
+	/*收款头部*/
+	.receipt_header_wrap{
+		position : relative;
+		width : 500px;
+		height : 100px;
+		background : #f1f1f1;
+	}
+	.receipt_header_wrap::before{
+		position : absolute;
+		content : '';
+		top : 20px;
+		left : 20px;
+		width : 40px;
+		height : 40px;
+		background : url('https://img.ishanshan.com/gimg/img/eb51ca21d2b7cee45a97df5a24faf1fd');
+		border-radius : 50%;
+		overflow : hidden;
+	}
+	.receipt_header_wrap .receipt_header_content{
+		position : relative;
+		height : 100px;
+		margin-left : 80px;
+		padding : 20px 0 20px 0;
+	}
+	.receipt_header_content_item{
+		padding : 0;
+		margin : 0;
+		height : 20px;
+		line-height : 20px;
+	}
+	.receipt_header_click{
+		position : absolute;
+		right : 20px;
+		bottom : 20px;
+	}
+	/*收款头部*/
+
+	/*未关联pos内容区域*/
+	.receipt_content_without_pos{
+		position : relative;
+		width : 100%;
+		height : 450px;
+	}
+	.receipt_content_without_pos::before{
+		position : absolute;
+		top : 20px;
+		left : 30px;
+		content : '';
+		width : 200px;
+		height : 400px;
+		background : url('https://img.ishanshan.com/gimg/img/50aacda15ddc35594691ad716c26594a');
+		background-size : cover;
+	}
+	.receipt_content_without_pos_tip{
+		position : absolute;
+		top : 40px;
+		right : 40px;
+		width : 200px;
+		height : 90px;
+		padding : 9px 0;
+		background : #7eb4f8;
+		border-radius : 5px;
+	}
+	.receipt_content_without_pos_intro{
+		position : absolute;
+		top : 150px;
+		right : 40px;
+		width : 200px;
+		height : 145px;
+	}
+	.without_pos_intro_shou{
+		position : absolute;
+		bottom : -80px;
+		left : 0;
+		text-align : center;
+	}
+	.without_pos_intro_shou::before{
+		content : '';
+		display : block;
+		width : 30px;
+		height : 30px;
+		background : url('https://img.ishanshan.com/gimg/img/3d809223e8fc5d7580e5c50c08043c8d')
+	}
+	.without_pos_intro_yan{
+		position : absolute;
+		bottom : -80px;
+		left : 80px;
+		text-align : center;
+	}
+	.without_pos_intro_yan::before{
+		content : '';
+		display : block;
+		width : 30px;
+		height : 30px;
+		background : url('https://img.ishanshan.com/gimg/img/3d809223e8fc5d7580e5c50c08043c8d')
+	}
+	.without_pos_intro_xin{
+		position : absolute;
+		bottom : -80px;
+		left : 160px;
+		text-align : center;
+	}
+	.without_pos_intro_xin::before{
+		content : '';
+		display : block;
+		width : 30px;
+		height : 30px;
+		background : url('https://img.ishanshan.com/gimg/img/5f02af95349e08a021dab2e28b50f72e')
+	}
+	.without_pos_tip_item{
+		height : 18px;
+		line-height : 18px;
+		color : #fff;
+		text-align : center;
+	}
+	/*未关联pos内容区域*/
+	/*关联pos内容区域*/
+	.receipt_content_with_pos{
+		position : relative;
+		width : 100%;
+		height : 450px;
+	}
+	.receipt_content_with_pos_search{
+		padding : 10px 0;
+		margin : 0 20px;
+		border-bottom : 1px solid#ddd;
+	}
+	.receipt_content_with_pos_list{
+		width : 100%;
+		height : 332px;
+		padding : 10px 20px;
+		overflow : auto;
+	}
+	.receipt_content_with_pos_list::-webkit-scrollbar {
+		background-color: transparent!important;
+		border-radius: 5px;
+		width: 4px;
+		height: 6px;
+		margin-right: 4px;
+		right: 4px;
+	}
+	.with_pos_list_tips{
+		margin : 0 auto;
+		margin-bottom : 10px;
+		width  : 320px;
+		height : 40px;
+		line-height : 40px;
+		text-align : center;
+		color : #fff;
+		background : #7EB4F8;
+		border-radius : 5px;
+	}
+	.with_pos_list_item{
+		position : relative;
+		margin-top : 10px;
+		width : 460px;
+		height : 108px;
+		border : 1px solid #ddd;
+		border-radius : 5px;
+		box-sizing : border-box;
+		cursor : pointer;
+	}
+	.width_pos_list_item_selected{
+		border : 2px solid @saas_main_color;
+	}
+	.with_pos_list_item:first-child{
+		margin : 0;
+	}
+	.with_pos_list_item_icon{
+		position : absolute;
+		top : 6px;
+		left : 6px;
+		width : 40px;
+		height : 40px;
+		background-size : cover;
+	}
+	.with_pos_list_item_info{
+		margin-left : 56px;
+		height : 106px;
+		padding : 20px 20px 20px 0;
+	}
+	.with_pos_list_item_info_left, .with_pos_list_item_info_right{
+		display : inline-block;
+		vertical-align : top;
+		width : 190px;
+		p{
+			width : 100%;
+			overflow : hidden;
+			text-overflow : ellipsis;
+			white-space : nowrap;
+			padding : 0;
+			margin : 0;
+			height : 14px;
+			line-height : 14px;
+			margin-bottom : 10px;
+			color : #999;
+		}
+		p:last-child{
+			margin : 0;
+		}
+		.with_pos_list_item_info_left_spe{
+			font-size : 14px;
+			color : #666;
+		}
+	}
+	.with_pos_list_item_info_left p{
+		text-align : left;
+	}
+	.with_pos_list_item_info_right p{
+		text-align : right;
+	}
+	.receipt_content_with_pos_list_footer{
+		position : relative;
+		height : 68px;
+		padding : 20px;
+	}
+	.with_pos_list_footer_total{
+		position : absolute;
+		left : 20px;
+		height : 28px;
+		line-height : 28px;
+		font-size : 14px;
+		span{
+			color : @saas_main_color;
+			font-size : 18px;
+		}
+	}
+	.with_pos_list_footer_btnGroup{
+		position : absolute;
+		right : 20px;
+	}
+	/*关联pos内容区域*/
+
+	/*手填收款单区域*/
+	/*覆盖样式*/
+	.receipt_content_write .ant-form-inline .ant-form-item{
+		margin-right : 10px;
+		margin-bottom : 10px;
+	}
+	/*覆盖样式*/
+	.receipt_content_write{
+		width : 100%;
+		height : 420px;
+	}
+	.receipt_content_write_body{
+		margin-top : 20px;
+		height : 352px;
+		width : 100%;
+		padding : 0 20px;
+		overflow : auto;
+	}
+	.receipt_content_write_body::-webkit-scrollbar {
+		background-color: transparent!important;
+		border-radius: 5px;
+		width: 4px;
+		height: 6px;
+		margin-right: 4px;
+		right: 4px;
+	}
+	.receipt_content_write_body_scroll{
+		width : 460px;
+	}
+	.receipt_content_write_body_item{
+		position : relative;
+		margin-bottom : 20px;
+		width : 100%;
+		border-bottom : 1px solid #ddd;
+	}
+    .receipt_content_write_body_item_render{
+        display : -webkit-flex;
+        display : flex;
+        flex-direction: row;
+        flex-wrap : nowrap;
+        img{
+            height : 100%;
+            width : 100%;
+            margin-right: 20px;
+        }
+    }
+	.form_item_rate{
+		display : inline-block;
+		width : 120px;
+		height : 28px;
+		line-height : 27px;
+		text-align : center;
+		box-sizing : border-box;
+		border : 1px solid #d9d9d9;
+		border-radius : 4px;
+		background : #f7f7f7;
+		color : rgba(0, 0, 0, 0.25);
+	}
+    .receipt_content_write_operation{
+        display : -webkit-flex;
+        display : flex;
+        flex-wrap : nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+//	.receipt_content_write_ori_money{
+//		position : absolute;
+//		right : 80px;
+//		bottom : 10px;
+//	}
+//	.receipt_content_write_delete_btn{
+//		position : absolute;
+//		right : 0px;
+//		bottom : 10px;
+//		width : 44px;
+//		height : 22px;
+//		line-height : 22px;
+//		text-align : center;
+//		color : #fff;
+//		background : #FF7E76;
+//		border-radius : 4px;
+//		cursor : pointer;
+//	}
+	.receipt_content_write_footer{
+		width : 100%;
+		height : 68px;
+		line-height : 67px;
+	}
+
+}
+.item_label{
+	font-size : 14px;
+}
+.item_text{
+	margin-left : 5px;
+	font-size : 14px;
+	color : #999;
+}
+.contract_order_queueAnim{
+    width : 100%;
+}
+.contract_order_queueAnim{
+    display : -webkit-flex;
+    display : flex;
+    flex-wrap : nowrap;
+    justify-content : center;
+    align-items : center;
+}
+/*没有关联订金*/
+.contract_no_order{
+    height : 28px;
+    line-height : 28px;
+    text-align : center;
+    font-size : 14px;
+    background : #ddd;
+    color : #fff;
+    border-radius : 5px;
+    padding : 0 10px;
+}

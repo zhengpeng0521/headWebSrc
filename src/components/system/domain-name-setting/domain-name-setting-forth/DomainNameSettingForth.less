@@ -1,0 +1,137 @@
+/*引入less定义的方法*/
+@import '../../../common/less/common.less';
+
+.all{
+    width:100%;
+    min-width: 800px;
+    height:calc(~'100% - 55px');
+    padding:10px 20px 20px 20px;
+    overflow:auto;
+}
+/*标题*/
+.domain_block{
+    overflow:hidden;
+    height:25px;
+    margin-bottom:10px;
+}
+.domain_block_before{
+    float:left;
+    height:14px;
+    width:8px;
+    margin-top: 5.5px;
+    background-color:#5d9cec;
+    .borderRadius(3px,3px,3px,3px);
+}
+.domain_block_content{
+    float:left;
+    height:inherit;
+    line-height:25px;
+    margin-left:10px;
+    font-size:1.16rem;
+}
+
+.domain_setting{
+    margin-bottom: 15px;
+}
+.domain_setting_name{
+    font-size: 1.16rem;
+    color:#666;
+}
+.login_background_setting{
+    margin-bottom: 15px;
+}
+.login_background_setting_name{
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+:global{
+    .mainpage_background_img_setting{
+        margin-bottom: 0;
+    }
+    .mainpage_background_img_setting .ant-upload.ant-upload-select-picture-card{
+        width : 320px;
+        height : 180px;
+    }
+    .mainpage_background_img_setting .ant-upload-list-picture-card .ant-upload-list-item{
+        width : 320px;
+        height : 180px;
+    }
+    .mainpage_background_img_setting .domain_setting_forth_step_upload_button{
+        margin-top: 50px;
+    }
+    .login_logo_img_setting .domain_setting_forth_step_upload_button{
+        margin-top: 5px;
+    }
+}
+.login_page_setting{
+    margin-bottom: 40px;
+}
+.login_page{
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.login_page_detail{
+    width : 270px;
+    height : 356px;
+    border-radius: 5px;
+    border:1px solid #ddd;
+    padding-top: 28px;
+    margin-right: 100px;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+.login_page_detail_logo{
+    width : 90px;
+    height : 87px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.login_page_detail_no_logo{
+    width : 90px;
+    height : 87px;
+    border-radius : 3px;
+    border : 1px solid #ddd;
+    font-size: 1.33rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.login_page_detail_brand_name{
+    font-size: 1.33rem;
+    margin-bottom: 5px;
+}
+.login_page_detail_brand_small_name{
+    font-size: 1rem;
+    margin-bottom: 20px
+}
+.login_page_detail_account_information{
+    >div{
+        background-color: #f1f1f1;
+        border-radius: 5px;
+        height : 28px;
+        width : 180px;
+        margin-bottom: 15px;
+        padding:0 5px;
+        line-height: 28px;
+        cursor: not-allowed;
+        i{
+            color : #5d9cec;
+            padding-right: 5px;
+            line-height: 28px;
+            border-right: 1px solid #ddd;
+        }
+        &:last-child{
+            background-color: #5d9cec;
+            text-align: center;
+            color:#fff;
+        }
+    }
+}

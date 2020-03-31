@@ -1,0 +1,192 @@
+.organ-common-wrap {
+    position: absolute;
+    width: 326px;
+    height: 525px;
+    top: 150px;
+    left: 26px;
+    overflow: auto;
+    background: #fff;
+}
+
+.organ-common-wrap:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 326px;
+    height: 30px;
+    top: -30px;
+    left: 0;
+    background: #313035;
+}
+
+.organCommon-page-render-design {
+    position: absolute;
+    width: 309px;
+    height: 1167px;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-image: url("//img.ishanshan.com/gimg/img/cef7bb9fb56a80827785129e4569d994");
+    background-size: cover;
+}
+
+.organCommon-page-headImg {
+    position: absolute;
+    top: 33.5px;
+    left: 105px;
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+}
+
+.organCommon-page-headImg-content {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.organCommon-page-title {
+    position: absolute;
+    top: 150px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #558A5E;
+    text-align: center;
+    overflow: hidden;
+}
+
+.organCommon-page-intro {
+    position: absolute;
+    top: 266px;
+    left: 36px;
+    width: 240px;
+    height: 73px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #54895f;
+    overflow: hidden;
+}
+
+.organCommon-page-img1,
+.organCommon-page-img2,
+.organCommon-page-img3,
+.organCommon-page-img4 {
+    position: absolute;
+    width: 112px;
+    height: 112px;
+}
+
+.organCommon-page-img1 {
+    top: 413px;
+    left: 31px;
+}
+
+.organCommon-page-img2 {
+    top: 413px;
+    left: 167px;
+}
+
+.organCommon-page-img3 {
+    top: 550px;
+    left: 31px;
+}
+
+.organCommon-page-img4 {
+    top: 550px;
+    left: 167px;
+}
+
+.organCommon-page-imgContent {
+    width: 100%;
+    height: 100%;
+}
+
+.organCommon-page-courseIntro {
+    position: absolute;
+    top: 742px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 225px;
+    height: 95px;
+    color: #54895f;
+    overflow: hidden;
+}
+
+.organCommon-page-courseIntro-item {
+    width: 225px;
+    min-height: 19px;
+    line-height: 19px;
+}
+
+
+/*二维码样式*/
+
+.organCommon-page-codeImg {
+    position: absolute;
+    top: 887.5px;
+    left: 26.5px;
+    width: 82px;
+    height: 83px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.organCommon-page-codeImg-content {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*联系方式*/
+
+.organCommon-page-contact-title {
+    position: absolute;
+    top: 890px;
+    right: 102px;
+    width: 65px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 900;
+    color: #666;
+}
+
+.organCommon-page-contact {
+    position: absolute;
+    top: 918px;
+    right: 5px;
+    width: 162px;
+    height: 80px;
+    font-size: 12px;
+    color: #666;
+    overflow: hidden;
+}
+
+.organCommon-page-contact-item {
+    width: 162px;
+    min-height: 20px;
+    line-height: 20px;
+}
+
+.organCommon-page-contact-item-label {
+    display: inline-block;
+    width: 32px;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: top;
+    margin-right: 5px;
+}
+
+.organCommon-page-contact-item-value {
+    display: inline-block;
+    width: 125px;
+    min-height: 20px;
+    line-height: 20px;
+}

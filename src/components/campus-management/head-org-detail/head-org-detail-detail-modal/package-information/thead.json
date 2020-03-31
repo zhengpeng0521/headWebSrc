@@ -1,0 +1,5 @@
+[
+    { "key" : "pkgName" , "value" : "套餐名称" , "width" : "20%" },
+    { "key" : "endDate" , "value" : "到期时间" , "width" : "55%" },
+    { "key" : "status" , "value" : "状态" , "width" : "25%" }
+]

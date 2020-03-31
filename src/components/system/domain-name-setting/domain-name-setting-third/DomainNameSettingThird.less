@@ -1,0 +1,44 @@
+/*引入less定义的方法*/
+@import '../../../common/less/common.less';
+
+.all{
+    width:100%;
+    min-width: 800px;
+    height:calc(~'100% - 55px');
+    padding:10px 20px 20px 20px;
+    overflow:auto;
+}
+/*标题*/
+.domain_block{
+    overflow:hidden;
+    height:25px;
+    margin-bottom:10px;
+}
+.domain_block_before{
+    float:left;
+    height:14px;
+    width:8px;
+    margin-top: 5.5px;
+    background-color:#5d9cec;
+    .borderRadius(3px,3px,3px,3px);
+}
+.domain_block_content{
+    float:left;
+    height:inherit;
+    line-height:25px;
+    margin-left:10px;
+    font-size:1.16rem;
+}
+.domain_name{
+    font-size: 1.16rem;
+    color:#666;
+    margin-bottom: 15px;
+}
+.domain_alert{
+    padding:10px;
+    border-radius: 5px;
+    background-color: #5d9cec;
+    color:#fff;
+    display: inline-block;
+    cursor: default;
+}

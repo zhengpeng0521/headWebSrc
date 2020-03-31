@@ -1,0 +1,239 @@
+import React from 'react';
+import moment from 'moment';
+import styles from './ClassScheduleContentComponent.less';
+import {Popover, Button, Row, Col, Progress } from 'antd';
+import {objListSortOfTime, scheduleDataAlgorithm } from '../../../utils/arrayUtils';
+
+/**
+ * 课程表
+ * 查询组件 - 内容区域
+ */
+function ClassScheduleContentComponent ({beginDate, endDate, beginTime, endTime, classScheduleList,tbody_height,onUpdateSchedule,onCreateSchedule,createAble}) {
+
+    let classScheduleData = scheduleDataAlgorithm(classScheduleList);//课程表数据整理算法
+
+    /*获取课程表的学员名称字符串*/
+    function getScheduleStudent(stus) {
+        let stu_str = '';
+        let stu_arr = [];
+        if(stus && stus.length > 0) {
+            stus.forEach(function(stu_item) {
+                stu_arr.push(stu_item.stuName);
+            });
+        }
+        return stu_arr.join(',');
+    }
+
+    let render_cont = [];
+
+    let loopRow = time_str => {
+        let time_moment = moment(time_str, 'HH:mm');//划线的时间点
+        let next_time_moment = moment(time_str, 'HH:mm').add(1, 'h');//下个整点的时间
+        let next_time_str = moment(time_str, 'HH:mm').add(1, 'h').format('HH:mm');//下个整点的时间字符串
+
+        let render_col = [];
+        for(let i = 0; i < 7; i++) {
+            let day = moment(beginDate, 'YYYY-MM-DD').add(i, 'd');
+            let dayStr = day.format('YYYY-MM-DD');
+
+            let dayData = classScheduleData[dayStr];
+
+            let scheduleRender = [];
+            if(dayData) {
+                let dayTimeKeys = Object.keys(dayData);
+
+                dayTimeKeys.forEach(function(time_item, time_item_index) {
+
+                    if(time_item >= time_str && time_item < next_time_str) {
+                        let timeData = dayData[time_item];
+
+                        if(timeData && timeData.length > 0) {
+                            //渲染课程表块
+
+                            let time_item_moment = moment(time_item, 'HH:mm');//块起始 的时间点
+
+                            let top_percent = 1.0 * time_item_moment.diff(time_moment)/1000/60/60*100;
+                            let width_percent = 100.0 / timeData.length;
+
+                            let schedule_class_item_list = [];
+                            timeData.forEach(function(time_data_item, time_data_item_index) {
+                                let time_data_item_startTime_moment = moment(time_data_item.startTime, 'HH:mm');
+                                let time_data_item_endTime_moment = moment(time_data_item.endTime, 'HH:mm');
+                                let time_data_item_height = (time_data_item_endTime_moment - time_data_item_startTime_moment)/60000*1.0/60*80;
+                                let time_data_item_color = time_data_item.color || '#5D9BEC';
+                                let time_data_item_top = (time_data_item_startTime_moment - time_item_moment)/60000*1.0/60*80;
+
+                                let schedule_class_item_type_text = time_data_item.type == '1' ? '听' : time_data_item.type == '2' ? '课' : time_data_item.type == '3' ? '补' : '课';
+
+                                let class_time_str = time_data_item.studyDate + ' ' + time_data_item.startTime + '~' + time_data_item.endTime;
+
+
+                                //主教
+                                let ptArr = time_data_item.ptArr;
+                                let has_ptArr = ptArr && ptArr.length > 0;
+
+                                let ptArr_str = '';//上课老师
+                                let ptArr_arr = [];
+                                if(has_ptArr) {
+                                    ptArr.forEach(function(tea_item) {
+                                        ptArr_arr.push(tea_item.uname);
+                                    });
+                                }
+                                if(ptArr_arr && ptArr_arr.length > 0) {
+                                    ptArr_str = ptArr_arr.join(',');
+                                }
+
+                                //助教
+                                let atArr = time_data_item.atArr;
+                                let has_atArr = atArr && atArr.length > 0;
+
+                                let atArr_str = '';//上课老师
+                                let atArr_arr = [];
+                                if(has_atArr) {
+                                    atArr.forEach(function(tea_item) {
+                                        atArr_arr.push(tea_item.uname);
+                                    });
+                                }
+                                if(atArr_arr && atArr_arr.length > 0) {
+                                    atArr_str = atArr_arr.join(',');
+                                }
+
+                                //班课学员
+                                let normalStuStr = getScheduleStudent(time_data_item.normalStuArr);
+                                //补课学员
+                                let remedialStuStr = getScheduleStudent(time_data_item.remedialStuArr);
+                                //试听学员
+                                let auditionStuStr = getScheduleStudent(time_data_item.auditionStuArr);
+
+                                //进度条
+                                let {curProgress,maxProgress} = time_data_item;
+                                let isShowProgress = maxProgress != undefined && maxProgress > 0;
+                                let progressPercent = 100.0 * curProgress/maxProgress;
+
+                                //班级名称显示的行数
+                                let classNameLineClamp = isShowProgress ?　time_data_item_height / 50　: time_data_item_height / 40;
+                                let classNameLineClampNum = Math.floor(classNameLineClamp);
+                                let classNameLineClampNumRea = classNameLineClampNum == 0 ? 1 : classNameLineClampNum;
+
+                                //班级名称和进度是否显示
+                                let classNameDisable = time_data_item_height < 50 && width_percent <= 34 ? 'none' : '-webkit-box';
+
+
+                                //鼠标悬停 显示块
+                                let class_content = (
+                                    <div className={styles.class_content} key={'schedule_class_item_pop_cont_'+time_data_item_index}>
+                                        <div className={styles.class_content_type} style={{backgroundColor: time_data_item_color}}>{schedule_class_item_type_text}</div>
+                                        <div className={styles.class_content_org_name}>{time_data_item.orgName||'无'}</div>
+                                        <div className={styles.class_content_time}>{class_time_str}</div>
+                                        <div className={styles.class_content_classroom}>{time_data_item.roomName||'无'}</div>
+                                        {!!(time_data_item.courseName) && <div className={styles.class_content_course_name}>{time_data_item.courseName||'无'}</div>}
+                                        {!!(time_data_item.className) && <div className={styles.class_content_class_name}>{time_data_item.className||'无'}</div>}
+                                        {!!time_data_item.mtNames && <div className={styles.class_content_teachers_pt}>{time_data_item.mtNames||'无'}</div>}
+                                        {!!has_atArr && <div className={styles.class_content_teachers_at}>{atArr_str||'无'}</div>}
+
+                                        {!!(normalStuStr   && normalStuStr.length > 0)   && <div className={styles.class_content_students_normal}>{normalStuStr||'无'}</div>}
+                                        {!!(remedialStuStr && remedialStuStr.length > 0) && <div className={styles.class_content_students_remedial}>{remedialStuStr||'无'}</div>}
+                                        {!!(auditionStuStr && auditionStuStr.length > 0) && <div className={styles.class_content_students_audition}>{auditionStuStr||'无'}</div>}
+
+                                        {!!(time_data_item.type == '2') && <div className={styles.class_content_intro_1}>{time_data_item.cpContent||'无'}</div>}
+                                        {!!(time_data_item.type == '1') && <div className={styles.class_content_intro_2}>{time_data_item.cpContent||'无'}</div>}
+                                        {!!(time_data_item.type == '3') && <div className={styles.class_content_intro_3}>{time_data_item.cpContent||'无'}</div>}
+                                        {!!isShowProgress && <div className={styles.class_content_progress}><Progress status={progressPercent == 100 ? 'success' : 'active'} percent={progressPercent} strokeWidth={5} format={()=>curProgress + '/' + maxProgress}/></div>}
+                                    </div>
+                                );
+
+                                schedule_class_item_list.push(
+                                    <Popover key={'schedule_class_item_pop_'+time_data_item_index} content={class_content} overlayClassName="common_class_content_pop" title={null} trigger="hover" placement="right" arrowPointAtCenter={true}>
+                                        <div className={styles.schedule_class_item}
+                                           onClick={()=>onUpdateSchedule(time_data_item)}
+                                            key={'schedule_class_item_'+time_data_item_index}
+                                            style={{backgroundColor: time_data_item_color, height: time_data_item_height, width: width_percent+'%', top: time_data_item_top}}
+                                        >
+                                            <div className={styles.schedule_class_item_type_text}>{schedule_class_item_type_text}</div>
+                                            <div className={styles.schedule_class_item_course_name} style={{'WebkitLineClamp': classNameLineClampNumRea, display: classNameDisable}}>{time_data_item.className || time_data_item.courseName ||'无'}</div>
+                                            {!!isShowProgress && <div className={styles.schedule_class_item_course_progress} style={{ display: classNameDisable}}>{'[' + curProgress + '/' + maxProgress + ']'}</div>}
+                                        </div>
+                                    </Popover>
+                                );
+                            });
+
+                            scheduleRender.push(
+                                <div className={styles.schedule_class_cont} key={'schedule_class_cont_' + time_item_index}
+                                style={{top: top_percent + '%'}}
+                               >
+                               {schedule_class_item_list}
+                                </div>
+                            );
+                        }
+                    }
+                });
+            }
+
+            let start_time = time_str;
+            let start_time_2 = moment(time_str, 'HH:mm').add(30, 'm').format('HH:mm');
+
+            let render_col_item = (
+                <div className={styles.schedule_item} key={'schedule_item_' + i}>
+                    {scheduleRender}
+                    <div className={styles.schedule_item_top} onClick={()=>onCreateSchedule(start_time)} style={{cursor: createAble ? 'pointer' : 'auto'}} ></div>
+                    <div className={styles.schedule_item_bottom} onClick={()=>onCreateSchedule(start_time_2)} style={{cursor: createAble ? 'pointer' : 'auto'}} ></div>
+                </div>
+            );
+
+            render_col.push(render_col_item);
+        }
+        return render_col;
+    }
+
+    for(let i = beginTime; i <= endTime; i++) {
+        let time_moment = moment(i + ':00', 'HH:mm');
+        let time_str = time_moment.format('HH:mm');
+        let render_row_item = (
+            <div className={styles.class_schedule_row} key={'class_schedule_row_' + i}>
+                <div className={styles.schedule_time}>{time_str}</div>
+                <div className={styles.schedule_content}>
+                   {loopRow(time_str)}
+                </div>
+            </div>
+        );
+        render_cont.push(render_row_item);
+    }
+
+    //课程表头部- 星期几显示
+    let day_render_content = [];
+    let week_text_arr = ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+    for(let i = 0; i < 7; i++) {
+        let day = moment(beginDate, 'YYYY-MM-DD').add(i, 'd');
+        let dayStr = day.format('YYYY-MM-DD');
+        if(dayStr == moment().format('YYYY-MM-DD')) {
+            day_render_content.push(
+                <div className={styles.schedule_header_item_today} key={'schedule_header_item_' + i}>
+                    <div className={styles.schedule_header_item_week_text}>今天</div>
+                    <div className={styles.schedule_header_item_date_text}>{dayStr}</div>
+                </div>);
+        } else {
+            day_render_content.push(
+                <div className={styles.schedule_header_item} key={'schedule_header_item_' + i}>
+                    <div className={styles.schedule_header_item_week_text}>{week_text_arr[i]}</div>
+                    <div className={styles.schedule_header_item_date_text}>{dayStr}</div>
+                </div>);
+        }
+    }
+
+    return (
+        <div className={styles.class_schedule_content} >
+           <div className={styles.class_schedule_header}>
+                <div className={styles.schedule_header_time}></div>
+                <div className={styles.schedule_header_content}>
+                    {day_render_content}
+                </div>
+            </div>
+
+            <div className={styles.class_schedule_cont} style={tbody_height ? {maxHeight: tbody_height} : {}}>
+              {render_cont}
+            </div>
+        </div>
+    );
+}
+
+export default ClassScheduleContentComponent;

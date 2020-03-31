@@ -1,0 +1,8 @@
+[
+    { "label" : "校区名称" , "value" : "orgName" },
+    { "label" : "联系人" , "value" : "contacts" },
+    { "label" : "联系方式" , "value" : "tel" },
+    { "label" : "校区地址" , "value" : "addr" },
+    { "label" : "校区类型" , "value" : "orgType" },
+    { "label" : "所属部门" , "value" : "deptName" }
+]

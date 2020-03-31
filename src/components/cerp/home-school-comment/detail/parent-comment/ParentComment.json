@@ -1,0 +1,6 @@
+[
+    { "key" : "stu_name" , "value" : "学员姓名" , "width" : "20%" },
+    { "key" : "parent_name" , "value" : "学员家长" , "width" : "20%" },
+    { "key" : "score" , "value" : "综合评分" , "width" : "30%" },
+    { "key" : "comment" , "value" : "家长评价" , "width" : "30%" }
+]

@@ -1,0 +1,15 @@
+'use strict';
+
+const mock = {};
+
+require('fs').readdirSync(require('path').join(__dirname + '/mock'))
+  .forEach(function (file) {
+    Object.assign(mock, require('./mock/' + file));
+  });
+
+
+module.exports = mock;
+
+//module.exports = {
+//    '/saas-web/*' : 'http://192.168.1.22:9090',
+//};

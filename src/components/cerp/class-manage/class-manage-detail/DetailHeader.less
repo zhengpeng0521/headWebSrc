@@ -1,0 +1,89 @@
+@import '../../../common/less/common.less';
+
+.header_wrap{
+	background-color: #fff;
+    overflow: hidden;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+}
+.header_wrap_top{
+    width: 100%;
+    padding: 20px 20px 10px 20px;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.header_wrap_top_left,.header_wrap_top_right{
+    width:50%;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.header_wrap_top_right{
+    justify-content: flex-end;
+}
+.header_wrap_top_left_img{
+    width:40px;
+    height:40px;
+    margin-right: 20px;
+}
+.header_wrap_top_left_title{
+    font-size: 1.33rem;
+    font-weight: 700;
+    color:#666;
+    cursor: default;
+    white-space: nowrap;
+    overflow: hidden;
+    .textOverflow(ellipsis);
+}
+.close_detail{
+	color : #666666;
+	height : 16px;
+	cursor : pointer;
+//	transition : transform .3s linear;
+}
+.close_detail:hover{
+	transform : rotate( 180deg );
+}
+.detail_content{
+	width : 100%;
+    margin-bottom : 10px;
+    padding :0 20px 0 80px;
+    display : -webkit-flex;
+    display : flex;
+    flex-wrap : wrap;
+    p{
+        width : calc(~'(100% - 80px)/3');       //平均3等分，前2个有编剧40px，最后一项没有右边距
+        font-size : 1.16rem;
+        margin-right : 20px;
+        margin-bottom : 10px;
+        overflow : hidden;
+        white-space: nowrap;
+        .textOverflow(ellipsis);
+        &:last-child{
+            margin-right: 0;
+        }
+        span{
+            &:nth-child(1){
+                color:#999;
+            }
+            &:nth-child(2){
+                color:#666;
+            }
+        }
+    }
+}
+.button_group{
+	position : absolute;
+	top : 26px;
+	right : 25px;
+	display : flex;
+}
+.ellipsis{
+	padding : 0 5px !important;
+}

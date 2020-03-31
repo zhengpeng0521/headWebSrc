@@ -1,0 +1,194 @@
+/*引入less定义的方法*/
+@import '../../../common/less/common.less';
+
+.small_ticket_all_content{
+    width:1000px;
+    height:650px;
+    padding:0 20px;
+    overflow: auto;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/*标题*/
+.small_ticket_title{
+    overflow:hidden;
+    height:25px;
+    margin-bottom:10px;
+}
+.small_ticket_title_block{
+    display: inline-block;
+    height:inherit;
+    width:8px;
+    height:14px;
+    background-color:@saas_main_color;
+    .borderRadius(3px,3px,3px,3px);
+}
+.small_ticket_title_content{
+    display: inline-block;
+    height:inherit;
+    line-height:25px;
+    margin-left:10px;
+    font-size: 1.16rem;
+}
+
+/*小票预览*/
+.small_ticket_preview{
+    margin-right: 80px;
+}
+
+.small_ticket_preview_content{
+    width:300px;
+    border:1px solid #ddd;
+    padding:10px 20px;
+    .borderRadius(5px,5px,5px,5px);
+}
+.small_ticket_preview_content_orgName{
+    font-size:20px;
+    text-align:center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.small_ticket_preview_content_common{
+    font-size:16px;
+    line-height: 35px;
+}
+.small_ticket_preview_content_recBottom{
+    padding-top: 5px;
+    border-top: 1px solid #ddd;
+    font-size:16px;
+    pre{
+        white-space:pre-wrap;
+    }
+}
+/*小票设置*/
+.small_ticket_set{
+
+}
+:global{
+    .small_ticket_set_checkbox{
+        width:100px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    .small_ticket_set_checkbox .ant-checkbox-group-item{
+        margin-bottom: 18px !important;
+    }
+    .small_ticket_set_checkbox .ant-checkbox-group-item:last-child{
+        margin-bottom: 5px !important;
+    }
+}
+.small_ticket_set_textarea{
+    margin-left: 42px;
+    margin-bottom: 20px;
+    width:400px;
+}
+.small_ticket_set_button{
+    margin-left: 42px;
+}
+.small_ticket_set_button_item{
+    margin-right: 10px;
+}
+
+.small_ticket_type{
+    width:400px;
+    margin-left:20px;
+    margin-bottom:15px;
+}
+
+.small_ticket_ment{
+    width:300px;
+    height:300px;
+    border:1px solid #ddd;
+    padding:20px;
+    margin-right:100px;
+    line-height:300px;
+    text-align:center;
+    float:left;
+    border-radius:5px;
+    margin-top:34px;
+}
+
+//签到名帖
+.name_card_area{
+    width:300px;
+}
+.name_card_area_title{
+    height:40px;
+    background: #666;
+    color:#fff;
+    font-size: 1.33rem;
+    text-align: center;
+    line-height: 40px;
+    .borderRadius(5px,5px,0,0);
+}
+.name_card_area_content{
+    height:120px;
+    display:-webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    border: 1px solid #ddd;
+    border-top: 0;
+    .borderRadius(0,0,5px,5px);
+}
+.name_card_area_img{
+    width:120px;
+    height:100%;
+    padding:20px;
+    img{
+        border-radius:5px;
+    }
+}
+.name_card_area_no_img{
+    width:100%;
+    height:100%;
+    font-size: 1.16rem;
+    border:1px dotted #ddd;
+    border-radius: 5px;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name_card_area_content_detail{
+    width:calc(~'100% - 120px');
+    height:100%;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+.name_card_area_content_detail_top,.name_card_area_content_detail_bottom{
+    width:100%;
+    display: -webkit-flex;
+    display: flex;
+    color:#666;
+}
+.name_card_area_content_detail_top{
+    height:40%;
+    font-size: 2rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.name_card_area_content_detail_bottom{
+    height:60%;
+    font-size: 1.16rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+:global{
+    .zj_sign_in_print_logo{
+        margin-left: 20px;
+        height: 112px;
+    }
+    .zj_sign_in_print_logo .ant-upload.ant-upload-select-picture-card{
+        width : 98px;
+        height : 98px;
+    }
+    .zj_sign_in_print_logo .ant-upload-list-picture-card .ant-upload-list-item{
+        width : 98px;
+        height : 98px;
+    }
+}

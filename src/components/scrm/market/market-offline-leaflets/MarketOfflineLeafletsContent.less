@@ -1,0 +1,535 @@
+@baseName : marketOfflineLeafletsContent;
+:global {
+    .@{baseName} {
+        width: 100%;
+        .ant-radio-button-wrapper-checked {
+            background-color: #5d9cec!important;
+            border-color: #5d9cec!important;
+            border: 1px red #5d9cec!important;
+            color: white!important;
+        }
+        .ant-select-selection--single {
+            height: 32px;
+        }
+        .ant-select-selection__rendered {
+            line-height: 32px;
+        }
+        .ant-radio-wrapper {
+            margin-bottom: 10px;
+        }
+        .canvas_modals {
+            height: 430px;
+        }
+        .ant-form-item {
+            margin-bottom: 10px;
+        }
+        .ant-col-3 {
+            width: 80px;
+        }
+    }
+}
+
+.module_bar_cont {
+    padding-top: 40px;
+    padding-left: 60px;
+    min-width: 500px;
+}
+
+.module_bar_cont :global(.ant-tabs-nav) {
+    border-radius: 8px;
+}
+
+.module_bar_cont :global(.ant-tabs-bar) {
+    border-bottom: 0px solid #d9d9d9;
+    margin-bottom: 26px!important;
+}
+
+.module_bar_cont :global(.ant-tabs-nav .ant-tabs-tab-active) {
+    background-color: #5D9CEC;
+    color: #FFF;
+    border: 1px solid #5D9CEC;
+}
+
+.module_bar_cont :global(.ant-tabs-nav-wrap) {
+    margin-bottom: 0;
+}
+
+.module_bar_cont :global(.ant-tabs-ink-bar) {
+    background-color: #5d9cec;
+    opacity: 0;
+}
+
+.module_bar_cont :global(.ant-tabs-tab) {
+    border: 1px solid #D9D9D9;
+    margin-right: 0;
+    padding: 3px 11px;
+}
+
+.module_bar_cont :global(.ant-tabs-tab:nth-child(2)) {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.module_bar_cont :global(.ant-tabs-tab:nth-child(3)) {
+    border-left-width: 0;
+    border-right-width: 0;
+}
+
+.module_bar_cont :global(.ant-tabs-tab:last-child) {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.leftContent {
+    width: 840px;
+    height: 100%;
+    background-color: #f1f1f1;
+    padding-bottom: 80px;
+    overflow: auto;
+    z-index: 1000;
+    position: relative;
+    float: left;
+}
+
+.contentBoxNoSelect {
+    background-color: white;
+    margin: auto;
+    margin-top: 25px;
+    position: absolute;
+    margin-left: 120px;
+}
+
+.contentBox {
+    background-color: white;
+    margin: auto;
+    margin-top: 25px;
+    position: absolute;
+    margin-left: 120px;
+    animation: moveShow;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes moveShow {
+    0% {
+        opacity: 0
+    }
+    ;
+    100% {
+        opacity: 1
+    }
+    ;
+}
+
+.leftTabsBase {
+    text-align: center;
+}
+
+.rightContent {
+    overflow: scroll;
+    display: -webkit-box;
+    height: 100%;
+}
+
+.rightTabsBase {
+    margin-top: 40px;
+    margin-left: 60px;
+}
+
+.bleedingLine {
+    margin: auto;
+    margin-top: 8px;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: red;
+    position: absolute;
+    left: 8px;
+    z-index: 100;
+}
+
+.leafletsSize {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+/*废弃*/
+
+.buttonStyle {
+    height: 30px;
+    width: 50px;
+    background-color: yellow;
+    position: absolute;
+    z-index: 100;
+}
+
+.leafletsBleedingLineExplain {
+    position: absolute;
+    right: 10px;
+}
+
+.leafletsBleedingLineExplainText {
+    float: right;
+    margin-left: 5px;
+    color: #666;
+    font-size: 14px;
+    margin-top: -2px;
+}
+
+.leafletsBleedingLineExplainSwith {
+    .leafletsBleedingLineExplainText();
+    margin-top: -3px;
+}
+
+.bleedingLineExplainDiv {
+    height: 172px;
+    width: 320px;
+    background-color: white;
+}
+
+.bleedingLineExplainDivString {
+    width: 190px;
+    float: left;
+    color: #999;
+    padding: 10px;
+    text-indent: 25px;
+}
+
+.bleedingLineExplainDivImage {
+    width: 120px;
+    float: left;
+    background-color: #dcdcdc;
+    height: 80%;
+    margin-top: 5%;
+}
+
+.bleedingLineExplainDivLine {
+    width: 80%;
+    height: 80%;
+    border: 1px red solid;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.blueDivBox {
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.tabContentDiv {
+    clear: both;
+    margin-top: 40px;
+}
+
+.blueDiv {
+    float: left;
+    width: 10px;
+    height: 15px;
+    background-color: #5d9cec;
+    margin-right: 10px;
+}
+
+.blueTitle {
+    float: left;
+    color: #666;
+}
+
+.defaultDivLeft {
+    clear: both;
+    margin-left: 60px;
+    padding-top: 10px;
+    transform: translateX(0%);
+}
+
+.fromDivRighrMove {
+    clear: both;
+    margin-left: 60px;
+    padding-top: 10px;
+    animation: moveLeftAni;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes moveLeftAni {
+    0% {
+        transform: translateX(0%)
+    }
+    100% {
+        transform: translateX(-100%)
+    }
+}
+
+.fromDivLeft {
+    clear: both;
+    margin-left: 60px;
+    padding-top: 10px;
+    animation: moveLeftAni;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes moveLeftAni {
+    0% {
+        transform: translateX(0%)
+    }
+    100% {
+        transform: translateX(100%)
+    }
+}
+
+.fromDivRight {
+    clear: both;
+    margin-left: 60px;
+    padding-top: 10px;
+    animation: moveLeftAni;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    transform: translateX(100%);
+}
+
+@keyframes moveLeftAni {
+    0% {
+        transform: translateX(100%)
+    }
+    100% {
+        transform: translateX(00%)
+    }
+}
+
+.contentDivSelect {
+    .contentDiv();
+    border: 1px yellow dashed;
+}
+
+.contentDiv {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border: 1px transparent dashed;
+}
+
+.popoverContentIconDiv {}
+
+.popoverContentIconDiv:hover {
+    cursor: pointer;
+    color: #5D9CEC;
+}
+
+.contentDivNoSelectBoxBorder {
+    width: calc(~"100% + 0px");
+    height: calc(~"100% + 0px");
+    border: 1px transparent solid; // overflow: hidden; 
+}
+
+.contentDivNoSelectBoxBorder:hover {
+    cursor: pointer;
+    border: 1px #2196F3 solid;
+    background-color: rgba(93, 155, 236, 0.3);
+}
+
+.editElementParamLabel {
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    width: 60px;
+    margin-top: 10px;
+}
+
+.editElementParamContent {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 500px;
+}
+
+.editElementParamContent1 {
+    .editElementParamContent();
+    margin-bottom: 10px;
+}
+
+.inputBox {
+    clear: both;
+    margin-bottom: 10px;
+    min-height: 40px;
+}
+
+.alignText {
+    float: left;
+    padding-top: 9px;
+    margin-left: 5px;
+    width: 30px;
+}
+
+.selectAlginText {
+    float: left;
+    font-size: 13px;
+    color: #5d9cec;
+    padding-top: 9px;
+    margin-left: 5px;
+    width: 30px;
+}
+
+.alignText:hover,
+.selectAlginText:hover {
+    font-size: 13px;
+    color: #5d9cec;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.qrTitle {
+    width: 60px;
+    float: left;
+}
+
+.qrBox {
+    width: 100%;
+}
+
+.qrLeftBox {
+    float: left;
+    //	width : 200px;
+    width: 160px;
+}
+
+.qrLeftBoxCustom {
+    .qrLeftBox();
+    clear: both;
+    margin-left: 60px;
+}
+
+.qrCenterBox {
+    float: left;
+    //	width : 80%;
+    width: 400px;
+    //	height: 40px;
+    overflow: hidden;
+}
+
+.qrRightBox {
+    float: left;
+    //	width : 80%;
+    width: 400px;
+    //	height: 50px;
+}
+
+.selectBox {
+    clear: both;
+}
+
+.qrInputCenterBox {
+    //	float : left;
+    //	width : 50%;
+    //	margin-top: 5px;
+    width: 50%;
+    margin-left: 60px;
+    position: relative;
+    top: 15px;
+    height: 150px;
+}
+
+.qrNote {
+    clear: both;
+    padding-top: 70px;
+}
+
+.bothAndfrontString {
+    float: left;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.downloadString {
+    float: left;
+    margin-top: 20px;
+}
+
+.downloadValue {
+    margin-top: 20px;
+    float: left;
+    margin-left: 4px;
+}
+
+.downloadExplain {
+    margin-top: 20px;
+    margin-left: 22px;
+    clear: both;
+    position: relative;
+    top: 10px;
+    margin-bottom: 40px;
+    font-size: 13px;
+    color: red;
+}
+
+.statusImage {
+    height: 60px;
+    width: 60px;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.statusTitle {
+    color: '#999';
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+}
+
+.hiddenQrCode {
+    opacity: 0;
+}
+
+//.frontStyles {
+//	position: absolute;
+//	float : left;
+//	animation: moveAniLeft;
+//	animation-duration: 0.5s;
+//	animation-fill-mode: forwards;
+//	animation-iteration-count: 1;
+//} @keyframes moveAniLeft {
+//	0% {transform: translateX(0px);}
+//	100% {transform: translateX(0px);}
+//}
+//
+//.behindStyles {
+//	position: absolute;
+//	float : left;
+//	animation: moveAniRight;
+//	animation-duration: 0.5s;
+//	animation-fill-mode: forwards;
+//	animation-iteration-count: 1;
+//} @keyframes moveAniRight {
+//	0% {transform: translateX(0px);}
+//	100% {transform: translateX(-591px);}
+//}
+//
+//.frontStylesToLeftMove {
+//	animation: moveAniLeft;
+//	animation-duration: 0.5s;
+//	animation-fill-mode: forwards;
+//	animation-iteration-count: 1;
+//} @keyframes moveAniLeft {
+//	0% {transform: translateX(-591px);}
+//	100% {transform: translateX(0px);}
+//}
+//
+.blurBox {
+    height: 100%;
+    width: 100%;
+    background: white;
+    filter: blur(0.5px);
+    position: absolute;
+    top: 0px;
+    z-index: 10000;
+    opacity: 0.7;
+    text-align: center;
+    margin: 0 auto;
+}

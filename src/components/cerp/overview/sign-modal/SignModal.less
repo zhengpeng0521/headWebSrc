@@ -1,0 +1,84 @@
+/*引入less定义的方法*/
+@import '../../../common/less/common.less';
+
+:global{
+    .cerp_overview_sign_modal .ant-modal-body{
+        padding: 20px 20px 0 20px;
+        height: 550px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        .scrollbar();
+    }
+    .cerp_overview_sign_modal .ant-modal-footer{
+        margin: 0;
+        padding: 20px;
+    }
+    .cerp_overview_sign_modal .ant-form-item{
+        margin-bottom: 10px;
+    }
+}
+.teacher_area{
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    >div{
+        width: 50%;
+    }
+}
+:global{
+    .cerp_overview_sign_modal_stu_detail{
+        margin-top : 20px;
+        margin-bottom : 5px;
+        border-top : 1px solid #ddd;
+        padding-top : 20px;
+        display : -webir-flex;
+        display : flex;
+        flex-wrap : nowrap;
+        justify-content : space-between;
+        align-items : center;
+    }
+    .cerp_overview_sign_modal_stu_detail .ant-form-item-label{
+        margin-right: 5px;
+        label:after{
+            display : none;
+        }
+    }
+    .cerp_overview_sign_modal_upload_pic{
+        margin-bottom : 35px !important;
+    }
+    .cerp_overview_sign_modal_upload_pic .ant-upload.ant-upload-select-picture-card{
+        width : 80px;
+        height : 80px;
+    }
+    .cerp_overview_sign_modal_upload_pic .ant-upload-list-picture-card .ant-upload-list-item{
+        width : 80px;
+        height : 80px;
+    }
+    .cerp_overview_sign_modal_upload_pic .ant-form-explain{
+        position : absolute;
+        top : 85px;
+    }
+}
+.course_spend{
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.null{
+    height:300px;
+    width:100%;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    >img{
+        margin-bottom: 5px;
+    }
+    >div{
+        cursor: default;
+        font-size: 1rem;
+        color:#999;
+    }
+}

@@ -1,0 +1,99 @@
+/*引入less定义的方法*/
+@import '../../common/less/common.less';
+
+
+:global{
+  .stumanage_detail_content_item{
+    margin-top : 20px;
+  }
+}
+.zl_leads_detail_message{
+  background-color: #fff;
+  overflow: hidden;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:flex-start;
+}
+.leads_detail_message_top{
+    width: 100%;
+    padding: 20px 20px 10px 20px;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.leads_detail_message_top_left,.leads_detail_message_top_right{
+    width:50%;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.leads_detail_message_top_right{
+    justify-content: flex-end;
+}
+.leads_detail_message_img{
+    width:40px;
+    height:40px;
+    margin-right: 20px;
+}
+.leads_detail_message_left{
+    font-size: 1.33rem;
+    font-weight: 700;
+    color:#666;
+    cursor: default;
+    white-space: nowrap;
+    overflow: hidden;
+    .textOverflow(ellipsis);
+}
+.radio_button_group{
+    width : 80px;
+    padding : 0 10px;
+    text-align: center;
+    color : #5d9cec;
+}
+.leads_detail_message_detail_message{
+    width : 100%;
+    margin-bottom : 10px;
+    padding :0 20px 0 80px;
+    display : -webkit-flex;
+    display : flex;
+    flex-wrap : wrap;
+    p{
+        width : calc(~'(100% - 80px)/3');       //平均3等分，前2个有编剧40px，最后一项没有右边距
+        font-size : 1.16rem;
+        margin-right : 20px;
+        margin-bottom : 10px;
+        overflow : hidden;
+        white-space: nowrap;
+        .textOverflow(ellipsis);
+        &:last-child{
+            margin-right: 0;
+        }
+        span{
+            &:nth-child(1){
+                color:#999;
+            }
+            &:nth-child(2){
+                color:#666;
+            }
+        }
+    }
+}
+
+.leads_follow_record_inner{
+    padding:20px 30px;
+    overflow: auto;
+    .scrollbar();
+}
+
+.ant-tabs-tab-prev  .ant-tabs-tab-next {
+  line-height: 40px;
+}
+
+.ant-tabs-tab-prev, .ant-tabs-tab-next{
+  line-height: 40px;
+}
+

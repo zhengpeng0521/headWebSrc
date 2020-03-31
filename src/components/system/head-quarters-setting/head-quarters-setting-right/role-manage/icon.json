@@ -1,0 +1,6 @@
+[
+    { "type" : "edit" , "explain" : "编辑" },
+    { "type" : "copy" , "explain" : "复制" },
+    { "type" : "delete" , "explain" : "删除" },
+    { "type" : "plus" , "explain" : "新增" }
+]

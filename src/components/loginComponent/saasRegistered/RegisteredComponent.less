@@ -1,0 +1,168 @@
+@baseName 	: saas_registered;
+@import '../CommonLess.less';
+
+:global {
+	.@{baseName} {
+		.ant-input-lg {
+			background: #f1f1f1;
+		}
+		.ant-input {
+			border: 0px,
+		}
+	}
+
+	.has-error .ant-input, .has-error .ant-input:hover {
+		background: #FEEAEA;
+		border-color: transparent;
+	}
+
+	.ant-select-open .ant-select-selection {
+		border: 1px @defaultColor solid;
+	}
+
+	.ant-select-selection:hover {
+		border: 1px @defaultColor solid;
+	}
+
+	.ant-select-selection:focus {
+		border: 1px @defaultColor solid;
+	}
+
+
+	.ant-select-lg .ant-select-selection--single {
+		background-color: #f1f1f1;
+		border: 0px;
+	}
+
+	.ant-input:hover {
+		border: 1px @defaultColor solid;
+	}
+
+	.ant-input:focus {
+		border: 1px @defaultColor solid;
+	}
+
+
+}
+
+.saas_registered_box {
+//	overflow: hidden;
+//	height : 840px;
+	width : 480px;
+	background: white;
+	border-radius: 10px;
+	opacity: 0;
+	box-shadow: 7px 7px 20px 2px rgba(0,0,0,.0);
+	.common_ani(login_box_ani 300ms linear 300ms forwards);
+}
+
+.login_base_box {
+	width : 70%;
+    margin: auto;
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+.login_text {
+	color : #999;
+	font-size: 14px;
+	text-align: right;
+}
+
+.login {
+	color : @defaultColor;
+	font-size: 14px;
+	float: right;
+}
+
+.login:hover {
+	cursor: pointer;
+}
+
+.common_input(@top) {
+	width : 70%;
+	margin: auto;
+	margin-top: @top;
+	clear: right;
+}
+
+.input_organ_box {
+	.common_input(40px);
+}
+
+.input_person_box {
+	.common_input(0px);
+}
+
+.input_phone_box {
+	.common_input(0px);
+}
+
+.input_organ_type {
+	.common_input(0px);
+}
+
+.input_address_box {
+	.common_input(0px);
+}
+
+.input_demand_box {
+	.common_input(0px);
+}
+.input_city_box{
+    .common_input(0px);
+}
+.input_code_box {
+    width: 50%;
+    margin-top: 0px;
+    margin-left: 15%;
+    float: left;
+}
+
+.comon_code {
+    float: right;
+	margin-right: 15%;
+    height: 32px;
+    width: 90px;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.getVCCode_5d9cec:hover {
+	cursor: pointer;
+	background-color: @hoverColor;
+}
+
+.getVCCode_5d9cec:active {
+	background-color: @activeColor;
+}
+
+.registration {
+	height : 40px;
+	line-height: 40px;
+	font-size: 14px;
+	color: white;
+	border-radius: 5px;
+	text-align: center;
+	width : 70%;
+	margin: auto;
+	margin-top: 40px;
+	background-color: @defaultColor;
+}
+
+.registration:hover {
+	cursor: pointer;
+	background-color: @hoverColor;
+}
+
+.registration:active {
+	cursor: pointer;
+	background-color: @activeColor;
+}
+
+.box_content {
+	height: 300px;
+    overflow: auto;
+}

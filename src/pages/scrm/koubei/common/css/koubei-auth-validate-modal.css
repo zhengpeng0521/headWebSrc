@@ -1,0 +1,16 @@
+.href-content {
+	font-size: 20px;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.href-content a {
+	overflow: auto;
+    word-wrap: break-word;
+}
+
+.qrcode-image-desc {
+	font-size: 14px;
+	color: #999;
+}

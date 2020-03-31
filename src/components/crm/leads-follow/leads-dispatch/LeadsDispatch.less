@@ -1,0 +1,163 @@
+/*引入less定义的方法*/
+@import '../../../common/less/common.less';
+
+:global{
+    .dispatch_all_content{
+        height:100%;
+        overflow: hidden;
+    }
+    .dispatch_all_content .ant-row{
+        width:800px;
+    }
+    .dispatch_all_content .ant-col-1{
+        width:61px !important;
+    }
+    .dispatch_all_content .ant-col-8{
+        width:400px;
+        height:36px;
+        padding:3px 10px;
+        line-height:27px;
+        overflow:hidden;
+        &:nth-child(1){
+            border: 1px solid #ddd;
+            padding: 3px 10px !important;
+            line-height: 28px !important;
+        }
+        &:nth-child(2){
+            border-top: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 3px 10px !important;
+            line-height: 28px !important;
+        }
+        &:nth-child(odd){
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 3.5px 10px;
+            line-height: 27px;
+        }
+        &:nth-child(even){
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 3.5px 10px;
+            line-height: 27px;
+        }
+    }
+    .dispatch_all_content .ant-input[disabled]{
+        color:rgba(0,0,0,0.4) !important;
+    }
+    .dispatch_all_content .ant-input-number-input[disabled]{
+        color:rgba(0,0,0,0.7) !important;
+    }
+    .dispatch_all_content .ant-checkbox-group{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+.dispatch_leads_title{
+    font-size: 1.33rem;
+    height: 50px;
+    line-height: 50px;
+    margin-top: -11px;
+    > span{
+        margin-right: 6rem;
+    }
+    > span > span{
+        color : @saas_main_color;
+    }
+}
+.dispatch_leads_content{
+    overflow: auto;
+    border-top: 4px solid @saas_main_color;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    height: calc(~'100% - 90px');
+    .scrollbar();
+}
+.dispatch_leads_form_th{
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    width:800px;
+    height:36px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.dispatch_leads_form_th_inner{
+    height:35px;
+    width:399px;
+    padding:10px;
+    line-height: 15px;
+    border-right: 1px solid #ddd;
+    background-color: #efefef;
+    color:#666;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    p:nth-child(1){
+        width:314px;
+    }
+}
+.dispatch_leads_form{
+    margin-bottom: 20px;
+}
+.dispatch_org_select{
+    display:inline-block;
+}
+.dispatch_radio_group{
+    line-height: 32px;
+    margin-left: -25px;
+    &:nth-child(1){
+        margin-bottom: 5px;
+    }
+    &:nth-child(2){
+        margin-bottom: 10px;
+    }
+}
+.dispatch_check_box{
+    height:inherit;
+    width:200px !important;
+    padding:0 !important;
+    margin:0 !important;
+}
+.dispatch_input_num{
+    height:inherit;
+    width:100px !important;
+    float:right;
+    padding:0 !important;
+    margin:0 !important;
+}
+
+.dispatch_leads_alert{
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    overflow:hidden;
+    span{
+        line-height: 25px;
+        &:first-child{
+            color:@status_flag_red;
+        }
+        &:last-child{
+            color:@status_flag_red;
+        }
+    }
+    p{
+        line-height: 25px;
+        white-space: nowrap;
+        overflow:inherit;
+        text-overflow:ellipsis;
+        cursor:pointer;
+        &:nth-last-child(1){
+            color : @status_flag_red
+        }
+    }
+}
+.dispatch_leads_submit_button{
+    width:800px;
+}

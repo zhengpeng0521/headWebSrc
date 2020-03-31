@@ -1,0 +1,411 @@
+.class_schedule_cont{
+	height : 100%;
+}
+.class_schedule_row{
+	width : 100%;
+}
+.schedule_time{
+	display : inline-block;
+	width : 40px;
+	height : 100px;
+	margin-right : 10px;
+	vertical-align : top;
+}
+.schedule_content{
+	display : inline-block;
+	width : calc( ~'100% - 50px' );
+}
+.schedule_content_item{
+	display : flex;
+	flex-direction : row;
+	flex-wrap : nowrap;
+}
+.schedule_item{
+	display : inline-block;
+	min-width : 80px;
+	width : 100%/7;
+	height : 100px;
+	border-left : 1px solid #ddd;
+	border-bottom : 1px solid #ddd;
+	border-top : 1px solid #ddd;
+}
+.schedule_item_top{
+	width : 100%;
+	height : 50px;
+	border-bottom : 1px dashed #ddd;
+}
+.schedule_item_bottom{
+	width : 100%;
+	height : 50px;
+}
+.line{
+	width : 0;
+	border-left : 2px solid #ddd;
+}
+
+
+/*顶部日期 星期*/
+.class_schedule_header{
+	overflow : hidden;
+}
+.schedule_header_cont{
+	width : calc( ~'100% - 100px' );
+	margin-left : 50px;
+	margin-bottom : 10px;
+	margin-right : 50px;
+}
+.schedule_header_cont_box{
+	display : flex;
+	flex-direction : row;
+	flex-wrap : nowrap;
+}
+.schedule_header_item_today{
+	display : inline-block;
+	border-left-width : 3px;
+	border-left-color : transparent;
+	.schedule_header_item_week_text, .schedule_header_item_date_text{
+		color : #5D9BEC
+	}
+}
+
+.schedule_header_item{
+	display : inline-block;
+	border-left : 3px solid #ddd;
+	border-left-color : transparent;
+	box-sizing : content-box;
+}
+.schedule_header_item_week_text{
+	width : 100%;
+	text-align : center;
+	font-size : 14px;
+
+}
+.schedule_header_item_date_text{
+	width : 100%;
+	text-align : center;
+	color : #999;
+}
+
+/*顶部维度*/
+.head_schedule_item{
+	height : 28px;
+	background : #f1f1f1;
+}
+.head_schedule_item{
+	display : inline-block;
+	min-width : 80px;
+	width : 100%/7;
+	height : 28px;
+	line-height : 28px;
+	border : 1px solid #ddd;
+	border-right : none;
+	text-align : center;
+}
+
+
+/*课程表小块*/
+.class_schedule_cont_table{
+	position    : relative;
+	height      : calc( ~'100% - 78px' );
+	overflow-x  : auto;
+	overflow-y  : auto;
+}
+.scroll_thumb{
+	width : 4px;
+	height : 100px;
+	border-radius : 5px;
+	background : #bed6f7;
+	position : absolute;
+	right : 0;
+	top : 50px;
+}
+.schedule_class_cont{
+	width : 100%;
+	border-radius : 5px;
+	position : relative;
+}
+.schedule_class_item{
+	display : inline-block;
+	vertical-align : top;
+	position : relative;
+	padding-top : 5px;
+	border-radius : 5px;
+	border : 1px solid #fff;
+	opacity : .8;
+	color : #fff;
+}
+.schedule_class_item_type_text{
+	display : inline-block;
+	vertical-align : top;
+	border : 1px solid #fff;
+	border-radius : 2px;
+	margin-left : 4px;
+	height : 18px;
+	line-height : 16px;
+	padding : 0 2px 0 2px;
+}
+.schedule_class_item_course_name{
+	display : inline-block;
+	font-size : 14px;
+    margin-left : 3px;
+
+	-webkit-box-orient : vertical;
+    overflow : hidden;
+}
+
+
+/*课程内容*/
+/*课程内容显示区域*/
+.class_content {
+    max-height: 200px;
+    max-width: 260px;
+    overflow: auto;
+}
+
+.class_content_type {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    color: #FFF;
+    text-align: center;
+    border-radius: 2px;
+}
+
+/*校区*/
+.class_content_org_name {
+    font-size: 14px;
+    color: #666;
+}
+
+.class_content_org_name:before {
+    font-size: 14px;
+    color: #999;
+    content: '校区 : ';
+    width: 65px;
+    text-align: right;
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+
+/*上课时间*/
+.class_content_time {
+    font-size: 14px;
+    color: #666;
+}
+
+.class_content_time:before {
+    font-size: 14px;
+    color: #999;
+    content: '上课时间 :';
+    width: 65px;
+    text-align: right;
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+
+/*班级*/
+.class_content_class_name {
+    font-size: 14px;
+    color: #666;
+}
+
+.class_content_class_name:before {
+    font-size: 14px;
+    color: #999;
+    content: '班级 :';
+    width: 65px;
+    text-align: right;
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+
+/*班级*/
+.class_content_course_name {
+    font-size: 14px;
+    color: #666;
+}
+
+.class_content_course_name:before {
+    font-size: 14px;
+    color: #999;
+    content: '课程 :';
+    width: 65px;
+    text-align: right;
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+
+/*主教   老师*/
+.class_content_teachers_pt {
+    font-size: 14px;
+    color: #666;
+}
+
+.class_content_teachers_pt:before {
+    font-size: 14px;
+    color: #999;
+    content: '主教 :';
+    width: 65px;
+    text-align: right;
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+
+/*助教   老师*/
+.class_content_teachers_at {
+    font-size: 14px;
+    color: #666;
+}
+
+.class_content_teachers_at:before {
+    font-size: 14px;
+    color: #999;
+    content: '助教 :';
+    width: 65px;
+    text-align: right;
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+
+/*上课学员*/
+.class_content_students_normal {
+    font-size: 14px;
+    color: #666;
+}
+
+.class_content_students_normal:before {
+    font-size: 14px;
+    color: #999;
+    content: '上课学员 :';
+    width: 65px;
+    text-align: right;
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+
+/*补课学员*/
+.class_content_students_remedial {
+    font-size: 14px;
+    color: #666;
+}
+
+.class_content_students_remedial:before {
+    font-size: 14px;
+    color: #999;
+    content: '补课学员 :';
+    width: 65px;
+    text-align: right;
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+
+/*试听学员*/
+.class_content_students_audition {
+    font-size: 14px;
+    color: #666;
+}
+
+.class_content_students_audition:before {
+    font-size: 14px;
+    color: #999;
+    content: '试听学员 :';
+    width: 65px;
+    text-align: right;
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+
+/*教室*/
+.class_content_classroom {
+    font-size: 14px;
+    color: #666;
+}
+
+.class_content_classroom:before {
+    font-size: 14px;
+    color: #999;
+    content: '教室 :';
+    width: 65px;
+    text-align: right;
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+
+/*上课内容*/
+.class_content_intro_1 {
+    font-size: 14px;
+    color: #666;
+}
+
+.class_content_intro_1:before {
+    font-size: 14px;
+    color: #999;
+    content: '上课内容 :';
+    width: 65px;
+    text-align: right;
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+
+/*试听内容*/
+.class_content_intro_2 {
+    font-size: 14px;
+    color: #666;
+}
+
+.class_content_intro_2:before {
+    font-size: 14px;
+    color: #999;
+    content: '试听内容 :';
+    width: 65px;
+    text-align: right;
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+
+/*补课内容*/
+.class_content_intro_3 {
+    font-size: 14px;
+    color: #666;
+}
+
+.class_content_intro_3:before {
+    font-size: 14px;
+    color: #999;
+    content: '补课内容 :';
+    width: 65px;
+    text-align: right;
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+
+/*上课进度*/
+.class_content_progress {
+    font-size: 14px;
+    color: #666;
+}
+
+.class_content_progress:before {
+    font-size: 14px;
+    color: #999;
+    content: '上课进度 :';
+    width: 65px;
+    text-align: right;
+    display: block;
+    float: left;
+    margin-right: 5px;
+}

@@ -1,0 +1,26 @@
+/*引入less定义的方法*/
+@import '../../../common/less/common.less';
+
+:global{
+    .refund_form_createModal .ant-modal-body{
+        padding: 20px;
+        max-height: 500px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        .scrollbar();
+    }
+    .refund_form_createModal .ant-modal-footer{
+        margin: 0;
+        padding: 0 20px 20px 20px;
+    }
+    .refund_form_createModal .ant-form-item{
+        margin-bottom: 10px;
+        margin-left: -10px;
+        &:last-child{
+             margin-bottom:0;
+        }
+    }
+}
+.courseDetail{
+    position: relative;
+}

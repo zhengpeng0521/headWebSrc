@@ -1,0 +1,62 @@
+@import '../../common/less/common.less';
+
+.div_reset{
+	margin : 0;
+	padding : 0;
+	height : 14px;
+	line-height : 14px;
+}
+.vip_card_info{
+	.div_reset;
+	font-size : 14px;
+	margin : 0 0 10px 20px;
+}
+.vip_card_id{
+	display : inline-block;
+	.div_reset;
+	margin-right : 10px;
+}
+.vip_card_time{
+	display : inline-block;
+	.div_reset;
+}
+.vip_card_money{
+	.div_reset;
+	font-size : 14px;
+	margin-left : 20px;
+	margin-bottom : 20px;
+}
+.class_compose_table{
+	display : inline-block;
+	margin-left : 20px;
+	border : 1px solid #ddd;
+	border-radius : 5px;
+}
+.table_header{
+	border-bottom : 1px solid #ddd;
+	background : #f5f6f8;
+    display : -webkit-flex;
+    display : flex;
+    flex-wrap : nowrap;
+}
+.table_content_item{
+	border-bottom : 1px solid #ddd;
+    display : -webkit-flex;
+    display : flex;
+    flex-wrap : nowrap;
+}
+.table_content_item:last-child{
+	border-bottom : none;
+}
+.table_header_item{
+	border-right : 1px solid #ddd;
+	width : 120px;
+	text-align : center;
+	padding : 6px 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    .textOverflow(ellipsis);
+}
+.table_header_item:last-child{
+	border-right : none;
+}

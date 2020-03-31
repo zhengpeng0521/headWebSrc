@@ -1,0 +1,831 @@
+@baseColor : #ffffff;
+@import '../../common/AniCommon.less';
+
+.background( @url, @size : 100% 100% ){
+	background-image : url( @url );
+	background-size : @size;
+}
+
+.absolute( @width, @height, @top, @bottom, @left, @right ){
+	position : absolute;
+	width    : @width;
+	height   : @height;
+	top      : @top;
+	bottom   : @bottom;
+	left     : @left;
+	right    : @right;
+}
+
+.flex{
+	display : flex;
+	align-items : center;
+	justify-content : center;
+}
+
+.animation_value( @value ){
+	animation : @value;
+	-webkit-animation : @value;
+	-moz-animation : @value;
+	-ms-animation : @value;
+	-o-animation : @value;
+}
+
+.leaflets_page1_head_img {
+	border-radius : 50%;
+	overflow : hidden;
+	img{
+		width : 100%;
+		height : 100%;
+	}
+	background: red;
+}
+
+/*通用属性*/
+.backgroundImageCommon() {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+.page_image_deng_common(@url) {
+	z-index: 101;
+	position: relative;
+	width: 48%;
+	height: 80px;
+	background-image: @url;
+	.backgroundImageCommon();
+}
+
+.bg_common(@url) {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background-image: @url;
+	.backgroundImageCommon();
+}
+
+.common_color_div(@color) {
+    width: 10px;
+    height: 10px;
+	border-radius: 50%;
+	background-color: @color;
+	border: 1px black solid;
+	position: absolute;
+	bottom: 45px;
+}
+
+/*第一页*/
+.page1_header {
+	width: 70px;
+    height: 70px;
+    background: 0;
+    position: absolute;
+    left: calc(~"50% - 35px");
+    border-radius: 50%;
+    z-index: 102;
+    top: 30px;
+}
+
+.page1_image_deng_l {
+	float: left;
+	.page_image_deng_common(url(https://img.ishanshan.com/gimg/ori/b4ef162e5b1a83944dc7f3c0abcc980a));
+}
+
+.page1_image_deng_r {
+	float: right;
+	.page_image_deng_common(url(https://img.ishanshan.com/gimg/ori/6cd428dd53e94bae18b37d44f65c0ff5));
+}
+
+.page1_image_student_table_common(@time) {
+	width: 80px;
+	height: 80px;
+	background-image: url(https://img.ishanshan.com/gimg/img/7f3ed913be0e70e74aa84015790ef09d);
+	float: left;
+    margin-left: 30px;
+    margin-top: 350px;
+	z-index: 101;
+	opacity: 0;
+	position: relative;
+	.backgroundImageCommon();
+	.ani(ani_top_to_bottom_long 0.5s linear @time forwards);
+}
+
+.page1_image_student_table_l {
+	.page1_image_student_table_common(0s);
+}
+
+.page1_image_student_table_r {
+	.page1_image_student_table_common(0.2s);
+}
+
+.page1_image_teacher_table {
+	width: 100px;
+	height: 80px;
+	background-image: url(https://img.ishanshan.com/gimg/ori/56d48251b54bc20b26b01bf335281d56);
+	opacity: 0;
+	position: absolute;
+	bottom: 110px;
+    left: 100px;
+	z-index: 100;
+	.backgroundImageCommon();
+	.ani(ani_top_to_bottom_long 0.5s linear 0.5s forwards);
+}
+
+.page1_image_teacher {
+    width: 150px;
+    height: 180px;
+	background-image: url(https://img.ishanshan.com/gimg/ori/2dce6a2c3432059e56a9a115f528c74f);
+	opacity: 0;
+    bottom: 50px;
+    right: 20px;
+	position: absolute;
+	z-index: 101;
+	.backgroundImageCommon();
+	.ani(ani_top_to_bottom_long 0.5s linear 0.8s forwards);
+}
+
+.page1_image_pencil {
+	width: 70px;
+	height: 70px;
+	background-image: url(https://img.ishanshan.com/gimg/ori/1e438bdffea0955c8b5117dd9293e65b);
+    bottom: 110px;
+    right: 130px;
+	opacity: 0;
+	position: absolute;
+	z-index: 101;
+	.backgroundImageCommon();
+	.ani(ani_fixed_center_swing_severe 0.3s linear 1.3s infinite);
+}
+
+.page1_image_kuang {
+    width: 95%;
+    height: 60%;
+    background-image: url(https://img.ishanshan.com/gimg/ori/20ef227d6cfc0104010524df9ac9d0b3);
+    margin-left: 2.5%;
+	margin-top: 2vh;
+	opacity: 0;
+	position: absolute;
+	z-index: 100;
+	.backgroundImageCommon();
+	.ani(ani_grow_big_jitter 0.5s linear 1.3s forwards);
+}
+
+.page1_title {
+	font-size: 20px;
+    color: white;
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    line-height: 25px;
+    font-weight: 800;
+	height: 80px;
+}
+
+.page1_sub_title {
+    font-size: 15px;
+    color: #06a786;
+    position: relative;
+    top: 20px;
+    width: 55%;
+    margin: auto;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/*第二页*/
+
+.page2_bg {
+	.bg_common(url(https://img.ishanshan.com/gimg/ori/0fa78574b7eb88a35ea34324c0183133));
+}
+
+.page2_image {
+    width: 90%;
+    height: 70px;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 17px;
+    font-weight: 600;
+    color: white;
+    margin: auto;
+    margin-top: 20px;
+	background-image: url(https://img.ishanshan.com/gimg/ori/ef8c7fa331f1aa3cb161064f872b124f);
+	.backgroundImageCommon();
+	opacity: 0;
+	.ani(ani_grow_big_jitter 0.5s linear 0.5s forwards);
+}
+
+.page2_image_div {
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+    margin-left: 30px;
+    float: left;
+}
+
+.page2_image_content {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border: 0.2rem #05a786 solid;
+	.backgroundImageCommon();
+}
+
+.page2_image_content_border {
+	width: 104%;
+	height: 104%;
+	border-radius: 50%;
+	border: 4px #05a786 solid;
+	margin-left: -4%;
+	margin-top: -4%;
+	border-left-color: white;
+	border-right-color: white;
+	.ani(ani_rotate360 1s linear 0s infinite);
+}
+
+.page2_image_star {
+	width: 30px;
+	height: 30px;
+	background-image: url(https://img.ishanshan.com/gimg/ori/eeacc457c9d178b7749856421e864bee);
+	.backgroundImageCommon();
+	margin: auto;
+	margin-top: 120px;
+	.ani(ani_grow_continuous_change 1s linear 0s infinite);
+}
+
+.page2_image_person_female {
+    width: 80px;
+    height: 100px;
+	background-image: url(https://img.ishanshan.com/gimg/ori/985ec1072e9278373bd7e0e08ea8913f);
+	margin-left: 0.5rem;
+	bottom: 20px;
+	position: absolute;
+	.backgroundImageCommon();
+	transform-origin: center bottom;
+	.ani(ani_fixed_center_swing 1s linear 0s infinite);
+}
+
+.page2_image_person_man {
+    width: 80px;
+    height: 100px;
+	background-image: url(https://img.ishanshan.com/gimg/ori/de81e15f2bb21475814ac3e3aa1e7ad5);
+    bottom: 20px;
+    margin-left: 85px;
+	position: absolute;
+	.backgroundImageCommon();
+	transform-origin: center bottom;
+	.ani(ani_fixed_center_swing 1s linear 0.5s infinite);
+}
+
+.page2_image_applause {
+    width: 20px;
+    height: 20px;
+    background-image: url(https://img.ishanshan.com/gimg/ori/8872bbc7265d51aa2c8b9ad3da06d191);
+    bottom: 130px;
+    margin-left: 80px;
+	position: absolute;
+	.backgroundImageCommon();
+	opacity: 0;
+	transform-origin: center bottom;
+	.ani(ani_grow_small 1s linear 0s infinite);
+}
+
+.page2_image_book {
+    width: 100px;
+    height: 100px;
+	background-image: url(https://img.ishanshan.com/gimg/ori/3b3b26baadcab2fed024d57f9aee571d);
+	bottom: 20px;
+	right: 20px;
+	position: absolute;
+	.backgroundImageCommon();
+}
+
+.page2_image_potted {
+    width: 20px;
+    height: 40px;
+    background-image: url(https://img.ishanshan.com/gimg/ori/ec26f317be9fcf4aae5a7077941307f6);
+    bottom: 165px;
+    right: 60px;
+	position: absolute;
+	.backgroundImageCommon();
+	.ani(ani_top_bottom_jitter 1s linear 0s infinite);
+}
+
+/*第三页*/
+.page3_bg {
+	.page2_bg();
+}
+
+.page3_content {
+    height: 300px;
+	width: 90%;
+	margin: auto;
+	margin-top: 0.5rem;
+	background-image: url(https://img.ishanshan.com/gimg/ori/bb5cbb04970bf06dbd562cb8a57f2669);
+	.backgroundImageCommon();
+	.ani(ani_rotate_show 1s linear 0s forwards);
+}
+
+.page3_content_text {
+	font-size: 15px;
+    color: white;
+    width: 80%;
+    padding-top: 30px;
+    margin-left: 40px;
+    line-height: 20px;
+}
+
+.page3_image_brush {
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    top: 90px;
+    left: 10px;
+	position: absolute;
+	background-image: url(https://img.ishanshan.com/gimg/ori/3d80e9262ce9733c17665961ea2204b5);
+	.backgroundImageCommon();
+	opacity: 0;
+	.ani(ani_fixed_center_swing 0.5s linear 1s infinite);
+}
+
+.page3_image_person_female {
+    width: 80px;
+    height: 140px;
+	background-image: url(https://img.ishanshan.com/gimg/ori/ba75cd0d54484dad0acd2b4975cfc30f);
+	margin-left: 0.5rem;
+	bottom: 0.1rem;
+	position: absolute;
+	.backgroundImageCommon();
+}
+
+.page3_image_person_man {
+    width: 80px;
+    height: 140px;
+	background-image: url(https://img.ishanshan.com/gimg/ori/e8c1eabd48763fc6867fa57668afc426);
+	bottom: 0.2rem;
+	margin-left: 2.5rem;
+	position: absolute;
+	right: 0px;
+	.backgroundImageCommon();
+}
+
+.page3_image_red {
+	left: 60px;
+	.common_color_div(rgb(241, 115, 113));
+	.ani(ani_landing 2s linear 0.5s infinite);
+}
+
+.page3_image_yellow {
+	left: 25px;
+	.common_color_div(rgb(249, 219, 74));
+	.ani(ani_landing 2s linear 0s infinite);
+}
+
+.page3_image_blue {
+	left: 45px;
+	.common_color_div(rgb(145, 223, 207));
+	.ani(ani_landing 2s linear 0.9s infinite);
+}
+
+/*第四页*/
+.page4_bg {
+	.bg_common(url(https://img.ishanshan.com/gimg/ori/83cbb9c772abf9021f13c2480b578ca2));
+}
+
+.page4_text_div {
+	font-size: 15px;
+    color: #03787d;
+    line-height: 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 15vh;
+    height: 200px;
+}
+
+.page4_print_text {
+	color: rgb(62, 122, 161);
+	font-size: 15px;
+	float: left;
+	opacity: 0;
+	.ani(ani_fixed 200ms linear 0s forwards);
+}
+
+.page4_qiqiu {
+    width: 30px;
+    height: 40px;
+	right: 0px;
+	bottom: 50%;
+	background-image: url(https://img.ishanshan.com/gimg/ori/99e05b290eb6caaccb7a48d4a625a9fb);
+	margin-left: 0.5rem;
+	position: absolute;
+	.backgroundImageCommon();
+	.ani(ani_shaking 4s linear 0s infinite);
+}
+
+.page4_pencil1 {
+    width: 80px;
+    height: 120px;
+    background-image: url(https://img.ishanshan.com/gimg/ori/79071a56dd10c4a5d4728f8aab903286);
+    margin-left: 30px;
+    bottom: 40px;
+	position: absolute;
+	.backgroundImageCommon();
+	.ani(ani_jitter 3s linear 0s infinite);
+}
+
+.page4_pencil2 {
+	background-image: url(https://img.ishanshan.com/gimg/ori/cecedf9efdee35eca61f107ad1550156);
+    width: 90px;
+    height: 120px;
+    margin-left: 120px;
+    bottom: 50px;
+	position: absolute;
+	.backgroundImageCommon();
+	.ani(ani_jitter 3s linear 1.5s infinite);
+}
+
+.page4_book {
+	width: 60px;
+    height: 50px;
+	background-image: url(https://img.ishanshan.com/gimg/ori/381e659e1e4b8d2b56e87ae6d86b24a4);
+	margin-left: 0.5rem;
+	bottom: 30px;
+	right: 30px;
+	position: absolute;
+	.backgroundImageCommon();
+	.ani(ani_shaking 3s linear 0s infinite);
+}
+
+
+/*第五页*/
+.page5_bg {
+	.page2_bg();
+}
+
+.page5_cover {
+    height: 80px;
+    width: 80px;
+    margin-left: 20px;
+    margin-top: 20px;
+	float: left;
+	border-radius: 5px;
+	.backgroundImageCommon();
+	opacity: 0;
+	.ani(ani_right_fade_in 1s linear 0s forwards);
+}
+
+.page5_text {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 55%;
+    height: 80px;
+    font-size: 15px;
+    line-height: 20px;
+    float: left;
+    background-color: white;
+    border-radius: 5px;
+    text-align: left;
+    padding: 10px;
+	opacity: 0;
+	color: rgb(62, 122, 161);
+	.ani(ani_right_fade_in 1s linear 0s forwards);
+}
+
+.page5_person1 {
+    width: 80px;
+    height: 100px;
+	background-image: url(https://img.ishanshan.com/gimg/ori/02edd1023ebbaf0507c22991686a3409);
+    margin-left: 30px;
+    bottom: 20px;
+	position: absolute;
+	.backgroundImageCommon();
+	.ani(ani_beating 1s linear 0s infinite);
+}
+
+.page5_person2 {
+    width: 80px;
+    height: 100px;
+	background-image: url(https://img.ishanshan.com/gimg/ori/95146bbf624575e9d5b078192ffdb95b);
+    bottom: 20px;
+	right: 30px;
+	position: absolute;
+	.backgroundImageCommon();
+	.ani(ani_beating 1s linear 0.5s infinite);
+}
+
+
+/*第六页*/
+.page6_bg {
+	.page2_bg();
+}
+
+.baby_name {
+	height: 40px;
+	width: 80%;
+	margin: auto;
+	margin-top: 15px;
+	background: white;
+	line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+	opacity: 0;
+	border-radius: 20px;
+	.ani(ani_right_fade_in 1s linear 0s forwards);
+}
+
+.baby_phone {
+	height: 40px;
+	width: 80%;
+	margin: auto;
+	margin-top: 15px;
+	background: white;
+	line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+	opacity: 0;
+	border-radius: 20px;
+	.ani(ani_right_fade_in 1s linear 0s forwards);
+}
+
+.baby_birthday {
+	height: 40px;
+	width: 80%;
+	margin: auto;
+	margin-top: 15px;
+	background: white;
+	line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+	opacity: 0;
+	border-radius: 20px;
+	.ani(ani_right_fade_in 1s linear 0s forwards);
+}
+
+.baby_submit {
+    height: 40px;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    background: #f2d12d;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+	opacity: 0;
+	color: white;
+	animation: ani_right_fade_in, ani_right_fade_in_bigge;
+	animation-duration: 1s, 0.5s;
+	animation-delay: 900ms, 1600ms;
+	animation-fill-mode: forwards, forwards;
+}
+
+@keyframes ani_right_fade_in {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(1000px);
+		transform: translateX(1000px)
+	}
+	80% {
+		opacity: 0.8;
+		-webkit-transform: translateX(-20px);
+		transform: translateX(-20px)
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(0px);
+		transform: translateX(0px)
+	}
+}
+
+@keyframes ani_right_fade_in_bigge {
+	0% {
+		transform: scale(1.2)
+	}
+	100% {
+		transform: scale(1)
+	}
+}
+
+.page6_image1 {
+    width: 130px;
+    height: 70px;
+	background-image: url(https://img.ishanshan.com/gimg/ori/ee6f392037fa796432ab24c96c1ba0e5);
+	margin-left: 0.5rem;
+	bottom: 30px;
+	left: 1rem;
+	position: absolute;
+	.backgroundImageCommon();
+	.ani(ani_right_through 5s linear 0s infinite);
+}
+
+.page6_image2_l {
+    width: 20px;
+    height: 20px;
+	background-image: url(https://img.ishanshan.com/gimg/ori/20c2af07598c48acab043659adf1247f);
+	margin-left: 1.5rem;
+	bottom: 30px;
+	left: 40px;
+	position: absolute;
+	.backgroundImageCommon();
+	animation: lunzi_ani 5s linear 0s infinite;
+}
+
+.page6_image2_r {
+    width: 20px;
+    height: 20px;
+	background-image: url(https://img.ishanshan.com/gimg/ori/20c2af07598c48acab043659adf1247f);
+	margin-left: 2.5rem;
+	bottom: 30px;
+	left: 60px;
+	position: absolute;
+	.backgroundImageCommon();
+	animation: lunzi_ani 5s linear 0s infinite;
+}
+
+@keyframes lunzi_ani {
+	0% {
+		-webkit-transform: translateX(1000px) rotate(0deg);
+		transform: translateX(1000px) rotate(0deg);
+	}
+	100% {
+		-webkit-transform: translateX(-1000px) rotate(360deg);
+		transform: translateX(-1000px) rotate(360deg);
+	}
+}
+
+.page6_image3 {
+    width: 20px;
+    height: 30px;
+    bottom: 140px;
+	left: 0.5rem;
+	background-image: url(https://img.ishanshan.com/gimg/ori/e8181193bfefc10fabd0044d33e4c372);
+	margin-left: 0.5rem;
+	position: absolute;
+	.backgroundImageCommon();
+	.ani(ani_grow_small 1.5s linear 0s infinite);
+}
+
+.page6_image4 {
+    width: 20px;
+    height: 30px;
+    background-image: url(https://img.ishanshan.com/gimg/ori/865f29bcec1687decb2806ba98581ccb);
+    margin-left: 0.5rem;
+    bottom: 180px;
+    right: 50px;
+	position: absolute;
+	.backgroundImageCommon();
+	.ani(ani_grow_small 1.5s linear 0s infinite);
+}
+
+.page6_image5 {
+    width: 60px;
+    height: 80px;
+	background-image: url(https://img.ishanshan.com/gimg/ori/01551944745bc142f7fa1bab0171eaea);
+	margin-left: 0.5rem;
+	bottom: 120px;
+	left: 150px;
+	position: absolute;
+	.backgroundImageCommon();
+	.ani(ani_fixed_center_swing 1s linear 0s infinite);
+}
+
+.page6_image6 {
+    width: 70px;
+    height: 80px;
+	background-image: url(https://img.ishanshan.com/gimg/ori/3d2a7cbab563f60a997f861efb0be6ba);
+	margin-left: 0.5rem;
+    bottom: 100px;
+    left: 50px;
+	position: absolute;
+	.backgroundImageCommon();
+	.ani(ani_fixed_center_swing 1s linear 0s infinite);
+}
+
+/*第七页*/
+.page7_person1 {
+    width: 80px;
+	height: 100px;
+	background-image: url(https://img.ishanshan.com/gimg/ori/88177cdbbf845758a96b82f919ec648d);
+	margin-left: 20px;
+	bottom: 10px;
+	position: absolute;
+	.backgroundImageCommon();
+}
+
+.page7_person2 {
+	width: 80px;
+    height: 100px;
+	background-image: url(https://img.ishanshan.com/gimg/ori/09d3535e98cd8d4da8cd1981dffd98fd);
+	margin-left: 0.5rem;
+	bottom: 10px;
+	right: 20px;
+	position: absolute;
+	.backgroundImageCommon();
+}
+
+.page7_image1 {
+    width: 120px;
+    height: 100px;
+	background-image: url(https://img.ishanshan.com/gimg/ori/e1bf335e926b5f2127971789958c8fbd);
+	margin-left: 0.5rem;
+	bottom: 10px;
+	right: calc(~"50% - 120px / 2");
+	position: absolute;
+	.backgroundImageCommon();
+	.ani(ani_shaking_gentle 2s linear 0s infinite);
+}
+
+.page7_content {
+    height: 350px;
+	width: 90%;
+	margin: auto;
+	margin-top: 0.5rem;
+	background-image: url(https://img.ishanshan.com/gimg/ori/af2546bf3b92bbfa9af36894246f47b1);
+	.backgroundImageCommon();
+	.ani(ani_rotate_show 1s linear 0s forwards);
+	overflow: hidden;
+}
+
+.page7_content_title {
+	color: white;
+    font-size: 15px;
+    line-height: 20px;
+    width: 80%;
+    margin: auto;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.page7_code {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 5px;
+    margin: auto;
+    margin-left: calc(~"50% - 50px");
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.page7_content_text {
+    font-size: 15px;
+    color: white;
+    line-height: 20px;
+    width: 80%;
+    margin: auto;
+    margin-left: 40px;
+}
+
+.page7_content_text_item {
+	font-size: 13px;
+    line-height: 18px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:global{
+	.leaflets_page1_render{
+		.background( 'https://img.ishanshan.com/gimg/ori/146526652efdf352a071c211e0d509e7' );
+		background-color : @baseColor;
+		overflow : hidden;
+	}
+
+	.leaflets_page2_render{
+		.background( 'https://img.ishanshan.com/gimg/ori/0fa78574b7eb88a35ea34324c0183133' );
+		background-color : @baseColor;
+		overflow : hidden;
+	}
+	.leaflets_page3_render{
+		.leaflets_page2_render();
+	}
+	.leaflets_page4_render{
+		.background( 'https://img.ishanshan.com/gimg/ori/83cbb9c772abf9021f13c2480b578ca2' );
+		background-color : @baseColor;
+		overflow : hidden;
+	}
+	.leaflets_page5_render{
+		.leaflets_page2_render();
+	}
+	.leaflets_page6_render{
+		.leaflets_page2_render();
+	}
+	.leaflets_page7_render{
+		.leaflets_page2_render();
+	}
+}

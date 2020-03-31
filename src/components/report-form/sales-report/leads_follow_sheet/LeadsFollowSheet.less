@@ -1,0 +1,65 @@
+/*引入less定义的方法*/
+@import '../../../common/less/common.less';
+
+.all{
+    width:100%;
+    height:calc(~'100% - 144px');
+    overflow: auto;
+}
+.row_sheet{
+    width:100%;
+    min-width: 1000px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display : -webkit-flex;
+    display : flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.sfollow_record_sheet{
+
+}
+.lfollow_record_sheet{
+    margin-left: 20px;
+}
+.ssheet,.lsheet{
+    margin-left: 20px;
+    border:1px solid #ddd;
+    border-radius: 5px;
+}
+.ssheet{
+    width:calc(~'100% - 400px');
+}
+.lsheet{
+    width:calc(~'100% - 440px');
+}
+.sheet_title{
+    height : 49px;
+    border-bottom : 1px solid #ddd;
+    background : #f1f1f1;
+    padding : 0 10px;
+    display : -webkit-flex;
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    >p{
+        font-size: 1.16rem;
+    }
+    >button{
+        display : -webkit-flex;
+        display : flex;
+        align-items: center;
+        background : #5d9cec !important;
+        border : 1px solid #5d9cec !important;
+        color : #fff;
+    }
+}
+.sheet_content_special{
+    height:329px;
+    width:60%;
+    margin:0 auto;
+}
+.sheet_content{
+    height:400px;
+    width:100%;
+}

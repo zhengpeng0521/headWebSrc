@@ -1,0 +1,132 @@
+
+/*引入less定义的方法*/
+@import '../../common/less/common.less';
+
+.stumanage_visiting_plan_inner_list{
+  padding:20px 30px;
+  overflow:hidden;
+}
+.leads_visiting_plan_inner_list{
+  width:100%;
+  overflow: auto;
+  padding : 0 20px 0 0;
+  &::-webkit-scrollbar {
+    background-color: transparent!important;
+    border-radius: 4px;
+    width: 4px;
+    height: 4px;
+    margin-right: 4px;
+    right: 4px;
+  }
+}
+.visiting_plan_list_item{
+  width:100%;
+  margin-bottom:10px;
+}
+.visiting_plan_list_item_title{
+  width:inherit;
+  height:42px;
+  background-color: #f1f1f1;
+  border:1px solid #ddd;
+  padding:0 20px;
+  font-size: 1.16rem;
+  display:-wenkit-flex;
+  display:flex;
+  flex-wrap: nowrap;
+  justify-content:space-between;
+  .borderRadius(5px,5px,0,0);
+  >p{
+    line-height: 40px;
+    >span{
+      &:nth-child(1){
+        color:#666;
+      }
+      &:nth-last-child(1){
+        color:#999;
+      }
+    }
+  }
+  >div{
+    line-height: 37px;
+    >div{
+      cursor : pointer;
+    }
+  }
+}
+.visiting_plan_list_item_content{
+  width:inherit;
+  height:121px;
+  overflow: hidden;
+  padding:10px 20px 20px 10px;
+  border-left:1px solid #ddd;
+  border-right:1px solid #ddd;
+  border-bottom:1px solid #ddd;
+  .borderRadius(0,0,5px,5px);
+}
+.visiting_plan_list_item_img{
+  width:60px;
+  height:60px;
+  margin-right: 10px;
+  float:left;
+}
+.visiting_plan_list_item_name{
+  height:60px;
+  line-height: 60px;
+  margin-right: 40px;
+  float:left;
+}
+.visiting_plan_list_item_parent{
+  height:60px;
+  line-height: 60px;
+  color:#666;
+  float:left;
+}
+.visiting_plan_list_item_operation{
+  height:60px;
+  line-height: 30px;
+  float:right;
+  span{
+    cursor:pointer;
+    &:nth-child(1){
+      color:@saas_main_color;
+      margin-right: 20px;
+    }
+    &:nth-last-child(1){
+      color:@status_flag_red;
+    }
+  }
+}
+.visiting_plan_list_item_intro{
+  width:calc(~'100% - 70px');
+  height:35px;
+  overflow: hidden;
+  cursor: default;
+  float:right;
+}
+.leads_visiting_plan_inner_bottom{
+  height:30px;
+  width:100%;
+  line-height:30px;
+  text-align:center;
+  i{
+    margin-right: 15px;
+  }
+}
+.null{
+    height:90%;
+    width:100%;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    >img{
+        margin-bottom: 5px;
+    }
+    >div{
+        cursor: default;
+        color:#999;
+        font-size: 1rem;
+    }
+}

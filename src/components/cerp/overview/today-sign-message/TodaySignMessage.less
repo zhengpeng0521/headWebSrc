@@ -1,0 +1,72 @@
+/*引入less定义的方法*/
+@import '../../../common/less/common.less';
+
+.today_all{
+    width:100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    >div{
+        &:nth-child(1){
+            width:100%;
+            font-size: 1.33rem;
+            margin-bottom: 10px;
+        }
+    }
+}
+.block_area{
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    >div{
+        width:calc(~'(100% - 20px)/3')/*26vw*/;
+        min-width: 390px;
+        height:12vw;
+        min-height: 180px;
+        margin-right: 10px;
+        .borderRadius(10px,10px,10px,10px);
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+.attend_course_title,.make_up_title,.audition_title{
+    width:100%;
+    height:20%;
+    color:#fff;
+    font-size: 1.33rem;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .borderRadius(10px,10px,0,0);
+}
+.attend_course_title{
+    background-color: #5d9cec;
+}
+.make_up_title{
+    background-color: #88c70a;
+}
+.audition_title{
+    background-color: #fbb323;
+}
+.data{
+    width:100%;
+    height:80%;
+    background-color: #fff;
+    padding:5px 20px;
+    font-size: 1.16rem;
+    .borderRadius(0,0,10px,10px);
+    >div{
+        height:20%;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:nth-child(1){
+            border-bottom: 1px dotted #ddd;
+        }
+        &:nth-child(n+3){
+            margin-left: 60px;
+        }
+    }
+}

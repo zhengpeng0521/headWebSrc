@@ -1,0 +1,82 @@
+:global{
+	.overview_rechart_cont{
+		font-family: 'PingFang SC';
+	}
+	/*样式覆盖*/
+	.overview_rechart_cont .recharts-default-legend{
+		text-align : right !important;
+	}
+
+    .zj_crm_overview_calender{
+        overflow: hidden;
+    }
+    /*日历内边距*/
+    .zj_crm_overview_calender .ant-fullcalendar-calendar-body{
+        padding:2.5% 0 0 0;
+    }
+
+    /*隐藏选择年份tabs*/
+    .zj_crm_overview_calender .ant-fullcalendar-fullscreen .ant-fullcalendar-header .ant-radio-group{
+        display:none;
+    }
+
+    /*隐藏选择日期*/
+    .zj_crm_overview_calender .ant-fullcalendar-header{
+        display:none;
+    }
+
+    /*日历高度*/
+    .zj_crm_overview_calender .ant-fullcalendar-fullscreen .ant-fullcalendar-date, .ant-fullcalendar-fullscreen .ant-fullcalendar-month{
+        width:100% !important;
+        height:100% !important;
+        max-width:72px !important;
+        max-height:72px !important;
+    }
+
+    .zj_crm_overview_calender .ant-fullcalendar-value{
+        height : 0;
+    }
+    /*日历文字内容高度*/
+    .zj_crm_overview_calender .ant-fullcalendar-fullscreen .ant-fullcalendar-content{
+        height:33px !important;
+    }
+    /*日历tab样式*/
+    .zj_crm_overview_calender .ant-radio-button-wrapper{
+        border:1px solid #5d9cec !important;
+    }
+    .zj_crm_overview_calender .ant-radio-button-wrapper-checked{
+        background-color: #5d9cec;
+        color:#ffffff;
+    }
+
+    /*鼠标悬浮背景色(月/年)*/
+    .zj_crm_overview_calender .ant-fullcalendar-fullscreen .ant-fullcalendar-today .ant-fullcalendar-date{
+        background-color: #f8f8f8;
+    }
+    .zj_crm_overview_calender .ant-fullcalendar-date:hover{
+        cursor:default;
+        background-color: #f8f8f8;
+    }
+    .zj_crm_overview_calender .ant-fullcalendar-fullscreen .ant-fullcalendar-month-panel-current-cell .ant-fullcalendar-month{
+        background-color: #f8f8f8;
+    }
+    .zj_crm_overview_calender .ant-fullcalendar-month:hover{
+        cursor:default;
+        background-color: #f8f8f8;
+    }
+}
+/*图表内容悬浮*/
+.Popover{
+    border:1px dotted #dddddd;
+     -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+         -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+             border-radius: 5px;
+    background-color: white;
+}
+.inner{
+    margin:10px;
+    font-size:14px;
+    font-weight:700;
+}

@@ -1,0 +1,212 @@
+/*第一页样式 开始*/
+.yuanxiao-page1-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/ef0912cfd165d79a2e33255b9283f3d7");
+}
+.yuanxiao-page1-title{
+	position: absolute;
+    top: 222px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 270px;
+    height: 70px;
+    line-height: 70px;
+
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+}
+/*第一页样式 结束*/
+
+/*第二页样式 结束*/
+.yuanxiao-page2-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/1ee92ce87d7a86949bfbcc7b7a399e9c");
+}
+.yuanxiao-page2-title{
+	position: absolute;
+    top: 54px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 210px;
+    height: 58px;
+    line-height: 58px;
+
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+}
+.yuanxiao-page2-content{
+	position:absolute;
+	top:174px;
+	margin: auto;
+    left: 0;
+    right: 0;
+	width:272px;
+	height:232px;
+
+	color:#fff;
+}
+.yuanxiao-page2-sub-title{
+	position:absolute;
+	top:12px;
+	margin :auto;
+	left:0;right:0;
+	width:250px;
+	height:30px;
+	line-height:30px;
+	overflow:hidden;
+
+    color:#fff;
+    font-size:14px;
+    text-align:center;
+}
+.yuanxiao-page2-content-total{
+	position:absolute;
+	top:50px;
+	margin:auto;
+	left:0;right:0;
+	width:250px;
+	height:182px;
+
+	overflow:hidden;
+
+}
+.yuanxiao-page2-content-item{
+	display:block;
+	width:250px;
+	min-height:16px;
+	line-height:16px;
+	margin:0 auto 5px;
+}
+.yuanxiao-page2-content-item-label{
+	display:inline-block;
+	box-sizing:border-box;
+	width:50px;
+	height:16px;
+	line-height:16px;
+	vertical-align: top;
+	text-align: right;
+	margin-right:10px;
+	overflow:hidden;
+
+}
+.yuanxiao-page2-content-item-value{
+	display:inline-block;
+	box-sizing:border-box;
+	width:180px;
+	min-height:16px;
+	line-height:16px;
+}
+/*第二页样式 结束*/
+
+/*第三页样式 结束*/
+.yuanxiao-page3-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/c302668c515b4fafe0e4cf4d086a0c12");
+}
+/*第三页样式 结束*/
+
+/*第四页样式 结束*/
+.yuanxiao-page4-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/ff7bc8dacbe8d5d33e86ba0f54cb7c34");
+}
+.yuanxiao-page5-title,.yuanxiao-page4-title,.yuanxiao-page6-title{
+	position: absolute;
+    top: 52px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 207px;
+    height: 60px;
+    line-height: 60px;
+
+	color:#fff;
+	font-size:22px;
+	text-align:center;
+}
+.yuanxiao-page4-content{
+	position:absolute;
+	top:115px;
+	margin:auto;left: 0;right: 0;
+	width:300px;
+	height:300px;
+
+	color:#fff;
+}
+.yuanxiao-page4-content-item,.yuanxiao-page5-content-item{
+	display: inline-block;
+    position: relative;
+    margin-left: 7px;
+    margin-right: 0.5px;
+    margin-bottom: 3.5px;
+    box-sizing: border-box;
+    width: 140px;
+    height: 140px;
+}
+.yuanxiao-page4-content-item-image,.yuanxiao-page5-content-item-image{
+	position: absolute;
+    top: 17px;
+    left: 10px;
+    width: 119px;
+    height: 119px;
+    border-radius: 10px;
+}
+/*第四页样式 结束*/
+
+/*第五页样式 结束*/
+.yuanxiao-page5-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/99a89378c51c029ea7c214dbfec0841c");
+}
+.yuanxiao-page5-content{
+	position:absolute;
+	top:115px;
+	margin: auto;
+    left: 0;
+    right: 0;
+	width:300px;
+	height:150px;
+
+	color:#fff;
+}
+.yuanxiao-page5-content-value{
+	position:absolute;
+	top:268px;
+	margin:auto;left:0;right:0;
+	width:272px;
+	height:140px;
+	overflow:hidden;
+	padding:10px 5px 5px 5px;
+
+	color:#fff;
+	font-size:14px;
+	overflow:hidden;
+}
+/*第五页样式 结束*/
+
+/*第六页样式 结束*/
+.yuanxiao-page6-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/a7ed5663d55296cbd9c3fe90019e1c4b");
+}
+.yuanxiao-page6-title{
+    top: 70px;
+}
+.yuanxiao-page6-name,.yuanxiao-page6-phone{
+	position: absolute;
+    top: 156px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+
+	text-align:center;
+	font-size:16px;
+	color:#fff;
+
+
+}
+.yuanxiao-page6-phone{
+	top:204px;
+}
+/*第六页样式 结束*/

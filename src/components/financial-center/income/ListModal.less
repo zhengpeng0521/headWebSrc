@@ -1,0 +1,31 @@
+@import "../../common/less/common.less";
+
+.expense_list_box{
+  height: 400px;
+  overflow: auto;
+}
+.expense_list {
+  margin-top: 10px;
+  border: 1px solid #ddd;
+}
+.expense_item {
+  .flex();
+  font-size: 14px;
+  height: 40px;
+  padding: 0 10px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+
+  &:last-child {
+    border: none;
+  }
+
+  .expense_item_name {
+    width: 70%;
+  }
+
+  .item_action a:last-child {
+    margin-left: 10px;
+  }
+}

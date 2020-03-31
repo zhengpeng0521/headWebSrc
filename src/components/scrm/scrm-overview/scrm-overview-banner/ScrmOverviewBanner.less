@@ -1,0 +1,66 @@
+:global{
+    .zj_scrm_overview_banner .banner-anim{
+        height:150px !important;
+        border-radius: 10px !important;
+    }
+    .zj_scrm_overview_banner .banner-anim-thumb-default{
+        height:2.11vw;
+        line-height: 2.11vw;
+    }
+    .zj_scrm_overview_banner .slick-list{
+        border-radius: 10px;
+    }
+    .zj_scrm_overview_banner .ant-carousel .slick-dots{
+        margin-bottom: 5px;
+    }
+    /*banner点与最下方的距离*/
+    .zj_scrm_overview_banner .ant-carousel .slick-dots{
+        bottom:15px !important;
+    }
+    /*banner播放图的点*/
+    .zj_scrm_overview_banner .ant-carousel .slick-dots li.slick-active button{
+        width:8px !important;
+        height:8px !important;
+        border-radius: 50%;
+        margin-left:5px;
+    }
+    /*banner未播放图的点*/
+    .zj_scrm_overview_banner .ant-carousel .slick-dots li button{
+        width:8px !important;
+        height:8px !important;
+        border-radius: 50%;
+        margin-left:5px;
+    }
+}
+.Scrm_OverView_Banner{
+    -webkit-animation:overviewBanner 1 1s ease-out ;
+       -moz-animation:overviewBanner 1 1s ease-out ;
+        -ms-animation:overviewBanner 1 1s ease-out ;
+         -o-animation:overviewBanner 1 1s ease-out ;
+            animation:overviewBanner 1 1s ease-out ;
+    @keyframes overviewBanner{
+        from {opacity:0;margin-left:20%}
+        to { opacity:1;margin-left:0}
+    }
+    @-o-keyframes overviewBanner{
+        from {opacity:0;margin-left:20%}
+        to { opacity:1;margin-left:0}
+    }
+    @-ms-keyframes overviewBanner{
+        from {opacity:0;margin-left:20%}
+        to { opacity:1;margin-left:0}
+    }
+    @-moz-keyframes overviewBanner{
+        from {opacity:0;margin-left:20%}
+        to { opacity:1;margin-left:0}
+    }
+    @-webkit-keyframes overviewBanner{
+        from {opacity:0;margin-left:20%}
+        to { opacity:1;margin-left:0}
+    }
+}
+.bannerImg{
+    border-radius:10px;
+    width:100%;
+    height:100%;
+}

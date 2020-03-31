@@ -1,0 +1,116 @@
+/*引入less定义的方法*/
+@import '../../common/less/common.less';
+
+:global {
+	.system-dic-data-maintenance {
+		height : calc(~'100% - 70px');
+		overflow: auto;
+        padding:10px 0 20px 20px;
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: nowrap;
+	}
+	.table-base {
+    	margin-bottom: 20px;
+        border:1px solid #e9e9e9;
+	}
+	.tbTextAlign {
+		text-align: center;
+	}
+	.pop {
+		background : red;
+	}
+	.system-dic-data-maintenance .ant-table-bordered .ant-table-body > table {
+		border-radius: 10px;
+	}
+}
+
+.a_style {
+	margin-left: 10px;
+}
+
+.blueMark {
+    float: left;
+    height: 14px;
+    width: 8px;
+	margin-left: 20px;
+	margin-right: 5px;
+	margin-top: 2.5px;
+    background-color: rgb(93, 156, 236);
+    border-radius: 3px;
+}
+
+.businessName {
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.left_area {
+    width: 30%;
+    margin-right: 20px;
+    min-width: 300px;
+}
+
+.right_area {
+    width: calc(~'70% - 20px');
+    padding-right: 20px;
+    min-width: 600px;
+}
+.block_title{
+    height:50px;
+    width:100%;
+    line-height: 50px;
+    background-color: #5d9cec;
+    color:#fff;
+    font-size: 1.16rem;
+    padding:0 10px;
+    .borderRadius(5px,5px,0,0);
+}
+.businessNameList {
+	width : 100%;
+    border: 1px solid #e9e9e9;
+	padding: 20px;
+    .borderRadius(0,0,5px,5px);
+}
+.rightDiv {
+	border: 1px solid #e9e9e9;
+    float: left;
+    margin-top: 20px;
+    height: 65%;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.listName {
+    font-size: 13px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	font-size: 1.16rem;
+    color: #666;
+	height: 50px;
+    line-height: 50px;
+    border-bottom: 1px rgb(248,248,248) solid;
+}
+
+.listNameSelect {
+	height: 50px;
+	line-height: 50px;
+    font-size: 1.16rem;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	color : #49a9ee;
+    border-bottom: 1px rgb(248,248,248) solid;
+}
+
+.listName:hover {
+	background: rgb(251,251,251);
+	cursor: pointer;
+}
+
+.bottomAddDiv {
+	height : 50px;
+	background: red;
+	width : 100%;
+}

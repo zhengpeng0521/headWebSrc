@@ -1,0 +1,49 @@
+@import '../../common/less/common.less';
+
+.leads_detail_inner{
+  padding:20px 0 20px 30px;
+  overflow: auto;
+  height:calc(~'100vh - 240px');
+}
+.leads_detail_inner::-webkit-scrollbar {
+    background-color: transparent!important;
+    border-radius: 5px;
+    width: 4px;
+    height: 4px;
+    margin-right: 5px;
+    right: 5px;
+}
+.leads_detail_inner_img{
+  width  : 80px;
+  height : 80px;
+  background-size : cover;
+}
+.leads_detail_inner_message{
+  width:100%;
+  display:-webkit-flex; /* Safari */
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:flex-start;
+  >p{
+    height:50px;
+    line-height:60px;
+    border-bottom: 1px solid #ddd;
+    width:calc(~'(100% - 50px)/2');
+    overflow: hidden;
+    white-space: nowrap;
+    .textOverflow(ellipsis);
+    &:nth-child(odd){
+      margin-right: 20px;
+    }
+    &:nth-child(even){
+      margin-right: 30px;
+    }
+    span:nth-child(1){
+      color:#999;
+    }
+    span:nth-child(2){
+      color:#666;
+    }
+  }
+}

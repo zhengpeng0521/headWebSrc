@@ -1,0 +1,118 @@
+.btn_common{
+	position : absolute;
+	width : 120px;
+	height : 50px;
+	line-height : 50px;
+	border-radius : 10px;
+	background : #5d9cec;
+	color : #fff;
+	font-size : 24px;
+	text-align : center;
+	cursor : pointer;
+}
+.guide_tip_item_common{
+	display : inline-block;
+	margin-left : 40px;
+	box-sizing : border-box;
+	width : 30px;
+	height : 30px;
+	line-height : 26px;
+	border : 2px solid #fff;
+	border-radius : 50%;
+	font-size : 20px;
+	text-align : center;
+}
+
+.guide_wrap{
+	position : absolute;
+	width : 100%;
+	height : 100%;
+	z-index : 9999;
+	background : rgba( 0, 0, 0, .8 );
+}
+
+/*步骤一*/
+.guide_one:before{
+	position : absolute;
+	top : 50px;
+	content : '';
+	width : 717px;
+	height : 117px;
+	background : url('https://img.ishanshan.com/gimg/img/3efe687c9ce74d6e64e3e850f85f8db0') no-repeat;
+}
+.guide_one_btn{
+	.btn_common;
+	top : 167px;
+	left : 360px;
+
+}
+/*步骤二*/
+.guide_two{
+	position : absolute;
+	top : 50px;
+	left : 50px;
+	content : '';
+	width : 636px;
+	height : 681px;
+	background : url('https://img.ishanshan.com/gimg/img/eedd0800b3fea07a4b186ebd1a0c2e90') no-repeat;
+}
+.guide_two_btn{
+	.btn_common;
+	top : 180px;
+	left : 400px;
+}
+
+//步骤三
+.guide_three{
+	position : absolute;
+	top : 8px;
+	left : 40px;
+	width : 533px;
+	height : 102px;
+	background : url('https://img.ishanshan.com/gimg/img/096d5ef22373142d356d42ec93760635') no-repeat;
+}
+.guide_three_btn{
+	.btn_common;
+	top : 102px;
+	left : 350px;
+}
+
+//步骤四
+.guide_four{
+	position : absolute;
+	top : 0;
+	right : 0;
+	width : 767px;
+	height : 135px;
+	background : url('https://img.ishanshan.com/gimg/img/93094e804d8763cbd784f782745582ab') no-repeat;
+}
+.guide_four_btn{
+	.btn_common;
+	top : 135px;
+	right : 530px;
+}
+
+//步骤提示
+.guide_tip{
+	width : 240px;
+	height : 30px;
+	position : absolute;
+	bottom : 60px;
+	margin : auto;
+	left : 0; right : 0;
+}
+.guide_tip_item_select{
+	.guide_tip_item_common;
+	color : #000;
+	background : #fff;
+}
+.guide_tip_item{
+	.guide_tip_item_common;
+	color : #fff;
+}
+.guide_tip_item:first-child{
+	margin : 0;
+}
+.guide_tip_item_select:first-child{
+	margin : 0;
+}

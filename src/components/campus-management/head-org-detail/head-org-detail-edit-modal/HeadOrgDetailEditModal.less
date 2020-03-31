@@ -1,0 +1,19 @@
+/*引入less定义的方法*/
+@import '../../../common/less/common.less';
+:global{
+    /*新增编辑员工表单内容公共样式*/
+    .head_org_detail_edit_modal .ant-modal-body{
+        padding : 20px;
+        margin : 0;
+    }
+    .head_org_detail_edit_modal .ant-form-item{
+        margin-bottom : 10px;
+        margin-left : -10px;
+        line-height : 32px;
+        &:last-child{ margin-bottom : 0; }
+    }
+    .head_org_detail_edit_modal .ant-modal-footer{
+        padding : 0 20px 20px 20px !important;
+        margin : 0;
+    }
+}

@@ -1,0 +1,243 @@
+@import '../../lib.less';
+.module_menu_title_cont:global(.ant-menu-submenu-active) {
+    color : #ff3055;
+}
+.sider_menu_div_cont {
+  width: 100%;
+}
+
+.sider_menu_div_cont > :global(.ant-menu) {
+    background-color: @sider-menu-bgcolor;
+}
+
+.sider_menu_div_cont :global(.ant-menu-item-group .ant-menu-item-group-title) {
+    background-color: #ff3055;
+    width: 150px;
+    height: 10px;
+    padding: 0;
+}
+
+.sider_menu_div_cont :global(.ant-menu-item-group:first-child .ant-menu-item-group-title) {
+    width: 150px;
+    height: 0;
+}
+
+.sider_menu_div_cont :global(.ant-menu-inline .ant-menu-item) {
+    left: 0;
+    margin-left: 0;
+    padding: 0;
+}
+
+/*一级 模块菜单*/
+.sider_module_menu_split {
+    width: 100%;
+    height: 100%;
+    background-color: #ff3055;
+}
+
+.module_menu_title_cont {
+    background-color: #ff3055;
+    width: 150px;
+}
+
+.module_menu_title_cont:global(.ant-menu-submenu-open) {
+    border-bottom: 1px solid #324352;
+}
+
+.module_menu_title_cont > :global(.ant-menu-submenu-title) {
+    width: 100%;
+    height: @sider-module-menu-height;
+    line-height: @sider-module-menu-height;
+}
+
+.module_menu_title {
+    color: #fff;
+    font-size: 14px;
+    padding-left: 25px;
+}
+
+.module_menu_title_cont > :global(.ant-menu-submenu-title:after) {
+    font-size: 14px;
+    color: #f5caca;
+}
+
+.module_menu_title_cont:hover .module_menu_title,
+.module_menu_title_cont:hover > :global(.ant-menu-submenu-title:after),
+.module_menu_title_cont:global(.ant-menu-submenu-open) .module_menu_title,
+.module_menu_title_cont:global(.ant-menu-submenu-open) > :global(.ant-menu-submenu-title:after)
+ {
+    color: @sider-module-menu-hover-color;
+}
+
+.module_menu_title_cont:global(.ant-menu-submenu-selected) .module_menu_title,
+.module_menu_title_cont:global(.ant-menu-submenu-selected) > :global(.ant-menu-submenu-title:after),
+ {
+    color: #fff;
+}
+
+.module_menu_title_cont:global(.ant-menu-submenu-selected) > :global(.ant-menu-submenu-title) {
+//    border-left: 4px solid @sider-module-menu-select-color;
+}
+
+
+/*二级 功能菜单*/
+.sider_sub_item_menu {
+    background-color: #ff3055;
+}
+.item_menu_cont i {
+    font-size : 15px;
+}
+.sider_sub_item_menu .item_menu_cont {
+    padding-left: 30px;
+    display: inline-block;
+    width: 100%;
+}
+
+.sider_sub_item_menu .sub_menu_title,
+.sider_sub_item_menu .item_menu_cont,
+ {
+    font-size: 14px;
+    color: #f5caca;
+    font-weight: 600;
+}
+
+.sider_sub_item_menu:global(.ant-menu-item-active)
+ {
+    background-color: #e62346!important;
+}
+
+
+.sider_sub_item_menu:global(.ant-menu-item-selected) {
+    border-right: none!important;
+    background-color: #e62346!important;
+    border-left: 4px solid #fff !important;
+}
+.sider_sub_item_menu:global(.ant-menu-item-selected .item_menu_cont:after) {
+    border-right: none!important;
+}
+
+.sider_sub_item_menu:global(.ant-menu-item-active) .sub_menu_title,
+.sider_sub_item_menu:global(.ant-menu-item-active) .item_menu_cont
+{
+    color: #fff!important;
+}
+
+.sider_sub_item_menu:global(.ant-menu-item-selected) .sub_menu_title,
+.sider_sub_item_menu:global(.ant-menu-item-selected) .item_menu_cont,
+{
+    color: @sider-sub-item-menu-select-color!important;
+}
+
+.sider_sub_item_menu:after {
+    display: none!important;
+}
+
+.module_menu_title_cont > :global(.ant-menu-sub.ant-menu-inline) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ff3055;
+    border-bottom: 2px solid #ff3055;
+}
+
+
+//三级悬浮菜单
+.sider_sub_menu_popover :global(.ant-popover-content) {
+    position: absolute;
+    left: -12px;
+}
+
+.sider_sub_menu_popover :global(.ant-popover-arrow) {
+   left: -6px!important;
+    top: 17px!important;
+}
+
+.sider_sub_menu_popover :global(.ant-popover-arrow):after {
+    border-right-color: #ff3055!important;
+    border-width: 8px!important;
+    left: -10px!important;
+    bottom: -8px!important;
+}
+
+.sider_sub_menu_popover :global(.ant-menu-inline) {
+    border-right: 0;
+    background-color: transparent;
+}
+
+.sider_sub_menu_popover :global(.ant-popover-inner-content) {
+    padding: 0;
+}
+
+.sider_sub_menu_popover :global(.ant-popover-inner) {
+    background-color: transparent;
+    box-shadow : 0 0 0;
+}
+
+.sider_third_item_menu {
+    font-size: 12px;
+    color: #fff;
+    background-color: #ff3055!important;
+//    padding : 0 0 0 24px !important;
+    //padding : 0 !important;
+}
+
+.sider_third_item_menu:after {
+    display: none;
+}
+
+.sider_third_item_menu:global(.ant-menu-item-active),
+.sider_third_item_menu:global(.ant-menu-item-selected),
+ {
+    color: #fff;
+    padding-left: 28px!important;
+    background-color: #e62346 !important;
+}
+.sider_third_item_menu:global(.ant-menu-item-selected){
+    border-left: 4px solid #fff!important;
+    background-color: #e62346!important;
+}
+.sider_third_item_menu{
+    background-color: #e62346;
+}
+.sider_third_item_menu:after{
+     border-right: none!important;
+}
+.small_sider_third_menu{
+    max-height : 320px;
+    overflow-x : hidden;
+    overflow-y : auto;
+    &::-webkit-scrollbar{
+        width : 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+        //background-color : #3F628D;
+        background-color : rgba(93,156,236,.7);
+        border-radius : 5px;
+    }
+    &::-webkit-scrollbar-button { height : 0 }
+    &::-webkit-scrollbar-track {
+        background-color : #2a3844;
+        border-radius : 5px;
+    }
+}
+.sider_third_menu,.small_sider_third_menu{
+    //border-radius : 5px;
+}
+.sider_menu_content:hover::-webkit-scrollbar-track {
+    background-color: rgba(255,255,255,0.5);
+}
+//.small_sider_third_menu .sider_third_item_menu:first-child {
+//    border-top-left-radius: 5px;
+//    border-top-right-radius: 5px;
+//}
+//.sider_third_menu .sider_third_item_menu:first-child {
+//    border-top-left-radius: 5px;
+//    border-top-right-radius: 5px;
+//}
+//.small_sider_third_menu .sider_third_item_menu:last-child {
+//    border-bottom-left-radius: 5px;
+//    border-bottom-right-radius: 5px;
+//}
+//.sider_third_menu .sider_third_item_menu:last-child {
+//    border-bottom-left-radius: 5px;
+//    border-bottom-right-radius: 5px;
+//}

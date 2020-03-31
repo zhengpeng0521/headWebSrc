@@ -1,0 +1,176 @@
+@import '../../lib.less';
+
+@search_item_select_margin_right: 30px;
+@search_item_select_width: 160px;
+
+.stu_sign_cont {
+    padding: 14px;
+}
+
+.search_stu_form_cont {
+    border-bottom: 1px solid #EEE;
+    display:-webkit-flex;
+    display: flex;
+    flex-direction: column;
+    >div{
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
+        width:100%;
+    }
+}
+.search_stu_form_cont_item{
+    display:-webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    >div{
+        width:50%;
+        margin-bottom: 20px;
+        &:nth-child(odd){
+            padding-right: 20px;
+        }
+        &:nth-child(even){
+            padding-left: 20px;
+        }
+    }
+}
+
+.search_item_org {
+    display: inline-block;
+    width: 350px;
+    margin-right: @search_item_select_margin_right;
+    height: 48px;
+    line-height: 48px;
+}
+
+
+
+.search_item_select {
+    display: inline-block;
+    width: @search_item_select_width;
+    margin-right: @search_item_select_margin_right;
+    height: 48px;
+    line-height: 48px;
+}
+
+.search_item_select:nth-child(2) {
+    margin-right: 0;
+}
+
+.search_item_select:last-child {
+    margin-right: 0;
+}
+
+.schedule_list_cont {
+    max-height: 450px;
+    overflow-y: auto;
+    padding-right: 20px;
+}
+
+.schedule_item_cont {
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    background-color: #FFF;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.schedule_item_cont:hover {
+    background-color: #F5F5F5;
+}
+
+.schedule_item_cont:last-child {
+    margin-bottom: 0;
+}
+
+.schedule_detail {
+    padding: 15px 24px;
+}
+
+.schedule_type {
+    display: inline-block;
+    font-size: 16px;
+    color: #4E9FF8;
+}
+
+.schedule_org {
+    color: #999;
+    float: right;
+    font-size: 14px;
+}
+
+.schedule_org:before {
+    display: inline-block;
+    content: '校区: ';
+    color: #999;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.schedule_room {
+    display: inline-block;
+    color: #999;
+    font-size: 14px;
+}
+
+.schedule_room:before {
+    display: inline-block;
+    content: '教室: ';
+    color: #999;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.schedule_time {
+    display: inline-block;
+    float: right;
+    color: #999;
+    font-size: 14px;
+}
+
+.schedule_time:before {
+    display: inline-block;
+    content: '上课时间: ';
+    color: #999;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.course_and_nums {
+    height: 30px;
+    line-height: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #EEE;
+    position: relative;
+}
+
+.schedule_course {
+    display: inline-block;
+    color: #666;
+    font-size: 14px;
+    width: 40%;
+    margin-left: 24px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.teacher_num {
+    display: inline-block;
+    color: #666;
+    font-size: 14px;
+    position: absolute;
+    left: 44%;
+    top: 0;
+}
+
+.student_num {
+    display: inline-block;
+    color: #666;
+    font-size: 14px;
+    float: right;
+    margin-right: 24px;
+}
+

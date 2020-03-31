@@ -1,0 +1,43 @@
+/*引入less定义的方法*/
+@import '../../../../common/less/common.less';
+
+.leads_detail_inner{
+    padding:20px 0 20px 30px;
+    overflow: auto;
+    .scrollbar();
+}
+.leads_detail_inner_img{
+    width:80px;
+    height:80px;
+}
+.leads_detail_inner_message{
+    width:100%;
+    display:-webkit-flex; /* Safari */
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    >p{
+        height:50px;
+        line-height:60px;
+        border-bottom: 1px solid #ddd;
+        width:calc(~'(100% - 50px)/2');
+        overflow: hidden;
+        white-space: nowrap;
+        .textOverflow(ellipsis);
+        &:nth-child(odd){
+            margin-right: 20px;
+        }
+        &:nth-child(even){
+            margin-right: 30px;
+        }
+        span{
+            &:nth-child(1){
+                color:#666;
+            }
+            &:nth-child(2){
+                color:#999;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+[
+    { "name" : "总部角色" , "id" : "role" , "choose" : true },
+    { "name" : "总部信息" , "id" : "head_detail" , "choose" : false },
+    { "name" : "品牌信息" , "id" : "brand" , "choose" : false },
+    { "name" : "安全设置" , "id" : "security_setting" , "choose" : false },
+    { "name" : "个性化域名" , "id" : "domain" , "choose" : false },
+    { "name" : "课件分类" , "id" : "courseware" , "choose" : false },
+    { "name" : "组织架构" , "id" : "structure" , "choose" : false },
+    { "name" : "收付款账号" , "id" : "accounts" , "choose" : false },
+    { "name" : "名单回收" , "id" : "leadRecycle" , "choose" : false },
+    { "name" : "名单查重" , "id" : "leadDup" , "choose" : false },
+    { "name" : "来源类别" , "id" : "secondSource" , "choose" : false },
+    { "name" : "市场渠道" , "id" : "firstSource" , "choose" : false },
+    { "name" : "财务设置" , "id" : "finance" , "choose" : false },
+    { "name" : "操作日志" , "id" : "filelog" , "choose" : false }
+]

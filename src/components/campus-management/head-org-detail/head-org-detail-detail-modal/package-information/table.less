@@ -1,0 +1,47 @@
+/*引入less定义的方法*/
+@import '../../../../common/less/common.less';
+.all{
+    width : 100%;
+    height : 100%;
+    display : -webkit-flex;
+    display : flex;
+    flex-wrap : nowrap;
+    overflow : hidden;
+}
+.left_table{ width : 80%; z-index : 9999; height : 100% }
+.right_button{ width : 20%; }
+.thead,.trow{
+    width : 100%;
+    margin-bottom : 16px;
+    display : -webkit-flex;
+    display : flex;
+    flex-wrap : nowrap;
+    justify-content : center;
+    align-items : center;
+}
+.thead{
+    padding-bottom : 16px;
+    border-bottom : 1px solid #ddd;
+}
+.trow:last-child{
+    margin-bottom : 0;
+}
+.trow_content{
+    height : calc(~'100% - 51px');
+    overflow-y : auto;
+}
+.thead_item,.trow_item{
+    height : 100%;
+    padding : 0 10px;
+    display : -webkit-flex;
+    display : flex;
+    flex-wrap : nowrap;
+    justify-content : center;
+    align-items : center;
+}
+/*flex布局若想达到text-overflow效果必须在内部再设置一个div*/
+.trow_item_inner{
+    white-space : nowrap;
+    overflow : hidden;
+    .textOverflow(ellipsis);
+}

@@ -1,0 +1,58 @@
+.p{
+	font-size : 14px;
+	height : 30px;
+	line-height : 30px;
+}
+.item_label{
+	display : inline-block;
+	width : 130px;
+	height : 20px;
+	line-height : 20px;
+}
+.item_text{
+	display : inline-block;
+	height : 20px;
+	line-height : 20px;
+	font-size : 12px;
+	color : #999;
+}
+
+.receipt_item{
+	display : inline-block;
+	height : 40px;
+	line-height : 40px;
+	text-align : center;
+	border-right : 1px solid #ddd;
+}
+.receipt_item:last-child{
+	border : none;
+}
+.delete_receipt_way{
+	position : absolute;
+	right : -35px;
+	top : 20px;
+}
+:global{
+	.receipt_form{
+		position : relative;
+		width : 540px;
+		height : 82px;
+		line-height : 40px;
+		border : 1px solid #ddd;
+		border-top-width : 0;
+	}
+	.receipt_form_first{
+		border-top : 1px solid #ddd;
+	}
+	.receipt_form .ant-form-item{
+		margin-right : 0px;
+		margin-top : -2px;
+	}
+	.receipt_contract_order_modal .ant-modal-footer{
+		margin-top : 0px;
+		padding : 0 20px 20px 10px;
+	}
+	.receipt_contract_order_modal .ant-modal-body{
+		padding : 20px;
+	}
+}

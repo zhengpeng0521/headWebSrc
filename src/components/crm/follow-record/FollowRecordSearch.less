@@ -1,0 +1,42 @@
+.special_search_item{
+	position : relative;
+	display : inline-block;
+	vertical-align : top;
+	margin-right : 20px;
+}
+.follow_up_search{
+	display : inline-block;
+}
+
+.right_btn_item{
+	margin-left : 10px;
+	background : #88C702;
+	color : #fff;
+	border-color : #88C702;
+}
+.right_btn_item:hover{
+	border-color : #93d50f;
+	background : #93d50f;
+	color : #fff;
+}
+.right_btn_item:focus, .right_btn_item:active{
+	border-color : #7ab700;
+	background : #7ab700;
+	color : #fff;
+}
+
+
+:global{
+	.card_search_wrap{
+		height : 28px;
+		line-height : 28px;
+		margin-bottom : 10px;
+		.ant-form-inline .ant-form-item > div{
+			vertical-align : top !important;
+		}
+	}
+	.card_right_operation{
+		display : inline-block;
+		float : right;
+	}
+}

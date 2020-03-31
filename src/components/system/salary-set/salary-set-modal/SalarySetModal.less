@@ -1,0 +1,65 @@
+/*引入less定义的方法*/
+@import '../../../common/less/common.less';
+
+:global{
+    .salary_set_modal_common .ant-modal-body{
+        padding : 20px;
+        max-height : 500px;
+        overflow-x : hidden;
+        overflow-y : auto;
+    }
+    .salary_set_modal_common .ant-input-group-addon{
+        background-color: #fff;
+    }
+    .salary_set_modal_common .ant-modal-footer{
+        padding : 20px;
+        margin : 0;
+    }
+    .salary_set_modal_common .ant-form-item{
+        margin-bottom : 6px;
+        line-height : 30px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+.course_commission{
+    position: relative;
+    background-color : #f1f1f1;
+    padding : 10px 0 ;
+    border-radius : 5px;
+    margin-bottom : 10px;
+    &:after{
+        content:attr(data-errorMessage);
+        position: absolute;
+        bottom:5px;
+        right:5px;
+        color:#f04134;
+    }
+}
+.course_commission_close{
+    position : absolute;
+    right : 10px;
+    top : 10px;
+    z-index: 9999;
+}
+:global{
+    .salary_set_gradient_group{
+        margin-left: 5px;
+    }
+    .salary_set_gradient_group .salary_set_gradient_group_item{
+        .ant-form-item{
+            margin-right : 20px;
+        }
+        &:nth-child(n+2){
+            .ant-form-item .ant-form-item-label{
+                opacity: 0
+            }
+        }
+    }
+    .salary_set_gradient_group_item{
+        display : -webkit-flex;
+        display : flex;
+        flex-wrap : nowrap;
+    }
+}

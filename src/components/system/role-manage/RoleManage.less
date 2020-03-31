@@ -1,0 +1,101 @@
+/*引入less定义的方法*/
+@import '../../common/less/common.less';
+
+.all{
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow:auto;
+    padding:10px 0 20px 20px;
+    height:calc(~'100% - 70px')
+}
+.left_area{
+    width:500px;
+    min-width: 400px;
+    margin-right: 20px;
+}
+.right_area{
+    width:520px;
+    min-width: 410px;
+    padding-right: 20px;
+}
+.block_title{
+    height:50px;
+    width:100%;
+    line-height: 50px;
+    background-color: #5d9cec;
+    color:#fff;
+    font-size: 1.16rem;
+    padding:0 10px;
+    .borderRadius(5px,5px,0,0);
+}
+.roleNameCheck{
+    height:50px;
+    line-height:50px;
+    border-bottom:1px solid #f8f8f8;
+    cursor:pointer;
+    color:#4e9ff8;
+    -webkit-transition: all 0.5s;
+       -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+         -o-transition: all 0.5s;
+            transition: all 0.5s;
+    width: 100%;
+    display: inline-block;
+    font-size: 1.16rem;
+    .unCheckOrCopy();
+    cursor: pointer !important;
+    &:hover{
+        background-color: rgb(251,251,251);
+    }
+}
+.content{
+    width:100%;
+    height:600px;
+    overflow:auto;
+    border:1px solid #ddd;
+    padding:20px 30px;
+    margin-bottom: 20px;
+    overflow: auto;
+    .borderRadius(0,0,5px,5px);
+    .scrollbar();
+}
+
+.roleNameUnCheck{
+    height:50px;
+    line-height:50px;
+    border-bottom:1px solid #f8f8f8;
+    cursor:pointer;
+    -webkit-transition: all 0.5s;
+       -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+         -o-transition: all 0.5s;
+            transition: all 0.5s;
+    font-size: 1.16rem;
+    .unCheckOrCopy();
+    cursor: pointer !important;
+    &:hover{
+        background-color: rgb(251,251,251);
+    }
+}
+.showRoleFunction{
+    color:#fff;
+    margin-left: 4px;
+}
+
+.roleFunctionTree{
+    height:700px;
+    width:100%;
+    float:left;
+    .unCheckOrCopy();
+}
+.createNewRole{
+    height: 50px;
+    border-bottom: 1px solid #f8f8f8;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+
+}

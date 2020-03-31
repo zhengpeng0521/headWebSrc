@@ -1,0 +1,276 @@
+:global {
+    .baseReview {
+        width: 50%;
+        background: #f1f1f1;
+        height: 100%;
+        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .actualContent {
+        position: absolute;
+        width: 279px;
+        height: 442px; // background: white;
+        margin-left: 30px;
+        margin-top: 137px;
+        overflow: auto;
+        background: #f1f1f1;
+    }
+    .actualContent::-webkit-scrollbar {
+        display: none;
+    }
+    .htmlStyle {
+        background: white;
+        padding-bottom: 10px;
+        overflow-wrap: break-word;
+        padding: 0px 10px 0px 10px;
+    }
+    .htmlStyle>p>img {
+        max-width: 100%;
+    }
+    .htmlStyle>div>.notranslate>div>figure>img {
+        float: left;
+        max-width: 100%;
+    }
+    .public-DraftEditor-content>div>* {
+        margin: 0px;
+    }
+}
+
+.phoneBackground {
+    width: 375px;
+    height: 667px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('https://img.ishanshan.com/gimg/img/4f4f74cf609c0ad311c9edf0849e5191')
+}
+
+// .actualContent {
+//     width: 279px;
+//     height: 442px; // background: white;
+//     margin-left: 30px;
+//     margin-top: 137px;
+//     overflow: auto;
+//     background: #f1f1f1;
+// }
+.bannerBase {
+    width: 100%;
+    height: 150px!important;
+    min-height: 150px!important;
+    max-height: 150px!important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.clearance {
+    height: 10px;
+    background-color: #F1F1F1;
+    border-top: 1px #ddd solid;
+    border-bottom: 1px #ddd solid;
+}
+
+.vipMark {
+    font-size: 15px;
+    color: rgba(229, 70, 111, 1);
+    line-height: 15px;
+}
+
+.actName {
+    width: 100%;
+    font-size: 15px;
+    color: #333333;
+    padding: 10px;
+    background: white;
+    line-height: 21px;
+    overflow-wrap: break-word;
+}
+
+.subTitle {
+    width: 100%;
+    font-size: 13px;
+    color: rgba(102, 102, 102, 1);
+    line-height: 13px;
+    padding: 0px 10px 10px;
+    background: white;
+}
+
+.addressBase {
+    width: 100%;
+    height: 44px;
+    background: rgba(255, 255, 255, 1);
+}
+
+.address {
+    height: 100%;
+    width: 80%;
+    float: left;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    color: rgba(102, 102, 102, 1);
+    border-bottom: 1px #ddd solid;
+    font-size: 13px;
+    line-height: 13px;
+    overflow: hidden;
+}
+
+.addressPhone::before {
+    width: 1px;
+    height: 20px;
+    background-color: #ddd;
+    content: '';
+    margin-right: 10px;
+}
+
+.addressPhone {
+    width: 20%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px #ddd solid;
+}
+
+.generalIconStyle {
+    margin-right: 5px;
+}
+
+.setOption {
+    background: white;
+    padding: 5px 0px 5px 0px;
+}
+
+.actLabel {
+    width: 100%;
+    font-size: 13px;
+    color: rgba(102, 102, 102, 1);
+    display: flex;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    min-height: 30px;
+    line-height: 21px;
+    overflow-wrap: break-word;
+}
+
+.contentTitle::before {
+    content: '';
+    width: 4px;
+    height: 60%;
+    background: #3b72b7;
+    margin-right: 5px;
+}
+
+.contentTitle {
+    width: 100%;
+    font-size: 13px;
+    color: #333333;
+    line-height: 13px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px 0px 10px;
+    border-bottom: 10px white solid; // margin-bottom: 10px;
+    // padding: 10px 0px 0px 10px;
+    background: white;
+}
+
+.applyNumber {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #2E5CA8;
+    line-height: 13px;
+}
+
+.userHeaderBase {
+    display: flow-root;
+    background: white;
+    padding: 0px 10px 10px 10px;
+}
+
+.userDiv {
+    width: calc(100% / 6);
+    float: left;
+    margin: 4px;
+}
+
+.userHeader {
+    height: 44px;
+    background-size: 100% 100%;
+    float: left;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.userName {
+    width: 100%;
+    font-size: 11px;
+    color: rgba(102, 102, 102, 1);
+    line-height: 11px;
+    float: left;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.bottomTabbar {
+    bottom: 88px;
+    width: 279px;
+    height: 44px;
+    background: white;
+    position: sticky;
+    bottom: 0px;
+}
+
+.addIconStyle {
+    width: 25%;
+    height: 20px;
+    float: left;
+    margin-top: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding-bottom: -24px;
+    bottom: 19px;
+    left: 0px;
+}
+
+.createActivity {
+    float: left;
+    width: 25%;
+    height: 100%;
+    background: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    color: rgba(102, 102, 102, 1);
+    line-height: 44px;
+    text-align: center; 
+    padding-top: 10px;
+}
+
+.applyActivity {
+    float: left;
+    width: 75%;
+    height: 100%;
+    background: rgba(59, 114, 183, 1);
+    font-size: 15px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 44px;
+    text-align: center;
+}
+
+.createActivityButton {
+    width: 80%;
+    height: 44px;
+    border: 1px #3B72Be solid;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 44px;
+    font-size: 13px;
+    color: rgba(74, 144, 226, 1);
+    line-height: 44px;
+}

@@ -1,0 +1,183 @@
+.user_dataview_cont {}
+
+.view_list_bar {
+    display: inline-flex;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.dataview_title {
+    font-size: 24px;
+    color: #000;
+    position: relative;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.dataview_title_intro {
+    margin-left: 10px;
+}
+
+.dataview_title_line {
+    position: absolute;
+    width: 5px;
+    height: 22px;
+    background-color: #00b4ff;
+    left: 0;
+    top: 8px;
+}
+
+.org_filter_cont {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 33%;
+}
+
+.bar_btn_cont {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin-top: 10px;
+}
+
+.ganeSearchBox {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.dataview_table_list{
+    position: relative;
+    overflow: auto;
+    width:100%;
+}
+
+.custom_filter_dropdown {
+    transform:translateX(-100%);
+    padding: 8px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+    padding: 8px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    width: 108px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    >button[type="button"]{
+        margin-top: 10px;
+    }
+}
+
+.view_list_table_cont{
+    width:100%;
+    :global{
+        .ant-table-tbody > tr > td{
+            border-bottom: 0!important;
+        }
+        .ant-table-tbody > tr:nth-child(even){
+            background:rgba(249,250,252,1)!important;
+        }
+        .ant-table-header{
+            overflow: hidden!important;
+        }
+        .ant-table-thead > tr > th{
+            text-align: center;
+            padding: 0 0!important;
+            height:50px!important;
+            color:#333!important;
+            font-weight:500;
+        }
+        .ant-table-thead > tr{
+            padding: 0 0!important;
+        }
+        .ant-table-tbody > tr > td{
+            text-align: center;
+            padding: 0 0!important;
+            height:42px!important;
+        }
+        .longlongCol{
+            width:380px!important;
+        }
+        .longCol{
+            width:150px!important;
+        }
+        .commonCol{
+            width:120px!important;
+        }
+        .shortCol{
+            width:100px!important;
+        }
+        .minCol{
+            width:50px!important;
+            line-height:1;
+        }
+        .fixedCol{
+            width:45px!important;
+            line-height:1;
+        }
+        .ant-checkbox-group-item{
+        }
+        .ant-table-tbody > tr:hover >td{
+            cursor: pointer;
+            background: #E0F1FF!important;
+        }
+        .ant-table{
+//            overflow:inherit!important;
+            
+        }
+        .ant-pagination{
+            text-align: right;
+            margin-top: 5px;
+        }
+        .ant-table-body::-webkit-scrollbar {
+            width:5px;
+            height:5px;
+        }
+        .ant-table-body::-webkit-scrollbar-track     {
+            background:#cccccc;
+        }
+        .ant-table-body::-webkit-scrollbar-thumb{
+            background:rgba(16,142,233,.3);
+            border-radius:4px;
+        }
+        .ant-table-scroll .ant-table-thead > tr > th:last-child{
+            visibility: hidden;
+        }
+        .ant-table-fixed-right >.ant-table-body-outer{
+            display: none;
+        }
+        .ant-table-fixed-right{
+            border-left:1px solid #DDDDDD!important;
+            box-shadow:0 0 0 transparent!important;
+            width:45px!important;
+            height:44px!important;
+        }
+        .ant-dropdown{
+            position: fixed!important;
+        }
+    }
+}
+
+.pagination{
+    position:fixed;
+    right:30px;
+    bottom: 35px;
+    :global{
+        .ant-pagination-item-active{
+            background-color: #5d9cec!important;
+        }
+    }
+}
+
+.settingBar{
+    position: absolute;
+    right: 20px;
+    z-index: 1;
+    top: 114px;
+}

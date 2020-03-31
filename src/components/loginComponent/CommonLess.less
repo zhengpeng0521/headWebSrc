@@ -1,0 +1,85 @@
+@defaultColor : #5d9cec; //'#88c70a';
+@hoverColor : #7bb4fd; //#93d50f;
+@activeColor : #4081d4; //#7ab700;
+
+.commmon_image_param {
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.common_ani(@animation_value) {
+	-webkit-animation: @animation_value;
+		-ms-animation: @animation_value;
+			-moz-animation: @animation_value;
+				-o-animation: @animation_value;
+					animation: @animation_value;
+}
+
+.common_logo {
+	margin-top: 40px;
+	width: 122px;
+	height: 122px;
+	margin-left: calc(~"50% - 61px");
+    border-radius: 5px;
+	//background: url(https://img.ishanshan.com/gimg/img/f204fd8affff8cdb30b68554143ef4f5) 0% 0% / contain no-repeat;
+}
+
+.common_company {
+	margin-top: 20px;
+	text-align: center;
+	font-size: 26px;
+	color: #666;
+	font-weight: 900;
+	margin: 0px;
+	margin-top: 15px;
+}
+
+.common_company_info {
+	color: #666;
+	font-size: 14px;
+	text-align: center;
+}
+
+@keyframes login_box_ani {
+
+	0% {opacity: 0; transform: scale(1); 	box-shadow: 7px 7px 20px 2px rgba(0,0,0,.0);}
+	70% {opacity: 0.7; transform: scale(1.1); 	box-shadow: 7px 7px 20px 2px rgba(0,0,0,.0);}
+	100% {opacity: 1; transform: scale(1); box-shadow: 7px 7px 20px 2px rgba(0,0,0,.2);}
+}
+
+.comon_code {
+    float: right;
+	margin-right: 15%;
+    height: 32px;
+    width: 90px;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 32px;
+    text-align: center;
+}
+
+:global {
+
+	.getVCCode_f1f1f1 {
+		.comon_code();
+		background-color: #f1f1f1;
+		color : #999;
+	}
+
+	.vertifyBtn {
+		.comon_code();
+		background-color: #5d9cec;
+		color : white;
+	}
+
+	.vertifyBtn:hover {
+		cursor: pointer;
+		background-color: #7cc4fd;
+	}
+
+	.vertifyBtn:active {
+		background-color: #4081d4;
+	}
+}
+
+

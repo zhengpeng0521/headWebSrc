@@ -1,0 +1,25 @@
+.ani(@animation_value) {
+	-webkit-animation							: @animation_value;
+		-ms-animation							: @animation_value;
+			-moz-animation						: @animation_value;
+				-o-animation					: @animation_value;
+					animation					: @animation_value;
+}
+
+.ani_fade_in (@startX, @pauseX, @endX) {
+	0% {
+        opacity: 0;
+		-webkit-transform: translateX(@startX);
+		transform: translateX(@startX)
+	}
+	70% {
+		opacity: 1;
+		-webkit-transform: translateX(@pauseX);
+		transform: translateX(@pauseX)
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(@endX);
+		transform: translateX(@endX)
+	}
+}

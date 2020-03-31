@@ -1,0 +1,133 @@
+/*引入less定义的方法*/
+@import '../../../common/less/common.less';
+
+.all{
+    width: 100%;
+    height: calc(~'100vh - 110px');
+    overflow: auto;
+    padding: 20px 20px 0 20px;
+    border-top: 4px solid @saas_main_color;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    .scrollbar();
+}
+:global{
+    .create_arrange_course{
+        width:1000px;
+    }
+    .create_arrange_course .ant-form-item{
+        margin-bottom: 6px;
+    }
+}
+.block_title{
+    margin-top: 15px;
+}
+.form_item_course_message{
+    width:1000px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    >div{
+        min-width: 290px;
+        margin-right: 100px;
+        margin-bottom: 10px;
+        line-height: 30px;
+        &:nth-child(2){
+            margin-right: 13px;
+        }
+    }
+    >p{
+        margin-right: 10px;
+    }
+}
+.form_item_color_set{
+    width:1000px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    >div{
+        min-width: 290px;
+        margin-right: 100px;
+        margin-bottom: 10px;
+        line-height: 30px;
+    }
+}
+.form_item_peo_lim{
+    width:1000px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    >div{
+        min-width: 290px;
+        margin-right: 100px;
+        margin-bottom: 10px;
+        line-height: 30px;
+    }
+    /*查重*/
+    >span{
+        color:@saas_main_color;
+        cursor:pointer;
+        line-height: 30px;
+        margin-right: 62px;
+        .unCheckOrCopy();
+    }
+}
+.form_item_time_set{
+    width:1000px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    >div{
+        min-width: 290px;
+        margin-bottom: 10px;
+        &:nth-child(1){
+            line-height: 30px;
+            margin-right: 700px;
+        }
+        &:nth-child(2){
+            margin-right: 100px;
+        }
+        &:nth-child(3){
+            margin-right: 0;
+        }
+        &:nth-child(4){
+            margin-left: -103px;
+        }
+        &:nth-child(5){
+            min-width: 400px;
+        }
+    }
+}
+
+/*上课次数*/
+.course_num{
+    height: 60px;
+    width: 286px;
+    background-color: #f1f1f1;
+    padding-top: 14px;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    .borderRadius(5px,5px,5px,5px);
+}
+.submit_button{
+    margin : 30px 0 40px;
+}
+
+/*课程进度*/
+.course_process{
+    width: 1000px;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    >div{
+        min-width: 290px;
+        margin-right: -102px;
+    }
+}

@@ -1,0 +1,334 @@
+@import '../../lib.less';
+
+.main_layout_cont {
+  width: 100vw;
+  height: 100vh;
+}
+
+/*↓↓↓↓↓↓↓↓↓↓↓↓↓顶部栏↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+
+.header_show_split {
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  z-index: 1030;
+//  box-shadow: 0 3px 17px 7px rgba(0, 0, 0, 0.2);
+//   box-shadow: 0 0.3rem 0.8rem 0.3rem rgba(0, 0, 0, 0.2);
+}
+
+.main_layout_header {
+    padding: 0;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: @cas-layout-top-bg-color;
+}
+
+.main_layout_header_left {
+    height : 100%;
+    padding : 7px 14px;
+    display : -webkit-flex;
+    display : flex;
+    flex-wrap : nowrap;
+    align-items : center;
+}
+
+.org_logo_img_cont {
+    width : 172px;
+    height : 36px;
+    border-radius : 5px;
+    margin-right : 30px;
+}
+.org_logo_name_cont{
+    color : #a7b6ba;
+    font-size : 16px;
+}
+
+.main_layout_header_right {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100%;
+}
+
+.main_layout_header_right_item {
+    cursor: pointer;
+    height: 100%;
+    margin-right: 30px;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.main_layout_header_right_item .btn_a_icon {
+    margin-right: 5px;
+}
+
+.main_layout_header_right_item .btn_a_text {
+    height:100%;
+    line-height: 50px;
+}
+.header_qrcode_cont {
+    font-size: 18px;
+    color: #666;
+    line-height: 70px;
+    cursor: pointer;
+	display : inline-block;
+}
+
+.header_qrcode_cont:hover {
+    color: #4E9FF8;
+}
+
+.qrcode_content {
+    width: 200px;
+}
+.btn_a_icon {
+    color: @cas-layout-top-btn-text-color;
+    font-size: 19px!important;
+}
+.login_user_info_img{
+    width : 30px;
+    height : 30px;
+    margin : 10px;
+    border-radius : 50%;
+}
+
+.main_layout_header_right_item:hover .btn_a_icon {
+    color: @cas-layout-top-btn-text-color-hover;
+}
+
+.btn_a_text {
+  color: @cas-layout-top-btn-text-color;
+  font-size: 14px;
+}
+
+.main_layout_header_right_item:hover .btn_a_text, .main_layout_header_right_item:hover .user_text_trigger_icon {
+  color: @cas-layout-top-btn-text-color-hover;
+}
+
+.user_text_trigger {
+    width: 8px;
+    height: 100%;
+    float: left;
+    position: relative;
+    margin-right: 10px;
+    margin-left: 2px;
+    overflow: hidden;
+}
+
+.user_text_trigger_icon {
+    color: @cas-layout-top-btn-text-color;
+    font-size: 12px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    bottom: 12px;
+}
+
+.top_user_drap_menu_text {
+  text-align: center;
+}
+
+.user_drap_menu {
+  background-color: @sider-third-menu-item-bgcolor;
+}
+.user_drap_menu :global(.ant-dropdown-menu-item-active) .top_user_drap_menu_text {
+    color: @shanshan-main-color!important;
+}
+
+.connect_popover :global(.ant-popover-inner-content) {
+    padding: 0;
+}
+
+.connect_popover_cont {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.connect_popover_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+/*↑↑↑↑↑↑↑↑↑↑↑↑↑顶部栏↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+
+/*↓↓↓↓↓↓↓↓↓↓↓↓↓侧边栏↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+
+/*最左边应用的tooltip*/
+:global{
+    .saas_layout_left_tooltip .ant-tooltip-inner{
+        background-color: rgba(0,0,0,.75);
+    }
+}
+.layout_tooltip{
+    background-color: rgba(0,0,0,.75);
+}
+.cas_layout_left_cont {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: @cas-layout-left-bgcolor;
+}
+
+.cas_layout_left_item_cont {
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cas_layout_left_item {
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 5px;
+  margin-top: 7px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cas_layout_left_item_active {
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 5px;
+  background-color: @cas-layout-left-btn-bgcolor-hover;
+  margin-top: 7px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cas_layout_left_item:hover {
+  background-color: @cas-layout-left-btn-bgcolor-hover;
+}
+
+.cas_layout_left_item:hover .cas_layout_left_item_icon, .cas_layout_left_item_active .cas_layout_left_item_icon {
+  color: @cas-layout-left-btn-color-hover;
+}
+
+.cas_layout_left_item_icon {
+  font-size: 22px;
+  color: #6F798D;
+  text-align: center;
+  cursor: pointer;
+  height: 36px;
+  line-height: 36px;
+}
+
+.cas_layout_left_bottom_split {
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: 50px;
+  background-color: @cas-layout-left-bottom-split-color;
+}
+/*↑↑↑↑↑↑↑↑↑↑↑↑↑侧边栏↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+
+/*↓↓↓↓↓↓↓↓↓↓↓↓↓内容栏-布局↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+
+.content_layout_cont {
+  background-color: #FFF;
+}
+
+.main_layout_content {
+  overflow: hidden;
+}
+
+.page_cont {
+  width: 100%;
+  border-left: 1px solid #DDD;
+  border-bottom: 1px solid #DDD;
+  border-right: 1px solid #DDD;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  overflow-y: auto;
+}
+
+.page_content {
+  width: 100%;
+  height: 100%;
+}
+
+/*↑↑↑↑↑↑↑↑↑↑↑↑↑内容栏-布局↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+//切换校区
+.org_switch_cont {
+  color: #5d9cec;
+  font-weight: 900;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.orgList {
+  margin-top: 10px;
+  max-height:160px;
+  overflow-y: auto;
+  width: 270px;
+  :last-child.orgItem {
+    margin-bottom: 0;
+  }
+}
+.orgList :global(.ant-radio-group) {
+  width: 100%;
+}
+.orgItem {
+  margin-bottom:10px;
+  display:inline-block;
+  width: 100%;
+}
+.orgName {
+  display:inline-block;
+  width:180px;
+  word-break:keep-all;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  vertical-align: bottom;
+}
+.title {
+  font-size: 15px;
+  line-height: 15px;
+  color: #333;
+  margin: 0 0 10px 0;
+}
+.footer {
+  text-align:end;
+  margin-top:10px;
+  width: 270px;
+}
+.hidden_tree_node {
+  display:none;
+}
+.switch_org {
+  width: 300px;
+  top: 45px !important;
+}
+.switch_org :global(.ant-popover-arrow) {
+  display:none;
+}
+.switch_org :global(.ant-radio-wrapper) {
+  font-size: 13px;
+  color: #333;
+}
+.switch_org :global(.ant-radio) {
+  vertical-align: sub;
+}
+.default {
+  float: right;
+  font-size: 13px;
+  color: #5d9cec;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}

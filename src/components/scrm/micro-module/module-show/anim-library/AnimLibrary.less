@@ -1,0 +1,55 @@
+
+/*动画库*/
+/*
+	1.动画基础 		例子 .ani(ani_fixed 5000ms linear 0ms infinite)
+		animation-name
+	2.动画时长				 ms || s
+		animation-duration
+	3.动画速度
+		animation-timing-function
+			linear			动画从头到尾的速度是相同的。
+			ease			动画以低速开始，然后加快，在结束前变慢。
+			ease-in			动画以低速开始。
+			ease-out		动画以低速结束。
+			ease-in-out		动画以低速开始和结束。
+	4.动画延迟
+		animation-delay		ms || s
+	5.动画次数
+		animation-iteration-count
+			number			次数
+			infinite		无限次
+*/
+
+
+@import './AnimClassLibrary.less';
+
+/*逐渐显示*/
+.ani_fixed_class {
+    .ani(ani_fixed 5000ms linear 0ms forwards);
+}
+@keyframes ani_fixed {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/*左侧淡入*/
+.ani_left_fade_in_class {
+    .ani(ani_left_fade_in 1500ms linear 0ms forwards);
+    opacity: 0;
+}
+@keyframes ani_left_fade_in {
+	.ani_fade_in(-1000px, 20px, 0px);
+}
+
+/*右侧淡入*/
+.ani_right_fade_in_class {
+    .ani(ani_right_fade_in 1500ms linear 0ms forwards);
+    opacity: 0;
+}
+@keyframes ani_right_fade_in {
+	.ani_fade_in(1000px, -20px, 0px);
+}

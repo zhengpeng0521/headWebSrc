@@ -1,0 +1,5 @@
+[
+    { "key" : "brandName" , "label" : "品牌名称" , "width" : 220 },
+    { "key" : "sourceRegion" , "label" : "品牌源地" , "width" : 220  },
+    { "key" : "brandIntro" , "label" : "品牌介绍" , "type" : "textarea" , "width" : 400  }
+]

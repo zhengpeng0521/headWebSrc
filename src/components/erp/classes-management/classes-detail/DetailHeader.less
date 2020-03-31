@@ -1,0 +1,94 @@
+@import '../../../common/less/common.less';
+
+.header_wrap{
+	position : relative;
+	width : 100%;
+	height : 144px;
+	background : #f1f1f1;
+}
+.header_wrap:before{
+	position : absolute;
+	content : '';
+	top: 20px;
+	left : 20px;
+	width : 40px;
+	height : 40px;
+	border-radius : 50%;
+	background-image : url( 'https://img.ishanshan.com/gimg/img/eb51ca21d2b7cee45a97df5a24faf1fd' );
+	background-size : cover;
+}
+.close_detail{
+	position : absolute;
+	top : 18px;
+	right : 20px;
+	color : #666666;
+	height : 16px;
+	cursor : pointer;
+//	transition : transform .3s linear;
+}
+.close_detail:hover{
+	transform : rotate( 180deg );
+}
+.detail_title{
+	position : absolute;
+	top : 32px;
+	left : 80px;
+	height : 16px;
+	line-height : 16px;
+	font-size : 16px;
+	color : #666;
+}
+
+.detail_content{
+	width : 100%;
+	position : absolute;
+	top : 76px;
+	left : 80px;
+	height : 14px;
+	line-height : 14px;
+	font-size : 14px;
+}
+.detail_content_angin{
+	width : 100%;
+	position : absolute;
+	top : 100px;
+	left : 80px;
+	height : 14px;
+	line-height : 14px;
+	font-size : 14px;
+}
+.detail_content_item{
+	display : inline-block;
+	margin-right : 20px;
+	height : 14px;
+	line-height : 14px;
+	span{
+		display : inline-block;
+		position : relative;
+		top : 2px;
+		font-size : 12px;
+		height : 14px;
+		color : #999;
+		overflow : hidden;
+	}
+}
+.detail_content_item:last-child{
+	margin-right : 0;
+}
+.button_group{
+	position : absolute;
+	top : 12px;
+	right : 54px;
+}
+.ellipsis{
+	padding : 0 5px !important;
+}
+
+.leads_detail_message_right_more_button{
+    width:30px;
+    padding:0 !important;
+    text-align: center;
+    margin-right: 10px;
+	border:0;
+    background-color: @detail_button_more_operation !important;
+}

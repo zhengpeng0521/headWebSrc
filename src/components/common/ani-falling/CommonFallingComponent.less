@@ -1,0 +1,132 @@
+.common_image_param {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.common_box_param {
+	height: 1rem;
+	width: 1rem;
+	.common_image_param();
+	background-color: transparent;
+	position: fixed;
+//	top: -100px;
+}
+
+.itemBox {
+	.common_box_param();
+	animation: fade, drop;
+	animation-iteration-count: infinite, infinite;
+	animation-timing-function: ease-in-out, ease-in-out;
+}
+
+.itemBoxVertical {
+	.common_box_param();
+	animation: fade, verticals;
+	animation-iteration-count: infinite, infinite;
+	animation-timing-function: ease-in-out, ease-in-out;
+}
+
+.itemBoxLeftOblique {
+	.common_box_param();
+	animation: fade, leftOblique;
+	animation-iteration-count: infinite, infinite;
+	animation-timing-function: ease, ease;
+}
+
+.itemBoxRightOblique {
+	.common_box_param();
+	animation: fade, rightOblique;
+	animation-iteration-count: infinite, infinite;
+	animation-timing-function: ease-in-out, ease-in-out;
+}
+
+.item_image(@name) {
+	.common_image_param();
+	height: 1rem;
+	width: 1rem;
+	animation-name: @name;
+	-webkit-animation : @name;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	transform-origin: 50% -100%;
+}
+
+.item_image_counterclockwiseSpinAndFlip {
+	.item_image(counterclockwiseSpinAndFlip);
+}
+
+.item_image_clockwiseSpin {
+	.item_image(clockwiseSpin);
+}
+
+/*box动画*/
+@-webkit-keyframes fade {
+	0% {
+		opacity: 1;
+	}
+	95% {
+		opacity: 0.8;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes drop {
+	0% {
+		transform: translate(0px, -50px);
+	}
+	100% {
+		transform: translate(0px, 1440px);
+	}
+}
+
+@-webkit-keyframes verticals {
+	0% {
+		transform: translate(0px, -50px);
+	}
+	100% {
+		transform: translate(0px, 1440px);
+	}
+}
+
+@-webkit-keyframes leftOblique {
+	0% {
+		transform: translate(0px, -50px) rotate(20deg);
+	}
+	100% {
+		transform: translate(-800px, 1440px) rotate(20deg);
+	}
+}
+
+@-webkit-keyframes rightOblique {
+	0% {
+		transform: translate(0px, -50px) rotate(-20deg);
+	}
+	100% {
+		transform: translate(800px, 1440px) rotate(-20deg);
+	}
+}
+
+
+/*方向*/
+@-webkit-keyframes clockwiseSpin {
+	0% {
+		-webkit-transform: rotate(-50deg);
+	}
+	100% {
+		-webkit-transform: rotate(50deg);
+	}
+}
+
+@-webkit-keyframes counterclockwiseSpinAndFlip {
+	0% {
+		-webkit-transform: scale(-1, 1) rotate(50deg);
+	}
+	100% {
+		-webkit-transform: scale(-1, 1) rotate(-50deg);
+	}
+}
+

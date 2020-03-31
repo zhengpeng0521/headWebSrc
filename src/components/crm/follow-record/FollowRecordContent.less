@@ -1,0 +1,207 @@
+@import '../../common/less/common.less';
+
+:global{
+	.follow_record_content{
+		position : relative;
+		width : 100%;
+		height : calc( ~'100% - 84px');
+		border-top : @saas_main_color 4px solid;
+	}
+	.follow_record_content_left{
+		position : relative;
+		width : 440px;
+		background : #f1f1f1;
+		height : 100%;
+		overflow : hidden;
+		overflow-x : hidden;
+	}
+	.follow_record_content_left::-webkit-scrollbar {
+		background-color: transparent!important;
+		border-radius: 4px;
+		width: 4px;
+		height: 4px;
+		margin-right: 4px;
+		right: 4px;
+	}
+	.card_pagination{
+		position : absolute;
+		bottom : 14px;
+		width : 100%;
+		height : 50px;
+		line-height : 50px;
+		text-align : right;
+		padding-right : 20px;
+		background : #f1f1f1;
+//		position : absolute;
+//		bottom : 10px;
+//		right : 20px;
+	}
+	.follow_record_list_item{
+		position : relative;
+		width : 400px;
+		height : 100px;
+		background : #fff;
+		border-radius : 5px;
+		margin-bottom : 20px;
+		cursor : pointer;
+        .transition(all 0.3s);
+        &:hover{
+            .transform(scale(1.05));
+        }
+		&:last-child{
+			margin-bottom : 0;
+		}
+		.active_span{
+			margin-left: 5px;
+			color: #ffffff;
+			display: inline-block;
+		}
+		.span_name{
+			margin-left: 5px;
+			color: #333333;
+			display: inline-block;
+		}
+		.follow_record_img{
+			position : absolute;
+			top : 10px;
+			left : 10px;
+			width : 60px;
+			height : 60px;
+			border-radius : 50%;
+			img{
+				width : 100%;
+				height : 100%;
+			}
+		}
+	}
+	.follow_record_text{
+		position : absolute;
+		max-width : 140px;
+		height : 20px;
+		line-height : 18px;
+		overflow : hidden;
+	}
+	.follow_record_name{
+		top : 18px;
+		left : 80px;
+		background : @saas_main_color;
+		padding : 0 8px;
+		border-radius : 5px;
+		font-size : 14px;
+		color : #fff;
+	}
+	.follow_record_time{
+		top : 44px;
+		left : 80px;
+		color : #999;
+	}
+	.follow_record_person{
+		top : 18px;
+		left : 255px;
+		font-size : 14px;
+		color : #666;
+	}
+	.follow_record_parent{
+		top : 44px;
+		left : 255px;
+		color : #999;
+	}
+	.follow_record_list_item_selected{
+		background : @saas_main_color;
+        .follow_record_name{
+            background-color: #fff;
+            color:@saas_main_color;
+        }
+		.follow_record_time,
+		.follow_record_person,
+		.follow_record_parent{
+			color : #fff;
+		}
+	}
+//	.follow_record_list_item_selected:after{
+//		content : '';
+//		display : block;
+//		position : absolute;
+//		top : 35px;
+//		left : 400px;
+//		width : 0; height : 0;
+//		border-width : 10px;
+//		border-style : solid;
+//		border-color : transparent;
+//		border-right-color : #fff;
+//	}
+
+	.follow_record_content_right{
+		position : absolute;
+		right : 0;
+		top : 0;
+		width : calc( ~'100% - 440px' );
+		height : 100%;
+		background : #ffffff;
+		.follow_record_right_img{
+			width : 80px;
+			height : 80px;
+			position : absolute;
+			top : 20px;
+			left : 20px;
+			img{
+				width : 100%;
+				height : 100%;
+			}
+		}
+		.right_name{
+			position : absolute;
+			left : 120px;
+			top : 50px;
+			font-size : 16px;
+			font-weight : bold;
+		}
+		.right_sex{
+			position : relative;
+			top : 2px;
+			margin-left : 20px;
+			font-size : 20px;
+			font-weight : normal;
+		}
+		.right_detail{
+			margin : 80px 0 20px 120px;
+			line-height : 20px;
+			li{
+				display : inline-block;
+				margin-right : 30px;
+				font-size : 14px;
+				.right_detail_title{
+					color : #999;
+					margin-right : 5px;
+				}
+				.right_detail_content{
+					color : #666;
+				}
+			}
+		}
+		.card_detail_line{
+			margin-left : 120px;
+			width : 100%;
+			height : 0;
+			border-bottom : 1px solid #ddd;
+		}
+		.card_detail_record{
+			margin : 20px 0 0 120px;
+			max-height : calc(~'100% - 160px');
+			font-size : 14px;
+			line-height : 24px;
+			overflow : auto;
+			.card_btn{
+				margin-top : 30px;
+			}
+		}
+		.card_detail_record::-webkit-scrollbar {
+			background-color: transparent!important;
+			border-radius: 4px;
+			width: 4px;
+			height: 4px;
+			margin-right: 4px;
+			right: 4px;
+		}
+	}
+}

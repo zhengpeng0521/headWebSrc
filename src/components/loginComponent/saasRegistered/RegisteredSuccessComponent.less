@@ -1,0 +1,66 @@
+@baseName : saas_registered_success;
+@import '../CommonLess.less';
+:global {
+    .@{baseName} {}
+}
+
+.saas_registered_success_box {
+    overflow: hidden;
+    height: 388px;
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    opacity: 0;
+    .common_ani(login_box_ani 300ms linear 300ms forwards);
+}
+
+.saas_registered_success_header {
+    height: 126px;
+    width: 154px;
+    background-image: url(https://img.ishanshan.com/gimg/img/4caa478e99702e1b69cd91f2c475f970);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.common_text(@top) {
+    color: #666;
+    font-size: 14px;
+    margin: auto;
+    text-align: center;
+    margin-top: @top;
+}
+
+.saas_registered_success_text1 {
+    .common_text(35px);
+}
+
+.saas_registered_success_text2 {
+    .common_text(5px);
+}
+
+.saas_registered_success_move_website {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    width: 70%;
+    margin-top: 35px;
+    float: left;
+    margin-left: 15%;
+    background-color: @defaultColor;
+}
+
+.saas_registered_success_move_website:hover {
+    cursor: pointer;
+    background-color: @hoverColor;
+}
+
+.saas_registered_success_move_website:active {
+    cursor: pointer;
+    background-color: @activeColor;
+}

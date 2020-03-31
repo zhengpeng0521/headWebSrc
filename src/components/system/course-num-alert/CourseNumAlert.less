@@ -1,0 +1,42 @@
+/*引入less定义的方法*/
+@import '../../common/less/common.less';
+
+.all{
+    width:100%;
+    padding:0 20px 20px 20px;
+    overflow:hidden;
+}
+/*标题*/
+.title{
+    overflow:hidden;
+    height:25px;
+    margin-bottom:10px;
+}
+.title_block{
+    float:left;
+    height:14px;
+    width:8px;
+    margin-top: 5.5px;
+    background-color:#5d9cec;
+    .borderRadius(3px,3px,3px,3px);
+}
+.title_content{
+    float:left;
+    height:inherit;
+    line-height:25px;
+    margin-left:10px;
+    font-size:1.16rem;
+}
+.course{
+    width:210px;
+    margin-bottom: 40px;
+    margin-left: 18px;
+    height: 28px;
+    line-height: 28px;
+    display:-webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    span,input{
+        margin-right: 5px;
+    }
+}

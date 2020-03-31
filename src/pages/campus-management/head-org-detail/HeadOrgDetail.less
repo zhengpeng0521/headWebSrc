@@ -1,0 +1,27 @@
+/*引入less定义的方法*/
+@import '../../../components/common/less/common.less';
+.all{
+    width : 100%;
+    height : 100%;
+    overflow-x : auto;
+    overflow-y : hidden;
+    display : -webkit-flex;
+    display : flex;
+    flex-wrap : nowrap;
+    height : calc(~'100% - 50px');   /*减去面包屑的高度*/
+}
+.left{
+    height : 100%;
+    margin-right : 10px;
+    background-color : #f7f7f7;
+    .transition(all .3s);
+}
+.left_s{ width : 220px ; min-width : 220px; }
+.left_l{ width : 250px ; min-width : 250px; }
+.right{
+    height : 100%;
+    min-width : 700px;
+    .transition(all .3s);
+}
+.right_s{ width : calc(~'100% - 230px');  /*减去左边占有的宽度*/ }
+.right_l{ width : calc(~'100% - 260px');  /*减去左边占有的宽度*/ }

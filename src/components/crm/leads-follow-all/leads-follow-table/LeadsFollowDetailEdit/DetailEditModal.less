@@ -1,0 +1,46 @@
+/*引入less定义的方法*/
+@import '../../../../common/less/common.less';
+
+:global{
+    .DetailEditModal .ant-modal-body{
+        max-height: 550px;
+        padding: 0;
+        margin: 20px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        .scrollbar();
+    }
+    .DetailEditModal .ant-modal-footer{
+        margin: 0;
+        padding: 0 20px 20px 20px;
+    }
+    .DetailEditModal .ant-form-item{
+        margin-bottom: 10px;
+        margin-left: -10px;
+        &:last-child{
+             margin-bottom:0;
+        }
+    }
+}
+.leads_add_title{
+    height:20px;
+    overflow: hidden;
+    padding:3px 0;
+    margin-bottom: 10px;
+    >div{
+        &:nth-child(1){
+            height:14px;
+            width:8px;
+            background-color: @saas_main_color;
+            margin-right: 10px;
+            float:left;
+            .borderRadius(3px,3px,3px,3px)
+        }
+        &:nth-last-child(1){
+            line-height:13px;
+            font-size:14px;
+            color:#666;
+            float:left;
+        }
+    }
+}

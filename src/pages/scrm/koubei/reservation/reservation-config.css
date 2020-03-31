@@ -1,0 +1,53 @@
+.config-item {
+	overflow: hidden;
+}
+
+.config-item-content {
+	display: inline-flex;
+	border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #e1e1e1;
+}
+
+.config-item-content:hover {
+	background-color: #f1f1f1;
+}
+
+.config-item-label {
+	height: 25px;
+    line-height: 25px;
+    width: 400px;
+}
+
+.config-item-switch {
+	height: 25px;
+    line-height: 25px;
+}
+
+.config-item-gift:hover {
+	background-color: #f1f1f1;
+}
+
+.config-item-gift {
+	border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #e1e1e1;
+    width: 450px;
+}
+
+.config-item-gift-switch {
+	display: inline-flex;
+}
+
+.config-item-gift-content {
+    width: 440px;
+    margin-top: 10px;
+}
+
+.reservation-config-update-btn {
+	width: 400px;
+	height: 40px;
+	margin-left: 23px;
+}

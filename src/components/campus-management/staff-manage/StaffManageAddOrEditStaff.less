@@ -1,0 +1,36 @@
+/*引入less定义的方法*/
+@import '../../common/less/common.less';
+:global{
+    /*新增编辑员工表单内容公共样式*/
+    .zj_staff_add_or_edit_modal .ant-modal-body {
+        padding : 20px;
+        max-height : 550px;
+        overflow-y : auto;
+        overflow-x : hidden;
+        .scrollbar();
+    }
+    .zj_staff_add_or_edit_modal .ant-modal-footer{
+        margin : 0;
+        padding : 0 20px 20px 20px !important;
+    }
+
+    .zj_staff_add_or_edit_modal .ant-select-lg .ant-select-selection--single{
+        height: 28px !important;
+    }
+    .zj_staff_add_or_edit_modal .ant-select-lg .ant-select-selection__rendered{
+        line-height: 28px !important;
+    }
+    /*表单上传图片设置宽高*/
+    .zj_staff_add_or_edit_modal .ant-upload.ant-upload-select-picture-card{
+        width:90px !important;
+        height:90px !important;
+    }
+    /*设置新增和修改员工每一个表单项的上边距*/
+    .zj_staff_add_or_edit_modal .ant-form-item{
+        margin-bottom : 10px;
+        margin-left : -10px;
+        &:last-child{
+            margin-bottom : 0;
+        }
+    }
+}

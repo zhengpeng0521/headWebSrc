@@ -1,0 +1,233 @@
+.doanngo-page1-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/3f25488f17fd0ce4dcac4b999704677e");
+}
+/*第一页样式 开始*/
+.doanngo-page1-title{
+	position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 166px;
+    width: 300px;
+    height: 70px;
+    line-height: 70px;
+    color: #2c6814;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+.doanngo-page1-subTitle{
+	position:absolute;
+	margin:auto;left:0;right:0;
+	padding:10px 20px;
+	top:260px;
+	width:230px;
+	height:130px;
+	line-height:20px;
+
+	color:#666;
+	font-size:12px;
+	overflow:hidden;
+}
+/*第一页样式 结束*/
+
+/*第二页样式 开始*/
+.doanngo-page2-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/31a1e28466f9a26cdcee51ddfb5fa819");
+}
+.doanngo-page2-title{
+	position:absolute;
+	top:39px;
+    margin: auto;left:0;right:0;
+    width:200px;
+    height: 60px;
+    line-height: 60px;
+	background:rgba(255,255,255,.1);
+	border-radius:12px;
+
+	color:#2c6814;
+	font-size:24px;
+	font-weight:bold;
+	text-align:center;
+}
+.doanngo-page2-content{
+	position: absolute;
+    top: 155px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 250px;
+    height: 175px;
+    color: #666;
+    font-size: 12px;
+    overflow: hidden;
+}
+.doanngo-page2-content-item{
+	display:block;
+	width:250px;
+	min-height:20px;
+	line-height:20px;
+	margin:0 auto 5px;
+}
+.doanngo-page2-content-item-label{
+	display:inline-block;
+	box-sizing:border-box;
+	width:60px;
+	height:20px;
+	line-height:20px;
+	vertical-align: top;
+	text-align: right;
+	margin-right:10px;
+	overflow:hidden;
+
+}
+.doanngo-page2-content-item-value{
+	display:inline-block;
+	box-sizing:border-box;
+	width:170px;
+	min-height:20px;
+	line-height:20px;
+}
+/*第二页样式 结束*/
+
+/*第三页样式 开始*/
+.doanngo-page3-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/df6a3f4b1e1b4dbebee397dc5ce889f9");
+}
+/*标题样式*/
+.doanngo-page3-title{
+	position: absolute;
+    top: 39px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    height: 60px;
+    line-height: 60px;
+    width: 250px;
+    text-align: center;
+    font-size: 22px;
+    font-weight:bold;
+    color: #2c6814;
+}
+/*图片 样式*/
+.doanngo-page3-content-item1{
+	position: absolute;
+    top: 118px;
+    left: 38px;
+    width: 120px;
+    height: 121px;
+}
+.doanngo-page3-content-item2{
+	position:absolute;
+	top: 248px;
+    left: 38px;
+    width: 120px;
+    height: 121px;
+}
+.doanngo-page3-content-item3{
+	position:absolute;
+	top: 378px;
+    left: 38px;
+  	width: 120px;
+    height: 121px;
+}
+.doanngo-page3-content-item-image{
+	width:100%;
+	height:100%;
+	border-radius:10px;
+}
+.doanngo-page3-content-item4{
+	position:absolute;
+	top: 132px;
+    left: 176px;
+    width: 110px;
+    height: 85px;
+    color:#666;
+    font-size:13px;
+	overflow:hidden;
+}
+.doanngo-page3-content-item5{
+	position:absolute;
+	top: 262px;
+    left: 176px;
+    width: 110px;
+    height: 85px;
+    color:#666;
+    font-size:13px;
+	overflow:hidden;
+}
+.doanngo-page3-content-item6{
+	position:absolute;
+	top: 392px;
+    left: 176px;
+    width: 110px;
+    height: 85px;
+    color:#666;
+    font-size:13px;
+    overflow:hidden;
+}
+/*第三页样式 结束*/
+
+/*第四页样式 开始*/
+.doanngo-page4-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/3c7d17105b9b1e7cdb4f3d68396cc46d");
+}
+.doanngo-page4-title,.doanngo-page5-title{
+	position:absolute;
+	top: 40px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width:200px;
+    height: 60px;
+    line-height: 60px;
+
+	color:#2c6814;
+	font-size:24px;
+	font-weight:bold;
+	text-align:center;
+}
+
+.doanngo-page4-content-item1{
+	position: absolute;
+    top: 118px;
+    left: 38px;
+    width: 120px;
+    height: 121px;
+}
+
+.doanngo-page4-content-item2{
+	position:absolute;
+	top: 118px;
+    left: 167px;
+    width: 120px;
+    height: 121px;
+}
+.doanngo-page4-content-item-image{
+	width:100%;
+	height:100%;
+	border-radius:10px;
+}
+.doanngo-page4-content-value{
+	position: absolute;
+    top: 250px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 240px;
+    height: 130px;
+    padding: 20px 5px 5px;
+    color: #666;
+    font-size: 12px;
+    overflow: hidden;
+}
+/*第四页样式 结束*/
+
+/*第五页样式 结束*/
+.doanngo-page5-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/caa43c99b74633d882f05a7558eade38");
+}
+.doanngo-page5-title{
+	top:39px;
+	font-size:21px;
+}

@@ -1,0 +1,189 @@
+@import '../../lib.less';
+/*
+ * 收缩模式下的菜单样式
+ */
+:global {
+
+    .common_layout_left_menu_shrink .ant-menu-vertical > .ant-menu-submenu > .ant-menu-submenu-title {
+        padding: 0;
+    }
+
+    .common_layout_left_menu_shrink .ant-menu-item-group-list > .ant-menu-submenu > .ant-menu-submenu-title {
+        padding: 0;
+    }
+
+    /*张开的菜单样式*/
+    .common_layout_left_menu_shrink .ant-menu-item-group-title {
+        padding: 0;
+    }
+
+    /*二级菜单 默认*/
+    .common_layout_left_menu_shrink .ant-menu-submenu-title {
+        height: 50px!important;
+        background-color: #384354;
+        line-height: 58px!important;
+        text-align: center;
+    }
+
+     /*二级菜单 默认字体*/
+    .common_layout_left_menu_shrink .ant-menu-submenu-vertical > .ant-menu-submenu-title:after {
+        display: none;
+    }
+
+    /*二级菜单 展开时 字体*/
+    .common_layout_left_menu_shrink .ant-menu-submenu-open .ant-menu-submenu-title span {
+        color: #4E9FF8;
+    }
+
+    /*二级菜单 鼠标经过*/
+    .common_layout_left_menu_shrink .ant-menu-submenu-title:hover {
+        background-color: #3E4859;
+    }
+
+    /*二级菜单 默认 箭头*/
+    .common_layout_left_menu_shrink .ant-menu-submenu-inline > .ant-menu-submenu-title:after {
+        color: rgba(159,170,190,0.3);
+    }
+
+    /*二级菜单 展开时 箭头*/
+    .common_layout_left_menu_shrink .ant-menu-submenu-open > .ant-menu-submenu-title:after {
+        color: rgba(78,159,248,0.3);
+    }
+
+    /*收缩时的一级菜单 是子菜单项时（首页菜单）*/
+    .common_layout_left_menu_shrink .ant-menu-vertical > .ant-menu-item {
+        padding-top: 4px;
+    }
+
+    /*收缩时的一级菜单 是子菜单项时（首页菜单）*/
+    .common_layout_left_menu_shrink .ant-menu-vertical .ant-menu-vertical .ant-menu-item {
+        padding-top: 0;
+    }
+
+    /*默认的三级菜单*/
+    .common_layout_left_menu_shrink .ant-menu-item {
+        background-color: #313B4B;
+        font-size: 14px;
+        color: #9FAABE;
+        line-height: 50px!important;
+        height: 50px!important;
+        text-align: center;
+        padding: 0;
+    }
+
+    /*三级菜单 鼠标经过*/
+    .common_layout_left_menu_shrink .ant-menu-item:hover {
+        background-color: #374050;
+        color: #4E9FF8;
+    }
+
+    /*三级菜单 选中时*/
+    .common_layout_left_menu_shrink .ant-menu-submenu-selected .ant-menu-submenu-title {
+        color: #4E9FF8;
+        background-color: #E9E8ED!important;
+//        border-left: 8px solid #4E9FF8;
+    }
+
+    .common_layout_left_menu_shrink .ant-menu-submenu-selected .ant-menu-submenu-title:before {
+        content: ' ';
+        width: 8px;
+        height: 50px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #4E9FF8;
+    }
+
+    /*三级菜单 选中时 */
+    .common_layout_left_menu_shrink .ant-menu-item-selected {
+        color: #4E9FF8;
+        background-color: #E9E8ED!important;
+//        border-left: 8px solid #4E9FF8;
+    }
+
+    .common_layout_left_menu_shrink .ant-menu-item-selected:before {
+        content: ' ';
+        width: 8px;
+        height: 50px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #4E9FF8;
+    }
+
+    /*三级菜单 选中时 */
+    .common_layout_left_menu_shrink .ant-menu-submenu-selected .ant-menu-item-selected {
+        color: #4E9FF8;
+        background-color: #313B4B!important;
+        border-left: 0;
+    }
+
+    /*三级菜单 选中时 */
+    .common_layout_left_menu_shrink .ant-menu-submenu-selected .ant-menu-item-selected:before {
+        display: none;
+    }
+
+    /*二级菜单分组时*/
+    .common_layout_left_menu_shrink .ant-menu-item-group .ant-menu-item-group-list {
+        border-top: 1px solid #2D3847;
+//        border-bottom: 1px solid #2D3847;
+        background-color: #424C5C;
+        margin-top: 1px;
+        padding-top: 1px;
+//        padding-bottom: 1px;
+    }
+
+    /*二级菜单分组时 块的分割线颜色*/
+    .common_layout_left_menu_shrink .ant-menu-item-group {
+        background-color: #343E4D;
+//        padding-bottom: 1px;
+    }
+
+    .common_layout_left_menu_shrink .ant-menu-item-group .ant-menu-item-group-list .ant-menu-submenu:first-child {
+        padding-top: 10px;
+    }
+
+    .common_layout_left_menu_shrink .ant-menu-item-group .ant-menu-item-group-list .ant-menu-submenu:last-child {
+        padding-bottom: 10px;
+    }
+
+    .common_layout_left_menu_shrink .ant-menu-submenu {
+        background-color: #384354!important;
+    }
+
+    .common_layout_left_menu_shrink .anticon {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .common_layout_left_menu_shrink .ant-menu-submenu-open .ant-menu-sub {
+        border-radius: 10px;
+    }
+    .common_layout_left_menu_shrink .ant-menu-submenu-open .ant-menu-sub .ant-menu-item {
+        border-radius: 10px;
+    }
+
+    /*定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸*/
+    .common_layout_left_menu_shrink::-webkit-scrollbar {
+        background-color: transparent!important;
+        border-radius: 5px;
+        width: 8px;
+        margin-right: 5px;
+        right: 5px;
+    }
+
+    /*定义滑块，内阴影及圆角*/
+    .common_layout_left_menu_shrink::-webkit-scrollbar-thumb {
+        background-color: rgba(88,100,118,0.4);;
+        border-radius: 5px;
+    }
+    /*滚动条按钮*/
+    .common_layout_left_menu_shrink::-webkit-scrollbar-button {
+        height: 0;
+    }
+    /*定义滚动条的轨道，内阴影及圆角*/
+    .common_layout_left_menu_shrink::-webkit-scrollbar-track {
+        background-color: rgba(0,0,0,0.1);
+        border-radius: 5px;
+    }
+}

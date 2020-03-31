@@ -1,0 +1,51 @@
+/*引入less定义的方法*/
+@import '../../common/less/common.less';
+
+.all{
+    width:100%;
+    padding:0 20px 20px 20px;
+    overflow:hidden;
+}
+/*标题*/
+.title{
+    overflow:hidden;
+    height:25px;
+    margin-bottom:10px;
+}
+.title_block{
+    float:left;
+    height:14px;
+    width:8px;
+    margin-top: 5.5px;
+    background-color:@saas_main_color;
+    .borderRadius(3px,3px,3px,3px);
+}
+.title_content{
+    float:left;
+    height:inherit;
+    line-height:25px;
+    margin-left:10px;
+    font-size:1.16rem;
+}
+:global{
+    .zj_set_classScheduleTimeSet_form{
+        width:100%;
+        margin-bottom: 40px;
+        >div{
+            margin-bottom: 10px;
+            display: -webkit-flex;
+            display: flex;
+            &:before{
+                margin-right: 4px;
+                content: "*";
+                font-family: SimSun;
+                line-height: 1;
+                font-size: 12px;
+                color: #f04134;
+            }
+        }
+        .ant-input-group-addon{
+            background-color: #fff;
+        }
+    }
+}

@@ -1,0 +1,6 @@
+[
+    { "label" : "主教" , "value" : "mtNames" },
+    { "label" : "校区" , "value" : "orgName" },
+    { "label" : "教室" , "value" : "roomName" },
+    { "label" : "上课时间" , "value" : "studyDate" }
+]

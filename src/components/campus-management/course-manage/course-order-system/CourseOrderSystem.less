@@ -1,0 +1,94 @@
+/*引入less定义的方法*/
+@import '../../../common/less/common.less';
+
+:global{
+    .course_order_system_modal .ant-modal-body{
+        padding: 10px 20px 20px 20px;
+        height: 510px;
+    }
+    .course_order_system_modal .ant-modal-footer{
+        margin: 0;
+        padding: 0 20px 20px 20px;
+    }
+    .course_order_system_add_or_edit_modal .ant-modal-body{
+        padding: 20px;
+        max-height: 510px;
+    }
+    .course_order_system_add_or_edit_modal .ant-modal-footer{
+        margin: 0;
+        padding: 0 20px 20px 20px;
+    }
+    .course_order_system_add_or_edit_modal_list .ant-modal-footer{
+        margin: 0;
+        padding-bottom:20px;
+        text-align: center !important;
+    }
+    .course_order_system_add_or_edit_modal .ant-form-item{
+        height:28px;
+        margin-left: -20px;
+        margin-bottom: 6px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+     .ant-popover-message{
+        padding: 0 !important;
+    }
+}
+.all{
+    height:470px;
+    width:100%;
+}
+.thead{
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    border-bottom: 1px solid #ddd;
+}
+.bottom_text{
+    padding-top: 10px;
+}
+.relevance{
+    margin-top: 10px;
+}
+.th_item{
+    height:40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.16rem;
+    color:#666;
+    padding:0 20px;
+    &:first-child{
+        text-align: left;
+    }
+    &:last-child{
+        text-align: right;
+    }
+}
+.trow{
+    height:calc(~'100% - 40px');
+    overflow: auto;
+    .scrollbar();
+}
+.tr{
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.tr_item{
+    padding:0 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    .textOverflow(ellipsis);
+        &:first-child{
+        text-align: left;
+    }
+    &:last-child{
+        text-align: right;
+    }
+}

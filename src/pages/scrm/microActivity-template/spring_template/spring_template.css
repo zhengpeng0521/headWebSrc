@@ -1,0 +1,238 @@
+.spring-page1-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/e75f7f904eceab61e22ca42d4fca352e");
+}
+/*第一页样式 开始*/
+.spring-page1-title{
+	position:absolute;
+	top: 43px;
+	margin:auto;left:0;right:0;
+    width: 236px;
+    height: 67px;
+    line-height: 67px;
+
+    color: #47A31E;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+}
+.spring-page1-subTitle{
+	position:absolute;
+	margin:auto;left:0;right:0;
+	padding:10px;
+	top:310px;
+	width:230px;
+	min-height:30px;
+	line-height:20px;
+
+	color:#666;
+	font-size:14px;
+}
+/*第一页样式 结束*/
+
+/*第二页样式 开始*/
+.spring-page2-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/bf1ec06284cb3498c5e831863937c934");
+}
+.spring-page2-title{
+	position:absolute;
+	top: 39px;
+	margin:auto;left:0;right:0;
+    width: 236px;
+    height: 67px;
+    line-height: 67px;
+
+	color:#47A31E;
+	font-size:24px;
+	font-weight:bold;
+	text-align:center;
+}
+.spring-page2-content{
+	position:absolute;
+	top: 170px;
+    width: 240px;
+    height: 185px;
+    padding:10px;
+    margin: auto;
+    left: 0;right:0;
+    color:#666;
+    font-size:14px;
+
+    overflow:hidden;
+}
+.spring-page2-content-item{
+	display:block;
+	width:240px;
+	min-height:20px;
+	line-height:20px;
+	margin:0 auto 5px;
+}
+.spring-page2-content-item-label{
+	display:inline-block;
+	box-sizing:border-box;
+	width:60px;
+	height:20px;
+	line-height:20px;
+	vertical-align: top;
+	text-align: right;
+	margin-right:10px;
+	overflow:hidden;
+
+}
+.spring-page2-content-item-value{
+	display:inline-block;
+	box-sizing:border-box;
+	width:160px;
+	min-height:20px;
+	line-height:20px;
+}
+/*第二页样式 结束*/
+
+/*第三页样式 开始*/
+.spring-page3-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/aa3aca089f451e2a57c9ab8928bfbc2c");
+}
+/*标题样式*/
+.spring-page3-title{
+	position: absolute;
+    top: 32px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    height: 67px;
+    line-height: 67px;
+    width:240px;
+
+    text-align: center;
+    font-size: 22px;
+    font-weight:bold;
+    color: #47A31E;
+}
+/*图片 样式*/
+.spring-page3-content-item1{
+	position: absolute;
+    top: 128px;
+    left: 46px;
+    width: 95px;
+    height: 95px;
+}
+.spring-page3-content-item2{
+	position:absolute;
+	top: 262px;
+    left: 46px;
+   	width: 95px;
+    height: 95px;
+}
+.spring-page3-content-item3{
+	position:absolute;
+	top: 395px;
+    left: 46px;
+    width: 95px;
+    height: 95px;
+}
+.spring-page3-content-item-image{
+	width:100%;
+	height:100%;
+}
+.spring-page3-content-item{
+	position:absolute;
+	box-sizing:border-box;
+    left: 175px;;
+    width: 120px;
+    height: 120px;
+    padding:25px 10px;
+    color:#666;
+    font-size:12px;
+	overflow:hidden;
+}
+.spring-page3-content-item4{
+	top: 115px;
+}
+.spring-page3-content-item5{
+	top: 248px;
+}
+.spring-page3-content-item6{
+	top: 382px;
+}
+/*第三页样式 结束*/
+
+/*第四页样式 开始*/
+.spring-page4-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/41670fb58e556636421178e446d02c18");
+}
+.spring-page4-title,.spring-page5-title{
+	position:absolute;
+    margin: auto;
+	top: 32px;
+    left: 0;
+    right: 0;
+    width:200px;
+    height: 67px;
+    line-height: 67px;
+
+	color:#47A31E;
+	font-size:24px;
+	font-weight:bold;
+	text-align:center;
+}
+
+.spring-page4-content-item1{
+	position:absolute;
+	top: 126px;
+    left: 48px;
+    width: 98px;
+    height: 98px;
+}
+
+.spring-page4-content-item2{
+	position:absolute;
+	top: 126px;
+    left: 182px;
+   	width: 98px;
+    height: 98px;
+}
+.spring-page4-content-item-image{
+	width:100%;
+	height:100%;
+}
+.spring-page4-content-value{
+	position:absolute;
+	top: 274px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 232px;
+    height: 168px;
+    padding: 10px 8px 5px;
+	color:#666;
+	font-size:14px;
+	overflow:hidden;
+}
+/*第四页样式 结束*/
+
+/*第五页样式 结束*/
+.spring-page5-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/968e76ceaa690ab0e7c2855a0d9d729c");
+}
+.spring-page5-title{
+	top:32px;
+	color:#47A31E;
+}
+.spring-page5-name,.spring-page5-phone{
+	position:absolute;
+	top:154px;
+	margin:auto;left:0;right:0;
+	width:160px;
+	height:38px;
+	line-height:38px;
+
+	text-align:center;
+	font-size:18px;
+	color:#666;
+
+
+}
+.spring-page5-phone{
+	top:215px;
+}
+
+/*第五页样式 结束*/

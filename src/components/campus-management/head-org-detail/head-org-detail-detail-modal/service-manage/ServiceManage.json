@@ -1,0 +1,6 @@
+[
+    { "key" : "confText" , "value" : "服务名称" , "width" : "20%"  },
+    { "key" : "secondValue" , "value" : "课件可见人" , "width" : "40%"  },
+    { "key" : "confValue" , "value" : "课件开启" , "width" : "20%"},
+    { "key" : "print" , "value" : "打印开启" , "width" : "20%"}
+]

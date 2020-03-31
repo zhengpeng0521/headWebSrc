@@ -1,0 +1,90 @@
+/*引入less定义的方法*/
+@import '../../common/less/common.less';
+
+:global{
+	.yhwu_course_modal_content{
+
+	}
+	.yhwu_course_modal_content .ant-modal-content{
+
+    }
+    .yhwu_course_modal_content .ant-modal-header{
+        background-color : #5D9CEC;
+    }
+    .yhwu_course_modal_content .ant-modal-body{
+        padding : 20px 20px 0 20px;
+        overflow-y : auto;
+        max-height : 500px;
+        .scrollbar();
+    }
+    .yhwu_course_modal_content .ant-modal-footer{
+        padding : 0 20px 20px 20px;
+		margin : 0;
+    }
+
+    .yhwu_modal_content{
+        max-height : 700px;
+    }
+    .yhwu_modal_content .ant-modal-content{
+        max-height : 700px;
+    }
+    .yhwu_modal_content .ant-modal-header{
+        background-color : #5D9CEC;
+    }
+    .yhwu_modal_content .ant-modal-body{
+        margin : 0;
+        padding : 30px 20px 0 30px;
+        overflow-y : auto;
+        max-height : 570px;
+    }
+    .yhwu_modal_content .ant-modal-footer{
+        padding : 0 20px 20px 20px;
+        margin:0;
+    }
+    .yhwu_modal_content .ant-modal-title{
+        font-size : 16px;
+    }
+    .yhwu_modal_content .ant-form-item{
+        margin-bottom : 20px;
+    }
+    .yhwu_modal_content .ant-form-extra{
+        color : red;
+        line-height : 12px;
+        margin-top : 6px;
+    }
+    .yhwu_modal_content .ant-form-explain{
+        line-height : 16px;
+        margin-top : 6px;
+    }
+    .yhwu_modal_content .ant-upload.ant-upload-select-picture-card{
+        margin-bottom : 0;
+    }
+    .yhwu_modal_content .ant-upload.ant-upload-select-picture-card>.ant-upload{
+        padding : 24px 0 0 0;
+    }
+    .yhwu_modal_content .ant-btn{
+        padding : 4px 24px;
+        border-radius : 5px;
+    }
+    .yhwu_base_setting{
+        margin-bottom:20px;
+        .ant-form-item{
+            margin-left: -15px;
+        }
+    }
+    .yhwu_base_setting::before{
+        content : '';
+        display : inline-block;
+        width : 6px;
+        height : 14px;
+        margin-right : 10px;
+        background : #5D9CEC;
+        vertical-align : middle;
+    }
+    .yhwu_base_setting>span{
+        display : inline-block;
+        vertical-align : middle;
+        font-size : 16px;
+    }
+
+}

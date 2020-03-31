@@ -1,0 +1,75 @@
+.header_wrap{
+	position : relative;
+	width : 100%;
+	height : 196px;
+	background : #fff;
+}
+.header_wrap:before{
+	position : absolute;
+	content : '';
+	top: 20px;
+	left : 20px;
+	width : 40px;
+	height : 40px;
+	border-radius : 50%;
+	background-image : url( 'https://img.ishanshan.com/gimg/img/76b4f9887dbe6d49f80218c85901a0ca' );
+	background-size : cover;
+}
+.close_detail{
+	position : absolute;
+	top : 18px;
+	right : 20px;
+	color : #666666;
+	height : 16px;
+	cursor : pointer;
+//	transition : transform .3s linear;
+}
+.close_detail:hover{
+	transform : rotate( 180deg );
+}
+.detail_title{
+	position : absolute;
+	top : 32px;
+	left : 80px;
+	height : 16px;
+	line-height : 16px;
+	font-size : 16px;
+	color : #666;
+}
+.detail_time{
+	margin-left : 10px;
+	background : #ddd;
+	border-radius : 5px;
+	padding : 0 10px;
+	font-size : 14px;
+
+}
+.btn_group{
+	position : relative;
+	top : 134px;
+	left : 80px;
+}
+:global{
+	.order_detail_content{
+		width : 100%;
+		position : relative;
+		top : 76px;
+		left : 80px;
+		height : 14px;
+		line-height : 14px;
+		font-size : 14px;
+		li{
+			display : inline-block;
+			width : 33%;
+			margin-bottom : 10px;
+			color : #999;
+			span{
+				display : inline-block;
+				width : 226px;
+				color : #666;
+				vertical-align : bottom;
+				overflow : hidden;
+			}
+		}
+	}
+}

@@ -1,0 +1,10 @@
+[
+    { "name" : "序号" , "width" : "7%" , "id" : "num" },
+    { "name" : "姓名" , "width" : "13%" , "id" : "name" },
+    { "name" : "昵称" , "width" : "13%" , "id" : "nickname" },
+    { "name" : "家长电话" , "width" : "15%" , "id" : "mobile" },
+    { "name" : "性别" , "width" : "7%" , "id" : "sex" },
+    { "name" : "类型" , "width" : "9%" , "id" : "zj_type" },
+    { "name" : "家长签到" , "width" : "13%" , "id" : "parent" },
+    { "name" : "备注" , "width" : "23%" , "id" : "remark" }
+]

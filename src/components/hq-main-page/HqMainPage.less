@@ -1,0 +1,226 @@
+/*引入less定义的方法*/
+@import '../common/less/common.less';
+
+.home_all{
+    height : 100%;
+    width : 100%;
+    //padding :10px 10px 0 10px;
+    background: #DFDFE5;
+    border-radius: 10px;
+    overflow: auto;
+    margin-top: 50px;
+}
+.home_top{
+    width: calc(~'100vw - 166px');
+    // height:28px;
+    line-height:28px;
+    display: flex;
+    color:#666;
+    font-size:12px;
+    // margin: 10px 0 0 10px;
+    background: #fff;
+    position: fixed;
+    top: 50px;
+    left: 150px;
+    z-index: 999;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+.home_top_select{
+    margin-left: 8px;
+}
+.home_title{
+    width:100%;
+    height:14px;
+    line-height: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    display: flex;
+    color:#666;
+    font-size:14px;
+}
+.home_title span:nth-child(1){
+    display: block;
+    width:8px;
+    height:14px;
+    background: #5D9CEC;
+    border-radius: 2px;
+    margin-right: 6px;
+}
+.home_card{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+}
+.home_rank{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+.home_rank_item{
+    width:420px;
+    height:534px;
+    background: #fff;
+    float: left;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding:0 20px;
+}
+.home_rank_item_title{
+    margin-top: 20px;
+    height:22px;
+    line-height: 12px;
+    border-bottom: 1px solid #ddd;
+    color:#666;
+    font-size:12px;
+}
+.home_rank_item_list{
+    width: 100%;
+    height:492px;
+    overflow: auto;
+}
+.home_rank_item_item{
+    margin-top:20px;
+    height:12px;
+    line-height: 12px;
+}
+.home_rank_item_item span:nth-child(1){
+    display: block;
+    width: 20px;
+    height:12px;
+    line-height: 12px;
+    margin-right: 15px;
+    text-align: center;
+    float:left;
+}
+.home_rank_item_item span:nth-child(2){
+    display: block;
+    width: 200px;
+    height:12px;
+    line-height: 12px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+    float:left;
+}
+.home_rank_item_item span:nth-child(3){
+    display: block;
+    width: auto;
+    height:12px;
+    line-height: 12px;
+    float:right;
+    text-align: right;
+    color:#5D9CEC;
+}
+:global{
+    .home_card_item_Lv1{
+        width:calc(~'(100% - 50px)/5');
+        min-width: 290px;
+        height:130px;
+        background: #fff;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        float: left;
+        position: relative;
+        cursor: pointer;
+    }
+    .home_card_item_Lv2{
+        width:calc(~'(100% - 40px)/4');
+        min-width: 290px;
+        height:130px;
+        background: #fff;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        float: left;
+        position: relative;
+        cursor: pointer;
+    }
+    .home_card_item_Lv3{
+        width:calc(~'(100% - 30px)/3');
+        min-width: 290px;
+        height:130px;
+        background: #fff;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        float: left;
+        position: relative;
+        cursor: pointer;
+    }
+    .home_card_item_Lv1 .ant-card-body,
+    .home_card_item_Lv2 .ant-card-body,
+    .home_card_item_Lv3 .ant-card-body,
+    .home_card_item_Lv4 .ant-card-body{
+        padding : 20px 20px !important;
+        height:100%;
+    }
+    .home_card_item_icon{
+        width:50px;
+        height:50px;
+        border-radius: 50%;
+        float: left;
+        background: #5D9CEC;
+        margin-right: 10px;
+        margin-top:20px;
+    }
+    .home_card_item_icon img{
+        width:50px;
+        height:50px;
+        display: block;
+
+    }
+    .home_card_item_title{
+//        height: 50px;
+//        line-height: 50px;
+//        color:#666;
+        font-size: 14px;
+//        width:auto;
+//        float: left;
+        text-align: right;
+        width : 100%;
+//        margin-bottom: 8px;
+//        margin-top: 5px;
+    }
+    .home_card_item_date{
+        width: 70%;
+        float: right;
+        height:auto;
+        position: absolute;
+        right: 20px;
+    }
+    .home_card_item_date_top{
+        font-size:34px;
+        color:#666;
+        text-align: right;
+        width:100%;
+        height:30px;
+        float: right;
+        line-height:30px;
+        overflow: hidden;
+        margin-bottom: 6px;
+//        text-overflow:ellipsis;
+//        white-space:nowrap;
+    }
+    .home_card_item_date_bot{
+        width:100%;
+        height:12px;
+        line-height: 12px;
+        margin-top: 4px;
+        float: right;
+        text-align: right;
+        font-size:12px;
+
+    }
+    .home_card_item_date_time{
+        color:#666;
+    }
+    .home_card_item_date_per{
+        color:#54AC41;
+        padding-left: 8px;
+    }
+}

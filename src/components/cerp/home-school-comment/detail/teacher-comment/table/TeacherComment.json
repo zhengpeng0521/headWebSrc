@@ -1,0 +1,7 @@
+[
+    { "key" : "stu_name" , "value" : "学员姓名" , "width" : "15%" },
+    { "key" : "score" , "value" : "综合评分" , "width" : "25%" },
+    { "key" : "comment" , "value" : "老师点评" , "width" : "30%" },
+    { "key" : "pic_num" , "value" : "上课图片" , "width" : "10%" },
+    { "key" : "operation" , "value" : "操作" , "width" : "20%" }
+]

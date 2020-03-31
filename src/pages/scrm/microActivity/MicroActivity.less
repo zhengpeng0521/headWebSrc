@@ -1,0 +1,484 @@
+.game_general_base {
+    background-color: white;
+    min-height: 100%;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.labeGroup {
+    padding: 8px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+}
+
+.labeTitle {
+    height: 100%;
+    color: #000;
+    font-weight: 600;
+    margin-right: 10px;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.labelChild {
+    margin-right: 14px;
+    word-break: keep-all;
+    white-space: nowrap;
+    display: inline-block;
+    line-height: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0 5px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.activity_label {
+    padding: 8px 0;
+    padding-left: 10px;
+    min-width: 1336px;
+}
+
+.labelAll {
+    cursor: pointer;
+    margin-right: 14px;
+    white-space: nowrap;
+    font-size: 14px;
+    padding: 0 5px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.labeContent {
+    width: calc(~'100% - 45px - 40px');
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.active_main {
+    background: #F0F0F4;
+    margin-right: 5px;
+    border-radius: 5px;
+    min-height: 635px;
+    padding-bottom: 60px;
+    min-width: 1336px;
+}
+
+.label_operation {
+    width: 4%;
+}
+
+.active_clearance {
+    height: 4px;
+    clear: both;
+    background: #5D9CEC;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.activity_div {
+    /*  width: calc((100% - 250px) / 4); */
+    background: #fff;
+    margin-left: 20px;
+    margin-right: 10px;
+    float: left;
+    margin-bottom: 30px;
+    height: 306px;
+    width: 240px;
+    position: relative;
+    // border-radius: 10px;
+    border-radius: 5px;
+    opacity: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.game_item_rightHot{
+    top: 0;
+    right: 6px;
+    position: absolute;
+    z-index: 1;
+}
+
+.game_item_rightHot>img{
+    width: 39px;
+    height: 28px;
+}
+
+.activity_div:hover {
+    box-shadow: 10px 10px 15px 2px #c5c5c5;
+}
+
+.activity_div:hover .codeModalActive {
+    opacity: 1;
+}
+
+.activity_div_img {
+    width: 100%;
+    height: 220px;
+    // border-radius: 5px;
+}
+
+.general_use_number {
+    position: absolute;
+    height: 26px;
+    background-color: black;
+    width: 100%;
+    bottom: 100px;
+    opacity: 0.6;
+}
+
+.general_game_acitity_list {
+    clear: both;
+    min-height: 400px;
+    padding-top: 20px;
+    padding-left: 55px;
+    box-sizing: border-box;
+    min-width: 1336px;
+}
+
+.Oractivity_div_open_status {
+    font-size: 14px;
+    margin-left: 10px;
+    line-height: 28px;
+    color: #FF928A;
+    cursor: default;
+}
+
+.general_use_number_p_left {
+    position: absolute;
+    bottom: 100px;
+    color: white;
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.general_use_number_p_right {
+    float: left;
+    bottom: 100px;
+    color: #2db7f5;
+    font-size: 12px;
+    line-height: 26px;
+}
+
+.activity_div_botton_div {
+    height: 76px;
+    background: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.activity_div_useNum{
+    margin-left: 10px;
+    display: inline-block;
+    line-height: 25px;
+    color: #999;
+    font-size: 12px;
+}
+
+.activity_icon_usernum{
+    line-height: 25px;
+    margin-right: 6px;
+    font-size: 14px;
+}
+
+.activity_div_title {
+    font-size: 14px;
+    text-align: left;
+    // padding: 5px 0px 0px 0px;
+    padding: 15px 0px 5px 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-overflow: ellipsis;
+    // color: #666;
+    color: #333;
+    cursor: default;
+}
+
+.active_footer {
+    text-align: center;
+}
+
+.general_custom {
+    clear: both;
+    font-size: 14px;
+    margin-right: 40px;
+}
+
+.activity_div_sub_title {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+    // height: 20px;
+    // margin-bottom: 13px;
+    overflow: hidden;
+    // margin-top: 2px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #999;
+    cursor: default;
+}
+
+.codeModalActive {
+    opacity: 0;
+    width: 220px;
+    height: 220px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    // border-radius: 5px;
+    top: 10px;
+    -webkit-transition: opacity ease-in-out .4s;
+    -moz-transition: opacity ease-in-out .4s;
+    -o-transition: opacity ease-in-out .4s;
+    transition: opacity ease-in-out .4s;
+}
+
+.codeUrlActive {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    // top: 19px;
+    top: 40px;
+    width: 140px;
+    height: 140px;
+    padding: 5px;
+    background: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.searchContent {
+    height: 46px;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+
+.codeName {
+    position: absolute;
+    top: 58px;
+    left: 58px;
+    height: 30px;
+    width: 30px;
+    background: #fff;
+    line-height: 1;
+    color: #5d9cec;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 700;
+    padding: 4px 0px;
+    font-size: 12px;
+}
+
+[data-name='microActivity'] {
+    overflow: hidden;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.zyf_micro_activity_search_ontent {
+    height: 35px;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 6px;
+    padding-left: 10px;
+}
+
+.zyf_micro_activity_search_item {
+    margin-right: 10px;
+}
+
+.zyf_micro_activity_search_button_group {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+
+.zyf_micro_activity_search_button_group button {
+    margin-right: 10px;
+}
+
+.zyf_micro_activity_check_or_pickup_more_tag {
+    position: relative;
+    height: 25px;
+    margin: 0 auto;
+    width: 80px;
+    background: #fff;
+    cursor: pointer;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.zyf_micro_activity_check_or_pickup_more_tag>div {
+    height: inherit;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.zyf_micro_activity_check_or_pickup_more_tag_font {
+    margin-right: 3px;
+}
+
+.zyf_micro_activity_check_more_tag {
+    position: absolute;
+    font-size: 14px;
+    right: 13px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.zyf_micro_activity_pickup_more_tag {
+    position: absolute;
+    font-size: 12px;
+    right: 13px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.gameOractivity_div_select_button {
+    // margin-right: 10px;
+    float: right;
+    background: #5D9CEC;
+    border-color: #5D9CEC;
+}
+
+.gameOractivity_div_select_button2 {
+    // margin-right: 10px;
+    float: right;
+    background: #5D9CEC;
+    border-color: #5D9CEC;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.activity_modal_box{
+    display: flex;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.activity_modal_left_box{
+    width: 311px;
+    height: 500px;
+}
+
+.activity_modal_left_box>img{
+    width: 100%;
+    height: 100%;
+}
+
+.activity_modal_right_box{
+    width: 329px;
+    margin-left: 30px;
+    position: relative;
+}
+
+.activity_modal_right_title{
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.activity_modal_right_type{
+    font-size: 12px;
+    color: #333;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.activity_modal_right_icon{
+    width: 6px;
+    height: 6px;
+    background: #5D9CEC;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.activity_modal_right_typeText{
+    font-size: 12px;
+    color: #5D9CEC;
+    padding-left: 12px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+
+.activity_modal_right_textIcon{
+    padding: 4px 6px;
+    background: #E0F1FF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.activity_modal_right_intro{
+    font-size: 12px;
+    color: #999;
+}
+
+.activity_modal_right_download{
+    margin-top: 8px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.activity_modal_right_downText{
+    text-decoration: underline;
+    color: #5D9CEC;
+}
+
+.activity_modal_right_other{
+    margin-bottom: 32px;
+    display: inline-block;
+}
+
+.activity_modal_right_imgs{
+    width: 70px;
+    height: 70px;
+    background: #ddd;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.activity_modal_right_qrbox{
+    padding-left: 4px;
+    box-sizing: border-box;
+}
+
+.activity_modal_right_qrimg{
+    width: 132px;
+    height: 132px;
+}
+
+.activity_modal_right_qrbox>p{
+    margin-left: 43px;
+}

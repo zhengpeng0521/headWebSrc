@@ -1,0 +1,221 @@
+/*定义less方法*/
+/*定义主色调*/
+/*搜索框表单项宽度*/
+/*ghost按钮经过颜色*/
+/*primary按钮经过颜色*/
+/*按钮点击颜色*/
+/*状态选项默认色(蓝色)*/
+/*状态选项淡蓝色*/
+/*状态选项红色*/
+/*状态选项深红色*/
+/*状态选项灰色*/
+/*状态选项黄色*/
+/*状态选项绿色*/
+/*详情页编辑右边更多操作按钮颜色*/
+/*漏斗图颜色自下而上*/
+/*滚动条*/
+/*不可选中不可复制*/
+/*圆角*/
+/*渐变*/
+/*转换*/
+/*动画结束后状态*/
+/*双色线性渐变*/
+/*三色线性渐变*/
+/*自定义线性渐变*/
+/*文本溢出*/
+/*box-shadow*/
+:global .follow_record_content {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 84px);
+  border-top: #5d9cec 4px solid;
+}
+:global .follow_record_content_left {
+  position: relative;
+  width: 440px;
+  background: #f1f1f1;
+  height: 100%;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+:global .follow_record_content_left::-webkit-scrollbar {
+  background-color: transparent!important;
+  border-radius: 4px;
+  width: 4px;
+  height: 4px;
+  margin-right: 4px;
+  right: 4px;
+}
+:global .card_pagination {
+  position: absolute;
+  bottom: 14px;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: right;
+  padding-right: 20px;
+  background: #f1f1f1;
+}
+:global .follow_record_list_item {
+  position: relative;
+  width: 400px;
+  height: 100px;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+:global .follow_record_list_item:hover {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+:global .follow_record_list_item:last-child {
+  margin-bottom: 0;
+}
+:global .follow_record_list_item .active_span {
+  margin-left: 5px;
+  color: #ffffff;
+  display: inline-block;
+}
+:global .follow_record_list_item .span_name {
+  margin-left: 5px;
+  color: #333333;
+  display: inline-block;
+}
+:global .follow_record_list_item .follow_record_img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+:global .follow_record_list_item .follow_record_img img {
+  width: 100%;
+  height: 100%;
+}
+:global .follow_record_text {
+  position: absolute;
+  max-width: 140px;
+  height: 20px;
+  line-height: 18px;
+  overflow: hidden;
+}
+:global .follow_record_name {
+  top: 18px;
+  left: 80px;
+  background: #5d9cec;
+  padding: 0 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #fff;
+}
+:global .follow_record_time {
+  top: 44px;
+  left: 80px;
+  color: #999;
+}
+:global .follow_record_person {
+  top: 18px;
+  left: 255px;
+  font-size: 14px;
+  color: #666;
+}
+:global .follow_record_parent {
+  top: 44px;
+  left: 255px;
+  color: #999;
+}
+:global .follow_record_list_item_selected {
+  background: #5d9cec;
+}
+:global .follow_record_list_item_selected .follow_record_name {
+  background-color: #fff;
+  color: #5d9cec;
+}
+:global .follow_record_list_item_selected .follow_record_time,
+:global .follow_record_list_item_selected .follow_record_person,
+:global .follow_record_list_item_selected .follow_record_parent {
+  color: #fff;
+}
+:global .follow_record_content_right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: calc(100% - 440px);
+  height: 100%;
+  background: #ffffff;
+}
+:global .follow_record_content_right .follow_record_right_img {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+:global .follow_record_content_right .follow_record_right_img img {
+  width: 100%;
+  height: 100%;
+}
+:global .follow_record_content_right .right_name {
+  position: absolute;
+  left: 120px;
+  top: 50px;
+  font-size: 16px;
+  font-weight: bold;
+}
+:global .follow_record_content_right .right_sex {
+  position: relative;
+  top: 2px;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: normal;
+}
+:global .follow_record_content_right .right_detail {
+  margin: 80px 0 20px 120px;
+  line-height: 20px;
+}
+:global .follow_record_content_right .right_detail li {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 14px;
+}
+:global .follow_record_content_right .right_detail li .right_detail_title {
+  color: #999;
+  margin-right: 5px;
+}
+:global .follow_record_content_right .right_detail li .right_detail_content {
+  color: #666;
+}
+:global .follow_record_content_right .card_detail_line {
+  margin-left: 120px;
+  width: 100%;
+  height: 0;
+  border-bottom: 1px solid #ddd;
+}
+:global .follow_record_content_right .card_detail_record {
+  margin: 20px 0 0 120px;
+  max-height: calc(100% - 160px);
+  font-size: 14px;
+  line-height: 24px;
+  overflow: auto;
+}
+:global .follow_record_content_right .card_detail_record .card_btn {
+  margin-top: 30px;
+}
+:global .follow_record_content_right .card_detail_record::-webkit-scrollbar {
+  background-color: transparent!important;
+  border-radius: 4px;
+  width: 4px;
+  height: 4px;
+  margin-right: 4px;
+  right: 4px;
+}

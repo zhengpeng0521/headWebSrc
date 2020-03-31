@@ -1,0 +1,12 @@
+[
+    { "value" : "orgName" , "label" : "校区名称" },
+    { "value" : "contacts" , "label" : "联系人" },
+    { "value" : "tel" , "label" : "联系方式" },
+    { "value" : "addr" , "label" : "校区地址" },
+    { "value" : "orgType" , "label" : "校区类型" },
+    { "value" : "deptName" , "label" : "所属部门" },
+    { "value" : "serverTime" , "label" : "营业时间" },
+    { "value" : "categoryTag" , "label" : "业务范围" },
+    { "value" : "ageTag" , "label" : "适合年龄" },
+    { "value" : "utilityTag" , "label" : "配套设施" }
+]

@@ -1,0 +1,135 @@
+/*引入less定义的方法*/
+@import '../../less/common.less';
+
+.popoverContent {
+  width: 400px;
+  min-height: 150px;
+  max-height: 240px;
+  overflow: auto;
+}
+.popoverP {
+  margin-bottom: 10px;
+}
+.popoverText {
+  font-weight: 600;
+  color: #333;
+}
+
+.icon{
+    color: #5d9cec;
+    margin-right: 2px;
+}
+
+.l_all_total{
+    width:100%;
+    overflow: hidden;
+    .l_left{
+        float:left;
+    }
+    .l_right{
+        float:right;
+    }
+}
+.l_all{
+    width:100%;
+    overflow: hidden;
+    border-bottom: 4px solid @saas_main_color;
+    .l_left{
+        float:left;
+    }
+    .l_right{
+        float:right;
+    }
+}
+.s_all_total{
+    width:100%;
+    overflow: hidden;
+}
+.s_all{
+    width:100%;
+    overflow: hidden;
+    border-bottom: 4px solid @saas_main_color;
+}
+
+.l_left,.l_right,.s_left,.s_right{
+    height : 38px;
+    display : -webkit-flex;
+    display : flex;
+    flex-direction : row;
+    flex-wrap : nowrap;
+    align-items : flex-start;
+}
+.org{
+    margin-right: 10px;
+}
+.other_search{
+    height : 100%;
+    margin-right: 20px;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    >div{
+        margin-bottom: 0;
+    }
+
+    :global{
+        .ant-form-item{
+            margin-right: 10px;
+            &:last-child{
+                margin: 0;
+            }
+        }
+    }
+}
+.btn{
+    display:-webkit-flex;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.export_btn_block{
+    display: flex;
+	height: 30px;
+	line-height: 30px;
+	margin-top:40px;
+    text-align: center;
+}
+.export_break_style{
+   margin-bottom:50px;
+   margin-top:40px;
+}
+.export_select_date{
+    padding-right: 10px;
+    font-size: 14px;
+    }
+    .export_break_line{
+    padding: 0 10px;
+}
+.export_btn_cloud{
+    margin-right: 20px;
+    border:1px solid #ccc;
+}
+.export_btn_cloud:hover{
+    border:1px solid #5d9cec;
+}
+.font_style{
+    display: block;
+    color: #5d9cec;
+    font-size: 12px
+}
+.fontstyle{
+    color: rgba(255,0,0,.733);
+    font-size: 12px !important;
+    text-align: center;
+    display: block;
+}
+:global{
+    .report_form_radioGroup{
+        margin-right: 20px;
+    }
+    .report_form_radioGroup .ant-radio-button-wrapper-checked{
+        background-color: #5d9cec;
+        color:#fff;
+    }
+}

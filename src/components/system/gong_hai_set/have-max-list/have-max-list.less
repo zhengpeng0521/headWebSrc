@@ -1,0 +1,80 @@
+/*引入less定义的方法*/
+@import '../../../common/less/common.less';
+
+.small_ticket_all_content{
+    width:100%;
+    height:calc(~'100vh - 120px');
+    padding:0 20px 20px 20px;
+    overflow:auto;
+}
+
+/*标题*/
+.small_ticket_title{
+    overflow:hidden;
+    height:25px;
+    margin-bottom:10px;
+}
+.small_ticket_title_block{
+    float:left;
+    height:14px;
+    width:8px;
+    margin-top: 5.5px;
+    background-color:@saas_main_color;
+    .borderRadius(3px,3px,3px,3px);
+}
+.small_ticket_title_content{
+    float:left;
+    height:inherit;
+    line-height:25px;
+    margin-left:10px;
+    font-size:1.16rem;
+}
+
+/*小票预览*/
+.small_ticket_preview{
+    float:left;
+    margin-right: 50px;
+}
+
+.lead_record_content{
+    width:100%;
+    height:auto;
+    overflow:hidden;
+    padding-left:20px;
+}
+.lead_record_radio{
+    width:100%;
+    height:auto;
+    overflow:hidden;
+    padding:10px 0 20px 0;
+}
+.lead_record_rule_con{
+    width:100%;
+    height:auto;
+    overflow:hidden;
+    margin-bottom:20px;
+    font-size:14px;
+}
+.lead_record_rule_con span{
+    display:block;
+    float:left;
+}
+.lead_record_rule_con input{
+    display:inline-block;
+    width:40px;
+    float:left;
+    margin:0 10px;
+}
+.lead_record_form{
+    width:100%;
+    height:auto;
+    font-size:12px;
+    margin-bottom:40px;
+}
+.lead_record_form .ant-radio-group{
+    width:100%;
+    margin-bottom:20px;
+}
+.lead_record_form FormItem{
+    width:100%;
+}

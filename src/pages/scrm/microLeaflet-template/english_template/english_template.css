@@ -1,0 +1,200 @@
+/*第一页 样式开始*/
+.english-page1-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/0a23e508e412f1192f49d8f2f4e85ef9");
+}
+
+/*机构图片*/
+.english-page1-head-img{
+	position:absolute;
+	top:28px;
+	margin:auto;left:0;right:0;
+	width:112px;
+	height:112px;
+}
+.english-page1-head-img-content{
+	width:100%;
+	height:100%;
+	border-radius:50%;
+}
+.english-page1-title{
+	position:absolute;
+	top:170px;
+	margin:auto;left:0;right:0;
+	width:200px;
+	height:40px;
+	line-height:40px;
+
+	font-size:22px;
+	font-weight:bold;
+	text-align:center;
+	color:#6079DD;
+
+}
+.english-page1-subTitle{
+	position:absolute;
+	top:344px;
+	margin:auto;left:0;right:0;
+	width:325px;
+	height:40px;
+	line-height:40px;
+
+	font-size:12px;
+	text-align:center;
+	color:#fff;
+}
+/*二维码图片*/
+.english-page1-code-img{
+	position:absolute;
+	top: 391px;
+    left: 27px;
+    width: 85px;
+    height: 85px;
+
+}
+.english-page1-code-img-content{
+	width:100%;
+	height:100%;
+	border-radius:12px;
+}
+
+/*联系方式*/
+.english-page1-contact-title{
+	position: absolute;
+    top: 391px;
+    right: 119px;
+    width: 65px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 900;
+    color: #666;
+}
+.english-page1-contact{
+	position: absolute;
+    top: 420px;
+    right: 21px;
+    width: 162px;
+    height: 80px;
+    font-size: 12px;
+    color: #666;
+    overflow:hidden;
+}
+.english-page2-contact-item{
+	width:162px;
+	min-height:20px;
+	line-height:20px;
+
+}
+.english-page2-contact-item-label{
+	display:inline-block;
+	width:32px;
+	height:20px;
+	line-height:20px;
+	vertical-align:top;
+	margin-right:5px;
+
+}
+.english-page2-contact-item-value{
+	display:inline-block;
+	width:125px;
+	min-height:20px;
+	line-height:20px;
+}
+/*第一页 样式结束*/
+
+/*第二页 样式开始*/
+.english-page2-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/c83abf689940fc6633b323ff90b80646");
+}
+.english-page2-title{
+	position: absolute;
+    top: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #6079dd;
+}
+.english-page2-intro{
+	position: absolute;
+    top: 90px;
+    left: 55px;
+    width: 170px;
+    height: 90px;
+    font-size: 12px;
+    color: #666;
+
+    overflow:hidden;
+
+}
+.english-page2-img1,.english-page2-img2{
+	position:absolute;
+	top: 226px;
+    left: 27px;
+    width: 120px;
+    height: 92px;
+
+}
+.english-page2-img2{
+	left:179px;
+}
+.english-page2-imgContent{
+	width:100%;
+	height:100%;
+	border-radius:5px;
+}
+.english-page2-courseIntro{
+	position: absolute;
+    top: 365px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 210px;
+    height: 95px;
+
+    overflow:hidden;
+}
+.english-page2-courseIntro-item{
+	width:210px;
+	min-height:19px;
+	line-height:19px;
+}
+/*第二页 样式结束*/
+
+/*第三页 样式开始*/
+.english-page3-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/3f1f82f180582a4b1ceb2ca06acaec1d");
+}
+.english-page3-title{
+	position:absolute;
+	top:0;
+	margin:auto;left:0;right:0;
+	height:70px;line-height:70px;
+	width:250px;
+
+	font-size:28px;
+	font-weight:bold;
+	text-align:center;
+	color:#AA714B;
+}
+.english-page3-name,.english-page3-phone{
+	position:absolute;
+	top:118px;
+	margin:auto;left:0;right:0;
+	height:40px;line-height:40px;
+	width:200px;
+
+	font-size:16px;
+	text-align: center;
+	color:#f4d3a2;
+}
+.english-page3-phone{
+	top:187px;
+
+}
+/*第三页 样式结束*/

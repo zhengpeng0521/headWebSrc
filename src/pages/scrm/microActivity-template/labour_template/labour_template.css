@@ -1,0 +1,277 @@
+/*第一页样式 开始*/
+.labour-page1-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/13e7bd6813c7a2ee4d772a079e2f9744");
+}
+.labour-page1-image{
+	position: absolute;
+    top: 27px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 113px;
+    height: 113px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.labour-page1-image>img{
+	width:100%;
+	height:100%;
+}
+.labour-page1-title{
+	position:absolute;
+	margin:auto;left:0;right:0;
+	top: 162px;
+    width: 265px;
+    height: 55px;
+    line-height: 50px;
+    color: #498e5c;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+}
+.labour-page1-subTitle{
+	position:absolute;
+	margin:auto;left:0;right:0;
+	top: 236px;
+    width: 215px;
+    height: 47px;
+    line-height: 25px;
+    color: #666;
+    font-size: 14px;
+    overflow: hidden;
+}
+/*第一页样式 结束*/
+
+/*第二页样式 开始*/
+.labour-page2-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/3928dd5d60b5ce86fbff66c82ce607a4");
+}
+.labour-page2-title{
+	position:absolute;
+	top: 125px;
+    margin: auto;left:0;right:0;
+    width:200px;
+    height: 60px;
+    line-height: 60px;
+	background:rgba(255,255,255,.1);
+	border-radius:12px;
+
+	color:#498e5c;
+	font-size:24px;
+	font-weight:bold;
+	text-align:center;
+}
+.labour-page2-content{
+	position:absolute;
+	top: 215px;
+    margin: auto;
+    left: 0;right:0;
+    width:230px;
+    height: 112px;
+    color:#666;
+    font-size:12px;
+    overflow:hidden;
+}
+.labour-page2-content-item{
+	display:block;
+	width:250px;
+	min-height:16px;
+	line-height:16px;
+	margin:0 auto 5px;
+}
+.labour-page2-content-item-label{
+	display:inline-block;
+	box-sizing:border-box;
+	width:50px;
+	height:16px;
+	line-height:16px;
+	vertical-align: top;
+	text-align: right;
+	margin-right:10px;
+	overflow:hidden;
+
+}
+.labour-page2-content-item-value{
+	display:inline-block;
+	box-sizing:border-box;
+	width:170px;
+	min-height:16px;
+	line-height:16px;
+}
+/*第二页样式 结束*/
+
+/*第三页样式 结束*/
+.labour-page3-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/444b09f0d7d24f93edfca2277a37e4c6");
+}
+.labour-page3-title{
+	position: absolute;
+    top: 125px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 210px;
+    height: 58px;
+    line-height: 58px;
+
+    font-size: 26px;
+    font-weight:bold;
+    text-align: center;
+    color: #A06740;
+}
+.labour-page3-content{
+	position:absolute;
+	margin: auto;
+    left: 0;
+    right: 0;
+	top: 218px;
+    width: 240px;
+    height: 112px;
+	overflow:hidden;
+	color:#666;
+}
+.labour-page3-content-total{
+	position:absolute;
+	margin:auto;
+	left:0;right:0;
+	width: 240px;
+	height: 115px;
+
+	overflow:hidden;
+
+}
+.labour-page3-content-item{
+	display:block;
+	width: 240px;
+	min-height:16px;
+	line-height:16px;
+	margin:0 auto 5px;
+}
+.labour-page3-content-item-label{
+	display:inline-block;
+	box-sizing:border-box;
+	width:50px;
+	height:16px;
+	line-height:16px;
+	vertical-align: top;
+	text-align: right;
+	margin-right:10px;
+	overflow:hidden;
+
+}
+.labour-page3-content-item-value{
+	display:inline-block;
+	box-sizing:border-box;
+	width:170px;
+	min-height:16px;
+	line-height:16px;
+}
+/*第三页样式 结束*/
+
+/*第四页样式 结束*/
+.labour-page4-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/b60cbf306c45e0022672f61be1342dd9");
+}
+.labour-page5-title,.labour-page4-title,.labour-page6-title{
+	position: absolute;
+    top: 27px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 207px;
+    height: 60px;
+    line-height: 60px;
+
+	color:#A06740;
+	font-size:24px;
+	font-weight:bold;
+	text-align:center;
+	overflow: hidden;
+}
+.labour-page4-content{
+	position: absolute;
+    top: 92px;
+    margin: auto;
+    left: 19px;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    color: #fff;
+}
+.labour-page4-content-item,.labour-page5-content-item{
+	display: inline-block;
+    position: relative;
+    margin-left: 6px;
+    margin-right: -4px;
+    margin-bottom: -9.5px;
+    box-sizing: border-box;
+    width: 132px;
+    height: 140px;
+}
+.labour-page4-content-item-image,.labour-page5-content-item-image{
+	position: absolute;
+    top: 17px;
+    left: 10px;
+    width: 114px;
+    height: 114px;
+    border-radius: 10px;
+}
+/*第四页样式 结束*/
+
+/*第五页样式 结束*/
+.labour-page5-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/3107369c367cabd31f792d978c051dea");
+}
+.labour-page5-content{
+	position:absolute;
+	top:92px;
+	margin: auto;
+    left: 19px;
+    right: 0;
+	width:300px;
+	height:150px;
+
+	color:#fff;
+}
+.labour-page5-content-value{
+	position:absolute;
+	top:270px;
+	margin:auto;left:0;right:0;
+	width:150px;
+	height:140px;
+	overflow:hidden;
+	padding:10px 5px 5px 5px;
+
+	color:#666;
+	font-size:14px;
+	overflow:hidden;
+}
+/*第五页样式 结束*/
+
+/*第六页样式 结束*/
+.labour-page6-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/ce05de294431f555b7b462ae79af5a2e");
+}
+.labour-page6-title{
+    top: 27px;
+}
+.labour-page6-name,.labour-page6-phone{
+	position: absolute;
+    top: 102px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+
+	text-align:center;
+	font-size:16px;
+	color:#333;
+
+
+}
+.labour-page6-phone{
+	top:158px;
+}
+/*第六页样式 结束*/

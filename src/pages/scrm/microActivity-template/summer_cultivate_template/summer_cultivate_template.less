@@ -1,0 +1,341 @@
+p{
+	padding : 0;
+	margin : 0;
+}
+@baseColor : #ffffff;
+@baseFontSize : 22px;
+.absolute( @width, @height, @top, @left ){
+	position : absolute;
+	width    : @width;
+	height   : @height;
+	top      : @top;
+	left     : @left;
+}
+.background( @url, @size : cover ){
+	background : url(@url);
+	background-size : @size;
+}
+.titleBox{
+	margin : 10px auto 0;
+	position : relative;
+	width : 215px;
+	height : 100px;
+	.background('http://115.29.172.104/gimg/img/65fccaca27a2c1ed7ccaf8fd4a68c902')
+}
+.titleProps{
+	.absolute( 185px, 40px, 55px, 15px );
+	text-align  : center;
+	font-size   : 22px;
+	line-height : 40px;
+	overflow : hidden;
+}
+.transform( @value ){
+	transform : translateY( @value );
+	-webkit-transform : translateY( @value );
+	-moz-transform : translateY( @value );
+	-ms-transform : translateY( @value );
+	-o-transform : translateY( @value );
+}
+
+/*动画效果*/
+.orgImg_bg{
+	.absolute( 110px, 152px, 0, 125px );
+	.background('http://115.29.172.104/gimg/img/acdc3355b38dd424ee6363023ba2b981' );
+	animation : orgImg_bg_ani 8s ease-in-out infinite alternate;
+	transform-origin : 70% 0%;
+}
+
+@keyframes orgImg_bg_ani{
+	20% { transform: rotate(15deg); }
+	40% { transform: rotate(-10deg); }
+	60% { transform: rotate(5deg); }
+	80% { transform: rotate(-5deg); }
+	100% { transform: rotate(0deg); }
+}
+.balloon{
+	.absolute( 100px, 65px, 550px, -5px );
+	.background('http://115.29.172.104/gimg/ori/6b07f3626ad3adae8160d788670e710b');
+	animation : balloon_ani1 3s linear infinite, balloon_ani2 8s linear 2s 1 forwards;
+}
+@keyframes balloon_ani1 {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.2); }
+	100% { transform: scale(1); }
+}
+@keyframes balloon_ani2 {
+	0% { top: 550px; }
+	80% { top: -100px; }
+	100% { top: 20px; }
+}
+.flying_bird{
+	.absolute( 30px, 30px, 100px, 650px );
+	.background('http://115.29.172.104/gimg/img/44d4bb6738c837f1a6ec54e074c373fe');
+	transform : rotate( 20deg );
+	animation : flying_bird_ani 5s linear infinite;
+}
+@keyframes flying_bird_ani{
+	0%{ top : 100px; left : 650px }
+	100%{ top : -30px; left : 0 }
+}
+
+:global{
+	.summer_cultivate_wrap{
+		.absolute( 326px, 525px, 150px, 26px );
+		overflow-x: hidden;
+		overflow-y: auto;
+		background: #ffffff;
+	}
+	.cultivate_content{
+		.orgImg{
+			width : 319px;
+			height : 155px;
+			.orgImg_box{
+				.absolute( 71px, 71px, 70px, 34px );
+				border-radius : 50%;
+				overflow : hidden;
+				img{
+					width : 100%;
+					height : 100%;
+				}
+			}
+		}
+		.org_title{
+			position : relative;
+			z-index : 2;
+			margin : 20px auto 0;
+			width : 300px;
+			height : 70px;
+			.background('http://115.29.172.104/gimg/img/2c1bc0b52bf18b74d6c1e2af4013247b', 100% 100% );
+			.title_box{
+				margin : 0 auto;
+				position : relative;
+				width : 240px;
+				height : 47px;
+				color : @baseColor;
+				p{
+					.absolute( 240px, auto, 25px, 0);
+					.transform( -50% );
+					line-height : 24px;
+					max-height : 47px;
+					font-size : 16px;
+					font-weight : bold;
+					text-align : center;
+					overflow : hidden;
+				}
+			}
+		}
+		.act_title{
+			position : relative;
+			z-index : 1;
+			margin : -40px auto 0;
+			width : 300px;
+			height : 208px;
+			.background('http://115.29.172.104/gimg/img/16ddb68c0df30418d36ae654ebe7202f');
+			.act_title_box{
+				.absolute( 150px, 78px, 34px, 0 );
+				margin : auto;
+				right : 0;
+				p{
+					.absolute( 150px, auto, 42px, 0 );
+					.transform( -50% );
+					line-height : 26px;
+					max-height : 85px;
+					text-align : center;
+					font-size : 15px;
+					color : @baseColor;
+					overflow : hidden;
+				}
+			}
+		}
+		.two_stus{
+			position : relative;
+			margin : 20px auto 30px;
+			width : 235px;
+			height : 133px;
+			.background('http://115.29.172.104/gimg/img/afd7b0c1f6a9b517b607387996184c4a');
+			&::before{
+				content : '';
+				.absolute( 23px, 23px, 80px, 226px );
+				.background('http://115.29.172.104/gimg/img/6a7faa6420dece82fc6a920d946209bd');
+			}
+			&:after{
+				content : '';
+				.absolute( 61px, 50px, 10px, 202px );
+				.background('http://115.29.172.104/gimg/img/446529843085d33454406b8732fd4f9e')
+			}
+		}
+		.cultivate_title{
+			.titleBox;
+			.titleInit{
+				.titleProps;
+			}
+			&::before{
+				content : '';
+				.background('http://115.29.172.104/gimg/img/02baba05b179cb205343f81394b51797');
+				.absolute( 50px, 50px, -3px, -30px );
+			}
+			&:after{
+				content : '';
+				.background('http://115.29.172.104/gimg/img/44d4bb6738c837f1a6ec54e074c373fe');
+				.absolute( 50px, 50px, 0, 198px );
+			}
+			.title1{
+				color : #27A691;
+			}
+			.title2{
+				color : #945B99;
+			}
+			.title3{
+				color : #5692C4;
+			}
+			.title4{
+				color : #EB9E1E;
+			}
+			.title5{
+				color : #FD6375;
+			}
+		}
+		.input{
+			margin : 10px auto 0;
+			width : 260px;
+			height : 41px;
+			.background('http://115.29.172.104/gimg/img/5fd3e8ba986cd8212aa7adbad54b1725');
+			p{
+				width : 260px;
+				line-height : 42px;
+				color : #666;
+				text-align : center;
+				font-size : 13px;
+			}
+		}
+		.btn{
+			margin : 20px auto 40px;
+			width : 260px;
+			height : 41px;
+			.background('http://115.29.172.104/gimg/img/a5f6fd7d56f4929a9e9b5b30c4b6337e');
+			p{
+				width : 260px;
+				line-height : 42px;
+				color : @baseColor;
+				text-align : center;
+				font-size : 16px;
+			}
+		}
+		.cultivate_box{
+			.content_top{
+				margin : 15px auto 0;
+				width : 270px;
+				height : 61px;
+			}
+			.content_middle{
+				margin : 0 auto;
+				width : 270px;
+				padding-top : 10px;
+				p{
+					color : @baseColor;
+					padding : 0 10px;
+					font-size : 13px;
+					line-height : 20px;
+				}
+				.orgContent_item{
+					width : 235px;
+					margin : 0 auto;
+					padding-top : 10px;
+					height : 100px;
+					.orgContent_img{
+						display : inline-block;
+						width : 90px;
+						height : 90px;
+						vertical-align : middle;
+						border-radius : 4px;
+						overflow : hidden;
+						img{
+							width : 100%;
+							height : 100%;
+						}
+					}
+					.orgContent_text{
+						position : relative;
+						display : inline-block;
+						width : 145px;
+						height : 80px;
+						color : @baseColor;
+						font-size : 13px;
+						text-align : left;
+						vertical-align : middle;
+						p{
+							.absolute( 155px, auto, 40px, 0 );
+							.transform( -50% );
+							line-height : 25px;
+							max-height : 74px;
+							overflow : hidden;
+						}
+					}
+				}
+				.codeImg{
+					margin : 10px auto 0;
+					width : 100px;
+					height : 100px;
+					border-radius : 4px;
+					overflow : hidden;
+					background : #fff;
+					img{
+						width : 100%;
+						height : 100%;
+					}
+				}
+				.remark{
+					width : 100px;
+					margin : 0 auto;
+					padding-top : 5px;
+					max-height : 40px;
+					line-height : 20px;
+					font-size : 12px;
+					text-align : center;
+					color : @baseColor;
+				}
+			}
+			.content_bottom{
+				margin : 0 auto;
+				width : 270px;
+				height : 81px;
+			}
+			.top1{
+				.background('http://115.29.172.104/gimg/img/ed622606a34786b31a9052bb85ca31ff');
+			}
+			.middle1{
+				.background('http://115.29.172.104/gimg/img/7d3ded74eebc280249e6903ef13e469c', 100% );
+			}
+			.bottom1{
+				.background('http://115.29.172.104/gimg/img/213ded5a7d20db132edd875bdf2ffda5');
+			}
+			.top2{
+				.background('http://115.29.172.104/gimg/img/2678c5d79d1409f96905ae1773bcee42');
+			}
+			.middle2{
+				.background('http://115.29.172.104/gimg/img/a6e632968340220540ad004e3cb4cb8d', 100%);
+			}
+			.bottom2{
+				.background('http://115.29.172.104/gimg/img/2f806d19c0ba134ec414d8c79391c459');
+			}
+			.top3{
+				.background('http://115.29.172.104/gimg/img/b20ead0ad526c4a637c42970638d5c13')
+			}
+			.middle3{
+				.background('http://115.29.172.104/gimg/img/4df78f83f39116b0a50aa3d54f97848b', 100% );
+			}
+			.bottom3{
+				.background('http://115.29.172.104/gimg/img/983eecea8b0b90d0cfaaf027f02f4035')
+			}
+			.top4{
+				.background('http://115.29.172.104/gimg/ori/669d64f93983c2e34bd1a164c9cdfcfb')
+			}
+			.middle4{
+				.background('http://115.29.172.104/gimg/img/e21a2bd3f8bdd3d9b9f94963f381b6b2', 100% );
+			}
+			.bottom4{
+				.background('http://115.29.172.104/gimg/img/426d6312fb4c5c08a599f7fd6217616e')
+			}
+		}
+	}
+}

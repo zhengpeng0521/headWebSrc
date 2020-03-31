@@ -1,0 +1,92 @@
+/*引入less定义的方法*/
+@import '../../../../../common/less/common.less';
+
+.second_step{
+    width:100%;
+    >p{
+        &:nth-child(2){
+            color:red;
+            margin-bottom: 20px;
+        }
+    }
+}
+.mapping_detail{
+    width:100%;
+    overflow: hidden;
+    display:-webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    >div>p{
+        display: inline-block;
+        text-align: left;
+        font-size: 1.33rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+}
+.left{
+    width:70%;
+    >p{
+        width:50%;
+    }
+    margin-right: 20px;
+}
+.right{
+    width:calc(~'100% - 70% - 20px');
+    >p{
+        width:100%;
+    }
+}
+.map{
+    width:100%;
+    border:1px solid #ddd;
+    padding:0 20px;
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    .scrollbar();
+    .borderRadius(10px,10px,10px,10px);
+}
+.map_item{
+    width:100%;
+    height:50px;
+    font-size: 1.16rem;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    >div{
+        width:50%;
+        white-space: nowrap;
+        text-align: left;
+        overflow: hidden;
+        &:nth-child(1){
+            white-space: nowrap;
+            .textOverflow(ellipsis);
+        }
+    }
+}
+.mis_map{
+    width:100%;
+    border:1px solid #ddd;
+    padding:0 20px;
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    .scrollbar();
+    .borderRadius(10px,10px,10px,10px);
+}
+.mis_map_item{
+    width:100%;
+    height:50px;
+    line-height: 50px;
+    font-size: 1.16rem;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    .textOverflow(ellipsis);
+}

@@ -1,0 +1,204 @@
+:global {
+    /*预览组件样式*/
+    .render_page {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        width: 326px;
+        height: 660px;
+        margin-left: 20px;
+        margin-right: 50px;
+        background: url('//img.ishanshan.com/gimg/img/066527e8633f23f219e291ad0312300e') no-repeat;
+        background-size: cover;
+    }
+    .render_page .render_page_wrap {
+        position: absolute;
+        top: 129px;
+        left: 22px;
+        width: 280px;
+        height: 450px;
+        background: #f1f1f1;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .render_page .render_page_wrap .render_page_content {
+        width: 280px;
+    }
+    .content_head {
+        background: #fff;
+    }
+    .content_head_title {
+        margin-top: 5px;
+    }
+    .head_title {
+        line-height: 20px;
+    }
+    .title {
+        display: inline-block;
+        width: 80%;
+        font-size: 14px;
+    }
+    .title .title_c {
+        width: 91%;
+        display: inline-block;
+    }
+    .title::before {
+        content: '';
+        display: inline-block;
+        vertical-align: top;
+        width: 10px;
+        height: 18px;
+        margin-right: 5px;
+        background: #3B72B7;
+    }
+    .head_title .title span {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 12px;
+        color: #E5466F;
+    }
+    .head_title .applying {
+        display: inline-block;
+        vertical-align: top;
+        background: #3B72B7;
+        padding: 0 4px;
+        color: #fff;
+        border-radius: 2px;
+    }
+    .content_head .time {
+        margin-left: 15px;
+        height: 24px;
+        line-height: 24px;
+    }
+    .render_page_content .orgId {
+        background: #fff;
+        margin-top: 10px;
+        padding: 0 15px;
+    }
+    .render_page_content .orgId .orgName {
+        height: 35px;
+        line-height: 35px;
+        border-bottom: 1px solid #ddd;
+    }
+    .render_page_content .orgId .orgName .name {
+        width: 50%;
+        display: inline-block;
+        font-size: 14px;
+    }
+    .render_page_content .orgId .orgName .more {
+        width: 50%;
+        display: inline-block;
+        text-align: right;
+        color: #3b72b7;
+        font-size: 12px;
+    }
+    .orgAdd {
+        height: 35px;
+        line-height: 35px;
+    }
+    .orgAdd .orgAdd_icon {
+        display: inline-block;
+        margin-right: 5px;
+        vertical-align: middle;
+        font-size: 24px;
+        color: #e5466f;
+    }
+    .orgAdd .orgAdd_icon_phone {
+        display: inline-block;
+        width: 18%;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 24px;
+        color: #3b72b7;
+    }
+    .orgAdd .orgAdd_add {
+        display: inline-block;
+        width: 70%;
+        border-right: 1px solid #ddd;
+        height: 24px;
+        line-height: 24px;
+    } //活动详情
+    .detail,
+    .success {
+        background: #fff;
+        margin-top: 10px;
+        padding: 5px 0;
+    }
+    .detail_content {
+        padding: 0 15px;
+    }
+    .detail_content_item {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .detail_item_title::before {
+        border-radius: 50%;
+        background: #3b72b7;
+        content: '';
+        display: inline-block;
+        height: 7px;
+        margin-right: 7px;
+        width: 7px;
+    }
+    .detail_item_content {
+        font-size: 12px;
+        margin-top: 3px;
+    }
+    /*已报名用户*/
+    .applyedUser {
+        margin-top: 5px;
+        padding: 0 15px;
+        width: 100%;
+    }
+    .applyedUser .applyedUser_item {
+        display: inline-block;
+        width: 50px;
+        text-align: center;
+    }
+    .applyedUser_item_img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .apply_soon {
+        position: absolute;
+        bottom: 80px;
+        left: 22px;
+        width: 276px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 20px;
+        text-align: center;
+        color: #fff;
+        background: #3B72B7;
+    }
+    /*定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸*/
+    .render_page ::-webkit-scrollbar {
+        background-color: transparent;
+        border-radius: 2px;
+        width: 4px;
+        height: 4px;
+        margin-right: 4px;
+        right: 4px;
+    }
+    .render_page ::-webkit-scrollbar-corner {
+        background-color: rgba(240, 240, 240, 0.1);
+    }
+    /*定义滑块，内阴影及圆角*/
+    .render_page ::-webkit-scrollbar-thumb {
+        background-color: #aaa;
+        opacity: 0.1;
+        border-radius: 2px;
+    }
+    /*滚动条按钮*/
+    .render_page ::-webkit-scrollbar-button {
+        height: 0;
+        width: 0;
+    }
+    /*定义滚动条的轨道，内阴影及圆角*/
+    .render_page ::-webkit-scrollbar-track {
+        background-color: #EEE;
+        border-radius: 2px;
+    }
+}

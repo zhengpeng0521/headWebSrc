@@ -1,0 +1,22 @@
+/*引入less定义的方法*/
+@import '../../../common/less/common.less';
+
+:global{
+    .vip_manage_add_send_class_modal .ant-modal-body{
+        max-height: 500px;
+        padding: 20px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        .scrollbar();
+    }
+    .vip_manage_add_send_class_modal .ant-modal-footer{
+        margin: 0;
+        padding: 0 20px 20px 20px;
+    }
+    .vip_manage_add_send_class_modal .ant-form-item{
+        margin-bottom: 10px;
+        &:last-child{
+             margin-bottom:0;
+        }
+    }
+}

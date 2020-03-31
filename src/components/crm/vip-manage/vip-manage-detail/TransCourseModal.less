@@ -1,0 +1,76 @@
+/*引入less定义的方法*/
+@import '../../../common/less/common.less';
+
+:global{
+    .card_transform_course_modal .ant-modal-body{
+        padding:20px;
+        max-height: 500px;
+        overflow: auto;
+        .scrollbar();
+    }
+    .card_transform_course_modal .ant-modal-footer{
+        margin:0;
+        padding:0 20px 20px 20px;
+    }
+    .card_transform_course_modal .ant-form-item{
+        margin-left: -25px;
+        margin-bottom: 10px;
+    }
+}
+.roll_out_course,.roll_in_course{
+    margin-left: 12px;
+    margin-bottom: 15px;
+}
+.roll_course_title{
+    margin-bottom: 5px;
+}
+.roll_out_course_detail_thead,.roll_in_course_detail_thead,.roll_out_course_detail_trow,.roll_in_course_detail_trow{
+    width:100%;
+    border:1px solid #ddd;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    >div{
+        border-right:1px solid #ddd;
+        padding:0 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        .textOverflow(ellipsis);
+    }
+}
+.roll_out_course_detail_thead,.roll_in_course_detail_thead{
+    height:30px;
+    >div{
+        text-align: center;
+        line-height: 30px;
+    }
+}
+.roll_out_course_detail_trow,.roll_in_course_detail_trow{
+    height:40px;
+    border-top:0;
+    >div{
+        text-align: center;
+        line-height: 40px;
+    }
+}
+.roll_out_course_detail_thead,.roll_out_course_detail_trow{
+    >div{
+        width:calc(~'100%/5');
+        &:last-child{
+            border-right: 0;
+        }
+    }
+}
+.roll_in_course_detail_thead,.roll_in_course_detail_trow{
+    >div{
+        &:nth-child(odd){
+            width:calc(~'100%/4');
+        }
+        &:nth-child(even){
+            width:calc(~'100%/2');
+        }
+        &:last-child{
+            border-right: 0;
+        }
+    }
+}

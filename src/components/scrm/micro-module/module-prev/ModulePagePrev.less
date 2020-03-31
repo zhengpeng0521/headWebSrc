@@ -1,0 +1,164 @@
+@import '../../../lib.less';
+
+.page_prev_cont {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    margin-right: -4px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.page_item_list {
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.page_prev_item {
+    padding: 10px;
+    margin: 0 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    position: absolute;
+    width: 112px;
+    height: 152px;
+    display: grid;
+    transition: top 0.5s ease 0s;
+}
+
+.page_prev_item_active {
+    padding: 10px;
+    margin: 0 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    position: absolute;
+    width: 112px;
+    height: 152px;
+    display: grid;
+    transition: top 0.5s ease 0s;
+}
+
+.page_prev_item_drag {
+    padding: 10px;
+    margin: 0 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    position: relative;
+    width: 112px;
+    height: 152px;
+    display: grid;
+    opacity: 0;
+}
+
+.page_prev_item_drag:before {
+    width: 100%;
+    height: 100%;
+    content: ' ';
+    z-index: 99;
+    position: absolute;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.28);
+    cursor: move;
+}
+
+.item_prev_cont {
+    width: 100%;
+    height: 125px;
+    margin: 0 auto;
+    border: 1px solid #666;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.item_prev_cont:hover {
+    border: 33px solid @shanshan-main-color;
+    border-top-width: 42px;
+    border-bottom-width: 42px
+}
+
+.page_prev_item_active .item_prev_cont {
+    border: 33px solid @shanshan-main-color;
+    border-top-width: 42px;
+    border-bottom-width: 42px
+}
+
+.page_prev_item_active .page_item_name {
+    color: @shanshan-main-color;
+}
+
+.item_bar {
+    position: absolute;
+    bottom: 5px;
+    padding: 0 12px;
+    border-radius: 3px;
+    width: 100%;
+    height: 18px;
+    text-align: center;
+}
+
+.page_item_name {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    float: left;
+    width: 40px;
+    font-size: 12px;
+    color: #666;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+}
+
+.add_btn_cont {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+}
+
+.add_btn {
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.item_bar_cont {
+    width: 45%;
+    display: inline-block;
+    text-align: right;
+    font-size: 0.8rem;
+}
+.item_bar_icon {
+    margin: 0 3px;
+    cursor: pointer;
+}
+.item_bar_icon:hover {
+    color: @zsb-main-color;
+}
+
+.page_item_bar {
+    float: right;
+    background-color: #A3A3A3;
+    border-radius: 5px;
+}
+
+.page_item_bar_item {
+    color: #FFF;
+    font-size: 12px;
+    width: 20px;
+    cursor: pointer;
+    line-height: inherit;
+}
+
+.page_item_bar_item:hover {
+    color: @shanshan-main-color;
+}
+
+.drag_handle_cont {
+    position: absolute;
+    bottom: 0;
+}

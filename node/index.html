@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand" />
+		<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<meta content="always" name="referrer">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+		<title>闪闪管家</title>
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_466393_ybchs11hy0gam7vi.css" /> <!-- 描述：(对应iconfont里saas10月更新项目) 放在index.css之前 -->
+		<link rel="stylesheet" href="index.css" />
+		
+		<style>
+    	/*商桥聊天的样式修改*/
+			#qiao-icon-wrap .qiao-icon-head {
+				overflow: inherit!important;
+			}
+			
+			/*缓冲页面的样式*/
+			#page_loading_9232 {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100vw;
+				height: 100vh;
+				z-index: 99999;
+			}
+			
+			#page_loading_9232 .page_loading_cont {
+		        margin: 0 auto;
+			    margin-top: 20%;
+			    text-align: center;
+			    font-size: 14px;
+			    color: #666666;
+			    width: 275px;
+			}
+			
+			#page_loading_9232 .page_loading_text {
+		        height: 32px;
+			    line-height: 32px;
+			}
+			
+			#page_loading_9232 .page_loading_icon {
+			    -webkit-transition-property: -webkit-transform;
+			    -webkit-transition-duration: 1s;
+			    -moz-transition-property: -moz-transform;
+			    -moz-transition-duration: 1s;
+			    -webkit-animation: loading_rotate 3s linear infinite;
+			    -moz-animation: loading_rotate 3s linear infinite;
+			    -o-animation: loading_rotate 3s linear infinite;
+			    animation: loading_rotate 3s linear infinite;
+			    color: #999999;
+			}
+			
+			@-webkit-keyframes loading_rotate{
+				from{-webkit-transform: rotate(0deg)}
+			    to{-webkit-transform: rotate(360deg)}
+			}
+			@-moz-keyframes loading_rotate{
+				from{-moz-transform: rotate(0deg)}
+			    to{-moz-transform: rotate(359deg)}
+			}
+			@-o-keyframes loading_rotate{
+				from{-o-transform: rotate(0deg)}
+			    to{-o-transform: rotate(359deg)}
+			}
+			@keyframes loading_rotate{
+				from{transform: rotate(0deg)}
+			    to{transform: rotate(359deg)}
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div id="root"></div>
+		
+		<!--
+        	loading加载页
+        -->
+		<div id="page_loading_9232">
+			<div class="page_loading_cont">
+				<img class="page_loading_icon" src="https://img.ishanshan.com/gimg/img/fe8cb8e8412c0286e5a4b9186146d377" />
+				<div class="page_loading_text">页面正在火速加载中</div>
+			</div>
+		</div>
+		
+
+		<script type="text/javascript">
+			/*关闭loading加载页 */
+			window.closeLoadingPageShow = function() {
+				document.getElementById('page_loading_9232').style.display = 'none';
+			}
+		</script>
+		<!--lodop打印的配置-->
+		<object  id="LODOP_OB" classid="clsid:2105C259-1E0C-4534-8141-A753534CB4CA" width=0 height=0>
+		   <embed id="LODOP_EM" type="application/x-print-lodop" width=0 height=0></embed>
+		</object>
+		<script type="text/javascript">
+			window.onload=function(){
+			var timestamp = new Date().getTime();
+			var ueditor_resource_base_url = 'http://www.ishanshan.com/ueditor';
+			var head= document.getElementsByTagName('body')[0];
+
+			var ueditor_script= document.createElement('script');
+			ueditor_script.type= 'text/javascript';
+			ueditor_script.src= ueditor_resource_base_url + '/ueditor.all.min.js?t='+timestamp;
+			head.appendChild(ueditor_script);
+
+			var config_script= document.createElement('script');
+			config_script.type= 'text/javascript';
+			config_script.src= ueditor_resource_base_url + '/ueditor.config.js?t='+timestamp;
+			head.appendChild(config_script);
+		}
+		</script>
+		<script>window.env = 'local';</script>
+		<script src="common.js"></script>
+		<script src="index.js"></script>
+		<script src="http://192.168.1.52/resources/js/zip/zip.js"></script>
+		<script src="http://192.168.1.52/resources/js/html2canvas.min.js"></script>
+	</body>
+</html>
+
+<script type="text/javascript">
+	var _mapNewLng = '';
+	var _mapNewLat = '';	
+	var _mapNoChange = true;
+	var _mapMoveAfter = false;
+	function loadJScript(src) {
+		var script = document.createElement("script");
+		script.type = "text/javascript";
+		script.src = src;
+		document.body.appendChild(script);
+	}
+		
+	//回调初始化默认北京
+	function init() {
+		var map = new BMap.Map("base_map");            
+		var point = new BMap.Point(116.404, 39.915); 
+		map.centerAndZoom(point,13);                 
+	}  
+	
+	//添加控件和比例尺
+	function scaleControl(map) {
+		var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});
+		var top_left_navigation = new BMap.NavigationControl();  
+		function add_control(){
+			map.addControl(top_left_control);        
+			map.addControl(top_left_navigation);     
+		}
+		  
+		add_control();
+	}
+	
+	function moveToLngLat(map, point) {
+		var marker = new BMap.Marker(point);
+		marker.enableDragging();
+		function getAttr(){
+			var p = marker.getPosition();    
+			_mapNewLng = p.lng;
+			_mapNewLat = p.lat;
+			_mapMoveAfter = true;
+		}
+		marker.addEventListener("mouseup", getAttr);
+		map.addOverlay(marker);
+	}
+	
+	//根据经纬度定位
+	function theLocation(lng, lat){
+		var map = new BMap.Map("base_map");
+		var new_point = new BMap.Point(lng, lat);
+		map.centerAndZoom(new_point, 19);
+		scaleControl(map);		
+		moveToLngLat(map, new_point);
+		map.panTo(new_point);   
+	}
+	
+	//根据地址进行解析定位
+	function addressParse(province, address) {		
+
+		var map = new BMap.Map("base_map");
+		var point = new BMap.Point();		
+		scaleControl(map);
+		var myGeo = new BMap.Geocoder();
+		myGeo.getPoint(province+address, function(point){
+			if (point) {
+				moveToLngLat(map, point);
+				map.centerAndZoom(point, address.length > 0 ? 17 : 13);
+				_mapNewLng = 0;
+				_mapNewLat = 0;
+				_mapMoveAfter = false;
+			} else {
+				alert("您选择的地址没有解析到结果!");
+			}
+		}, "");		
+	}
+</script>
+<script src="http://www.ishanshan.com/resources/zepto.min.js"></script>
+<script src="http://www.ishanshan.com/resources/js/gt.js"></script>
+<script src="http://www.ishanshan.com/resources/js/verifycode.js"></script>
+
+<!--
+	百度商桥交流代码
+-->
+<script src="http://www.ishanshan.com/thinknode/static/js/baidu/shangqiao.js"></script>

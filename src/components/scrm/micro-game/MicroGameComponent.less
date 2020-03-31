@@ -1,0 +1,430 @@
+.business_page_content {
+    height: 100%;
+}
+
+.top_content {
+    // padding-top: 14px;
+    border-bottom: 4px solid #5D9CEC;
+    padding-bottom: 10px;
+}
+
+.filter_org_cont, .filter_name_cont, .top_handle_btn_cont, .handle_btn {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.center_content {
+    // margin-top: 20px;
+    border-radius: 10px;
+    // padding: 5px;
+    overflow: auto;
+    width: 100%;
+    background-color: #F0F0F4;
+    // padding-left: 60px;
+    box-sizing: border-box;
+    min-width: 1336px;
+}
+
+.loading_cont {
+    width: 100%;
+    text-align: center;
+}
+
+//↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 单个游戏展示块  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+.game_item_cont {
+    width: 240px;
+    height: 306px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    // margin: 10px;
+    // cursor: pointer;
+    margin: 15px;
+    cursor: pointer;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.game_item_rightHot{
+    top: 0;
+    right: 6px;
+    position: absolute;
+    z-index: 1;
+}
+
+.game_item_rightHot>img{
+    width: 39px;
+    height: 28px;
+}
+
+.game_item_cont:hover {
+    box-shadow: 10px 10px 15px 2px #c5c5c5;
+}
+
+.game_item_top_cont {
+    width: 100%;
+    height: 220px;
+    // height: 200px;
+    // border-top-left-radius: 10px;
+    // border-top-right-radius: 10px;
+    background-size: 100% 100%;
+    background-position: center center;
+    position: relative;
+}
+
+.data_info_cont {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 26px;
+    line-height: 26px;
+    background-color: rgba(0, 0, 0, 0.60);
+    padding-left: 10px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.qrcode_modal_warp {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.60);
+    opacity: 0;
+    // border-top-left-radius: 10px;
+    // border-top-right-radius: 10px;
+    transition: opacity .4s ease-in-out;
+}
+
+.qrcode_modal_warp > canvas {
+    // width: 130px;
+    // height: 130px;
+    width: 140px;
+    height: 140px;
+    display: inline-block;
+    // margin-top: 20px;
+    margin-top: 40px;
+    border-radius: 5px;
+    padding: 3px;
+    background-color: #FFF;
+}
+
+.game_item_top_cont:hover .qrcode_modal_warp {
+    opacity: 1;
+}
+
+.game_item_bottom_cont {
+    width: 100%;
+    // height: 100px;
+    height: 76px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    // padding: 10px;
+}
+
+.game_item_info {
+    width: 100%;
+    height: 50%;
+}
+
+.game_item_title {
+    width: 100%;
+    height: 50%;
+    font-size: 14px;
+    color: #333;
+    padding-top: 15px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.game_item_intro {
+    width: 100%;
+    height: 50%;
+    font-size: 12px;
+    color: #999999;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+//    display: -webkit-box;
+//    -webkit-line-clamp: 1;
+//    -webkit-box-orient: vertical;
+//    overflow: hidden;
+}
+
+.game_item_buy_cont {
+    width: 100%;
+    height: 50%;
+    // margin-top: 10px;
+}
+
+.game_item_price {
+    width: 50%;
+    // height: 100%;
+    display: inline-block;
+    text-align: left;
+}
+
+.game_item_btn_cont {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    text-align: right;
+}
+
+.game_item_btn{
+    background: #5D9CEC;
+    border-color: #5D9CEC;
+}
+
+.game_item_price {
+    font-size: 14px;
+    // color: #FF928A;
+    color: #999;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.activity_icon_usernum{
+    font-size: 14px;
+    margin-right: 6px;
+}
+
+//微游戏窗口展示
+.modal_frame_modal {
+    color: #FFFFFF;
+}
+
+.modal_frame_cont {
+    height: 85vh;
+}
+
+.activity_modal_left_box{
+    width: 311px;
+    height: 500px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.activity_modal_left_box>img{
+    width: 100%;
+    // height: 100%;
+}
+
+.activity_modal_right_box{
+    width: 329px;
+    margin-left: 30px;
+    position: relative;
+}
+
+.activity_modal_right_title{
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+
+.activity_modal_right_type{
+    font-size: 12px;
+    color: #333;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+
+.activity_modal_right_icon{
+    width: 6px;
+    height: 6px;
+    background: #5D9CEC;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.activity_modal_right_typeText{
+    font-size: 12px;
+    color: #5D9CEC;
+    padding-left: 13px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+
+.activity_modal_right_textIcon{
+    padding: 4px 6px;
+    background: #E0F1FF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.activity_modal_right_intro{
+    font-size: 12px;
+    color: #999;
+    padding-left: 13px;
+    box-sizing: border-box;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.activity_modal_right_download{
+    margin-top: 8px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    padding-left: 13px;
+    box-sizing: border-box;
+}
+
+.activity_modal_right_downText{
+    text-decoration: underline;
+    color: #5D9CEC;
+}
+
+.activity_modal_right_other{
+    margin-bottom: 32px;
+    display: inline-block;
+    padding-left: 13px;
+    box-sizing: border-box;
+}
+
+.activity_modal_right_imgs{
+    width: 70px;
+    height: 70px;
+    background: #ddd;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.activity_modal_right_imgs>img{
+    width: 100%;
+    height: 100%;
+}
+
+.activity_modal_right_qrbox{
+    padding-left: 13px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+}
+
+.activity_modal_right_qrimg{
+    width: 132px;
+    height: 132px;
+}
+
+.activity_modal_right_qrbox>p{
+    margin-left: 43px;
+}
+
+.gameOractivity_div_select_button2 {
+    // margin-right: 10px;
+    float: right;
+    background: #5D9CEC;
+    border-color: #5D9CEC;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.activity_label {
+    padding: 8px 0;
+    padding-left: 10px;
+    min-width: 1336px;
+}
+
+.labeGroup {
+    padding: 8px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+}
+
+.labeTitle {
+    height: 100%;
+    color: #000;
+    font-weight: 600;
+    margin-right: 10px;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.labeContent {
+    width: calc(~'100% - 45px - 40px');
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.labelChild {
+    margin-right: 14px;
+    word-break: keep-all;
+    white-space: nowrap;
+    display: inline-block;
+    line-height: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0 5px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.active_main {
+    background: #F0F0F4;
+    margin-right: 5px;
+    border-radius: 5px;
+    min-height: 635px;
+    padding-bottom: 60px;
+    min-width: 1336px;
+    padding-left: 70px;
+}
+
+.zyf_micro_activity_check_or_pickup_more_tag {
+    position: relative;
+    height: 25px;
+    margin: 0 auto;
+    width: 80px;
+    background: #fff;
+    cursor: pointer;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.zyf_micro_activity_check_or_pickup_more_tag>div {
+    height: inherit;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.zyf_micro_activity_check_or_pickup_more_tag_font {
+    margin-right: 3px;
+}
+
+.zyf_micro_activity_check_more_tag {
+    position: absolute;
+    font-size: 14px;
+    right: 13px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.zyf_micro_activity_pickup_more_tag {
+    position: absolute;
+    font-size: 12px;
+    right: 13px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}

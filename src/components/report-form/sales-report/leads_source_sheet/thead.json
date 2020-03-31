@@ -1,0 +1,8 @@
+[
+    { "name" : "来源类型" , "id" : "sourceType" },
+    { "name" : "来源名称" , "id" : "sourceName" , "index" : 0 },
+    { "name" : "名单数量" , "id" : "sourceNum" , "index" : 1 },
+    { "name" : "占比" , "id" : "sourceRate" , "index" : 2 },
+    { "name" : "转为学员数量" , "id" : "turnStu" , "index" : 3 },
+    { "name" : "转化率" , "id" : "turnStuRate" , "index" : 4 }
+]

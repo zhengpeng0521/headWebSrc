@@ -1,0 +1,56 @@
+.assign_total{
+  font-size: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  span{
+    color: #5d9cec;
+  }
+}
+
+.assign_tip{
+  color: #ff7f75;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.assign_form{
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+
+  & > div{
+    width: 50%;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 10px;
+  }
+
+  .assign_table_header{
+    padding: 10px;
+    background: #efefef;
+
+    span:last-child{
+      margin-right: 30px;
+    }
+  }
+
+  :global{
+    .ant-form-item{
+      margin-bottom: 0;
+
+      &:first-child{
+        width: 50%;
+      }
+    }
+
+    .ant-input-number{
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,265 @@
+.enrollment-page1-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/c7655bee14d2f49695882d4153f72534");
+}
+/*第一页样式 开始*/
+.enrollment-page1-title{
+	position:absolute;
+	margin:auto;left:0;right:0;
+	top:130px;
+	width:300px;
+	height:80px;
+	line-height:80px;
+
+	color:#FABF25;
+	font-size:28px;
+	font-weight:bold;
+	text-align:center;
+}
+.enrollment-page1-subTitle{
+	position:absolute;
+	margin:auto;left:0;right:0;
+	padding:10px 20px;
+	top:310px;
+	width:230px;
+	min-height:30px;
+	line-height:20px;
+	background:rgba(0,0,0,.4);
+	border-radius:12px;
+
+	color:#fff;
+	font-size:14px;
+}
+/*第一页样式 结束*/
+
+/*第二页样式 开始*/
+.enrollment-page2-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/2251b87956e8206bd2a3b973d8db5e99");
+}
+.enrollment-page2-title{
+	position:absolute;
+	top: 55px;
+    margin: auto;
+    left: 50px;
+    width:200px;
+    height: 60px;
+    line-height: 60px;
+	background:rgba(255,255,255,.1);
+	border-radius:12px;
+
+	color:#518427;
+	font-size:24px;
+	font-weight:bold;
+	text-align:center;
+}
+.enrollment-page2-content{
+	position:absolute;
+	top: 215px;
+    margin: auto;
+    left: 0;right:0;
+    width:230px;
+    height: 155px;
+    color:#fff;
+    font-size:14px;
+    overflow: hidden;
+}
+.enrollment-page2-content-item{
+	display:block;
+	width:250px;
+	min-height:20px;
+	line-height:20px;
+	margin:0 auto 5px;
+}
+.enrollment-page2-content-item-label{
+	display:inline-block;
+	box-sizing:border-box;
+	width:50px;
+	height:20px;
+	line-height:20px;
+	vertical-align: top;
+	text-align: right;
+	margin-right:10px;
+	overflow:hidden;
+
+}
+.enrollment-page2-content-item-value{
+	display:inline-block;
+	box-sizing:border-box;
+	width:180px;
+	min-height:20px;
+	line-height:20px;
+}
+/*第二页样式 结束*/
+
+/*第三页样式 开始*/
+.enrollment-page3-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/91e05f5fee3821ea1598d8072a6d3867");
+}
+/*标题样式*/
+.enrollment-page3-title{
+	position: absolute;
+    top: 0px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    height: 60px;
+    line-height: 60px;
+    width: 250px;
+
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+}
+/*图片 样式*/
+.enrollment-page3-content-item1{
+	position:absolute;
+	top: 60px;
+    left: 20px;
+    width: 140px;
+    height: 146px;
+}
+.enrollment-page3-content-item2{
+	position:absolute;
+	top: 213px;
+    left: 166px;
+    width: 140px;
+    height: 146px;
+}
+.enrollment-page3-content-item3{
+	position:absolute;
+	top: 365px;
+    left: 20px;
+    width: 140px;
+    height: 146px;
+}
+.enrollment-page3-content-item-image{
+	width:100%;
+	height:100%;
+}
+.enrollment-page3-content-item4{
+	position:absolute;
+	top: 100px;
+    left: 182px;
+    width: 110px;
+    height: 80px;
+    color:#fff;
+    font-size:14px;
+	overflow:hidden;
+}
+.enrollment-page3-content-item5{
+	position:absolute;
+	top: 239px;
+    left: 39px;
+    width: 110px;
+    height: 80px;
+    color:#fff;
+    font-size:14px;
+	overflow:hidden;
+}
+.enrollment-page3-content-item6{
+	position:absolute;
+	top: 390px;
+    left: 178px;
+    width: 110px;
+    height: 80px;
+    color:#fff;
+    font-size:14px;
+    overflow:hidden;
+}
+/*第三页样式 结束*/
+
+/*第四页样式 开始*/
+.enrollment-page4-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/1a7fdfb5c74deb82c5dc9991444ba70e");
+}
+.enrollment-page4-title,.enrollment-page5-title{
+	position:absolute;
+	top: 40px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width:200px;
+    height: 60px;
+    line-height: 60px;
+
+	color:#FABF25;
+	font-size:24px;
+	font-weight:bold;
+	text-align:center;
+}
+
+.enrollment-page4-content-item1{
+	position:absolute;
+	top: 143px;
+    left: 30px;
+    width: 124px;
+    height: 125px;
+}
+
+.enrollment-page4-content-item2{
+	position:absolute;
+	top:143px;
+	left:174px;
+	width: 124px;
+    height: 125px;
+}
+.enrollment-page4-content-item-image{
+	width:100%;
+	height:100%;
+}
+.enrollment-page4-content-value{
+	position:absolute;
+	top:275px;
+	margin:auto;
+	left:0;right:0;
+	width:265px;
+	height:125px;
+	overflow:hidden;
+	padding:20px 5px 5px 5px;
+
+	color:#fff;
+	font-size:14px;
+	overflow:hidden;
+}
+/*第四页样式 结束*/
+
+/*第五页样式 结束*/
+.enrollment-page5-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/4f06ec48b3663ba1a5f967b4443987f2");
+}
+.enrollment-page5-title{
+	top:70px;
+	font-size:21px;
+}
+.enrollment-page5-name,.enrollment-page5-phone{
+	position:absolute;
+	top:190px;
+	margin:auto;left:0;right:0;
+	width:300px;
+	height:45px;
+	line-height:45px;
+	background:#81D1EA;
+	border-radius:15px;
+
+	text-align:center;
+	font-size:16px;
+	color:#fff;
+
+
+}
+.enrollment-page5-phone{
+	top:250px;
+}
+.enrollment-page5-submit-button{
+	position:absolute;
+	margin:auto;left:0;right:0;
+	top:310px;
+	width:140px;
+	height:42px;
+	background-image:url('//img.ishanshan.com/gimg/img/91c8190af56cd77de7bde58e2c3cd929');
+	background-size:cover;
+	text-align:center;
+	font-size:18px;
+	color:#fff;
+	line-height:42px;
+}
+/*第五页样式 结束*/

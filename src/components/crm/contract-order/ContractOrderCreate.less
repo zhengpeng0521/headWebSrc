@@ -1,0 +1,99 @@
+/*引入less定义的方法*/
+@import '../../common/less/common.less';
+
+:global{
+    .contract_order_modal .ant-modal-body{
+        overflow: auto;
+        max-height: 580px;
+        margin: 15px;
+        padding: 0 5px 0 0;
+        .scrollbar()
+    }
+	.contract_order_modal .ant-modal-footer{
+			margin: 0;
+			padding: 0 20px 20px 20px;
+	}
+//	.contract_order_modal .ant-form-item{
+//			margin-bottom : 10px;
+//	}
+//	.contract_order_modal .ant-form-item-label{
+//			height : 28px;
+//	}
+	.contract_order_modal .ant-form-extra{
+		color : red;
+	}
+	.contract_order_class_package{
+		background : #f1f1f1;
+		width : 652px;
+		height : 40px;
+		border : 1px solid #ddd;
+		li{
+			display : inline-block;
+			height : 39px;
+			line-height : 39px;
+			text-align : center;
+			border-right : 1px solid #ddd;
+		}
+		li:last-child{
+			border-width : 0;
+		}
+	}
+
+	.contract_order_class_package_content{
+		position : relative;
+		margin-left : 102.25px;
+		width : 652px;
+		height : 40px;
+		border : 1px solid #ddd;
+		border-top : none;
+		border-right : none;
+	}
+	.contract_order_delete_text{
+		position : absolute;
+		right : -40px;
+		top : 10px;
+	}
+	/*产品第一行需上移*/
+	.first{
+		margin-top : -20px;
+	}
+
+	.class_package_content_item{
+		display : inline-block;
+		padding : 0 6px;
+		height : 40px;
+		text-align : center;
+		line-height : 40px;
+		border-right : 1px solid #ddd;
+		overflow : hidden;
+	}
+	.contract_order_add_text{
+		margin-left : 102.25px;
+	}
+
+
+	/*覆盖样式*/
+	.class_package_content_item .ant-form-item{
+		margin : 0;
+		margin-top : -2px;
+	}
+	.contract_class_item .ant-input-group-wrapper{
+		margin-top : 6px;
+	}
+}
+
+.quick_send_class{
+	position : absolute;
+	top : 5px;
+	left :  420px;
+}
+.quick_send_class_item{
+	margin-right : 10px;
+	padding : 5px 10px;
+	background : #f1f1f1;
+	border-radius : 5px;
+	cursor : pointer;
+}
+.quick_send_class_item:hover{
+	box-shadow : 0 0 5px #ddd;
+}

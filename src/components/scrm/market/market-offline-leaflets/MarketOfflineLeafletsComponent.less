@@ -1,0 +1,201 @@
+@baseName : marketOfflineLeaflets;
+
+:global {
+	.@{baseName} {
+		width: 100%;
+		height: 100%;
+//		padding: 20px;
+//    	overflow: scroll;
+    	padding-bottom: 50px;
+		background-color: white;
+	}
+}
+
+.nextLoadString {
+    float: left;
+    clear: both;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;	
+}
+
+.cardContent {
+	height: 100%;
+    background-color: #ececec;
+    padding: 20px;
+    border-top: 4px #5d9cec solid;
+	margin-top: -10px;
+	overflow: auto;
+}
+
+.modelBaseDiv {
+	margin-right: 25px;
+    float: left;
+    margin-bottom: 25px;
+    height: 300px;
+    width: 200px;
+	background-color: white;
+	border-radius: 5px;
+	overflow: hidden;
+	animation: showModelBaseDiv;
+	animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+	opacity: 0;
+} @keyframes showModelBaseDiv {
+	0% { opacity: 0; transform : translateY(10px);}
+	100% { opacity: 1; transform : translateY(0px);};
+}
+
+.modelBaseDiv:hover {
+	animation: showModelBaseBorder;
+	animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+	opacity: 1;
+} @keyframes showModelBaseBorder {
+	0% { box-shadow: 10px 10px 15px 2px  #ececec;}
+	100% { box-shadow: 10px 10px 15px 2px  #c5c5c5;};
+}
+ 
+.modelCover {
+	width: 200px;
+    height: 200px;
+	background-size: cover;
+    background-position: center center;
+}
+
+.modelTitle {
+	font-size: 14px;
+	color : #666;
+    text-align: left;
+    padding: 5px 0px 0px 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-overflow: ellipsis;
+}
+
+.modelIntro {
+	font-size: 12px;
+	color : #999;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 18px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.modelIsOpen {
+	font-size: 16px;
+    margin-left: 10px;
+    line-height: 28px;
+    color: #cad0dd;
+	float: left;
+}
+
+.modelIsOpenButton {
+	margin-right: 10px;
+    float: right;
+	height: 29px;
+    line-height: 16px;
+}
+
+.pagePagination {
+    clear: both;
+    float: right;
+    margin-top: 20px;
+	height : 80px;
+}
+
+.leafletsCustom {
+	clear: both;
+    font-size: 14px;
+    float: right;
+    margin-right: 40px;
+}
+
+.customText {
+	margin-top: 20px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.useBaseDiv {
+	position: relative;
+    height: 26px;
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    top: 174px;
+}
+
+.useString {
+    color: white;
+    font-size: 14px;
+    line-height: 26px;
+    float: right;
+}
+
+.useCount {
+    float: left;
+    bottom: 140px;
+    color: #108ee9;
+    font-size: 14px;
+    line-height: 26px;
+	padding-left: 10px;
+}
+
+.offline_mask {
+    width: calc(~'100% + 20px');
+    height: calc(~'100% + 50px');
+    background: white;
+    position: absolute;
+    z-index: 10000;
+    margin-top: -100px;
+    margin-left: -20px;
+    filter: blur(15px);
+    -webkit-filter: blur(15px);
+    opacity: 0.5;
+}
+.promptString {
+    position: absolute;
+    z-index: 100001;
+    font-size: 18px;
+    left: calc(~'50% - 125px');
+    width: 250px;
+    color: #49a9ee;
+    // font-weight: 900;
+    text-align: center;
+    top: 50%;
+}
+
+ .turn_dot {
+    background-image: url(//img.ishanshan.com/gimg/img/e64ae5d335fd567df59102fa68aa2676);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    z-index: 10000;
+    animation: turn_dot_ani;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    left: 48%;
+    top: 42.5%;
+
+ } @keyframes turn_dot_ani {
+     0%{transform: rotate(0deg)}
+     100%{transform: rotate(360deg)}
+ }
+
+//  {
+//     transform: rotate(45deg);
+//     -webkit-animation: antRotate 1.2s infinite linear;
+//     animation: antRotate 1.2s infinite linear;
+//  }

@@ -1,0 +1,6 @@
+[
+    { "name" : "文档" , "type" : "1" , "content" : [ "ppt" , "pptx" , "pdf" ] , "open" : false },
+    { "name" : "图片" , "type" : "2" , "content" : [ "jpg" , "png" , "gif" ] , "open" : false },
+    { "name" : "视频" , "type" : "3" , "content" : [ "rmvb" , "avi" , "mp4" ] , "open" : false },
+    { "name" : "综合" , "type" : "4" , "content" : [ "ppt" , "pdf", "mp3", "mp4" ] , "open" : true }
+]

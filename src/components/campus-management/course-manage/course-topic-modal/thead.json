@@ -1,0 +1,5 @@
+[
+    { "name" : "主题名称" , "id" : "title" , "width" : "40%" },
+    { "name" : "类型" , "id" : "type" , "width" : "30%" },
+    { "name" : "操作" , "id" : "operation" , "width" : "30%" }
+]

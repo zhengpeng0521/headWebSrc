@@ -1,0 +1,14 @@
+/*引入less定义的方法*/
+@import '../../../../components/common/less/common.less';
+
+:global{
+    .wyp_classMonthKnotSheet_table{
+        overflow : hidden;
+        height : 100%;
+    }
+    .wyp_classMonthKnotSheet_table .ant-table-body{
+        overflow-x: auto !important;
+        // max-height: 550px !important;
+        overflow-y: scroll !important;
+    }
+}

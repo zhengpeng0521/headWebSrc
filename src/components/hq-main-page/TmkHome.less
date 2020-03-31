@@ -1,0 +1,244 @@
+
+.tmk_container{
+  width: calc(~'100% - 10px');
+  background: #fff;
+  margin: 0 10px;
+  padding: 20px 0;
+  border-radius: 10px;
+
+  h3{
+    margin: 0 0 10px 20px;
+    font-weight: normal;
+    color: #666;
+  }
+}
+
+.tmk_box{
+  display: flex;
+}
+// -------------------表格start-----------------
+.tmk_table{
+  width: 58%;
+  .tmk_table_list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    li {
+      width: 20%;
+      min-width: 120px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      text-align: center;
+      margin-left: -1px;
+
+      div {
+        line-height: 28px;
+
+        &:first-child{
+          border-bottom: 1px solid #ddd;
+          background: #5D9CEC;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+// -------------------表格end-----------------
+
+// -------------------漏斗start-----------------
+.sale_funnel {
+  width: 40%;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sale_funnel_box {
+  width: 250px;
+}
+
+.sale_funnel_flex {
+  display: flex;
+  align-items: center;
+
+  div:first-child {
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: -22px;
+      display: block;
+      width: 28px;
+      height: 28px;
+      background: #fff;
+      transform: rotate(70deg);
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      right: -22px;
+      display: block;
+      width: 28px;
+      height: 28px;
+      background: #fff;
+      transform: rotate(20deg);
+    }
+  }
+
+  // 漏斗线
+  div:nth-child(2) {
+    width: 9px;
+    height: 1.6px;
+    background: linear-gradient(0, rgba(130, 82, 219, 0.6), #8252db);
+    z-index: 9;
+  }
+
+  div:last-child {
+    z-index: 9;
+    margin-left: 4px;
+
+    span {
+      margin-left: 4px;
+      vertical-align: middle;
+    }
+  }
+
+  .funnel_tip_text {
+    display: inline-block;
+    max-width: 56px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #999;
+  }
+
+  // 漏斗1
+  &:first-child {
+    .sale_funnel_one {
+      width: 140px;
+      height: 24px;
+      border-radius: 6px;
+      background: linear-gradient(
+        180deg,
+        rgb(130, 82, 219) 0%,
+        rgba(130, 82, 219, 0.6) 100%
+      );
+
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: -14px;
+        display: block;
+        width: 18px;
+        height: 18px;
+        background: #fff;
+        transform: rotate(70deg);
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        right: -14px;
+        display: block;
+        width: 18px;
+        height: 18px;
+        background: #fff;
+        transform: rotate(20deg);
+      }
+    }
+  }
+
+  // 漏斗2
+  &:nth-child(2) {
+    margin-top: 2px;
+    .sale_funnel_one {
+      width: 126px;
+      height: 24px;
+      margin: 0 7px;
+      background: linear-gradient(
+        180deg,
+        rgb(63, 138, 232) 0%,
+        rgba(63, 138, 232, 0.6) 100%
+      );
+    }
+    .sale_funnel_line {
+      width: 17px;
+      margin-left: -9px;
+      background: linear-gradient(0, rgba(63, 138, 232, 0.6), #3f8ae8);
+    }
+  }
+
+  // 漏斗3
+  &:nth-child(3) {
+    margin-top: 2px;
+    .sale_funnel_one {
+      width: 108px;
+      height: 24px;
+      margin: 0 16px;
+      background: linear-gradient(
+        180deg,
+        rgb(78, 176, 217) 0%,
+        rgba(78, 176, 217, 0.6) 100%
+      );
+    }
+    .sale_funnel_line {
+      width: 27px;
+      margin-left: -18px;
+      background: linear-gradient(0, rgba(78, 176, 217, 0.6), #4eb0d9);
+    }
+  }
+
+  // 漏斗4
+  &:nth-child(4) {
+    margin-top: 2px;
+    .sale_funnel_one {
+      width: 90px;
+      height: 24px;
+      margin: 0 25px;
+      background: linear-gradient(
+        180deg,
+        rgb(100, 194, 162) 0%,
+        rgba(100, 194, 162, 0.6) 100%
+      );
+    }
+    .sale_funnel_line {
+      width: 35px;
+      margin-left: -26px;
+      background: linear-gradient(0, rgba(100, 194, 162, 0.6), #64c2a2);
+    }
+  }
+
+  // 漏斗5
+  &:nth-child(5) {
+    margin-top: 2px;
+    .sale_funnel_one {
+      width: 70px;
+      height: 24px;
+      margin: 0 35px;
+      border-radius: 0px 0px 5px 5px;
+      background: linear-gradient(
+        180deg,
+        rgb(234, 212, 59) 0%,
+        rgba(234, 212, 59, 0.6) 100%
+      );
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+    .sale_funnel_line {
+      width: 42px;
+      margin-left: -33px;
+      background: linear-gradient(0, rgba(234, 212, 59, 0.6), #ead43b);
+    }
+  }
+
+}
+// -------------------漏斗end-----------------

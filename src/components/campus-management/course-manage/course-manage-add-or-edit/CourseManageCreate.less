@@ -1,0 +1,267 @@
+/*引入less定义的方法*/
+@import '../../../common/less/common.less';
+
+:global{
+    .zj_yhwu_course_manage_modal .ant-modal-body{
+        max-height: 510px;
+        padding: 20px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        .scrollbar();
+    }
+    .zj_yhwu_course_manage_modal .ant-modal-footer{
+        margin: 0;
+        padding: 0 20px 20px 20px;
+    }
+    .zj_yhwu_course_manage_modal .ant-form-item{
+        margin-bottom: 10px;
+        margin-left: -10px;
+        &:last-child{
+             margin-bottom:0;
+        }
+    }
+
+    .yhwu_course_modal_content .ant-modal-body{
+        padding: 20px !important;
+    }
+    .yhwu_course_modal_content .ant-modal-footer{
+        margin : 0;
+        padding : 0 20px 20px 20px;
+    }
+		.yhwu_course_modal_content .ant-form-item-label{
+				height : 28px;
+		}
+    .yhwu_modal_content{
+        max-height : 700px;
+    }
+    .yhwu_modal_content .ant-modal-content{
+        max-height : 700px;
+    }
+    .yhwu_modal_content .ant-modal-header{
+        background-color : #5D9CEC;
+    }
+    .yhwu_modal_content .ant-modal-body{
+        padding : 20px 20px 0 20px;
+        overflow-y : auto;
+        max-height : 570px;
+    }
+    .yhwu_modal_content .ant-modal-footer{
+        padding : 0 20px 20px 20px;
+        margin:0;
+    }
+    .yhwu_modal_content .ant-modal-title{
+        font-size : 16px;
+    }
+    .yhwu_modal_content .ant-form-extra{
+        color : red;
+        line-height : 12px;
+        margin-top : 6px;
+    }
+    .yhwu_modal_content .ant-form-explain{
+        line-height : 16px;
+        margin-top : 6px;
+    }
+    .yhwu_modal_content .ant-upload.ant-upload-select-picture-card{
+        margin-bottom : 0;
+    }
+    .yhwu_modal_content .ant-upload.ant-upload-select-picture-card>.ant-upload{
+        padding : 24px 0 0 0;
+    }
+    .yhwu_modal_content .ant-btn{
+        padding : 4px 24px;
+        border-radius : 5px;
+    }
+    .yhwu_base_setting{
+        margin-bottom : 10px !important;
+    }
+    .yhwu_base_setting::before{
+        content : '';
+        display : inline-block;
+        width : 8px;
+        height : 14px;
+        margin-right : 10px;
+        background : #5D9CEC;
+        vertical-align : middle;
+        border-radius: 3px;
+    }
+    .yhwu_base_setting>span{
+        display : inline-block;
+        vertical-align : middle;
+        font-size : 1.16rem;
+    }
+}
+/*详情页面*/
+
+.model_detail_bigDiv{
+   background:#f1f1f1;
+   width:100%;
+   height:140px;
+   overflow: hidden;
+}
+.model_detail_img{
+    width:40px;
+    height:40px;
+    float:left;
+    margin:20px;
+    border-radius:50%;
+    border:1px solid #ccc;
+}
+.model_detail_top{
+    width:calc(~'100% - 80px');
+    height:auto;
+    overflow:hidden;
+    float:left;
+}
+.model_detail_topTitle{
+    width:100%;
+    height:60px;
+}
+.model_detail_title{
+    margin-top:20px;
+    height:40px;
+    line-height:40px;
+    color:#666;
+    font-size:16px;
+    float:left;
+}
+.model_detail_btn{
+    width:120px;
+    float:right;
+    height:60px;
+    margin-top:10px;
+}
+.model_detail_btn ButtonGroup{
+    width:100px;
+    height:28px;
+    line-height:28px;
+}
+
+.model_detail_btn1{
+    width:80px;
+    text-align:center;
+    padding:0 !important;
+}
+.model_detail_btn2{
+    width:20px;
+    text-align:center;
+    background:#7eb4f8;
+    border:1px solid #7eb4f8;
+    color:#fff;
+    &:hover{
+        background:#7eb4f8;
+        border:1px solid #7eb4f8;
+        color:#fff;
+    }
+}
+.model_detail_close{
+    width:20px;
+    float:right;
+    margin-right:20px;
+    margin-left:20px;
+    height:40px;
+    padding-top:18px;
+}
+.model_detail_detailcon{
+    width:100%;
+    height:auto;
+    overflow:hidden;
+    margin-bottom:30px;
+}
+.model_detail_detailconLi{
+     width:100%;
+    height:auto;
+    overflow:hidden;
+    font-size:14px;
+}
+
+.model_detailconLip1{
+    float:left;
+    width:20%;
+    color:#666;
+}
+.model_detailconLip2{
+    float:left;
+    width:20%;
+    color:#999;
+}
+.model_detail_Cen{
+     background:#e9e9e9;
+     width:100%;
+     height:44px;
+    font-size:14px;
+}
+.model_detaiTitleSub{
+    width:50%;
+    float:left;
+    height:44px;
+    line-height:44px;
+    color:#666;
+    padding-left:80px;
+}
+.model_detailTitleBtn{
+    width:50%;
+    float:left;
+    height:44px;
+}
+.model_detailTitleBtn Button{
+    display:block;
+    float:right;
+    margin-right:20px;
+    height:28px;
+    margin-top:8px;
+}
+
+
+.courseManage_add_course{
+    width:100%;
+    padding:20px 0 20px 30px;
+    height:auto;
+    overflow:hidden;
+}
+.courseManage_add_course p{
+    padding:4px 24px;
+    width:132px;
+    border-radius:5px;
+    background:#5d9cec !important;
+    color:#fff;
+    font-size:14px;
+    cursor:pointer;
+}
+
+
+:global{
+    .courseManage_schedule{
+        padding-top:10px;
+    }
+    .common_detail .courseManage_detail .courseManage_schedule .ant-tabs-top .ant-tabs-bar .ant-tabs-nav-container{
+         background:#fff !important;
+         margin-left:230px;
+    }
+    .common_detail .courseManage_detail .courseManage_schedule
+    .ant-tabs-nav-container .ant-tabs-tab{
+         background:#fff !important;
+         color: #5D9BEC!important;
+         margin-right:80px!important;
+    }
+    .common_detail .courseManage_detail .courseManage_schedule
+    .ant-tabs-nav-container .ant-tabs-tab-active{
+         color: #666!important;
+    }
+    .common_detail .courseManage_detail .courseManage_schedule .common_class_schedule_content .ant-tabs-content{
+            margin: 2px 20px 30px 30px!important;
+            border:1px solid #ddd;
+    }
+
+    //上课主题
+    .classTopic{
+        width:100%;
+        display: flex;
+        padding-left: 15px;
+        margin-top: 15px;
+    }
+    .classTopicBtn{
+        margin-left: 50px;
+    }
+}
+
+

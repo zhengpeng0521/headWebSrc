@@ -1,0 +1,329 @@
+@import '../../lib.less';
+@buke-color: #8175C7;
+@shiting-color: #FBB323;
+
+.erp_overview_cont {
+    width: 100%;
+//    height: 100%;
+    padding-right: 1vw;
+    background-color: #E9E9ED;
+    padding:10px;
+    border-radius: 10px;
+}
+
+.org_filter_cont {
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+}
+
+.org_filter_cont:before {
+    display: inline-block;
+    content: '选择校区';
+    color: #666;
+    font-size: 16px;
+    margin-right: 10px;
+    float: left;
+}
+
+/*首页签到*/
+.overview_sign_cont {
+    width: 100%;
+    margin-top: 20px;
+    display: inline-flex;
+}
+
+/*排课签到*/
+.schedule_sign_cont {
+    width: 600px;
+    display: inline-block;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.title_cont {
+    height: 32px;
+    line-height: 32px;
+}
+
+.sign_title_text {
+    color: #666;
+    float: left;
+    font-size: 16px;
+}
+
+.schedule_sign_more {
+    float: right;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.schedule_sign_more_href {
+    color: @shanshan-main-color;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.schedule_content {
+    padding: 10px 20px;
+    background-color: #F5F5F5;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+}
+
+.schedule_content:hover {
+    opacity: 0.7;
+}
+
+.schedule_title_and_people {
+    height: 32px;
+    border-bottom: 1px solid #D9D9D9;
+    font-size: 14px;
+    color: #666;
+    position: relative;
+}
+
+.schedule_class_name {
+    float: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 40%;
+}
+
+.schedule_tea_num {
+    position: absolute;
+    left: 42%;
+}
+
+.schedule_stu_num {
+    float: right;
+}
+
+.schedule_info_cont {
+    padding-top: 10px;
+    width: 85%;
+}
+
+.first_schedule_sign_text {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 22px;
+    padding: 20px;
+    color: @shanshan-main-color;
+}
+
+.schedule_info_line {
+    height: 22px;
+    line-height: 22px;
+    font-size: 14px;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.schedule_type {
+    color: @shanshan-main-color;
+    float: left;
+}
+
+.schedule_info_left_item {
+    color: #999;
+    float: left;
+    max-width: 50%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.schedule_info_right_item {
+    color: #999;
+    float: right;
+    max-width: 50%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/*学员签到*/
+.student_sign_cont {
+    width: 30%;
+    min-width: 400px;
+    display: inline-block;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 1px;
+}
+
+.stu_select_cont {
+    height: 106px;
+}
+
+
+/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓签到信息↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.today_sign_record_cont {
+    margin-top: 20px;
+}
+
+.sign_record_title {
+    font-size: 16px;
+    color: #666;
+}
+
+.sign_record_list {
+    width: 100%;
+    display: inline-flex;
+    margin-top: 5px;
+}
+
+.sign_record_item {
+    width: calc(~'100%/3');
+}
+
+.sign_record_item_cont {
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.sign_record_list .sign_record_item:first-child .sign_record_item_cont {
+    margin-left: 0;
+}
+
+.sign_record_item_type {
+    background-color: @shanshan-main-color;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #FFF;
+    font-size: 16px;
+    text-align: center;
+    height: 32px;
+    line-height: 32px;
+}
+
+.sign_record_item_type_buke {
+    background-color: @buke-color;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #FFF;
+    font-size: 16px;
+    text-align: center;
+    height: 32px;
+    line-height: 32px;
+}
+
+.sign_record_item_type_shiting {
+    background-color: @shiting-color;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #FFF;
+    font-size: 16px;
+    text-align: center;
+    height: 32px;
+    line-height: 32px;
+}
+
+.sign_record_item_content {
+    background-color: #FFF;
+    padding: 8% 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: inline-flex;
+    width: 100%;
+    cursor: pointer;
+}
+
+.sign_record_item_content:hover {
+    opacity: 0.7;
+}
+
+.maa_all_num_cont {
+    width: 40%;
+    text-align: center;
+    border-right: 1px solid #D9D9D9;
+}
+
+.maa_all_num {
+    font-size: 48px;
+    color: #666;
+    font-weight: bold;
+}
+
+.remark_text {
+    font-size: 14px;
+    color: #999;
+}
+
+.really_data_cont {
+    width: 60%;
+    padding-right: 20px;
+    display: inline-flex;
+}
+
+.really_sign_num_cont {
+    text-align: center;
+    width: 50%;
+}
+
+.really_sign_num {
+    font-size: 48px;
+    color: @shanshan-main-color;
+    font-weight: bold;
+}
+
+.really_sign_num_buke {
+    font-size: 48px;
+    color: @buke-color;
+    font-weight: bold;
+}
+
+.really_sign_num_shiting {
+    font-size: 48px;
+    color: @shiting-color;
+    font-weight: bold;
+}
+
+.sign_type_num_cont {
+    width: 50%;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.sign_type_item {
+    padding: 0 10%;
+    height: 25px;
+    line-height: 25px;
+}
+
+.sign_type_label {
+    float: left;
+    font-size: 14px;
+    color: #999;
+}
+
+.sign_type_num {
+    float: right;
+    font-size: 14px;
+    color: #666;
+}
+
+.class_schedule_cont {
+    margin-top: 46px;
+}
+
+.schedule_content_empty {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+    color: #999;
+}
+
+.sign_by_self_cont {
+    float: right;
+}

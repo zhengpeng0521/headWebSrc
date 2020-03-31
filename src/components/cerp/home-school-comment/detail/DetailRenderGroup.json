@@ -1,0 +1,7 @@
+[
+    { "label" : "课程名称" , "value" : "courseName" },
+    { "label" : "排课标题" , "value" : "title" },
+    { "label" : "上课时间" , "value" : "time" },
+    { "label" : "主教" , "value" : "mtNames" },
+    { "label" : "所属校区" , "value" : "orgName" }
+]

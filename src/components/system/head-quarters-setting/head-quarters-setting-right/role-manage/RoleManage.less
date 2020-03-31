@@ -1,0 +1,171 @@
+/*引入less定义的方法*/
+@import '../../../../common/less/common.less';
+
+@bgColor: #f7f7f7;
+@hoverColor : #e0f0ff;
+@aColor : #5d9cec;
+
+.all{
+    display : -webkit-flex;
+    display : flex;
+    flex-wrap : nowrap;
+    min-width : 800px;
+}
+.left_area{
+    width : 320px;
+    margin-right : 20px;
+}
+.right_area{
+    width : 400px;
+    padding-left : 20px;
+    border-left : 1px solid #e9e9ed;
+}
+.block_title{
+    width : 100%;
+    color : #666;
+    font-size : 14px;
+    margin-bottom : 15px;
+    display : -webkit-flex;
+    display : flex;
+    flex-wrap : nowrap;
+    align-items : center;
+}
+.icon_help{
+    display : -webkit-flex;
+    display : flex;
+    flex-wrap : nowrap;
+}
+.icon_help_item{
+    margin-right : 20px;
+    display : -webkit-inline-flex;
+    display : inline-flex;
+    flex-wrap : nowrap;
+    align-items : center;
+    font-size : 12px;
+    &:last-child{ margin-right : 0; }
+    >i{ color : @aColor ; margin-right : 6px;  }
+    >div{ color : #333 }
+}
+.role_name{
+    color : @aColor
+}
+.left_content{
+    width : 100%;
+    overflow : auto;
+    height : calc(~'100vh - 232px');  /*232 约等于 50 + 50 + 38 + 20 + 40 + 20 + 10*/
+    padding-right : 10px;
+}
+.right_content{
+    overflow : auto;
+    height : calc(~'100vh - 300px');  /*300 约等于 50 + 50 + 38 + 20 + 40 + 40 + 30 + 20 + 10*/
+    margin-bottom : 40px;
+    padding-right : 5px;         /*tree自带5px内边距*/
+}
+:global{
+    .role_manage_function_tree .ant-tree li{
+        padding : 2px 0;
+    }
+}
+.roleNameCheck,.roleNameUnCheck{
+    display : -webkit-flex;
+    display : flex;
+    flex-wrap : nowrap;
+    justify-content : space-between;
+    align-items : center;
+    height : 28px;
+    font-size : 12px;
+    cursor : pointer !important;
+    margin-bottom : 10px;
+    padding : 0 20px;
+    border-radius : 5px;
+    color : #666;
+    .transition(all .3s);
+    .unCheckOrCopy();
+}
+.roleNameCheck{
+    background-color : @aColor;
+    color : #fff;
+    .item_operation{ color : #fff; }
+}
+.roleNameUnCheck{
+    background-color : @bgColor;
+    color : #666;
+    &:hover{
+        background-color: @hoverColor;
+        color : #666;
+        .item_operation{ color : @aColor; }
+    }
+}
+.item_name{
+    width : 200px;
+    white-space : nowrap;
+    overflow : hidden;
+    .textOverflow(ellipsis);
+}
+.item_operation{
+    display : -webkit-flex;
+    display : flex;
+    flex-wrap : nowrap;
+    align-items : center;
+    color : @aColor;
+    i{
+        font-size : 12px;
+        margin-right : 10px;
+        &:last-child{ margin-right : 0; }
+    }
+}
+.operation_item{
+    height : 28px;
+    background-color : @bgColor;
+    margin-bottom : 10px;
+    padding : 0 20px 0 13px;
+    border-radius : 5px;
+    display : -webkit-flex;
+    display : flex;
+    flex-wrap : nowrap;
+    justify-content : space-between;
+    align-items : center;
+    input{
+        height : 24px;
+        background-color : @bgColor;
+        border : 0;
+    }
+}
+.rename_operation{
+    a{
+        font-size : 12px;
+        margin-right : 10px;
+        &:last-child{ margin-right : 0; }
+    }
+}
+
+.roleFunctionTree{
+    height:700px;
+    width:100%;
+    float:left;
+    .unCheckOrCopy();
+}
+.createNewRole{
+    height: 50px;
+    border-bottom: 1px solid #f8f8f8;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+
+}
+.add_button{
+    display : -webkit-flex;
+    display : flex;
+    justify-content : flex-end;
+    align-items : center;
+    i{
+        cursor : pointer;
+        border-radius : 5px;
+        padding : 7px;
+        font-size : 14px;
+        color : @aColor;
+        background-color : @bgColor;
+    }
+}

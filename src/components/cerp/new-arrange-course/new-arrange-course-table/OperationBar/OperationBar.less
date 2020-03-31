@@ -1,0 +1,68 @@
+/*引入less定义的方法*/
+@import '../../../../common/less/common.less';
+
+.all{
+    height:50px;
+    padding:10px;
+    overflow: hidden;
+    display:-webkit-flex;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    >div{
+        &:nth-child(odd){
+            width:25%;
+        }
+        &:nth-child(even){
+            width:50%;
+        }
+    }
+}
+.operation{
+    line-height: 25px;
+    font-size: 1.16rem;
+    color:#666;
+    >span{
+        margin-right: 5px;
+    }
+    >a{
+        margin-right: 5px;
+    }
+}
+.chooseItem{
+    display:-webkit-flex;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: baseline;
+    .unCheckOrCopy();
+    >a{
+        font-size: 1.16rem;
+        min-width: 3.5rem;;
+    }
+    >p{
+        font-size:1.67rem;
+        cursor:default;
+    }
+    span{
+        font-size: 1rem;
+    }
+}
+
+:global{
+    .zj_new_arrange_corse_operation_radio_group .ant-radio-button-wrapper-checked{
+        background-color: @saas_main_color;
+        color:#fff !important;
+    }
+    .zj_new_arrange_corse_operation_radio_group .ant-radio-button-wrapper{
+        color:#666;
+    }
+}
+.radioGroup{
+    overflow: hidden;
+    >div{
+        float:right;
+    }
+}

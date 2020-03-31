@@ -1,0 +1,471 @@
+/*
+* @author yhwu
+* 音乐模板样式文件
+*/
+
+/*公共变量定义*/
+@baseFontColor  : #ffffff;
+@baseBackground : #000000;
+/*公共变量定义*/
+
+/*公共方法开始*/
+.fontStyle( @size : 16px, @weight : normal, @color : #fff, @position : center ){
+	color       : @color;
+	font-weight : @weight;
+	font-size   : @size;
+	text-align  : @position;
+}
+.background( @url, @size, @color ){
+	background-image : url( @url );
+	background-size  : @size;
+	background-color : @color;
+}
+.absolute( @width, @height, @top, @bottom, @left, @right ){
+	position : absolute;
+	width    : @width;
+	height   : @height;
+	top      : @top;
+	bottom   : @bottom;
+	left     : @left;
+	right    : @right;
+}
+.block( @width, @height, @margin ){
+	width : @width;
+	height : @height;
+	margin : @margin;
+}
+.animation_value( @value ){
+	animation : @value;
+	-webkit-animation : @value;
+	-moz-animation : @value;
+	-ms-animation : @value;
+	-o-animation : @value;
+}
+.flex{
+	display : flex;
+	align-items : center;
+	justify-content : center;
+}
+/*公共方法结束*/
+
+.music_page1_wrap, .music_page3_wrap,
+.music_page5_wrap, .music_page7_wrap{
+	.absolute( 326px, 525px, -525px, auto, 0, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/6480915f369da343b5ca6a1c02a07013', 100% 100%, @baseBackground );
+	.animation_value( page_wrap_ani1 .8s ease-in-out forwards );
+}
+
+.music_page2_wrap,
+.music_page4_wrap,
+.music_page6_wrap{
+	.absolute( 326px, 525px, -525px, auto, 0, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/6480915f369da343b5ca6a1c02a07013', 100% 100%, @baseBackground );
+	.animation_value( page_wrap_ani2 .8s ease-in-out forwards );
+}
+
+.page1_border, .page2_border,
+.page3_border, .page4_border,
+.page5_border, .page6_border,
+.page7_border{
+	.absolute( 296px, 495px, 15px, auto, 15px, auto );
+	border : 3px solid #ffffff;
+	transform : scale( 0.1 );
+	opacity : 0;
+	.animation_value( page_border_ani .8s ease-in-out forwards );
+	animation-delay : .8s;
+}
+
+/*第一页样式开始*/
+.page1_person1{
+	.absolute( 170px, 170px, 20px, auto, 60px, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/0cf606d52360a997d1eaaa046b07811e', cover, transparent );
+	opacity : 0;
+	.animation_value( page1_person_ani .3s ease-in-out forwards );
+	animation-delay : 2.5s;
+}
+.page1_person2{
+	.absolute( 100px, 100px, 130px, auto, 10px, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/ea3a62c841e9641f2a3307beb86e1fad', cover, transparent );
+	opacity : 0;
+	.animation_value( page1_person_ani .3s ease-in-out forwards );
+	animation-delay : 1.9s;
+}
+.page1_person3{
+	.absolute( 100px, 100px, 165px, auto, 95px, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/809a383a80969e218b5c3f64c8f0015d', cover, transparent );
+	opacity : 0;
+	.animation_value( page1_person_ani .3s ease-in-out forwards );
+	animation-delay : 1.6s;
+}
+.page1_person4{
+	.absolute( 120px, 155px, 95px, auto, 150px, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/eb344fdb277fbb20eec9b233993a5d76', cover, transparent );
+	opacity : 0;
+	.animation_value( page1_person_ani .3s ease-in-out forwards );
+	animation-delay : 2.2s;
+}
+.total_content{
+	.absolute( 260px, 205px, 270px, auto, 15px, auto );
+	.flex;
+}
+.org_name{
+	.block( 260px, auto, 0 auto );
+	.fontStyle;
+	max-height : 48px;
+	overflow : hidden;
+	opacity : 0;
+	.animation_value( page1_content_ani .3s ease-in-out forwards );
+	animation-delay : 3.1s;
+}
+.page1_title1{
+	.block( 200px, auto, 5px auto );
+	.fontStyle( 20px, bold );
+	max-height : 60px;
+	overflow : hidden;
+	opacity : 0;
+	.animation_value( page1_content_ani .3s ease-in-out forwards );
+	animation-delay : 2.8s;
+}
+.page1_content{
+	.fontStyle( 12px );
+	opacity : 0;
+	.animation_value( page1_content_ani .3s ease-in-out forwards );
+	animation-delay : 3.4s;
+}
+.content_item{
+	line-height : 24px;
+	max-height : 24px;
+	overflow : hidden;
+}
+
+@keyframes page1_person_ani{
+	0%{ opacity : 0; transform : scale( 0.1 ); }
+	100%{ opacity : 1; transform : scale( 1 ); }
+}
+@keyframes page1_content_ani{
+	0%{ opacity : 0; transform : scale( 1.5 ) }
+	80%{ opacity : 1; transform : scale( .8 ) }
+	100%{ opacity : 1; transform : scale( 1 ) }
+}
+@keyframes page_border_ani{
+	0%{ opacity : 0; transform : scale( 0.1 ) }
+	100%{ opacity : 1; transform : scale( 1 ) }
+}
+/*第一页样式结束*/
+
+/*第二页样式开始*/
+.page2_title,.page4_title,.page6_title,.page7_title{
+	.absolute( 200px, 70px, 0, auto, 45px, auto );
+	.fontStyle( 24px, bold );
+	line-height : 80px;
+	overflow : hidden;
+	opacity : 0;
+	.animation_value( page2_title_ani .3s ease-in-out forwards );
+	animation-delay : 2.5s;
+}
+.page2_content{
+	.absolute( 260px, auto, 70px, auto, 15px, auto );
+	.fontStyle( 14px, normal, #fff, left );
+	max-height : 0px;
+	overflow : hidden;
+	opacity : 0;
+	.animation_value( page_content_ani .8s ease-in-out forwards );
+	animation-delay : 2.8s;
+}
+.page2_person{
+	.absolute( 100px, 160px, 315px, auto, 80px, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/f57b91fc5b2b0076f1b9d6f94cbdd72f', cover, transparent );
+	opacity : 0;
+	.animation_value( page1_person_ani .3s ease-in-out forwards );
+	animation-delay : 1.6s;
+}
+.page2_cloud{
+	.absolute( 70px, 57px, 305px, auto, 10px, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/dc3ca2681a4d5d6fe2c2e117cb85351f', cover, transparent );
+	opacity : 0;
+	.animation_value( page1_person_ani .3s ease-in-out forwards );
+	animation-delay : 1.9s;
+}
+.page2_wave{
+	.absolute( 150px, 98px, 265px, auto, 135px, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/1c52c0e0f29d5563c2d39222064590b6', cover, transparent );
+	opacity : 0;
+	.animation_value( page1_person_ani .3s ease-in-out forwards );
+	animation-delay : 2.2s;
+}
+@keyframes page2_title_ani{
+	0%{ opacity : 0 }
+	100%{ opacity : 1 }
+}
+@keyframes page_content_ani{
+	0%{ opacity : 0; max-height : 0 }
+	100%{ opacity : 1; max-height : 190px }
+}
+/*第二页样式结束*/
+
+/*第三页样式开始*/
+.page3_person{
+	.absolute( 130px, 130px, 345px, auto, 50px, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/b11d0a2f1f5182777a1d945310baf76e', cover, transparent );
+	opacity : 0;
+	.animation_value( page1_person_ani .3s ease-in-out forwards );
+	animation-delay : 1.6s;
+}
+.page3_yue1{
+	.absolute( 80px, 62px, 305px, auto, 5px, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/3e3a1bb37e88781f1ed929eb0b2ec3f5', cover, transparent );
+	opacity : 0;
+	.animation_value( page1_person_ani .3s ease-in-out forwards );
+	animation-delay : 1.9s;
+}
+.page3_yue2{
+	.absolute( 90px, 56px, 280px, auto, 95px, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/0c5725804dbf2ff7cbbf678b1b879725', cover, transparent );
+	opacity : 0;
+	.animation_value( page1_person_ani .3s ease-in-out forwards );
+	animation-delay : 1.9s;
+}
+.page3_yue3{
+	.absolute( 75px, 53px, 320px, auto, 200px, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/f899c2df8fce5e63e570ccd2e399911b', cover, transparent );
+	opacity : 0;
+	.animation_value( page1_person_ani .3s ease-in-out forwards );
+	animation-delay : 1.9s;
+}
+.page3_flower{
+	.absolute( 70px, 56px, 410px, auto, 190px, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/ef4eb023209d7a18e8b8299825f148c7', cover, transparent );
+	opacity : 0;
+	.animation_value( page1_person_ani .3s ease-in-out forwards );
+	animation-delay : 2.2s;
+}
+/*第三页样式结束*/
+
+/*第四页样式开始*/
+.page4_duck{
+	.absolute( 130px, 130px, 350px, auto, 30px, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/f5508d0734cda7690f45bf947a9359b1', cover, transparent );
+	opacity : 0;
+	.animation_value( page1_person_ani .4s ease-in-out forwards );
+	animation-delay : 1.6s;
+}
+.page4_flower{
+	.absolute( 40px, 53px, 420px, auto, 10px, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/1a3a302134c759959aa6fe642e02fe1d', cover, transparent );
+	opacity : 0;
+	.animation_value( page1_person_ani .3s ease-in-out forwards );
+	animation-delay : 2s;
+}
+.page4_paino{
+	.absolute( 130px, 95px, 370px, auto, 140px, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/4245a9a0bfed003eec30d7b5c86e00a0', cover, transparent );
+	opacity : 0;
+	.animation_value( page1_person_ani .2s ease-in-out forwards );
+	animation-delay : 2.3s;
+}
+.page4_img1{
+	.absolute( 250px, 135px, 70px, auto, 20px, auto );
+	background-size : 100% 100%;
+	border-radius : 4px;
+	opacity : 0;
+	.animation_value( img_ani .5s ease-in-out forwards );
+	animation-delay : 2.5s;
+}
+.page4_img2{
+	.absolute( 250px, 135px, 220px, auto, 20px, auto );
+	background-size : 100% 100%;
+	border-radius : 4px;
+	opacity : 0;
+	.animation_value( img_ani .5s ease-in-out forwards );
+	animation-delay : 3s;
+}
+@keyframes img_ani{
+	0%{ opacity : 0;  }
+	100%{ opacity : 1; }
+}
+/*第四页样式结束*/
+
+/*第五页样式开始*/
+.page5_cow{
+	.absolute( 120px, 120px, 360px, auto, 25px, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/a8425d0d40fb631d725e4267a46fdf44', cover, transparent );
+	opacity : 0;
+	.animation_value( page1_person_ani .4s ease-in-out forwards );
+	animation-delay : 1.6s;
+}
+.page5_star{
+	.absolute( 20px, 20px, 390px, auto, 15px, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/f3ebd6b3a9f9db8b235e2166df8cecc6', cover, transparent );
+	opacity : 0;
+	.animation_value( page1_person_ani .1s ease-in-out forwards );
+	animation-delay : 2s;
+}
+.page5_flower{
+	.absolute( 35px, 48px, 430px, auto, 150px, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/dc7e9e386d5725a87cd9299317c62ac7', cover, transparent );
+	opacity : 0;
+	.animation_value( page1_person_ani .1s ease-in-out forwards );
+	animation-delay : 2.1s;
+}
+.page5_guitar{
+	.absolute( 100px, 72px, 375px, auto, 180px, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/a55ed5aacdd530971b7949395d2ab071', cover, transparent );
+	opacity : 0;
+	.animation_value( page1_person_ani .1s ease-in-out forwards );
+	animation-delay : 2.2s;
+}
+/*第五页样式结束*/
+
+/*第六页样式开始*/
+.address_img{
+	.absolute( 250px, 170px, 70px, auto, 20px, auto );
+	background-size : cover;
+	background-position : center center;
+	opacity : 0;
+	transform : rotate( 360deg ) scale( 0 );
+	.animation_value( address_url_ani 1s ease-in-out forwards );
+	animation-delay : 2.8s;
+}
+.page6_content{
+	.absolute( 240px, auto, 250px, auto, 25px, auto );
+	.fontStyle( 16px, normal, #fff, left );
+	overflow : hidden;
+	opacity : 0;
+	max-height : 0;
+	.animation_value( page6_content_ani .8s ease-in-out forwards );
+	animation-delay : 3.8s;
+	p{
+		line-height : 26px;
+	}
+}
+.page6_person{
+	.absolute( 120px, 120px, 355px, auto, 50px, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/2a9d4dbaf30422733a226d7b24cb65b6', cover, transparent );
+	opacity : 0;
+	.animation_value( page1_person_ani .4s ease-in-out forwards );
+	animation-delay : 1.6s;
+}
+.page6_grass{
+	.absolute( 30px, 68px, 385px, auto, 25px, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/b426be3eea567c6aa9e94fe4fbdfb3bc', cover, transparent );
+	opacity : 0;
+	.animation_value( page1_person_ani .1s ease-in-out forwards );
+	animation-delay : 2s;
+}
+.page6_trumpet{
+	.absolute( 80px, 52px, 345px, auto, 170px, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/e8077d8e8b6890f738989d3393278d16', cover, transparent );
+	opacity : 0;
+	.animation_value( page1_person_ani .1s ease-in-out forwards );
+	animation-delay : 2.1s;
+}
+.page6_cup{
+	.absolute( 42px, 60px, 410px, auto, 145px, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/be0256d3f207a61b1742f9ed2d1b7a4b', cover, transparent );
+	opacity : 0;
+	.animation_value( page1_person_ani .1s ease-in-out forwards );
+	animation-delay : 2.2s;
+}
+.page6_food{
+	.absolute( 40px, 44px, 420px, auto, 210px, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/efe8f26f0d29b0ea9cbd80278fddd5f9', cover, transparent );
+	opacity : 0;
+	.animation_value( page1_person_ani .1s ease-in-out forwards );
+	animation-delay : 2.3s;
+}
+@keyframes address_url_ani{
+	0%{ opacity : 0; transform : rotate( 360deg ) scale( 0 ) };
+	100%{ opacity : 1; transform : rotate( 0deg ) scale( 1 ) };
+}
+@keyframes page6_content_ani{
+	0%{ opacity : 0; max-height : 0 };
+	100%{ opacity : 1; max-height : 120px }
+}
+/*第六页样式结束*/
+
+/*第七页样式开始*/
+.page7_title{
+	height : 80px;
+}
+.name, .phone, .birthday, .remark, .btn{
+	.absolute( 250px, 40px, 80px, auto, 20px, auto );
+	line-height : 40px;
+	background : rgba( 0,0,0,.3);
+	border-radius : 4px;
+	.fontStyle( 14px );
+	opacity : 0;
+	.animation_value( input_ani .3s ease-in-out forwards );
+	animation-delay : 2.8s;
+}
+.name{
+	animation-delay : 2.8s;
+}
+.phone{
+	top : 130px;
+	animation-delay : 3.1s;
+}
+.birthday{
+	top : 180px;
+	animation-delay : 3.4s;
+}
+.remark{
+	top : 230px;
+	animation-delay : 3.7s;
+}
+.btn{
+	background : #F6E977;
+	color : #3CA1D9;
+	font-size : 16px;
+	top : 290px;
+	animation-delay : 4s;
+}
+.page7_person{
+	.absolute( 150px, 150px, 335px, auto, 80px, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/eafbba884431e1192383c5d7bc066ded', cover, transparent );
+	opacity : 0;
+	.animation_value( page1_person_ani .4s ease-in-out forwards );
+	animation-delay : 1.6s;
+}
+.page7_flower{
+	.absolute( 32px, 44px, 430px, auto, 40px, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/9eaea3d504e2f0ec10d5edf5647313b4', cover, transparent );
+	opacity : 0;
+	.animation_value( page1_person_ani .1s ease-in-out forwards );
+	animation-delay : 2s;
+}
+.page7_book{
+	.absolute( 70px, 60px, 360px, auto, 20px, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/19dff7ea0341657d5794590257d19c5a', cover, transparent );
+	opacity : 0;
+	.animation_value( page1_person_ani .1s ease-in-out forwards );
+	animation-delay : 2.1s;
+}
+.page7_butterfly{
+	.absolute( 35px, 35px, 365px, auto, 225px, auto );
+	.background( 'https://img.ishanshan.com/gimg/img/fb3008ea5c957858d15007ddeadcbd64', cover, transparent );
+	opacity : 0;
+	.animation_value( page1_person_ani .1s ease-in-out forwards );
+	animation-delay : 2.2s;
+}
+@keyframes input_ani{
+	0%{ opacity : 0; transform : translateX( 300px ) }
+	100%{ opacity : 1; transform : translateX( 0 ) }
+}
+/*第七页样式结束*/
+@keyframes page_wrap_ani1{
+	0%{ top : -525px }
+	100%{ top : 0 }
+}
+@keyframes page_wrap_ani2{
+	0%{ top : 525px }
+	100%{ top : 0 }
+}
+:global{
+	.music_page1_render, .music_page2_render,
+	.music_page3_render, .music_page4_render,
+	.music_page5_render, .music_page6_render,
+	.music_page7_render{
+		background : @baseBackground;
+		overflow : hidden;
+	}
+}

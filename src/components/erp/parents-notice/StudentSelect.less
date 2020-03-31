@@ -1,0 +1,143 @@
+@import '../../lib.less';
+.students_select_cont {
+    display: inline-flex;
+    width: 100%;
+}
+
+.selecting_cont {
+    width: 440px;
+}
+
+.selected_cont {
+    width: 200px;
+    padding-left: 5px;
+    border-left: 1px solid #DDD;
+}
+
+.selected_org {
+    font-size: 16px;
+    color: #666;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.selecting_org {
+    display: inline-block;
+    font-size: 14px;
+    color: @shanshan-main-color;
+    cursor: pointer;
+}
+
+.select_filter_cont {
+    border-radius: 5px;
+    border: 1px solid #DDD;
+    background-color: #F5F5F5;
+    margin: 10px 10px 10px 0;
+    width: 430px;
+    padding-left: 8px;
+}
+
+.select_filter_item {
+    display: inline-block;
+    margin-right: 10px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.select_search_btns {
+
+}
+
+.search_btn_item {
+    margin-right: 10px;
+}
+
+.add_all_btn {
+    font-size: 14px;
+    color: @shanshan-main-color;
+    cursor: pointer;
+}
+
+/*显示班级学员区域*/
+.show_class_stus {
+    max-height: 400px;
+    width: 430px;
+    padding-right: 10px;
+    overflow-y: auto;
+}
+
+/*班级学员项*/
+.class_stus_item {
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+/*班级名称*/
+.class_select {
+    color: #666;
+}
+
+.class_stus_cont {
+    border-top: 1px solid #DDD;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+.class_stu_item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/*选中的学员区域*/
+.selected_cont_title {
+    font-size: 14px;
+    color: #999;
+}
+
+.selected_cont_content {
+    max-height: 525px;
+    overflow-y: auto;
+    margin-top: 10px;
+    padding-right: 5px;
+}
+
+.selected_cont_item {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px dashed #DDD;
+    border-radius: 5px;
+    line-height: 14px;
+}
+
+.selected_cont_item:hover {
+    background-color: #FBFBFB;
+}
+
+.selected_item_label {
+    width: 148px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.remove_item {
+    float: right;
+    vertical-align: baseline;
+    text-align: center;
+    text-transform: none;
+    text-rendering: auto;
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+.remove_item:before {
+    content: "\E633";
+    display: block;
+    font-family: "anticon" !important;
+}

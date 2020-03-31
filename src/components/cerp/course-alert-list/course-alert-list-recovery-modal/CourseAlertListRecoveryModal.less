@@ -1,0 +1,51 @@
+/*引入less定义的方法*/
+@import '../../../common/less/common.less';
+
+:global{
+    .course_alert_recovery_modal .ant-modal-body{
+        padding: 20px;
+    }
+    .course_alert_recovery_modal .ant-modal-footer{
+        margin: 0;
+        padding: 0 20px 20px 20px;
+    }
+    .course_alert_recovery_modal .ant-table-pagination{
+        margin: 20px 0 0 0 !important;
+    }
+    .course_alert_recovery_modal .ant-table-body{
+        .scrollbar();
+    }
+    .course_alert_recovery_modal .ant-table-header{
+        height:50px;
+        line-height: 5px;
+    }
+    .course_alert_recovery_modal .ant-table-bordered .ant-table-thead > tr:nth-child(1) > th{
+        text-align: center;
+    }
+    .course_alert_recovery_modal .ant-table .ant-table-content .ant-table-body tr{
+        height:40px;
+    }
+    .course_alert_recovery_modal .ant-table .ant-table-content .ant-table-body tr > td{
+        position:relative;
+        padding:0 10px;
+    }
+    .course_alert_recovery_modal .ant-table .ant-table-content .ant-table-body tr > td > span{
+        position:absolute;
+        left:10px;
+        top:12px;
+        width:calc(~'100% - 20px');
+        .textOverflow(ellipsis);
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+.table{
+    width:100%;
+    overflow: hidden;
+}
+.pagination{
+    width:100%;
+    height: 30px;
+    margin-top: 20px;
+    overflow: hidden;
+}

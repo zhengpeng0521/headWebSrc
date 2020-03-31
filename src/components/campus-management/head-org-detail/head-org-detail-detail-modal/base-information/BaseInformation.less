@@ -1,0 +1,44 @@
+/*引入less定义的方法*/
+@import '../../../../common/less/common.less';
+.all{
+    width : 100%;
+    height : 100%;
+}
+.render_item,.render_item_special{
+    width : 100%;
+    margin-bottom : 16px;
+    display : -webkit-flex;
+    display : flex;
+    flex-wrap : nowrap;
+}
+.render_item{
+    margin-bottom : 16px;
+}
+.render_item_special{
+    margin-bottom : 4px;            /*每一项的下边距是12，所以这里是4*/
+}
+.render_item_label{
+    color : #999;
+    text-align : right;
+    white-space : nowrap;
+    overflow : hidden;
+    .textOverflow(ellipsis);
+}
+.render_item_value{
+    white-space : nowrap;
+    overflow : hidden;
+    .textOverflow(ellipsis);
+}
+.render_item_tag{
+    padding : 2px 4px;
+    border : 1px solid #5d9cec;
+    color : #5d9cec;
+    display : inline-block;
+    margin-right : 12px;
+    margin-bottom : 10px;
+    border-radius : 3px;
+    //.borderRadius(5px 10px,5px 10px,5px 10px,5px 10px);
+    &:last-child{
+        margin-right : 0;
+    }
+}

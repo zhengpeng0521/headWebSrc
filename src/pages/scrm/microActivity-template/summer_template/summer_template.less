@@ -1,0 +1,548 @@
+@color : #3D74B7;
+@borderColor : #66A2D4;
+.title( @top ){
+	position : absolute;
+	margin   : auto;
+	left : 0; right : 0;
+	top      : @top;
+	width    : 200px;
+	height   : 30px;
+	line-height : 30px;
+	font-size   : 24px;
+	text-align  : center;
+	font-weight : bold;
+	overflow    : hidden;
+	color : @color;
+}
+.absolute( @top, @left, @width, @height ){
+	position : absolute;
+	top : @top;
+	left : @left;
+	width : @width;
+	height : @height;
+}
+.transform( @value ){
+	transform : translateY( @value );
+	-webkit-transform : translateY( @value );
+	-moz-transform : translateY( @value );
+	-ms-transform : translateY( @value );
+	-o-transform : translateY( @value );
+}
+.animation_value( @ani_vlaue ){
+	animation : @ani_vlaue;
+	-webkit-animation : @ani_vlaue;
+	-moz-animation : @ani_vlaue;
+	-ms-animation : @ani_vlaue;
+	-o-animation : @ani_vlaue;
+}
+/*第一页动画开始*/
+.pangxie{
+	.absolute( 484px, 120px, 36px, 30px );
+	background : url('http://115.29.172.104/gimg/img/0e96a78889ad06be85e7bc48f1b3d56c') no-repeat;
+	background-size : cover;
+	.animation_value( pangxieAni 5s linear infinite alternate )
+}
+.person{
+	.absolute( 399px, 138px, 163px, 102px );
+	background : url('http://115.29.172.104/gimg/ori/e5861ccaae2cf0346aa9278ae774cc6a') no-repeat;
+	background-size : cover;
+}
+/*第一页动画结束*/
+/*第三页动画开始*/
+.meirenyu{
+	.absolute( 375px, 105px, 140px, 112px );
+	background : url('http://115.29.172.104/gimg/img/228e52db384856a0d589eb5e0f3c3e60') no-repeat;
+	background-size : cover;
+	.animation_value( meirenyuAni 3s linear infinite );
+}
+/*第三页动画结束*/
+/*第五页样式开始*/
+.page5_person{
+	.absolute( 388px, 195px, 106px, 125px );
+	background : url('http://115.29.172.104/gimg/img/8fa9249529c7ee3e492eb43e65e5fc3e') no-repeat;
+	background-size : cover;
+	.animation_value( page5_personAni 2.5s ease-in-out );
+}
+/*第五页样式结束*/
+/*第六页动画开始*/
+.qianshui{
+	.absolute( 370px, 160px, 116px, 145px );
+	background : url('http://115.29.172.104/gimg/img/db68cb425cc9fc958d524510b5f05392') no-repeat;
+	background-size : cover;
+	.animation_value( qianshuiAni 2s ease-in-out infinite );
+}
+/*第六页动画结束*/
+/*动画效果*/
+@keyframes pangxieAni{
+	0% { left : 0px }
+	50% { left : 290px }
+	100% { left : 0px }
+}
+@-o-keyframes pangxieAni{
+	0% { left : 0px }
+	50% { left : 290px }
+	100% { left : 0px }
+}
+@-ms-keyframes pangxieAni{
+	0% { left : 0px }
+	50% { left : 290px }
+	100% { left : 0px }
+}
+@-moz-keyframes pangxieAni{
+	0% { left : 0px }
+	50% { left : 290px }
+	100% { left : 0px }
+}
+@-webkit-keyframes pangxieAni{
+	0% { left : 0px }
+	50% { left : 290px }
+	100% { left : 0px }
+}
+
+//美人鱼
+@keyframes meirenyuAni{
+	0% { transform: rotate(0deg); }
+	50% { transform: rotate(20deg); }
+	100% { transform: rotate(0deg); }
+}
+@-o-keyframes meirenyuAni{
+	0% { transform: rotate(0deg); }
+	50% { transform: rotate(20deg); }
+	100% { transform: rotate(0deg); }
+}
+@-ms-keyframes meirenyuAni{
+	0% { transform: rotate(0deg); }
+	50% { transform: rotate(20deg); }
+	100% { transform: rotate(0deg); }
+}
+@-moz-keyframes meirenyuAni{
+	0% { transform: rotate(0deg); }
+	50% { transform: rotate(20deg); }
+	100% { transform: rotate(0deg); }
+}
+@-webkit-keyframes meirenyuAni{
+	0% { transform: rotate(0deg); }
+	50% { transform: rotate(20deg); }
+	100% { transform: rotate(0deg); }
+}
+
+//第五页人物
+@keyframes page5_personAni{
+	0% { left : 220px; }
+	100% { left : 195px; }
+}
+@-o-keyframes page5_personAni{
+	0% { left : 220px; }
+	100% { left : 195px; }
+}
+@-ms-keyframes page5_personAni{
+	0% { left : 220px; }
+	100% { left : 195px; }
+}
+@-moz-keyframes page5_personAni{
+	0% { left : 220px; }
+	100% { left : 195px; }
+}
+@-webkit-keyframes page5_personAni{
+	0% { left : 220px; }
+	100% { left : 195px; }
+}
+
+//潜水小伙
+@keyframes qianshuiAni{
+	0% {opacity : 0.1;}
+	10% {opacity : 0.3;}
+	20% {opacity : 0.5;}
+	30% {opacity : 0.7;}
+	40% {opacity : 0.9;}
+	50% {opacity : 1;}
+	60% {opacity : 0.9;}
+	70% {opacity : 0.7;}
+	80% {opacity : 0.5;}
+	90% {opacity : 0.3;}
+	100% {opacity : 0.1;}
+}
+@-o-keyframes qianshuiAni{
+	0% {opacity : 0.1;}
+	10% {opacity : 0.3;}
+	20% {opacity : 0.5;}
+	30% {opacity : 0.7;}
+	40% {opacity : 0.9;}
+	50% {opacity : 1;}
+	60% {opacity : 0.9;}
+	70% {opacity : 0.7;}
+	80% {opacity : 0.5;}
+	90% {opacity : 0.3;}
+	100% {opacity : 0.1;}
+}
+@-ms-keyframes qianshuiAni{
+	0% {opacity : 0.1;}
+	10% {opacity : 0.3;}
+	20% {opacity : 0.5;}
+	30% {opacity : 0.7;}
+	40% {opacity : 0.9;}
+	50% {opacity : 1;}
+	60% {opacity : 0.9;}
+	70% {opacity : 0.7;}
+	80% {opacity : 0.5;}
+	90% {opacity : 0.3;}
+	100% {opacity : 0.1;}
+}
+@-moz-keyframes qianshuiAni{
+	0% {opacity : 0.1;}
+	10% {opacity : 0.3;}
+	20% {opacity : 0.5;}
+	30% {opacity : 0.7;}
+	40% {opacity : 0.9;}
+	50% {opacity : 1;}
+	60% {opacity : 0.9;}
+	70% {opacity : 0.7;}
+	80% {opacity : 0.5;}
+	90% {opacity : 0.3;}
+	100% {opacity : 0.1;}
+}
+@-webkit-keyframes qianshuiAni{
+	0% {opacity : 0.1;}
+	10% {opacity : 0.3;}
+	20% {opacity : 0.5;}
+	30% {opacity : 0.7;}
+	40% {opacity : 0.9;}
+	50% {opacity : 1;}
+	60% {opacity : 0.9;}
+	70% {opacity : 0.7;}
+	80% {opacity : 0.5;}
+	90% {opacity : 0.3;}
+	100% {opacity : 0.1;}
+}
+
+:global{
+	/*第一页样式开始*/
+	.summer-page1-render{
+		position:relative;
+		background-image : url('http://115.29.172.104/gimg/img/b46cbbcbc70ea060ee32a8e33bcf571b');
+		.summer_logo{
+			.absolute( 42px, 123px, 80px, 80px );
+			border-radius : 50%;
+			overflow : hidden;
+		}
+		.summer_logo img{
+			width : 100%;
+			height : 100%;
+		}
+		.summer_wrap{
+			.absolute( 259px, 27px, 272px, 112px );
+			box-sizing : border-box;
+			border : 6px solid #66A2D4;
+			border-radius : 16px;
+			background : rgba(255,255,255,.8);
+			&::before{
+				content : '';
+				display : block;
+				.absolute( 66px, -20px, 60px, 45px  );
+				background : url('http://115.29.172.104/gimg/img/a70db1618772c2dd6ac1bc39fb1944f3') no-repeat;
+				background-size : cover;
+			}
+			&:after{
+				.absolute( 71px, 215px, 56px, 38px );
+				content : '';
+				display : block;
+				background : url('http://115.29.172.104/gimg/img/cb3b3536f7fdf696e56a95fc8457d945') no-repeat;
+				background-size : cover;
+			}
+			.summer_title{
+				.title( 11px )
+			}
+			.summer_subTitle{
+				.absolute( 46px, 16px, 230px, 46px );
+				text-align : center;
+			}
+			.summer_subTitle div{
+				.absolute( 50%, 0, 230px, auto );
+				.transform( -50% );
+				max-height : 46px;
+				font-size : 14px;
+				color : @color;
+				overflow : hidden;
+			}
+		}
+		.summer_subTitle{
+			.absolute( 305px, 48px, 230px, 46px )
+		}
+		.summer_subTitle div{
+			.absolute( 50%, 0, 230px, auto );
+			.transform( -50% );
+			max-height : 46px;
+			font-size : 14px;
+			color : @color;
+			overflow : hidden;
+		}
+
+	}
+
+	/*第一页样式结束*/
+
+	/*第二页样式开始*/
+	.summer-page2-render{
+		background-image : url('http://115.29.172.104/gimg/img/043c46bfdef70dc5c91d26d83bdcd282');
+		.summer_title{
+			.title( 30px );
+		}
+		.summer_title2{
+			.title( 240px );
+		}
+		.summer_content, .summer_content2{
+			.absolute( 60px, 45px, 240px, 110px );
+			margin-top : 10px;
+			.content{
+				.absolute( 50%, 0, 240px, auto );
+				.transform( -50% );
+				max-height : 110px;
+				line-height : 22px;
+				font-size : 12px;
+				color : @color;
+				overflow : hidden;
+			}
+		}
+		.summer_content2{
+			top : 270px;
+		}
+	}
+	/*第二页样式结束*/
+
+	/*第三页样式开始*/
+	.summer-page3-render-design{
+		background-image : url('http://115.29.172.104/gimg/img/2be3d8e5118122bd6c21e73d5ef599fe');
+		.summer_wrap{
+			.absolute( 28px, 27px, 272px, 448px );
+			.summer_content{
+				&::before{
+					position : absolute;
+					left : -20px;
+					bottom : -15px;
+					width : 60px;
+					height : 45px;
+					content : '';
+					display : block;
+					background : url('http://115.29.172.104/gimg/img/a70db1618772c2dd6ac1bc39fb1944f3') no-repeat;
+					background-size : cover;
+				}
+				&:after{
+					position : absolute;
+					width : 56px;
+					height : 38px;
+					right : -20px;
+					bottom : -15px;
+					content : '';
+					display : block;
+					background : url('http://115.29.172.104/gimg/img/cb3b3536f7fdf696e56a95fc8457d945') no-repeat;
+					background-size : cover;
+				}
+				.absolute( 50%, 0, 272px, auto );
+				.transform( -50% );
+				max-height : 448px;
+				color : @color;
+				border-radius : 16px;
+				border : 5px solid @borderColor;
+				box-sizing : border-box;
+				padding : 10px 30px 0 30px;
+				background : rgba( 255,255,255, .8 );
+				.summer_title{
+					margin : 0 auto;
+					margin-bottom : 20px;
+					width : 200px;
+					height : 40px;
+					line-height : 40px;
+					font-size : 24px;
+					text-align  : center;
+					font-weight : bold;
+					overflow    : hidden;
+					color : @color;
+				}
+				.summer_item{
+					position : relative;
+					margin : 0 auto;
+					height : 100px;
+					width : 204px;
+					margin-bottom : 20px;
+					.summer_item_img{
+						display : inline-block;
+						width : 100px;
+						height : 100px;
+						background : #ffffff;
+						border-radius : 10px;
+						overflow : hidden;
+						img{
+							width : 100%;
+							height : 100%;
+						}
+					}
+					.summer_item_con{
+						display : inline-block;
+						width : 104px;
+						height : 100px;
+						div{
+							.absolute( 50%, 10px, 84px, auto );
+							.transform( -50% );
+							text-align : center;
+							color : @color;
+							font-size : 12px;
+							max-height : 92px;
+							overflow : hidden;
+						}
+						.con1{
+							left : 110px;
+						}
+					}
+				}
+			}
+		}
+	}
+	/*第三页样式结束*/
+
+	/*第五页样式开始*/
+	.summer-page5-render{
+		background-image : url('http://115.29.172.104/gimg/img/1cb283014116dfcbc724c5640e63eb5c');
+		.summer_wrap{
+			.absolute( 62px, 27px, 272px, 320px );
+			border-radius : 16px;
+			border : 5px solid @borderColor;
+			box-sizing : border-box;
+			background : rgba( 255,255,255, .8 );
+			&:before{
+				position : absolute;
+				left : -20px;
+				bottom : -15px;
+				width : 60px;
+				height : 45px;
+				content : '';
+				display : block;
+				background : url('http://115.29.172.104/gimg/img/a70db1618772c2dd6ac1bc39fb1944f3') no-repeat;
+				background-size : cover;
+			}
+			&:after{
+				position : absolute;
+				width : 56px;
+				height : 38px;
+				right : -20px;
+				bottom : -10px;
+				content : '';
+				display : block;
+				background : url('http://115.29.172.104/gimg/img/cb3b3536f7fdf696e56a95fc8457d945') no-repeat;
+				background-size : cover;
+			}
+		}
+		.summer_title{
+			.title( 80px );
+		}
+		.summer_content{
+			.absolute( 125px, 43px, 240px, 240px );
+			.summer_content_item{
+				display : inline-block;
+				width   : 50%;
+				height  : 120px;
+				padding : 5px;
+				div{
+					width : 110px;
+					height : 110px;
+					border-radius : 10px;
+					background : #ffffff;
+					overflow : hidden;
+					img{
+						width : 100%;
+						height : 100%;
+					}
+				}
+			}
+		}
+	}
+	/*第五页样式结束*/
+
+	/*第六页样式开始*/
+	.summer-page6-render{
+		background-image : url('http://115.29.172.104/gimg/img/670a07b7e38b99043780fcda40b4212b');
+		.summer_title{
+			.title( 25px );
+		}
+		.summer_content{
+			.absolute( 65px, 42px, 240px, 115px );
+			.content{
+				.absolute( 50%, 0, 240px, auto );
+				.transform( -50% );
+				max-height : 110px;
+				line-height : 22px;
+				color : @color;
+				overflow : hidden;
+			}
+		}
+		.title2{
+			top : 235px;
+		}
+		.summer_content_item{
+			background : #ffffff;
+			border-radius : 10px;
+			border : 2px solid @borderColor;
+			overflow : hidden;
+			img{
+				width : 100%;
+				height : 100%;
+			}
+		}
+		.summer_content_item1{
+			.absolute( 285px, 80px, 90px, 90px );
+			box-shadow : 3px 3px 10px rgba( 0, 0, 0, .3);
+		}
+		.summer_content_item2{
+			.absolute( 300px, 165px, 90px, 90px );
+		}
+	}
+	/*第六页样式结束*/
+
+	/*第七页样式开始*/
+	.summer-page7-render{
+		background-image : url('http://115.29.172.104/gimg/img/9f00d75671e12bfbb0cb3dc8885ca701');
+		.summer_title{
+			.title( 25px );
+		}
+		.summer_subTitle{
+			.absolute( 60px, 52px, 220px, 40px );
+			text-align : center;
+			div{
+				.absolute( 50%, 0, 220px, auto );
+				.transform( -50% );
+				max-height : 40px;
+				line-height : 20px;
+				color : @color;
+				font-size : 14px;
+				overflow : hidden;
+			}
+		}
+		.name, .phone, .birthday{
+			.absolute( 133px, 52px, 220px, 40px );
+			text-align : center;
+			line-height : 40px;
+			font-size : 12px;
+			color : @color;
+		}
+		.phone{
+			top : 188px;
+		}
+		.birthday{
+			top : 243px;
+		}
+		.btn{
+			.absolute( 310px, 52px, 220px, 30px );
+			line-height : 30px;
+			font-size : 20px;
+			color : #ffffff;
+			text-align : center;
+		}
+	}
+	/*第七页样式结束*/
+
+
+	/*动画效果结束*/
+	/*配置项样式*/
+	.summer_page2_design.ant-form-item{
+		margin-bottom : 10px;
+	}
+}

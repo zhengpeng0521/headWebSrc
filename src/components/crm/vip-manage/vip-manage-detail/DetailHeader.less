@@ -1,0 +1,38 @@
+/*引入less定义的方法*/
+@import '../../../common/less/common.less';
+
+.header_wrap{
+	width : 100%;
+	background : #fff;
+    padding: 20px;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_left{
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    img{
+        margin-right: 20px;
+    }
+}
+.detail_title{
+	color : #666;
+    font-size: 1.33rem;
+}
+.header_right{
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+	color : #666;
+	cursor : pointer;
+    button{
+        width:80px;
+        margin-right: 20px;
+    }
+    i:hover{
+        .transform(rotate(180deg));
+    }
+}

@@ -1,0 +1,226 @@
+/*第一页 样式开始*/
+.organGeneral-page1-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/3867d78e6e32b05eeb08c7650132ded7");
+}
+
+/*机构图片*/
+.organGeneral-page1-head-img{
+	position:absolute;
+	top:28px;
+	margin:auto;left:0;right:0;
+	width:112px;
+	height:112px;
+	border:solid 2px #95642E;
+	background:#ddd;
+	border-radius:50%;
+}
+.organGeneral-page1-head-img-content{
+	width:100%;
+	height:100%;
+	border-radius:50%;
+}
+.organGeneral-page1-title{
+	position:absolute;
+	top: 155px;
+    width: 250px;
+	margin:auto;left:0;right:0;
+	height:40px;
+	line-height:40px;
+
+	font-size:26px;
+	font-weight:bold;
+	text-align:center;
+	color:#6079DD;
+
+}
+.organGeneral-page1-subTitle{
+	position:absolute;
+	top:340px;
+	margin:auto;left:0;right:0;
+	width:295px;
+	height:20px;
+	line-height:20px;
+
+	font-size:12px;
+	text-align:center;
+	color:#95642E;
+}
+/*二维码图片*/
+.organGeneral-page1-code-img{
+	position:absolute;
+	top: 391px;
+    left: 27px;
+    width: 85px;
+    height: 85px;
+
+}
+.organGeneral-page1-code-img-content{
+	width:100%;
+	height:100%;
+	border-radius:12px;
+}
+
+/*联系方式*/
+.organGeneral-page1-contact-title{
+	position: absolute;
+    top: 391px;
+    right: 119px;
+    width: 65px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 900;
+    color: #666;
+}
+.organGeneral-page1-contact{
+	position: absolute;
+    top: 420px;
+    right: 21px;
+    width: 162px;
+    height: 80px;
+    font-size: 12px;
+    color: #666;
+    overflow:hidden;
+}
+.organGeneral-page2-contact-item{
+	width:162px;
+	min-height:20px;
+	line-height:20px;
+
+}
+.organGeneral-page2-contact-item-label{
+	display:inline-block;
+	width:32px;
+	height:20px;
+	line-height:20px;
+	vertical-align:top;
+	margin-right:5px;
+
+}
+.organGeneral-page2-contact-item-value{
+	display:inline-block;
+	width:125px;
+	min-height:20px;
+	line-height:20px;
+}
+/*第一页 样式结束*/
+
+/*第二页 样式开始*/
+.organGeneral-page2-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/4d9b45f44482dcf334d9c885b86efe8a");
+}
+.organGeneral-page2-backgroundImage{
+	content: '';
+    display: block;
+    position: absolute;
+    top: 285px;
+    left: 0;
+    width: 60px;
+    height: 56px;
+    z-index: 80;
+    background-image: url('//img.ishanshan.com/gimg/img/95f1f1889091c28727dfd4e321df3208');
+    background-size: cover;
+}
+.organGeneral-page2-render-design::after{
+	content:'';
+	display:block;
+	position:absolute;
+	bottom:0;
+	right:0;
+	width:76px;
+	height:100px;
+	background-image:url("//img.ishanshan.com/gimg/img/cef596c3f990df0377fa4ab805effa04");
+	background-size: cover;
+}
+.organGeneral-page2-title{
+	position: absolute;
+    top: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #2E82C2;
+}
+.organGeneral-page2-intro{
+	position: absolute;
+    top: 90px;
+    left: 65px;
+    width: 200px;
+    height: 90px;
+    font-size: 12px;
+    color: #666;
+
+    overflow:hidden;
+
+}
+.organGeneral-page2-img1,.organGeneral-page2-img2{
+	position:absolute;
+	top: 226px;
+    left: 27px;
+    width: 120px;
+    height: 92px;
+
+}
+.organGeneral-page2-img2{
+	left:179px;
+}
+.organGeneral-page2-imgContent{
+	width:100%;
+	height:100%;
+	border-radius:5px;
+}
+.organGeneral-page2-courseIntro{
+	position: absolute;
+    top: 365px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 210px;
+    height: 95px;
+
+    overflow:hidden;
+}
+.organGeneral-page2-courseIntro-item{
+	width:210px;
+	min-height:19px;
+	line-height:19px;
+}
+/*第二页 样式结束*/
+
+/*第三页 样式开始*/
+.organGeneral-page3-render-design{
+	background-image:url("//img.ishanshan.com/gimg/img/84ab1884d5d55bcec287295e34cd8403");
+}
+.organGeneral-page3-title{
+	position:absolute;
+	top:0;
+	margin:auto;left:0;right:0;
+	height:70px;line-height:70px;
+	width:250px;
+
+	font-size:26px;
+	font-weight:bold;
+	text-align:center;
+	color:#207DBD;
+}
+.organGeneral-page3-name,.organGeneral-page3-phone{
+	position:absolute;
+	top:88px;
+	margin:auto;left:0;right:0;
+	height:40px;line-height:40px;
+	width:200px;
+
+	font-size:16px;
+	text-align: center;
+	color:#207DBD;
+}
+.organGeneral-page3-phone{
+	top:156px;
+
+}
+/*第三页 样式结束*/

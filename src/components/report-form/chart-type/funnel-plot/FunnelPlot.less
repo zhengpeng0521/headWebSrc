@@ -1,0 +1,70 @@
+/*引入less定义的方法*/
+@import '../../../common/less/common.less';
+
+.all{
+    width:100%;
+    height:100%;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.funnel_plot{
+    width:100%;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.funnel_plot_item{
+    height:30px;
+    min-width: 2%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    &:first-child{
+        margin: 0;
+    }
+    &:hover{
+        opacity: 0.9;
+    }
+    &:after{
+        content:attr(data-intro);
+        float: right;
+        line-height: 30px;
+        width:220px;
+        white-space: nowrap;
+        overflow: hidden;
+        .textOverflow(ellipsis);
+        .transform(translate(105%));
+    }
+}
+.funnel_plot_legend{
+    width:100%;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.funnel_plot_legend_item,.funnel_plot_legend_item_disabeld{
+    margin-right: 15px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    >div{
+        &:first-child{
+            width:8px;
+            height:8px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+    }
+}

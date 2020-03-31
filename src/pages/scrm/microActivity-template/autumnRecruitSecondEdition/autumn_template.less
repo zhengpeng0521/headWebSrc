@@ -1,0 +1,435 @@
+@base_name : call_phone;
+@import '../../common/AniCommon.less';
+
+.absolute( @width, @height, @top, @bottom, @left, @right ) {
+	position: absolute;
+	width: @width;
+	height: @height;
+	top: @top;
+	bottom: @bottom;
+	left: @left;
+	right: @right;
+}
+
+:global {
+	.@{base_name} {
+		.absolute( 326px, 525px, 150px, 26px, 26px, 0px);
+		overflow-x: hidden;
+		overflow-y: auto;
+		background: #ffffff;
+	}
+}
+
+.common_background_param {
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.common_background_image(@url : '') {
+	overflow: hidden;
+	height: 100%;
+	min-height: 100%;
+	background-image: @url;
+	.common_background_param();
+}
+
+.common_top_title {
+	width: 100%;
+    margin: auto;
+    font-size: 25px;
+    margin-top: -80px;
+    color: #833c1a;
+    text-align: center;
+}
+
+.page1_background {
+	.common_background_image(url(https://img.ishanshan.com/gimg/ori/b0c1262f9fa5b354c8122d803d0261c1));
+}
+
+.page2_background {
+	.common_background_image(url(https://img.ishanshan.com/gimg/ori/6fb7a22d036fc968c8207ba620c0f732));
+}
+
+.page3_background {
+	.common_background_image(url(https://img.ishanshan.com/gimg/ori/29bc2bfdd0b7cd6bc739173452f608d2));
+}
+
+.page4_background {
+	.common_background_image(url(https://img.ishanshan.com/gimg/ori/cb22fa00d2de755f44d14fb18fef3799));
+}
+
+.page5_background {
+	.common_background_image(url(https://img.ishanshan.com/gimg/ori/91e47cbaa38e8e217430fec419f9cdda));
+}
+
+.page6_background {
+	.common_background_image(url(https://img.ishanshan.com/gimg/ori/79fcbab2881be6949bd6724b85739430));
+}
+
+.page7_background {
+	.common_background_image(url(https://img.ishanshan.com/gimg/ori/106958a0495ad4880ecbceda7ce196cb));
+}
+
+.page8_background {
+	.common_background_image(url(https://img.ishanshan.com/gimg/img/90eceacdd04d4c2db9bba9882c5c62b7));
+}
+
+.page1_header {
+	width: 100px;
+    height: 100px;
+    background: white;
+    margin: auto;
+    border-radius: 50%;
+    margin-top: 60px;
+	.common_background_param();
+}
+
+.page1_org_name {
+	margin: auto;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.common_img_image {
+	.common_background_param();
+    height: 0.9rem;
+    bottom: 3rem;
+	position: absolute;
+}
+
+.page1_agreed {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 50px;
+    left: calc(~"50% - 30px");
+	.common_background_param();
+	background-image: url(https://img.ishanshan.com/gimg/img/466ec9517ea0005125fb35840b24d4e5);
+	.ani(ani_jitter 0.3s linear 0s infinite);
+}
+
+.common_arc {
+	border-radius: 50%;
+    position: absolute;
+}
+
+.page1_agreed_left_arc_line {
+    height: 40px;
+    width: 15px;
+    bottom: 60px;
+    left: 100px;
+	border-left: 1px #b1b1aa solid;
+	.common_arc();
+	.ani(ani_fixed 1.5s linear 0s infinite);
+}
+
+.page1_agreed_left_arc_line_second {
+    height: 60px;
+    width: 25px;
+    bottom: 50px;
+    left: 80px;
+	border-left: 1px #b1b1aa solid;
+	.common_arc();
+	.ani(ani_fixed 1.8s linear 0s infinite);
+}
+
+.page1_agreed_right_arc_line {
+	.common_arc();
+	border-right: 1px #b1b1aa solid;
+    height: 40px;
+    width: 15px;
+    bottom: 60px;
+    right: 100px;
+	.ani(ani_fixed 1.5s linear 0s infinite);
+}
+
+.page1_agreed_right_arc_line_second {
+	.common_arc();
+	border-right: 1px #b1b1aa solid;
+    height: 60px;
+    width: 25px;
+    bottom: 50px;
+    right: 80px;
+	.ani(ani_fixed 1.8s linear 0s infinite);
+}
+
+
+/*第二页*/
+
+.page2_top_image {
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    margin-top: 30px;
+	background-image: url(https://img.ishanshan.com/gimg/ori/19a681d021a0438a32f76cac99ead3ee);
+	.common_background_param();
+	.ani(ani_left_fade_in 1s LINEAR 0s 1);
+}
+
+.page2_content {
+    font-size: 16px;
+    color: #a54707;
+    margin: auto;
+    margin-top: 50px;
+    width: 60%;
+    text-align: center;
+    background-color: #e69c37;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.page2_person {
+    width: 100px;
+    height: 140px;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+	background-image: url(https://img.ishanshan.com/gimg/ori/fc78bffb919a0e434291b5940808d4c9);
+	.common_background_param();
+	.ani(ani_right_fade_in 4s LINEAR 0s 1);
+}
+
+/*第三页*/
+
+.page3_tio_image {
+    height: 130px;
+    width: 180px;
+    background-image: url(https://img.ishanshan.com/gimg/ori/6037987e78671f5906c3d4278c925ac8);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotateY(180deg);
+	.common_background_param();
+}
+
+.pageThreeTextItem {
+	font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    color: #6e3820;
+}
+
+.page3_title {
+	height : 2rem;
+	width : 100%;
+	margin: auto;
+	font-size: 0.4rem;
+	color : yellow;
+}
+
+.page3_common_cover {
+	height: 40vw;
+    width: 40vw;
+	margin-left: 5%;
+    border-radius: 10px;
+    float: left;
+	box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
+	.common_background_param();
+}
+
+.page3_common_text {
+    width: 40vw;
+    height: 40vw;
+    font-size: 0.3rem;
+	line-height: 0.4rem;
+    color: red;
+    float: left;
+    border: 10px transparent solid;
+    display: flex;
+    margin-left: 5%;
+    justify-content: center;
+    align-items: center;
+    color: #845738;
+}
+
+.page3_content {
+    width: calc(~"80% - 0.3rem");
+    min-height: 32vh;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+	background-color: rgb(240, 204,166);
+    border-radius: 10px;
+	font-size: 13px;
+}
+
+/*第四页*/
+.page4_title {
+	margin-top: 26vh;
+}
+
+.page4_common_image() {
+    width: 80%;
+    height: 120px;
+	margin: auto;
+	border-radius: 10px;
+	background-color: rgb(231,195,158);
+	.common_background_param();
+}
+
+.page4_cover_image1 {
+	.page4_common_image();
+	margin-top: 50px;
+}
+
+.page4_cover_image2 {
+	.page4_common_image();
+	margin-top: 20px;
+}
+
+/*第五页*/
+
+.page5_top_image {
+    height: 100px;
+    width: 150px;
+    background-image: url(https://img.ishanshan.com/gimg/ori/4192800f3aa77bd11961f45cfcc42c0f);
+	.common_background_param();
+}
+
+.page5_common_top_title {
+	.common_top_title();
+	position: absolute;
+    margin-top: -40px;
+}
+
+.page5_info {
+    font-size: 14px;
+    margin-left: 15%;
+    margin-bottom: 10px;
+    line-height: 20px;
+    color: #6e3820;
+    width: 70%;
+    margin-top: 10px;
+    background-color: #e7c39e;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+    min-height: 80px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*第六页*/
+
+.page6_image {
+    height: 145px;
+    width: 80%;
+    background-color: #e7c39e;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+	.common_background_param();
+}
+
+/*第七页*/
+
+.page7_top_image {
+    height: 50px;
+    width: 70px;
+    margin-left: 40px;
+    background-image: url(https://img.ishanshan.com/gimg/ori/9064293cb3c0d508bd8efd4e5d7213b8);
+    margin-top: 30px;
+	.common_background_param();
+}
+
+.page7_top_r_image {
+    height: 40px;
+    width: 52px;
+    background-image: url(https://img.ishanshan.com/gimg/ori/62ee9ab8ae91ac9b4c29f845a07110a2);
+    margin-top: 10px;
+    position: absolute;
+    right: 20px;
+	.common_background_param();
+}
+
+.page7_title {
+	.common_top_title();
+	margin-top: 0rem;
+}
+
+.page7_content_box {
+    margin-left: 7vw;
+    width: 80%;
+    padding: 15px;
+    line-height: 20px;
+    border-radius: 10px;
+    margin: auto;
+    background: #e7c39e;
+    margin-top: 20px;
+    min-height: 200px;
+}
+
+.page7_text {
+    color: #6e3820;
+    font-size: 13px;
+	width : 100%;
+}
+
+/*第八页*/
+.page7_qr_code_image {
+	height : 100px;
+	width : 100px;
+	margin: auto;
+	margin-top: 10px;
+	display: block;
+}
+
+.page7_qr_remark {
+    font-size: 12px;
+    color: #6e3820;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+	margin-top: 5px;
+}
+
+/*第八页*/
+.page8_title {
+	.common_top_title();
+	margin-top: 0rem;
+}
+
+.name {
+	.common();
+	border: 1px blue solid;
+}
+
+.phone {
+	.common();
+	border: 1px blue solid;
+}
+
+.birthday {
+	.common();
+	border: 1px blue solid;
+}
+
+.btn {
+	.common();
+	width: 70%;
+	background-color: #6e3820;
+	color : white;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 20px;
+	padding-left: 0px;
+	line-height: 50px;
+}
+
+.common {
+    width: 70%;
+    color: #999;
+    margin: auto;
+    border-radius: 0px;
+    height: 50px;
+    text-align: left;
+	font-size: 16px;
+    line-height: 45px;
+    padding-left: 10px;
+	margin-top: 20px;
+}

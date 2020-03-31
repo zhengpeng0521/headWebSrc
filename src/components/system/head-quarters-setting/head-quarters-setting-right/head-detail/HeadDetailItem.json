@@ -1,0 +1,6 @@
+[
+    { "key" : "orgName" , "label" : "总部名称" , "width" : 220 , "required" : true },
+    { "key" : "imgurl" , "label" : "LOGO" , "type" : "upload" },
+    { "key" : "contacts" , "label" : "联系人" , "width" : 220  },
+    { "key" : "tel" , "label" : "联系电话" ,  "width" : 220  }
+]

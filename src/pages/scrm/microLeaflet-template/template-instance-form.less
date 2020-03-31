@@ -1,0 +1,492 @@
+:global{
+    .templet-instance-form-modal .ant-modal-body {
+        padding-bottom: 25px;
+        padding-top: 20px;
+    }
+
+    .templet-instance-form-content {
+        width: 100%;
+        height: 772px;
+        display: inline-flex;
+    }
+
+    .templet-instance-render-content {
+        width: 46%;
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    .templet-instance-design-content {
+        width: 54%;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+    .templet-instance-render-content .bg_phone {
+        position:relative;
+        width: 375px;
+        height: 772px;
+        background: url("http://115.29.172.104/gimg/img/4693c8465348642727cf85efc7ed1f07") no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+    }
+    .templet-instance-render-content .bg_phone::before{
+        display:block;
+        position:absolute;
+        top:94px;
+        left:26px;
+        content:'';
+        width:326px;
+        height:581px;
+        background:url("http://115.29.172.104/gimg/img/ba94bf9b9b819d2c7d1a54ef2b03780f") no-repeat;
+    }
+
+    /*mainDesigComponent样式 开始*/
+    .base-setting{
+        margin-bottom:25px;
+    }
+    .share-setting{
+        margin-bottom:25px;
+        margin-top:35px;
+    }
+    .base-setting::before{
+        content:'';
+        display:inline-block;
+        width:10px;
+        height:32px;
+        line-height:32px;
+        vertical-align:middle;
+        margin-right:10px;
+        background:#009DD9;
+    }
+    .base-setting>span{
+        display:inline-block;
+        font-size:22px;
+        line-height:32px;
+        vertical-align:middle;
+    }
+    /*mainDesigComponent样式 结束*/
+
+
+    /*pageRenderComponent 样式 开始*/
+
+    /*MainPage 样式开始*/
+    .main-page-render-design{
+        position:absolute;
+        width:326px;
+        height:581px;
+        top: 94px;
+        left: 26px;
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+    .main-page-title,.main-page-content,.main-page-image{
+        box-sizing:border-box;
+        position:absolute;
+        display:block;
+    }
+    .main-page-title{
+        top: 96px;
+        left: 75px;
+        width: 140px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 14px;
+        color: #000;
+
+        overflow:hidden;
+    }
+    .main-page-content{
+        top: 120px;
+        left: 75px;
+        width: 130px;
+        height: 45px;
+        line-height:15px;
+        font-size: 12px;
+        word-break: break-all;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .main-page-image{
+        top: 120px;
+        left: 215px;
+        width:45px;
+        height:45px;
+    }
+    /*MainPage 样式结束*/
+
+
+    .page-render-design{
+        position:absolute;
+        width:326px;
+        height:525px;
+        top: 150px;
+        left: 26px;
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+    .page-render-design::before{
+        content:'';
+        display:block;
+        position:absolute;
+        width:326px;
+        height: 30px;
+        top: -30px;
+        left: 0;
+        background:#313035;
+    }
+
+    /*pageChange 样式 开始*/
+    .page-change{
+        position:relative;
+        width:250px;
+        height:50px;
+        margin:0 auto;
+        margin-top:50px;
+    }
+    .page-current{
+        display: inline-block;
+        font-size: 20px;
+        margin: 0 auto;
+        padding: 0 50px;
+        vertical-align: middle;
+    }
+    /*pageChange 样式 结束*/
+
+    /*page1 样式 开始*/
+    .page1-render-design{
+        background-image:url("http://115.29.172.104/gimg/img/6cac68dd4dd0d1e328d07ddf1ba78952");
+    }
+    .page1-title{
+        position:absolute;
+        margin:auto;top:0;left:0;right:0;bottom:0;
+        width:300px;
+        height:80px;
+        line-height:80px;
+        background:rgba(255,255,255,.1);
+        border-radius:12px;
+
+        color:#fff;
+        font-size:32px;
+        text-align:center;
+
+    }
+    /*page1 样式 结束*/
+
+    /*page2 样式 开始*/
+    .page2-render-design{
+        background-image:url("http://115.29.172.104/gimg/img/13f3c680af43d28b87f8807f6ce97218");
+    }
+    /*page2Design 样式 开始*/
+    .delete-button{
+        cursor: pointer;
+        position: relative;
+        top: 4px;
+        font-size: 20px;
+        color: #bbb;
+        margin-left:12px;
+        transition: all .3s;
+        -webkit-transition: all ,.3s;
+        -moz-transition: all ,.3s;
+    }
+    .delete-button:hover {
+      color: #777;
+    }
+    .delete-button[disabled] {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+    /*page2Design 样式 结束*/
+    .page2-title{
+        position:absolute;
+        top: 60px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        width:200px;
+        height: 60px;
+        line-height: 60px;
+        background:rgba(255,255,255,.1);
+        border-radius:12px;
+
+        color:#fff;
+        font-size:22px;
+        text-align:center;
+    }
+    .page2-title::before{
+        content:'';
+        position:absolute;
+        display:block;
+        width:60px;
+        height:37px;
+        top:40px;
+        margin:auto;
+        left:0;
+        right:0;
+        background-image:url('http://115.29.172.104/gimg/img/bf641375134a4307e2f1d1bb5d054bfd');
+        background-size:cover;
+
+    }
+    .page2-content{
+        position:absolute;
+        top:150px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        width:288px;
+        height:260px;
+        background:rgba(255,255,255,.1);
+        border-radius:12px;
+
+        color:#fff;
+    }
+    .page2-content::before{
+        content:'';
+        position:absolute;
+        display:block;
+        width: 35px;
+        height: 35px;
+        top: -20px;
+        right: -8px;
+        background-image:url('http://115.29.172.104/gimg/img/87b4b6bfcc7caeb4c266f98b9228b062');
+        background-size:cover;
+    }
+    .page2-sub-title{
+        position:absolute;
+        top:15px;
+        margin :auto;
+        left:0;right:0;
+        width:250px;
+        height:30px;
+        line-height:30px;
+        overflow:hidden;
+
+        color:#fff;
+        font-size:14px;
+        text-align:center;
+    }
+    .page2-content-total{
+        position:absolute;
+        top:55px;
+        margin:auto;
+        left:0;right:0;
+        width:250px;
+        height:190px;
+
+        overflow:hidden;
+
+    }
+    .page2-content-item{
+        display:block;
+        width:250px;
+        min-height:16px;
+        line-height:16px;
+        margin:0 auto 5px;
+    }
+    .page2-content-item-label{
+        display:inline-block;
+        box-sizing:border-box;
+        width:50px;
+        height:16px;
+        line-height:16px;
+        vertical-align: top;
+        text-align: right;
+        margin-right:10px;
+        overflow:hidden;
+
+    }
+    .page2-content-item-value{
+        display:inline-block;
+        box-sizing:border-box;
+        width:180px;
+        min-height:16px;
+        line-height:16px;
+    }
+    /*page2 样式 结束*/
+
+    /*page3 样式 开始*/
+    .page3-render-design{
+        background-image:url("http://115.29.172.104/gimg/img/afe8ae08a2e8f69796f5fc9012db1808");
+    }
+    .page3-main-content{
+        position:absolute;
+        top:10px;
+        margin:auto;right:0;left:0;
+        width:250px;
+        height:235px;
+
+        overflow:hidden;
+    }
+    /*page3 样式 结束*/
+
+    /*page4 样式 开始*/
+    .page4-render-design{
+        background-image:url("http://115.29.172.104/gimg/img/3bd93f8be59e5b0c90630d072799c4c4");
+    }
+    .page5-title,.page4-title,.page6-title{
+        position:absolute;
+        top: 40px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        width:200px;
+        height: 60px;
+        line-height: 60px;
+        background:rgba(255,255,255,.1);
+        border-radius:12px;
+
+        color:#fff;
+        font-size:22px;
+        text-align:center;
+    }
+    .page4-title::before,.page5-title::before,.page6-title::before{
+        content:'';
+        position:absolute;
+        display:block;
+        width: 35px;
+        height: 35px;
+        top: -20px;
+        right: -8px;
+        background-image:url('http://115.29.172.104/gimg/img/87b4b6bfcc7caeb4c266f98b9228b062');
+        background-size:cover;
+
+    }
+    .page4-content{
+        position:absolute;
+        top:115px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        width:300px;
+        height:300px;
+
+        color:#fff;
+    }
+    .page4-content-item,.page5-content-item{
+        display:inline-block;
+        position:relative;
+        margin-left:5px;
+        margin-right:5px;
+        margin-bottom:10px;
+        box-sizing:border-box;
+        width:140px;
+        height:140px;
+    }
+    .page4-content-item::before,.page5-content-item::before{
+        content:'';
+        display:block;
+        position:absolute;
+        top:0;left:0;
+        width:140px;
+        height:140px;
+        background-image:url('http://115.29.172.104/gimg/img/b236bf5c421e69aa55670e3807ed3181');
+        background-size:cover;
+    }
+    .page4-content-item-image,.page5-content-item-image{
+        position:absolute;
+        top:9px;left:10px;
+        width:118px;
+        height:118px;
+    }
+    /*page4 样式 结束*/
+
+    /*page5 样式 开始*/
+    .page5-render-design{
+        background-image:url("http://115.29.172.104/gimg/img/050cf41a3b41e8566731d6aef1aab575");
+    }
+    .page5-content{
+        position:absolute;
+        top:115px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        width:300px;
+        height:150px;
+
+        color:#fff;
+    }
+    .page5-content-value{
+        position:absolute;
+        top:260px;
+        margin:auto;
+        left:0;right:0;
+        width:300px;
+        height:150px;
+        overflow:hidden;
+        padding:20px 5px 5px 5px;
+        background:rgba(255,255,255,.1);
+        border-radius:12px;
+
+        color:#fff;
+        font-size:14px;
+        overflow:hidden;
+    }
+    /*page5 样式 结束*/
+
+    /*page6 样式 开始*/
+    .page6-render-design{
+        background-image:url("http://115.29.172.104/gimg/img/a2ed97c7acc8fe801c62fe7371eeeded");
+    }
+    .page6-title{
+        top:70px;
+    }
+    .page6-name,.page6-phone{
+        position:absolute;
+        top:150px;
+        margin:auto;left:0;right:0;
+        width:300px;
+        height:45px;
+        line-height:45px;
+        background:rgba(255,255,255,.3);
+        border-radius:15px;
+
+        text-align:center;
+        font-size:16px;
+        color:#fff;
+
+
+    }
+    .page6-phone{
+        top:205px;
+    }
+    .page6-submit-button{
+        position:absolute;
+        top:265px;
+        left:41px;
+        width:190px;
+        height:42px;
+        background-image:url('http://115.29.172.104/gimg/img/da5e9f60096b21d42d0081c22eba9532');
+        background-size:cover;
+    }
+    /*page6 样式 结束*/
+
+    /*pageRenderComponent 样式 结束*/
+
+
+    /*样式覆盖*/
+    form textarea.ant-input{
+        height:100px;
+    }
+
+    .page-change .ant-btn{
+        padding: 4px 6px;
+    }
+
+	.ant-message{
+		z-index : 99999;
+	}
+	.ant-form-item{
+		margin-bottom : 20px;
+	}
+	.templet-instance-form-modal .ant-upload.ant-upload-select-picture-card{
+		width : 90px;
+		height : 90px;
+	}
+	.templet-instance-form-modal .ant-upload-list-picture-card .ant-upload-list-item{
+		width : 90px !important;
+		height : 90px;
+	}
+}

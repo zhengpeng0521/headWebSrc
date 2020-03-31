@@ -1,0 +1,60 @@
+/*引入less定义的方法*/
+@import '../../../common/less/common.less';
+
+.all{
+    position: relative;
+    width:380px;
+    height:380px;
+    border-radius: 5px;
+    background : url('https://img.ishanshan.com/gimg/img/4369bb32b18262fc026b87a3b75ade44') no-repeat 0 0;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        .inner_img > img{
+            .transform(scale(1.1));
+        }
+    }
+}
+.export_button{
+    position: absolute;
+    display : -webkit-inline-flex;
+    display : inline-flex;
+    align-items: center;
+    top : 20px;
+    right : 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,.4);
+    border : 0;
+    color : #fff;
+}
+
+.inner{
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    img{
+        margin-right: 10px;
+        .transition(all .2s);
+    }
+}
+.inner_text{
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .unCheckOrCopy();
+    p{
+        color:#fff;
+        &:first-child{
+            font-size: 5rem;
+        }
+        &:last-child{
+            font-size: 1.5rem;
+        }
+    }
+}

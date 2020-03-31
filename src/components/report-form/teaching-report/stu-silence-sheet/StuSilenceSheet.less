@@ -1,0 +1,99 @@
+/*引入less定义的方法*/
+@import '../../../common/less/common.less';
+:global{
+	.report_form_pie_chart_area .g-label{
+		left : 250px !important;
+	}
+}
+.report_form_pie_chart_item{
+	display : inline-block;
+	width : 50%;
+	height : 100%;
+}
+.all{
+    width : 100%;
+    height : calc(~'100% - 144px');
+    overflow : auto;
+    padding : 0 20px;
+}
+.row_sheet{
+    width : 100%;
+    min-width : 1000px;
+    overflow : hidden;
+    margin-bottom : 20px;
+    display : -webkit-flex;
+    display : flex;
+    flex-direction : row;
+    flex-wrap : nowrap;
+}
+.sheet{
+    width : calc( ~'100% - 470px' );
+    border : 1px solid #ddd;
+    border-radius : 5px;
+}
+.sheet_title{
+    height : 49px;
+    border-bottom : 1px solid #ddd;
+    background : #f1f1f1;
+    padding : 0 10px;
+    display : -webkit-flex;
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    >p{
+        font-size: 1.16rem;
+    }
+    >button{
+        display : -webkit-flex;
+        display : flex;
+        align-items: center;
+    }
+}
+.title_info_label{
+	color : #666;
+	font-size : 14px;
+}
+.title_info_text{
+	margin-left : 5px;
+	color : #999;
+	font-size : 12px;
+}
+
+.follow_record_sheet{
+    margin-right : 20px;
+	border : 1px solid #ddd;
+	border-radius : 5px;
+}
+.use_less_class_wrap{
+	width : 450px;
+	height : 400px;
+	background : #fff;
+    display : -webkit-flex;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+}
+.use_less_class_wrap:hover .use_less_img{
+	.transform(scale(1.1));
+}
+.use_less_num{
+	margin-bottom : 20px ;
+	height : 80px;
+	line-height : 80px;
+	font-size : 80px;
+	color : #666;
+}
+.use_less_title{
+	margin-bottom : 30px;
+	height : 18px;
+	line-height : 18px;
+	font-size : 18px;
+	color : #999;
+}
+.use_less_img{
+	.transition(all .2s);
+	width : 220px;
+	height : 220px;
+	background : url('https://img.ishanshan.com/gimg/img/3bcdde1747456a414161cf5fad246b12') no-repeat 0 0;
+}

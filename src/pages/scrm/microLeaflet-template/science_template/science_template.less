@@ -1,0 +1,303 @@
+@baseColor          : #ffffff;
+@baseBorderColor    : #42A2F9;
+@borderRadius       : 4px;
+@baseLineHeight     : 20px;
+@baseFontSize       : 12px;
+@titleFontSize      : @baseFontSize * 2;
+@titleLineHeight    : 36px;
+@subTitleLineHeight : 90px;
+@basePadding        : 10px;
+@baseMargin         : 10px;
+@marginAuto         : 0 auto;
+
+.absolute( @width, @height, @top, @left ){
+	position : absolute;
+	width    : @width;
+	height   : @height;
+	top      : @top;
+	left     : @left;
+}
+.transform( @value ){
+	transform : translateY( -50% );
+	-webkit-transform : translateY( -50% );
+	-moz-transform : translateY( -50% );
+	-ms-transform : translateY( -50% );
+	-o-transform : translateY( -50% );
+}
+
+.title{
+	width       : 200px;
+    margin      : @marginAuto;
+    color       : @baseColor;
+    text-align  : center;
+    font-size   : 25px;
+    line-height : @subTitleLineHeight;
+	overflow    : hidden;
+	white-space : nowrap;
+}
+.animation_value( @value ){
+	animation : @value;
+	-webkit-animation : @value;
+	-moz-animation : @value;
+	-ms-animation : @value;
+	-o-animation : @value;
+}
+/*机构简介背景图片样式*/
+.orgIntro_bg{
+	position : relative;
+	z-index : 1;
+	margin-top : 150px;
+	left : -32px;
+	width : 98px;
+	height : 98px;
+	border-radius : 50%;
+	background : url('http://115.29.172.104/gimg/img/e40fa97ea80a7150023f9a70e84904da') repeat;
+	background-size : auto 100%;
+	animation : orgIntro_ani 8s linear infinite;
+	transform : rotate( 20deg );
+}
+@keyframes orgIntro_ani{
+	0% { background-position : 0px; }
+	100% { background-position : 200%; }
+}
+//课程介绍背景图片样式
+.course_bg{
+	position : relative;
+	z-index : 1;
+	margin-top : -60px;
+	left : 260px;
+	width : 85px;
+	height : 85px;
+	border-radius : 50%;
+	background : url('http://115.29.172.104/gimg/img/3ba7ad8343719565f6a0df18f3fbecd8') repeat;
+	background-size : auto 100%;
+	transform : rotate( 160deg );
+	animation : orgIntro_ani 10s linear infinite;
+}
+//联系方式背景图片样式
+.contact_bg{
+	position : relative;
+	z-index : 1;
+	margin-top : -120px;
+	right : 30px;
+	width : 130px;
+	height : 130px;
+	border-radius : 50%;
+	background : url('http://115.29.172.104/gimg/img/82a4b8cb81c9e37ef4e4c0cc93901d31') repeat;
+	background-size : auto 100%;
+	animation : orgIntro_ani 14s linear infinite;
+	transform : rotate( -10deg );
+}
+//尾部背景图片样式
+.footer_bg{
+	position : relative;
+	z-index : 1;
+	margin-top : 70px;
+	left : 245px;
+	width : 70px;
+	height : 70px;
+	border-radius : 50%;
+	background : url('http://115.29.172.104/gimg/img/9ed97ec34c01d2ed28454f955c4049dc') repeat;
+	background-size : auto 100%;
+	animation : orgIntro_ani 20s linear infinite;
+}
+//背景框上
+.backgroungTop{
+	width      : 290px;
+	height     : 85px;
+	background : url('http://115.29.172.104/gimg/img/7d4715ec5a54bef6bffa3ebcc0d14611') no-repeat;
+	background-size : 100%;
+}
+//背景框中
+.backgroundMiddle{
+	width      : 290px;
+	background : url('http://115.29.172.104/gimg/img/e2ea00ee01edcce70a77fb437faadb3f');
+	background-size : 100%;
+}
+//背景框下
+.backgroundBottom{
+	width      : 290px;
+	height     : 101px;
+	background : url('http://115.29.172.104/gimg/img/93b89ab837bd5dab5b0864acf623cbf4');
+	background-size : 100%;
+}
+
+:global{
+	.science_wrap{
+		.absolute( 326px, 525px, 150px, 26px );
+		overflow-x : hidden;
+		overflow-y : auto;
+		background : #ffffff;
+	}
+	.science_bg{
+		background : url('http://115.29.172.104/gimg/img/cd1aa2d191bab1dcb1c8c35b973108af') repeat;
+		background-size : 319px;
+	}
+	.science_content{
+		.ship{
+			margin : @marginAuto;
+			width  : 319px;
+			height : 145px;
+			&::before{
+				.absolute( 212px, 121px, 25px, 44px );
+				content    : '';
+				background : url( 'http://115.29.172.104/gimg/img/f7649a39f3defe501dab282b92b6fe2f' );
+				background-size : cover;
+			}
+			&::after{
+				.absolute( 36px, 30px, 55px, 260px );
+				content : '';
+				background : url('http://115.29.172.104/gimg/img/ba3d2623b8623edd022654a11a1f5131');
+				background-size : cover;
+			}
+		}
+		.headImgUrl{
+			.absolute( 62px, 62px, 41px, 114px );
+			overflow : hidden;
+			border-radius : 50%;
+			img{
+				width : 100%;
+				height : 100%;
+			}
+		}
+		.orgTitle{
+			width      : 210px;
+			box-sizing : border-box;
+			margin     : @marginAuto;
+			margin-top : -10px;
+			padding    : @basePadding;
+			background : #0a5ca7;
+			border     : 2px solid @baseBorderColor;
+			color      : @baseColor;
+			font-size  : @baseFontSize * 1.5;
+			text-align : center;
+			border-radius : @borderRadius;
+		}
+		.actiTitle{
+			margin : @marginAuto;
+			margin-top : @baseMargin * 3;
+			width  : 290px;
+			.actiTitleTop{
+				position   : relative;
+				.backgroungTop;
+				.actiTitleTopCon{
+					.absolute( 220px, 108px, 26px, 40px );
+					p{
+						.absolute( 220px, auto, 50%, 0 );
+						.transform( -50% );
+						color       : @baseColor;
+						font-size   : @baseFontSize * 1.8;
+						text-align  : center;
+						max-height  : 105px;
+						line-height : @titleLineHeight;
+						overflow    : hidden;
+
+					}
+				}
+			}
+			&::after{
+				content    : '';
+				display    : block;
+				.backgroundBottom;
+			}
+		}
+
+		/*活动说明背景图片样式 */
+		.explain_bg{
+			position : relative;
+			z-index : 1;
+			margin : @marginAuto;
+			margin-top : @baseMargin * 2;
+			width : 313px;
+			height : 388px;
+			background : url('http://115.29.172.104/gimg/img/149bd65c4fa0fa393ea6cb4eb402c192') no-repeat;
+			background-size : 100%;
+		}
+
+		.explain_content{
+			position : relative;
+			z-index : 2;
+			margin : @marginAuto;
+			margin-top : -255px;
+			width : 290px;
+			.content_top{
+				.backgroungTop;
+				p{
+					.title;
+				}
+			}
+			.content_middle{
+				.backgroundMiddle;
+				p{
+					margin : @marginAuto;
+					width     : 225px;
+					color     : @baseColor;
+					font-size : @baseFontSize * 1.2;
+					line-height : @baseLineHeight;
+//					text-align : center;
+				}
+				.org_img{
+					width : 225px;
+					margin : @marginAuto;
+					.org_img_item{
+						margin-top : 15px;
+						width : 100%;
+						img{
+							width : 100%;
+							height : 125px;
+							border-radius : @borderRadius;
+						}
+					}
+				}
+				.remark_wrap{
+					width : 225px;
+					margin : @marginAuto;
+					margin-top : 20px;
+					.code_img{
+						display : inline-block;
+						vertical-align : top;
+						width : 100px;
+						height : 100px;
+						img{
+							width : 100%;
+							height : 100%;
+							border-radius : @borderRadius;
+						}
+					}
+					.robot{
+						display : inline-block;
+						vertical-align : top;
+						position : relative;
+						right : -20px;
+						width : 115px;
+						height : 115px;
+						background : url('http://115.29.172.104/gimg/img/723538d05e1090301b6afccb7369797e') no-repeat;
+						background-size : cover;
+					}
+				}
+				.remark{
+					margin-left : 32px;
+					width : 100px;
+					color : @baseColor;
+					font-size : @baseFontSize;
+					text-align : center;
+				}
+			}
+			.content_bottom{
+				.backgroundBottom;
+			}
+			.bottom{
+				margin-top : -40px;
+			}
+		}
+		.org_content{
+			margin-top : -250px;
+		}
+		.course_content{
+			margin-top : -30px;
+		}
+		.contact_content{
+			margin-top : -160px;
+		}
+	}
+}

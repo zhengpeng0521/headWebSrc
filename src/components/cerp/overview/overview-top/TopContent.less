@@ -1,0 +1,163 @@
+/*引入less定义的方法*/
+@import '../../../common/less/common.less';
+
+.top_all{
+    width:100%;
+    height:200px;
+    overflow: hidden;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+}
+
+.left{
+    height:200px;
+    width:650px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding:10px 20px 20px 20px;
+    margin-right: 10px;
+}
+.left_top{
+    height:20%;
+    width:100%;
+    margin-bottom: 10px;
+    display:-webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    .left_top_left{
+        display:-webkit-inline-flex;
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        div{
+            font-size: 1.33rem;
+            margin-right: 10px;
+        }
+        a{
+            font-size: 1.16rem;
+        }
+    }
+}
+.left_bottom{
+    height:calc(~'80% - 10px');
+    width:100%;
+    border-radius: 10px;
+    background-color: rgb(245,245,245);
+    padding:0 20px;
+    cursor: pointer !important;
+    .boxShadow(1px 1px 5px #ddd);
+    .unCheckOrCopy();
+    &:hover{
+        opacity: 0.8;
+    }
+    &:active{
+        .boxShadow(inset 2px 2px 5px #ddd);
+    }
+}
+.left_bottom_title{
+    width:100%;
+    height:30%;
+    border-bottom: 1px solid #ddd;
+    display:-webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    align-items: center;
+}
+.left_bottom_content{
+    width:100%;
+    height:70%;
+    padding:10px 0;
+    display:-webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    >p{
+        width:50%;
+        white-space: nowrap;
+        overflow: hidden;
+        .textOverflow(ellipsis);
+        &:nth-child(odd){
+            text-align: left;
+        }
+        &:nth-child(even){
+            text-align: right;
+        }
+    }
+}
+
+.right{
+    height:200px;
+    width:calc(~'100% - 650px - 250px - 20px');
+    background-color: #fff;
+    border-radius: 10px;
+    padding:10px 20px 20px 20px;
+    margin-right: 10px;
+    >div{
+        &:last-child{
+            height:70%;
+            >div{
+                width:100%;
+                height:100%;
+            }
+        }
+    }
+}
+.right_top{
+    height:20%;
+    width:100%;
+    display:-webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-size: 1.33rem;
+}
+.right_bottom{
+    height:100%;
+    width:100%;
+    display:-webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.course_alert{
+    height:100%;
+    width:250px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding:10px 20px 20px 20px;
+}
+.course_alert_top{
+    height:20%;
+    width:100%;
+    font-size: 1.33rem;
+    display:-webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.alert_num{
+    height:70%;
+    width:100%;
+    font-size: 4rem;
+    display:-webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}

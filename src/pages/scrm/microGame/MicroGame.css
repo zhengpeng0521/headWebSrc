@@ -1,0 +1,4 @@
+/*微游戏的表单窗口样式*/
+.micro_game_form_modal .ant-modal-content .ant-modal-body {
+    height: 85vh;
+}

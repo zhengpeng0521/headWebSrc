@@ -1,0 +1,23 @@
+/*引入less定义的方法*/
+@import '../../../../common/less/common.less';
+
+:global{
+    .LeadsFollowDetailSendOtherModal .ant-modal-body{
+        padding: 20px;
+    }
+    .LeadsFollowDetailSendOtherModal .ant-modal-footer{
+        margin: 0;
+        padding: 0 20px 20px 20px;
+    }
+    .LeadsFollowDetailSendOtherModal .ant-form-item{
+        margin-left:-10px;
+        margin-bottom : 0;
+    }
+}
+.leads_follow_modals_alert_message{
+    font-size: 1.16rem;
+    padding : 0 45px;
+    span:nth-child(1){
+        color : @status_flag_red;
+    }
+}

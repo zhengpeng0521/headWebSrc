@@ -1,0 +1,52 @@
+/*引入less定义的方法*/
+@import '../../../common/less/common.less';
+
+:global{
+    .refund_form_rejectModal .ant-modal-body{
+        padding: 20px 20px 10px 20px;
+        label{
+            font-size: 1.16rem;
+        }
+    }
+    .refund_form_rejectModal .ant-modal-footer{
+        margin: 0;
+        padding: 0 20px 20px 20px;
+    }
+    .refund_form_rejectModal .ant-form-item{
+        margin-bottom: 10px;
+    }
+}
+.all{
+    font-size: 1.16rem;
+    max-height: 500px;
+    overflow: auto;
+    .scrollbar();
+    >div{
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+}
+.reject_button{
+    background-color: #cc4342 !important;
+    border:1px solid #cc4342 !important;
+}
+.refund_money_intro{
+    font-size: 1rem;
+    color:rgba(0,0,0,0.4);
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+.course_detail{
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    >div{
+        display: -webkit-flex;
+        display: flex;
+        flex-flow: column;
+        flex-wrap: nowrap;
+        >div{
+            margin-bottom: 10px;
+        }
+    }
+}

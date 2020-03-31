@@ -1,0 +1,5 @@
+[
+    { "key" : "content" , "name" : "课堂内容" },
+    { "key" : "homework" , "name" : "课后作业" },
+    { "key" : "picList" , "name" : "课堂图片" }
+]

@@ -1,0 +1,83 @@
+/*引入less定义的方法*/
+@import '../../common/less/common.less';
+
+.small_ticket_all_content{
+    width:100%;
+    padding:0 20px 20px 20px;
+    overflow:hidden;
+}
+
+/*标题*/
+.small_ticket_title{
+    width:100%;
+    overflow:hidden;
+    height:25px;
+}
+.small_ticket_title_block{
+    float:left;
+    height:14px;
+    width:8px;
+    margin-top: 5.5px;
+    background-color:@saas_main_color;
+    .borderRadius(3px,3px,3px,3px);
+}
+.small_ticket_title_content{
+    float:left;
+    height:inherit;
+    line-height:25px;
+    margin-left:10px;
+    font-size:15px;
+}
+.radio_group{
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+/*小票预览*/
+.small_ticket_preview{
+    float:left;
+    margin-right: 50px;
+    width:100%;
+    height:auto;
+    overflow:hidden;
+}
+.check_on_work_attendance_title{
+    width:100%;
+    font-size:1.16rem;
+    margin-bottom: 20px;
+}
+
+.check_on_work_attendance_list{
+    width:30%;
+    height:auto;
+    overflow:hidden;
+    margin-bottom:40px;
+}
+.check_on_work_attendance_list li{
+    width:100%;
+    height:50px;
+    line-height:50px;
+    border:1px solid #ddd;
+    &:first-child{
+        background-color: #e9e9e9;
+    }
+}
+.check_on_work_attendance_list li p{
+    width:30%;
+    height:50px;
+    float:left;
+    text-align:center;
+    border-right:1px solid #ddd;
+}
+
+.check_on_work_attendance_list li div{
+    width:70%;
+    height:50px;
+    float:left;
+    text-align: center;
+}
+.check_on_work_attendance_list li div RadioGroup{
+    width:100%;
+}

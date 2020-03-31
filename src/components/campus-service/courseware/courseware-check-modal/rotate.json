@@ -1,0 +1,5 @@
+[
+    { "id" : "left" , "icon" : "turn-left" , "angle" : -90 },
+    { "id" : "right" , "icon" : "turn-right" , "angle" : 90 },
+    { "id" : "all" , "display" : "none" , "main" : true }
+]

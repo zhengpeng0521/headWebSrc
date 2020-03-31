@@ -1,0 +1,397 @@
+.game_general_base {
+	background-color: white;
+	min-height : 100%;
+	border-radius: 10px;
+	overflow: auto;
+}
+
+.game_general_select_org {
+	width: 300px;
+	float: left;
+	margin-top : 20px;
+}
+
+.game_general_game_acitity_list {
+	clear : both;
+}
+
+.gameOractivity_div {
+   /*  width: calc((100% - 250px) / 4); */
+	background: #e9eaed;
+	margin-left: 50px;
+	float: left;
+	margin-bottom: 20px;
+	height: 390px;
+	width : 250px;
+	position: relative;
+	border-radius : 10px;
+	animation : game_ani .5s forwards;
+	opacity : 0;
+	transform : translateY( 10px );
+}
+@keyframes game_ani{
+	0%{ transform : translateY( 10px ); opacity : 0 }
+	100%{ transform : translateY( 0 ); opacity : 1 }
+}
+.gameOractivity_div:hover .codeModal{
+	opacity : 1;
+}
+.codeModal{
+	opacity : 0;
+	width: 250px;
+	height: 250px;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	-webkit-transition : opacity ease-in-out .4s;
+	-moz-transition : opacity ease-in-out .4s;
+	-o-transition : opacity ease-in-out .4s;
+	transition : opacity ease-in-out .4s;
+}
+.codeUrl{
+	position : absolute;
+	margin : auto; left : 0; right : 0; top : 0; bottom : 0;
+	width : 210px;
+	height : 225px;
+	padding : 10px;
+	background : #fff;
+	border-radius : 10px;
+	text-align : center;
+}
+
+.gameOractivity_div_img {
+	width: 100%;
+	height: 250px;
+	border-radius : 10px;
+}
+
+.game_clearance {
+	height : 20px;
+	clear: both;
+}
+
+.gameOractivity_div_botton_div {
+	height: 150px;
+}
+
+.gameOractivity_div_title {
+	font-size: 17px;
+	text-align: left;
+	padding: 5px 0px 0px 0px;
+	overflow: hidden;
+	white-space: nowrap;
+	margin-right: 10px;
+	margin-left: 10px;
+	text-overflow: ellipsis;
+}
+
+.gameOractivity_div_sub_title {
+	font-size: 15px;
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 45px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	margin-top: 10px;
+}
+
+.gameOractivity_div_select_button {
+	margin-right: 10px;
+	float : right;
+}
+
+.gameOractivity_div_open_status {
+	font-size: 16px;
+	margin-left: 10px;
+	line-height: 28px;
+	color: #cad0dd;
+}
+
+.gameOractivity_div_pagesize_div {
+	height: 50px;
+	clear: both;
+	text-align: center;
+	float: right;
+	margin-right: 40px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.game_general_custom {
+	clear: both;
+	font-size: 14px;
+	float: right;
+	margin-right: 40px;
+}
+
+.game_general_select_org_title {
+	width: 100px;
+	font-size: 15px;
+	float: left;
+	line-height: 30px;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+
+.game_general_open_create_qr_code_title {
+	margin-top: 20px;
+	font-size: 15px;
+	text-align: left;
+}
+
+.game_general_tel {
+	margin-top : 20px;
+}
+
+.game_general_tel .ant-input {
+	width : 50%;
+}
+
+.game_general_div_po_qr_code_title {
+	margin-top: 20px;
+	font-size: 15px;
+	text-align: center;
+}
+
+.game_general_use_number {
+	position: absolute;
+	height: 40px;
+	background-color: black;
+	width: 100%;
+	bottom: 140px;
+	opacity: 0.6;
+}
+
+.game_general_use_number_p_left {
+	position: absolute;
+	bottom: 140px;
+	color: white;
+	margin-left: 10px;
+	font-size: 15px;
+	line-height: 40px;
+}
+
+.game_general_use_number_p_right {
+	float : left;
+	bottom: 140px;
+	color: #2db7f5;
+	font-size: 15px;
+	line-height: 40px;
+}
+
+.game_general_base .ant-input {
+	width: 200px;
+	float: right;
+	margin-top: 20px;
+	margin-right: 10px;
+}
+
+.game_general_base .ant-btn-circle {
+	margin-right: 50px;
+	float: right;
+	margin-top: 20px;
+}
+
+.game_search_base_create_ui_div_campus_value {
+	float : left;
+	font-size : 14px;
+	margin-top: 10px;
+}
+
+.game_search_base_create_ui_div_config {
+	height: 20px;
+	width: 120px;
+	font-size: 15px;
+	margin-left: 20px;
+}
+
+.game_search_base_create_ui_div_title {
+	float: left;
+	margin-right: 10px;
+	font-size: 12px;
+	width: 90px;
+	text-align: right;
+	clear: both;
+	margin-top: 10px;
+}
+
+.game_search_base_create_ui_div_config_mack {
+	width: 10px;
+	height: 20px;
+	margin-left: 20px;
+	background-color: #c33939;
+}
+
+.game_search_base_create_ui_div_clearance {
+	height: 10px;
+	clear: both;
+}
+
+.game_search_base_create_ui_div_form .ant-form-item>label:after {
+	content : '';
+}
+
+.game_search_base_create_ui_div_form .ant-form-item>label {
+	width: 100px;
+}
+
+.game_search_base_create_ui_div_form .must-input {
+	color:#999;
+}
+
+.game_search_base_create_ui_div_submit_button {
+	clear: both;
+	text-align: right;
+	margin-top: 30px;
+}
+
+.game_search_base_create_ui_div_submit_button .ant-btn-primary  {
+	margin-right : 10px;
+}
+
+.game_search_base_create_ui_div_submit_button .ant-btn-ghost {
+	margin-right : 10px;
+}
+
+.game_general_base>createGame>ant-modal-body {
+	height : 600px;
+}
+
+.game_base_list_div {
+	background-color: white;
+	min-height : 100%;
+	border-radius: 10px;
+}
+.game_base_list_div .ant-tabs-bar{
+	margin-bottom : 0;
+}
+.game_base_list_div .game_base_list_search_ani_div{
+	margin-top : 20px;
+}
+.game_base_list_search_div .ant-advanced-search-form {
+	border: 0px solid #d9d9d9;
+}
+
+.ant-advanced-search-form {
+	overflow: hidden;
+}
+.game_base_list_search_div .ant-col-8 {
+	width: calc(100% / 4);
+	margin-top: 10px;
+	padding-left: 0px!important;
+	padding-right: 0px!important;
+}
+
+/* 重写覆盖父类方法 */
+
+.game_base_list_search_div .ant-col-19 {
+	width: 100%;
+}
+
+.game_base_list_search_div .ant-form-item-control {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.game_base_list_search_div_button {
+	background-color:#f8f8f8;
+}
+
+.game_base_list_search_ani_div {
+	border-radius: 10px;
+	padding:10px 20px 5px 10px;
+	overflow: hidden;
+	background: #f8f8f8;
+	border: 1px solid #d9d9d9;
+}
+
+.game_base_list_search_div_button .ant-btn-primary {
+	margin: 0px 0 10px 25px;
+}
+
+.game_base_list_search_div_button_creategame {
+	background-color: white;
+	margin-bottom : 20px;
+}
+.game_base_list_search_div_button_creategame .yhwu_operation_left{
+	display : inline-block;
+	width : 60%;
+	font-size : 14px;
+	color : #666;
+
+}
+.game_base_list_search_div_button_creategame .yhwu_operation_right{
+	display : inline-block;
+	width : 40%;
+	text-align: right;
+}
+
+.game_base_list_search_div_table {
+	clear: both;
+	width: 100%;
+}
+
+.game_address_a {
+	color : red;
+}
+
+.game_base_list_search_div_table .ant-table th {
+	text-align : center;
+}
+
+.game_search_base_create_ui_div_statistical .ant-btn-primary {
+	float : right;
+	margin-bottom : 10px;
+}
+
+.dataModal td{
+	text-align : center;
+}
+.game_search_base_create_ui_div_statistical_p_div {
+	clear: both;
+	margin-bottom: 10px;
+	background-color:#d6d0d0;
+	border-radius: 5px;
+}
+
+.game_search_base_create_ui_div_statistical_p_div_left_p_game {
+	float: left;
+	margin-right: 30px;
+	font-size: 13px;
+	line-height: 30px;
+	padding-left: 5px;
+}
+
+.game_search_base_create_ui_div_statistical_p_div_left_p_activity {
+	margin-right: 30px;
+	font-size: 13px;
+	line-height: 30px;
+	padding-left: 5px;
+}
+
+.game_search_base_create_ui_div_statistical_p_div_right_p {
+	font-size: 13px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 5px;
+}
+
+.game_base_list_search_div_table .ant-table table {
+	text-align : center;
+}
+
+.game_search_base_create_ui_div_po_qr_code_div_wx_title {
+	margin-top: 20px;
+	font-size: 15px;
+	text-align: center;
+}
+
+
+
+
+
+/*创建游戏浮动定位 top*/
+.micro_game_form_modal.ant-modal{
+	top : 10px;
+}

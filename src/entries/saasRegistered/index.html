@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv='X-UA-compatible' content='IE=edge'>
+    <title>${formName}</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+<div id="saasRegistered"></div>
+<script>
+	var platform = "${channelKey}";
+	window.BASE_URL = window.BASE_URL || '/saas-web';
+</script>
+
+<script src="http://www.ishanshan.com/resources/zepto.min.js"></script>
+<script src="http://192.168.1.52/resources/js/gt.js"></script>
+<script src="http://192.168.1.52/resources/js/verifycode.js"></script>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>-->
+<script src="common.js"></script>
+<script src="index.js"></script>
+<script src = "http://www.ishanshan.com/resources/ad/ad-util.js"></script>
+
+<script>
+	(function(para) {
+		var p = para.sdk_url, n = para.name, w = window, d = document, s = 'script',x = null,y = null;
+		w['sensorsDataAnalytic201505'] = n;
+		w[n] = w[n] || function(a) {return function() {(w[n]._q = w[n]._q || []).push([a, arguments]);}};
+		var ifs = ['track','quick','register','registerPage','registerOnce','clearAllRegister','trackSignup', 'trackAbtest', 'setProfile','setOnceProfile','appendProfile', 'incrementProfile', 'deleteProfile', 'unsetProfile', 'identify','login','logout','trackLink','clearAllRegister'];
+		for (var i = 0; i < ifs.length; i++) {
+			w[n][ifs[i]] = w[n].call(null, ifs[i]);
+		}
+		if (!w[n]._t) {
+			x = d.createElement(s), y = d.getElementsByTagName(s)[0];
+			x.async = 1;
+			x.src = p;
+			y.parentNode.insertBefore(x, y);
+			w[n].para = para;
+		  }
+	})({
+		sdk_url: 'https://img.ishanshan.com/resources/js/sdk.js',
+		name: 'sa',
+		server_url:'http://www.ishanshan.com/track/s.gif'
+	});
+	sa.quick('autoTrack'); //神策系统必须是1.4最新版及以上
+</script>
+<script>
+        sa.track("regist_load", {_ch : platform,});
+</script>
+</body>
+</html>

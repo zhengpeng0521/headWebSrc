@@ -1,0 +1,70 @@
+/*引入less定义的方法*/
+@import '../../../common/less/common.less';
+
+.small_ticket_all_content{
+    width:1000px;
+    height:650px;
+    padding:0 20px;
+    overflow: auto;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/*小票预览*/
+.small_ticket_preview{
+    margin-right : 80px;
+}
+
+.small_ticket_preview_content{
+    width:300px;
+    border:1px solid #ddd;
+    padding:10px 20px;
+    .borderRadius(5px,5px,5px,5px);
+}
+.small_ticket_preview_content_orgName{
+    font-size:20px;
+    text-align:center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.small_ticket_preview_content_common{
+    font-size:16px;
+    line-height: 35px;
+}
+.small_ticket_preview_content_recBottom{
+    padding-top: 5px;
+    border-top: 1px solid #ddd;
+    font-size:16px;
+    pre{
+        white-space:pre-wrap;
+    }
+}
+/*小票设置*/
+.small_ticket_set{
+
+}
+:global{
+    .small_ticket_set_checkbox{
+        width:120px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    .small_ticket_set_checkbox .ant-checkbox-group-item{
+        margin-bottom: 18px !important;
+    }
+    .small_ticket_set_checkbox .ant-checkbox-group-item:last-child{
+        margin-bottom: 5px !important;
+    }
+}
+.small_ticket_set_textarea{
+    margin-left: 42px;
+    margin-bottom: 20px;
+    width:400px;
+}
+.small_ticket_set_button{
+    margin-left: 42px;
+}
+.small_ticket_set_button_item{
+    margin-right: 10px;
+}

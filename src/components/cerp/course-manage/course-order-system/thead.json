@@ -1,0 +1,4 @@
+[
+    { "name" : "课系名称" , "id" : "name" , "width" : "70%" },
+    { "name" : "操作" , "id" : "operation" , "width" : "30%" }
+]

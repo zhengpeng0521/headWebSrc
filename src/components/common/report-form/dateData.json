@@ -1,0 +1,34 @@
+[
+    {
+        "key": "today",
+        "value": "今日"
+    },
+    {
+        "key": "yesterday",
+        "value": "昨日"
+    },
+    {
+        "key": "7",
+        "value": "近7日"
+    },
+    {
+        "key": "30",
+        "value": "近30日"
+    },
+    {
+        "key": "week",
+        "value": "本周"
+    },
+    {
+        "key": "thisMonth",
+        "value": "本月"
+    },
+    {
+        "key": "lastMonth",
+        "value": "上月"
+    },
+    {
+        "key": "free",
+        "value": "自定义"
+    }
+]

@@ -1,0 +1,84 @@
+/*引入less定义的方法*/
+@import '../../../../common/less/common.less';
+
+.leads_add_all{
+    width: 100%;
+    height: calc(~'100vh - 120px');
+    overflow: auto;
+    padding: 20px 20px 0 20px;
+    border-top: 4px solid @saas_main_color;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    .scrollbar();
+}
+:global{
+    .leads_add_first{
+        width:1000px;
+    }
+    .leads_add_first .ant-form-item{
+        margin-bottom: 6px;
+    }
+}
+.block_title{
+    margin-top: 15px;
+}
+.form_item_one,.form_item_two,.form_item_three,.form_item_four{
+    width:1000px;
+    display : -webkit-flex;
+    display : flex;
+    flex-direction : row;
+    flex-wrap : wrap;
+}
+.form_item_one{
+    width : 1200px;
+    >div{
+        min-width: 290px;
+        margin-right: 100px;
+        margin-bottom: 10px;
+        line-height: 30px;
+    }
+}
+.form_item_two{
+    >div{
+        min-width: 290px;
+        margin-right: 100px;
+        margin-bottom: 10px;
+        line-height: 30px;
+        &:first-child{
+            margin-right: 15px;
+        }
+        &:last-child{
+            margin-left: 10px;
+        }
+    }
+    /*查重*/
+    >span{
+        color:@saas_main_color;
+        cursor:pointer;
+        line-height: 30px;
+        margin-right: 62px;
+        .unCheckOrCopy();
+    }
+}
+.form_item_three,.form_item_four{
+    >div{
+        min-width: 290px;
+        margin-right: 100px;
+        margin-bottom: 10px;
+        line-height: 30px;
+        &:nth-of-type(2){
+            margin-right: 15px;
+        }
+    }
+    /*查重*/
+    >span{
+        color:@saas_main_color;
+        cursor:pointer;
+        line-height: 30px;
+        margin-right: 62px;
+        .unCheckOrCopy();
+    }
+}
+.submit_button{
+    margin : 30px 0 40px;
+}

@@ -1,0 +1,81 @@
+/*引入less定义的方法*/
+@import '../../../common/less/common.less';
+
+:global{
+
+    /*上方表格总属性*/
+        .zj_sales_achieve_table_common .ant-table-bordered .ant-table-thead>tr>th{
+            text-align : center;
+            font-size : 14px;
+        }
+        /*表格内容字体居中*/
+        .zj_sales_achieve_table_common .ant-table-tbody>tr{
+            text-align : center;
+            height : 50px;
+        }
+    	.zj_sales_achieve_table_common .ant-table .ant-table-content .ant-table-body tr > td{
+            border-bottom: 1px solid #e9e9e9;
+            text-align : center;
+            line-height : 16px;
+            padding : 0 10px;
+            position : relative;
+        }
+        .zj_sales_achieve_table_common .ant-table .ant-table-content .ant-table-body tr > td > a,
+        .zj_sales_achieve_table_common .ant-table .ant-table-content .ant-table-body tr > td > span{
+            position : absolute;
+            top : 18px;
+            left : 10px;
+            display : inline-block;
+            width : calc( ~'100% - 20px' );
+            .textOverflow(ellipsis);
+            white-space : nowrap;
+            overflow : hidden;
+        }
+
+    /*下方表格总属性*/
+        /*每门课和总计数*/
+        .zj_sales_achieve_table .ant-table-bordered .ant-table-thead>tr:nth-child(2)>th{
+            background-color: #f5f5f5;
+            color:#666;
+        }
+            /*授课节数和教学人次属性*/
+        .zj_sales_achieve_table .ant-table-bordered .ant-table-thead>tr:nth-child(1)>th{
+            background-color : #5d9cec;
+            color : #fff;
+        }
+        /*统计类型栏属性*/
+        .zj_sales_achieve_table .ant-table-bordered .ant-table-thead>tr:nth-child(1)>th:nth-child(1),
+        .zj_sales_achieve_table .ant-table-bordered .ant-table-thead>tr:nth-child(1)>th:nth-child(2),
+        .zj_sales_achieve_table .ant-table-bordered .ant-table-thead>tr:nth-child(1)>th:last-child{
+            background-color : #f7f7f7;
+            color : #333;
+        }
+}
+/*表格*/
+.allTable_s,.allTable_l{
+    width:100%;
+    font-size:1.16rem;
+    overflow: auto;
+    // .unCheckOrCopy();
+}
+.allTable_s{
+    height:calc(~'100% - 160px');
+}
+.allTable_l{
+    height:calc(~'100% - 110px');
+}
+
+/*分页器*/
+.Pagination{
+    margin:20px;
+    float:right;
+}
+
+.tip_icon{
+    margin-left: 4px;
+}
+
+.pop_con{
+    max-width: 400px;
+    color: #f04134;
+}

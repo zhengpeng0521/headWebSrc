@@ -1,0 +1,388 @@
+:global {
+	.koubei_org_map_tab .ant-tabs-bar {
+		display: none;
+	}
+}
+
+.empty_list_data {
+    padding: 16px 8px;
+    background: #fff;
+    border-bottom: 1px solid #e9e9e9;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    font-size: 12px;
+    color: #999;
+}
+
+.koubei_org_map_cont {
+	color: #666;
+    width: 850px;
+    margin: 0 auto;
+    position: relative;
+    top: 65px;
+}
+
+.header_step {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.koubei_org_map_content {
+    margin-top: 56px;
+}
+
+.tenant_list_cont {
+    margin: 0 auto;
+    max-height: 500px;
+    overflow-y: auto;
+    border: 1px dashed #e9e9e9;
+}
+
+.tenant_item {
+	font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    color: #333;
+    margin: 5px;
+    cursor: pointer;
+    padding-left: 10px;
+    overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+    transition: font-size 0.3s linear;
+}
+
+.tenant_item:hover {
+	background-color: #ecf6fd;
+    font-size: 18px;
+    box-shadow: 7px 5px 5px #eee;
+}
+
+.tenant_list_bar {
+    padding: 10px 16px 10px 16px;
+    margin-top: 20px;
+}
+
+.create_tenant_bar {
+    float: right;
+    display: inline-flex;
+}
+
+.create_tenant_msg {
+    height: 28px;
+    line-height: 28px;
+    margin-right: 10px;
+}
+
+.more_tenant_bar {
+    float: left;
+    display: inline-flex;
+}
+
+.more_tenant_word {
+    width: 250px;
+    margin-right: 10px;
+}
+
+/*门店映射*/
+
+.org_map_content {
+    width: 100%;
+}
+
+.saas_org_cont {
+    border: 1px dashed #e9e9e9;
+    width: 220px;
+    min-height: 200px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.org_map_cont {
+    border: 1px dashed #e9e9e9;
+    width: 277px;
+    min-height: 200px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.koubei_org_cont {
+    border: 1px dashed #e9e9e9;
+    width: 220px;
+    min-height: 200px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.saas_org_item {
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+    margin: 5px;
+    cursor: pointer;
+    padding-left: 10px;
+    overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+    transition: font-size 0.3s linear;
+}
+
+.saas_org_item:hover {
+	background-color: #ecf6fd;
+    font-size: 16px;
+    box-shadow: 7px 5px 5px #eee;
+}
+
+.koubei_org_item {
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+    margin: 5px;
+    cursor: pointer;
+    padding-left: 10px;
+    overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+    transition: font-size 0.3s linear;
+}
+
+.koubei_org_item:hover {
+	background-color: #ecf6fd;
+    font-size: 16px;
+    box-shadow: 7px 5px 5px #eee;
+}
+
+.maped_org_cont {
+    margin: 5px;
+}
+
+.maped_org_content {
+    height: 200px;
+    overflow-y: auto;
+}
+
+/*一匹配的机构项*/
+.maped_org_item {
+    height: 30px;
+    line-height: 30px;
+    color: #333;
+    margin: 5px;
+    overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+    transition: background-color 0.3s linear;
+    display: inline-flex;
+    width: 98%;
+}
+
+.maped_org_item:hover {
+	background-color: #ecf6fd;
+    box-shadow: 7px 5px 5px #eee;
+}
+
+.maped_org_item_saas {
+    width: 49%;
+    overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+    padding: 0 45px 0 8px;
+    font-size: 14px;
+    color: #666;
+    font-size: 14px;
+}
+
+.maped_org_item_koubei {
+    width: 49%;
+    overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+    padding: 0 8px 0 45px;
+    font-size: 14px;
+    color: #666;
+    font-size: 14px;
+}
+
+.maped_icon {
+    width: 38px;
+    height: 10px;
+    display: block;
+    background-image: url(https://img.ishanshan.com/gimg/img/66a8bb5d26f9be073cc807f185d45caf);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+/*未匹配的机构操作区域*/
+
+.mapping_org_cont {
+    margin: 5px;
+    margin-bottom: 40px;
+    width: 98.5%;
+    display: inline-flex;
+//    -moz-box-shadow:3px -3px 3px #3EB3F4,
+//                    -3px 3px 3px #3EB3F4,
+//                    -3px -3px 3px #3EB3F4,
+//                    3px 3px 3px #3EB3F4;
+//    -webkit-box-shadow: 3px -3px 3px #3EB3F4,
+//                        -3px 3px 3px #3EB3F4,
+//                        -3px -3px 3px #3EB3F4,
+//                        3px 3px 3px #3EB3F4;
+//    box-shadow: 3px -3px 3px #3EB3F4,
+//                -3px 3px 3px #3EB3F4,
+//                -3px -3px 3px #3EB3F4,
+//                3px 3px 3px #3EB3F4;
+}
+
+.mapping_saas_org_cont {
+    width: 38%;
+    background-color: #fff;
+}
+
+.mapping_saas_org_content {
+    width: 100%;
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #E5E5E5;
+    margin-top: 10px;
+}
+
+.mapping_koubei_org_cont {
+    width: 38%;
+    background-color: #fff;
+}
+
+.mapping_koubei_org_content {
+    width: 100%;
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #E5E5E5;
+    margin-top: 10px;
+}
+
+.mapping_org_bar {
+    width: 24%;
+    height: 200px;
+    background-color: #fff;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.animation_one_show_component {
+    width: 153px;
+    height: 28px;
+    display: block;
+    font-size: 14px;
+    line-height: 28px;
+    border-radius: 5px;
+    background-color: #FFF;
+    border: 1px solid #E5E5E5;
+    overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+    position: absolute;
+    text-align: center;
+    position: absolute;
+    z-index: 99;
+}
+
+.animation_two_show_component {
+    width: 153px;
+    height: 28px;
+    display: block;
+    font-size: 14px;
+    line-height: 28px;
+    border-radius: 5px;
+    background-color: #FFF;
+    border: 1px solid #E5E5E5;
+    overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+    position: absolute;
+    text-align: center;
+    position: absolute;
+    z-index: 99;
+}
+
+.maping_maped_box_one {
+    width: 153px;
+    height: 28px;
+    display: block;
+    border-radius: 5px;
+    background-color: #FFF;
+    border: 1px solid #E5E5E5;
+    position: relative;
+    margin: 0 auto;
+    top: 25px;
+}
+
+.maping_maped_box_two {
+    width: 153px;
+    height: 28px;
+    display: block;
+    border-radius: 5px;
+    background-color: #FFF;
+    border: 1px solid #E5E5E5;
+    position: relative;
+    margin: 0 auto;
+    top: 55px;
+}
+
+.maping_maped_icon {
+    width: 36px;
+    height: 10px;
+    display: block;
+    background-image: url(https://img.ishanshan.com/gimg/img/b052e02455e927b19924018b5e6cfbac);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    top: 41px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mapping_btn {
+    position: relative;
+    left: 0;
+    top: 90px;
+    width: 153px;
+    margin: 0 auto;
+    transition: display 1.0s linear;
+}
+
+/*标题*/
+.title_cont {
+    width: 100%;
+}
+
+.title {
+    color: #666;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.title:before {
+    display: inline-flex;
+    content: ' ';
+    background-color: #3eb3f4;
+    width: 3px;
+    height: 18px;
+    line-height: 16px;
+    position: relative;
+    margin-right: 5px;
+    top: 3px;
+}
+
+.map_org_bar {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.map_org_bar_btn {
+    margin-right: 20px;
+}

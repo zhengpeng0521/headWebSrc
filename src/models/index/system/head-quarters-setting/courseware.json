@@ -1,0 +1,17 @@
+
+[
+    { "name" : "教学类" , "id" : "teach" , "pid" : -1 , "open" : true },
+    { "name" : "线性代数" , "id" : "lineMath" , "pid" : "teach" , "open" : true  },
+    { "name" : "线代1" , "id" : "linMath1" , "pid" : "lineMath" , "open" : true  },
+    { "name" : "线代2" , "id" : "linMath2" , "pid" : "lineMath" , "open" : true  },
+    { "name" : "线代1-1" , "id" : "linMath1-1" , "pid" : "linMath1" , "open" : true  },
+    { "name" : "线代1-2" , "id" : "linMath1-2" , "pid" : "linMath1" , "open" : true  },
+    { "name" : "线代1-3" , "id" : "linMath1-3" , "pid" : "linMath1" , "open" : true  },
+    { "name" : "微积分" , "id" : "micro" , "pid" : "teach" , "open" : true  },
+    { "name" : "语言类" , "id" : "lang" , "pid" : -1 ,  "open" : true  },
+    { "name" : "中文" , "id" : "chinese" , "pid" : "lang" , "open" : true  },
+    { "name" : "英语" , "id" : "english" , "pid" : "lang" , "open" : true },
+    { "name" : "物理" , "id" : "phy" , "pid" : -1 , "open" : true },
+    { "name" : "物理1" , "id" : "phy1" , "pid" : "phy" , "open" : true },
+    { "name" : "物理2" , "id" : "phy2" , "pid" : "phy" , "open" : true }
+]
